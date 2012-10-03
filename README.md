@@ -48,3 +48,16 @@ for k,v in sid_to_ind.items():
     else:
         print '\t'.join([k,str(len(set(ind_to_weeks[v]))),s[k]['Week'].replace('week.',''),str(min(map(float,[e.replace('week.','') for e in ind_to_weeks[v]]))), str(max(map(float,[e.replace('week.','') for e in ind_to_weeks[v]])))])
 ```
+
+Beta diversity
+--------------
+
+```
+echo "beta_diversity_through_plots.py -i /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/palm_closed_ref_filtered_otu_table.biom -o /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/palm_bdiv_even10000/ -t /scratch/caporaso/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre -m /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/StudentMicrobiomeProject-map.tsv -aO 25 -e 10000" | qsub -keo -N smppalm10000 -l pvmem=8gb -q memroute
+
+echo "beta_diversity_through_plots.py -i /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/tongue_closed_ref_filtered_otu_table.biom -o /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/tongue_bdiv_even10000/ -t /scratch/caporaso/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre -m /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/StudentMicrobiomeProject-map.tsv -aO 25 -e 10000" | qsub -keo -N smptongue10000 -l pvmem=8gb -q memroute
+
+echo "beta_diversity_through_plots.py -i /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/gut_closed_ref_filtered_otu_table.biom -o /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/gut_bdiv_even10000/ -t /scratch/caporaso/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre -m /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/StudentMicrobiomeProject-map.tsv -aO 25 -e 10000" | qsub -keo -N smpgut10000 -l pvmem=8gb -q memroute
+
+echo "beta_diversity_through_plots.py -i /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/forehead_closed_ref_filtered_otu_table.biom -o /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/forehead_bdiv_even10000/ -t /scratch/caporaso/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre -m /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/StudentMicrobiomeProject-map.tsv -aO 25 -e 10000" | qsub -keo -N smpforehead10000 -l pvmem=8gb -q memroute
+```
