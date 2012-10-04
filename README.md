@@ -49,6 +49,45 @@ for k,v in sid_to_ind.items():
         print '\t'.join([k,str(len(set(ind_to_weeks[v]))),s[k]['Week'].replace('week.',''),str(min(map(float,[e.replace('week.','') for e in ind_to_weeks[v]]))), str(max(map(float,[e.replace('week.','') for e in ind_to_weeks[v]])))])
 ```
 
+Demultiplexing
+--------------
+```
+echo "split_libraries_fastq.py -i /home/shared/Illumina_hiseq_UCB/Illumina071712/Project_Fierer_71712/Sample_Fierer_16sV4_SMP1_tongue_71712/Fierer_16sV4_SMP1_tongue_71712_NoIndex_L001_R1_001.fastq.gz -b /home/shared/Illumina_hiseq_UCB/Illumina071712/Project_Fierer_71712/Sample_Fierer_16sV4_SMP1_tongue_71712/Fierer_16sV4_SMP1_tongue_71712_NoIndex_L001_R2_001.fastq.gz -m /home/caporaso/analysis/student_microbiome/tongue_all.tsv --rev_comp_mapping_barcodes -o /home/caporaso/analysis/student_microbiome/slout_tongue/" | qsub -keo -N stu_tongue
+
+echo "split_libraries_fastq.py -i /home/shared/Illumina_hiseq_UCB/Illumina071712/Project_Fierer_71712/Sample_Fierer_16sV4_SMP2_palm_71712/Fierer_16sV4_SMP2_palm_71712_NoIndex_L002_R1_001.fastq.gz -b /home/shared/Illumina_hiseq_UCB/Illumina071712/Project_Fierer_71712/Sample_Fierer_16sV4_SMP2_palm_71712/Fierer_16sV4_SMP2_palm_71712_NoIndex_L002_R2_001.fastq.gz -m /home/caporaso/analysis/student_microbiome/palm_all.tsv --rev_comp_mapping_barcodes -o /home/caporaso/analysis/student_microbiome/slout_palm/" | qsub -keo -N stu_palm
+
+echo "split_libraries_fastq.py -i /home/shared/Illumina_hiseq_UCB/Illumina071712/Project_Fierer_71712/Sample_Fierer_16sV4_SMP3_forehead_71712/Fierer_16sV4_SMP3_forehead_71712_NoIndex_L003_R1_001.fastq.gz -b /home/shared/Illumina_hiseq_UCB/Illumina071712/Project_Fierer_71712/Sample_Fierer_16sV4_SMP3_forehead_71712/Fierer_16sV4_SMP3_forehead_71712_NoIndex_L003_R2_001.fastq.gz -m /home/caporaso/analysis/student_microbiome/forehead_all.tsv --rev_comp_mapping_barcodes -o /home/caporaso/analysis/student_microbiome/slout_forehead/" | qsub -keo -N stu_forehead
+
+echo "split_libraries_fastq.py -i /home/shared/Illumina_hiseq_UCB/Illumina071712/Project_Fierer_71712/Sample_Fierer_16sV4_SMP4_fecal_71712/Fierer_16sV4_SMP4_fecal_71712_NoIndex_L004_R1_001.fastq.gz -b /home/shared/Illumina_hiseq_UCB/Illumina071712/Project_Fierer_71712/Sample_Fierer_16sV4_SMP4_fecal_71712/Fierer_16sV4_SMP4_fecal_71712_NoIndex_L004_R2_001.fastq.gz -m /home/caporaso/analysis/student_microbiome/gut_all.tsv --rev_comp_mapping_barcodes -o /home/caporaso/analysis/student_microbiome/slout_fecal/" | qsub -keo -N stu_fecal
+
+# week one only data
+echo "split_libraries_fastq.py -i /home/shared/Illumina_hiseq_UCB/Illumina03022012/Project_Fierer_030212/Sample_NF_SM_H/NF_SM_H_NoIndex_L001_R1_001.fastq -b /home/shared/Illumina_hiseq_UCB/Illumina03022012/Project_Fierer_030212/Sample_NF_SM_H/NF_SM_H_NoIndex_L001_R2_001.fastq -m /scratch/caporaso/student_microbiome/wk1only_map.txt -o /scratch/caporaso/student_microbiome/slout_wk1_only/ --rev_comp_mapping_barcodes" | qsub -keo -N student_sl
+```
+
+OTU picking
+-----------
+```
+pick_subsampled_reference_otus_through_otu_table.py -i /scratch/caporaso/student_microbiome/slout_wk1_only/seqs.fna,/scratch/caporaso/student_microbiome/slout_fecal/seqs.fna,/scratch/caporaso/student_microbiome/slout_tongue/seqs.fna,/scratch/caporaso/student_microbiome/slout_forehead/seqs.fna,/scratch/caporaso/student_microbiome/slout_palm/seqs.fna -r /scratch/caporaso/gg_otus_4feb2011/rep_set/gg_97_otus_4feb2011.fasta -o /scratch/caporaso/student_microbiome/ucrss_fast/ -p /scratch/caporaso/student_microbiome/ucrss_params.txt -n student.microbiome -aO 50
+```
+
+OTU table filtering
+-------------------
+
+NEED GILBERT'S NOTES
+
+Alpha rarefaction
+-----------------
+
+```
+echo "alpha_rarefaction.py -i /scratch/gifl2111/SMP/Working_OTU_Tables/Forehead/forehead_closed_ref_working_otu_table.biom -o /home/caporaso/analysis/student_microbiome/24sept2012/forehead/arare_max10000/ -t /scratch/caporaso/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre -m /scratch/gifl2111/SMP/Working_OTU_Tables/Forehead/forehead_working_mf.txt -aO 25 -e 10000" | qsub -keo -N smpmax10000 -l pvmem=8gb -q memroute
+
+echo "alpha_rarefaction.py -i /scratch/gifl2111/SMP/Working_OTU_Tables/Gut/gut_closed_ref_working_otu_table.biom -o /home/caporaso/analysis/student_microbiome/24sept2012/gut/arare_max10000/ -t /scratch/caporaso/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre -m /scratch/gifl2111/SMP/Working_OTU_Tables/Gut/gut_working_mf.txt -aO 25 -e 10000" | qsub -keo -N smpmax10000 -l pvmem=8gb -q memroute
+
+echo "alpha_rarefaction.py -i /scratch/gifl2111/SMP/Working_OTU_Tables/Tongue/tongue_closed_ref_working_otu_table.biom -o /home/caporaso/analysis/student_microbiome/24sept2012/tongue/arare_max10000/ -t /scratch/caporaso/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre -m /scratch/gifl2111/SMP/Working_OTU_Tables/Tongue/tongue_working_mf.txt -aO 25 -e 10000" | qsub -keo -N smpmax10000 -l pvmem=8gb -q memroute
+
+echo "alpha_rarefaction.py -i /scratch/gifl2111/SMP/Working_OTU_Tables/Palm/palm_closed_ref_working_otu_table.biom -o /home/caporaso/analysis/student_microbiome/24sept2012/palm/arare_max10000/ -t /scratch/caporaso/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre -m /scratch/gifl2111/SMP/Working_OTU_Tables/Palm/palm_working_mf.txt -aO 25 -e 10000" | qsub -keo -N smpmax10000 -l pvmem=8gb -q memroute
+```
+
 Beta diversity
 --------------
 
