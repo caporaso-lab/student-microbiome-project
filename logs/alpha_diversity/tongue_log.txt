@@ -1,0 +1,62 @@
+Logging started at 22:41:29 on 24 Sep 2012
+QIIME version: 1.5.0-dev, svn revision 3290
+
+qiime_config values:
+blastmat_dir	/home/caporaso/blast-2.2.16/data
+sc_queue	all.q
+pynast_template_alignment_fp	/home/caporaso/data/gg_core/core_set_aligned.fasta.imputed
+cluster_jobs_fp	/home/caporaso/bin/cluster_jobs_4.py
+assign_taxonomy_reference_seqs_fp	/scratch/caporaso/gg_otus_4feb2011/rep_set/gg_97_otus_4feb2011.fasta
+torque_queue	friendlyq
+qiime_test_data_dir	/scratch/caporaso/qiime_test_data
+template_alignment_lanemask_fp	/home/caporaso/data/gg_core/lanemask_in_1s_and_0s.txt
+jobs_to_start	3
+cloud_environment	False
+qiime_scripts_dir	/home/caporaso/code/Qiime/scripts/
+denoiser_min_per_core	50
+python_exe_fp	/home/caporaso//app/Python-2.6.5/python
+temp_dir	/scratch/caporaso/temp/
+blastall_fp	/home/caporaso/blast-2.2.16/bin/blastall
+seconds_to_sleep	1
+assign_taxonomy_id_to_taxonomy_fp	/scratch/caporaso/gg_otus_4feb2011/taxonomies/greengenes_tax_rdp_train.txt
+
+parameter file values:
+parallel:jobs_to_start	25
+
+Input file md5 sums:
+/scratch/gifl2111/SMP/Working_OTU_Tables/Tongue/tongue_closed_ref_working_otu_table.biom: e4802b1457a815a69624ed6007613a30
+/scratch/gifl2111/SMP/Working_OTU_Tables/Tongue/tongue_working_mf.txt: 85e8c9d318efb6386b53bfc8b6d2a29d
+/scratch/caporaso/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre: 3a4afedd405c4b5fce4ec20b073acf94
+
+Executing commands.
+
+# Alpha rarefaction command 
+/home/caporaso//app/Python-2.6.5/python /home/caporaso/code/Qiime/scripts//parallel_multiple_rarefactions.py -T -i /scratch/gifl2111/SMP/Working_OTU_Tables/Tongue/tongue_closed_ref_working_otu_table.biom -m 10 -x 10000 -s 999 -o /home/caporaso/analysis/student_microbiome/24sept2012/tongue/arare_max10000//rarefaction/  --jobs_to_start 25
+
+Stdout:
+
+Stderr:
+
+# Alpha diversity on rarefied OTU tables command 
+/home/caporaso//app/Python-2.6.5/python /home/caporaso/code/Qiime/scripts//parallel_alpha_diversity.py -T -i /home/caporaso/analysis/student_microbiome/24sept2012/tongue/arare_max10000//rarefaction/ -o /home/caporaso/analysis/student_microbiome/24sept2012/tongue/arare_max10000//alpha_div/  -t /scratch/caporaso/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre --jobs_to_start 25
+
+Stdout:
+
+Stderr:
+
+# Collate alpha command 
+/home/caporaso//app/Python-2.6.5/python /home/caporaso/code/Qiime/scripts//collate_alpha.py -i /home/caporaso/analysis/student_microbiome/24sept2012/tongue/arare_max10000//alpha_div/ -o /home/caporaso/analysis/student_microbiome/24sept2012/tongue/arare_max10000//alpha_div_collated/ 
+
+Stdout:
+
+Stderr:
+
+# Rarefaction plot: All metrics command 
+/home/caporaso//app/Python-2.6.5/python /home/caporaso/code/Qiime/scripts//make_rarefaction_plots.py -i /home/caporaso/analysis/student_microbiome/24sept2012/tongue/arare_max10000//alpha_div_collated/ -m /scratch/gifl2111/SMP/Working_OTU_Tables/Tongue/tongue_working_mf.txt -o /home/caporaso/analysis/student_microbiome/24sept2012/tongue/arare_max10000//alpha_rarefaction_plots/ 
+
+Stdout:
+
+Stderr:
+
+
+Logging stopped at 02:33:14 on 25 Sep 2012
