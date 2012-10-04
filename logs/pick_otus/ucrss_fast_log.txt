@@ -1,0 +1,602 @@
+Logging started at 22:27:04 on 10 Aug 2012
+QIIME version: 1.5.0-dev, svn revision 3180
+
+qiime_config values:
+blastmat_dir	/home/caporaso/blast-2.2.16/data
+sc_queue	all.q
+pynast_template_alignment_fp	/home/caporaso/data/gg_core/core_set_aligned.fasta.imputed
+cluster_jobs_fp	/home/caporaso/bin/cluster_jobs_16.py
+assign_taxonomy_reference_seqs_fp	/scratch/caporaso/gg_otus_4feb2011/rep_set/gg_97_otus_4feb2011.fasta
+torque_queue	friendlyq
+qiime_test_data_dir	/scratch/caporaso/qiime_test_data
+template_alignment_lanemask_fp	/home/caporaso/data/gg_core/lanemask_in_1s_and_0s.txt
+jobs_to_start	3
+cloud_environment	False
+qiime_scripts_dir	/home/caporaso/code/Qiime/scripts/
+denoiser_min_per_core	50
+python_exe_fp	/home/caporaso//app/Python-2.6.5/python
+temp_dir	/home/caporaso/temp/
+blastall_fp	/home/caporaso/blast-2.2.16/bin/blastall
+seconds_to_sleep	1
+assign_taxonomy_id_to_taxonomy_fp	/scratch/caporaso/gg_otus_4feb2011/taxonomies/greengenes_tax_rdp_train.txt
+
+parameter file values:
+parallel:jobs_to_start	150
+pick_otus:max_rejects	8
+pick_otus:word_length	8
+pick_otus:max_accepts	1
+pick_otus:stepwords	8
+pick_otus:enable_rev_strand_match	True
+
+Input file md5 sums:
+/scratch/caporaso/student_microbiome/slout_wk1_only/seqs.fna: 760eee7f0b7b790971da76b3a6349f7f
+/scratch/caporaso/gg_otus_4feb2011/rep_set/gg_97_otus_4feb2011.fasta: 5c7cac39c5b3fefe69ac9eb2e463b134
+
+Overridding similiary with 0.600.
+Executing commands.
+
+# Pick Reference OTUs (prefilter) command 
+parallel_pick_otus_uclust_ref.py -i /scratch/caporaso/student_microbiome/slout_wk1_only/seqs.fna -o /scratch/caporaso/student_microbiome/ucrss_fast//0//prefilter_otus/ -r /scratch/caporaso/gg_otus_4feb2011/rep_set/gg_97_otus_4feb2011.fasta -T --jobs_to_start 150 --max_rejects 8 --enable_rev_strand_match --similarity 0.6 --word_length 8 --stepwords 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Filter prefilter failures from input command 
+filter_fasta.py -f /scratch/caporaso/student_microbiome/slout_wk1_only/seqs.fna -o /scratch/caporaso/student_microbiome/ucrss_fast//0//prefilter_otus//prefiltered_seqs.fna -s /scratch/caporaso/student_microbiome/ucrss_fast//0//prefilter_otus//seqs_failures.txt -n
+
+Stdout:
+
+Stderr:
+
+# Pick Reference OTUs command 
+parallel_pick_otus_uclust_ref.py -i /scratch/caporaso/student_microbiome/ucrss_fast//0//prefilter_otus//prefiltered_seqs.fna -o /scratch/caporaso/student_microbiome/ucrss_fast//0//step1_otus -r /scratch/caporaso/gg_otus_4feb2011/rep_set/gg_97_otus_4feb2011.fasta -T --jobs_to_start 150 --max_rejects 8 --stepwords 8 --enable_rev_strand_match --word_length 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Generate full failures fasta file command 
+filter_fasta.py -f /scratch/caporaso/student_microbiome/ucrss_fast//0//prefilter_otus//prefiltered_seqs.fna -s /scratch/caporaso/student_microbiome/ucrss_fast//0//step1_otus/prefiltered_seqs_failures.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//0//step1_otus/failures.fasta
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+# Pick rep set command 
+pick_rep_set.py -i /scratch/caporaso/student_microbiome/ucrss_fast//0//step1_otus/prefiltered_seqs_otus.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//0//step1_otus/step1_rep_set.fna -f /scratch/caporaso/student_microbiome/ucrss_fast//0//prefilter_otus//prefiltered_seqs.fna
+
+Stdout:
+
+Stderr:
+
+# Pick de novo OTUs for new clusters command 
+pick_otus.py -i /scratch/caporaso/student_microbiome/ucrss_fast//0//step1_otus/subsampled_failures.fasta -o /scratch/caporaso/student_microbiome/ucrss_fast//0//step2_otus/ -m uclust  --max_rejects 8 --enable_rev_strand_match --uclust_otu_id_prefix student.microbiome.0.ReferenceOTU --word_length 8 --stepwords 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Pick representative set for subsampled failures command 
+pick_rep_set.py -i /scratch/caporaso/student_microbiome/ucrss_fast//0//step2_otus//subsampled_failures_otus.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//0//step2_otus//step2_rep_set.fna -f /scratch/caporaso/student_microbiome/ucrss_fast//0//step1_otus/subsampled_failures.fasta
+
+Stdout:
+
+Stderr:
+
+# Pick reference OTUs using de novo rep set command 
+parallel_pick_otus_uclust_ref.py -i /scratch/caporaso/student_microbiome/ucrss_fast//0//step1_otus/failures.fasta -o /scratch/caporaso/student_microbiome/ucrss_fast//0//step3_otus/ -r /scratch/caporaso/student_microbiome/ucrss_fast//0//step2_otus//step2_rep_set.fna -T --jobs_to_start 150 --max_rejects 8 --stepwords 8 --enable_rev_strand_match --word_length 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Create fasta file of step3 failures command 
+filter_fasta.py -f /scratch/caporaso/student_microbiome/ucrss_fast//0//step1_otus/failures.fasta -s /scratch/caporaso/student_microbiome/ucrss_fast//0//step3_otus//failures_failures.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//0//step3_otus//failures_failures.fasta
+
+Stdout:
+
+Stderr:
+
+# Pick de novo OTUs on step3 failures command 
+pick_otus.py -i /scratch/caporaso/student_microbiome/ucrss_fast//0//step3_otus//failures_failures.fasta -o /scratch/caporaso/student_microbiome/ucrss_fast//0//step4_otus/ -m uclust  --max_rejects 8 --enable_rev_strand_match --uclust_otu_id_prefix student.microbiome.0.CleanUp.ReferenceOTU --word_length 8 --stepwords 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Merge OTU maps command 
+cat /scratch/caporaso/student_microbiome/ucrss_fast//0//step1_otus/prefiltered_seqs_otus.txt /scratch/caporaso/student_microbiome/ucrss_fast//0//step3_otus//failures_otus.txt /scratch/caporaso/student_microbiome/ucrss_fast//0//step4_otus//failures_failures_otus.txt >> /scratch/caporaso/student_microbiome/ucrss_fast//0//final_otu_map.txt
+
+Stdout:
+
+Stderr:
+
+# Pick representative set for subsampled failures command 
+pick_rep_set.py -i /scratch/caporaso/student_microbiome/ucrss_fast//0//step4_otus//failures_failures_otus.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//0//step4_otus//step4_rep_set.fna -f /scratch/caporaso/student_microbiome/ucrss_fast//0//step3_otus//failures_failures.fasta
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+# Make the otu table command 
+make_otu_table.py -i /scratch/caporaso/student_microbiome/ucrss_fast//0//final_otu_map_mc2.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//0//otu_table_mc2.biom
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+Input file md5 sums:
+/scratch/caporaso/student_microbiome/slout_fecal/seqs.fna: cb9618cd3c87e888e7d29d01bc274bb0
+/scratch/caporaso/student_microbiome/ucrss_fast//0//new_refseqs.fna: 276966db8619ddb3879dec2aace4d563
+
+Overridding similiary with 0.600.
+Executing commands.
+
+# Pick Reference OTUs (prefilter) command 
+parallel_pick_otus_uclust_ref.py -i /scratch/caporaso/student_microbiome/slout_fecal/seqs.fna -o /scratch/caporaso/student_microbiome/ucrss_fast//1//prefilter_otus/ -r /scratch/caporaso/gg_otus_4feb2011/rep_set/gg_97_otus_4feb2011.fasta -T --jobs_to_start 150 --max_rejects 8 --enable_rev_strand_match --similarity 0.6 --word_length 8 --stepwords 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Filter prefilter failures from input command 
+filter_fasta.py -f /scratch/caporaso/student_microbiome/slout_fecal/seqs.fna -o /scratch/caporaso/student_microbiome/ucrss_fast//1//prefilter_otus//prefiltered_seqs.fna -s /scratch/caporaso/student_microbiome/ucrss_fast//1//prefilter_otus//seqs_failures.txt -n
+
+Stdout:
+
+Stderr:
+
+# Pick Reference OTUs command 
+parallel_pick_otus_uclust_ref.py -i /scratch/caporaso/student_microbiome/ucrss_fast//1//prefilter_otus//prefiltered_seqs.fna -o /scratch/caporaso/student_microbiome/ucrss_fast//1//step1_otus -r /scratch/caporaso/student_microbiome/ucrss_fast//0//new_refseqs.fna -T --jobs_to_start 150 --max_rejects 8 --stepwords 8 --enable_rev_strand_match --word_length 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Generate full failures fasta file command 
+filter_fasta.py -f /scratch/caporaso/student_microbiome/ucrss_fast//1//prefilter_otus//prefiltered_seqs.fna -s /scratch/caporaso/student_microbiome/ucrss_fast//1//step1_otus/prefiltered_seqs_failures.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//1//step1_otus/failures.fasta
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+# Pick rep set command 
+pick_rep_set.py -i /scratch/caporaso/student_microbiome/ucrss_fast//1//step1_otus/prefiltered_seqs_otus.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//1//step1_otus/step1_rep_set.fna -f /scratch/caporaso/student_microbiome/ucrss_fast//1//prefilter_otus//prefiltered_seqs.fna
+
+Stdout:
+
+Stderr:
+
+# Pick de novo OTUs for new clusters command 
+pick_otus.py -i /scratch/caporaso/student_microbiome/ucrss_fast//1//step1_otus/subsampled_failures.fasta -o /scratch/caporaso/student_microbiome/ucrss_fast//1//step2_otus/ -m uclust  --max_rejects 8 --enable_rev_strand_match --uclust_otu_id_prefix student.microbiome.1.ReferenceOTU --word_length 8 --stepwords 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Pick representative set for subsampled failures command 
+pick_rep_set.py -i /scratch/caporaso/student_microbiome/ucrss_fast//1//step2_otus//subsampled_failures_otus.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//1//step2_otus//step2_rep_set.fna -f /scratch/caporaso/student_microbiome/ucrss_fast//1//step1_otus/subsampled_failures.fasta
+
+Stdout:
+
+Stderr:
+
+# Pick reference OTUs using de novo rep set command 
+parallel_pick_otus_uclust_ref.py -i /scratch/caporaso/student_microbiome/ucrss_fast//1//step1_otus/failures.fasta -o /scratch/caporaso/student_microbiome/ucrss_fast//1//step3_otus/ -r /scratch/caporaso/student_microbiome/ucrss_fast//1//step2_otus//step2_rep_set.fna -T --jobs_to_start 150 --max_rejects 8 --stepwords 8 --enable_rev_strand_match --word_length 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Create fasta file of step3 failures command 
+filter_fasta.py -f /scratch/caporaso/student_microbiome/ucrss_fast//1//step1_otus/failures.fasta -s /scratch/caporaso/student_microbiome/ucrss_fast//1//step3_otus//failures_failures.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//1//step3_otus//failures_failures.fasta
+
+Stdout:
+
+Stderr:
+
+# Pick de novo OTUs on step3 failures command 
+pick_otus.py -i /scratch/caporaso/student_microbiome/ucrss_fast//1//step3_otus//failures_failures.fasta -o /scratch/caporaso/student_microbiome/ucrss_fast//1//step4_otus/ -m uclust  --max_rejects 8 --enable_rev_strand_match --uclust_otu_id_prefix student.microbiome.1.CleanUp.ReferenceOTU --word_length 8 --stepwords 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Merge OTU maps command 
+cat /scratch/caporaso/student_microbiome/ucrss_fast//1//step1_otus/prefiltered_seqs_otus.txt /scratch/caporaso/student_microbiome/ucrss_fast//1//step3_otus//failures_otus.txt /scratch/caporaso/student_microbiome/ucrss_fast//1//step4_otus//failures_failures_otus.txt >> /scratch/caporaso/student_microbiome/ucrss_fast//1//final_otu_map.txt
+
+Stdout:
+
+Stderr:
+
+# Pick representative set for subsampled failures command 
+pick_rep_set.py -i /scratch/caporaso/student_microbiome/ucrss_fast//1//step4_otus//failures_failures_otus.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//1//step4_otus//step4_rep_set.fna -f /scratch/caporaso/student_microbiome/ucrss_fast//1//step3_otus//failures_failures.fasta
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+# Make the otu table command 
+make_otu_table.py -i /scratch/caporaso/student_microbiome/ucrss_fast//1//final_otu_map_mc2.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//1//otu_table_mc2.biom
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+Input file md5 sums:
+/scratch/caporaso/student_microbiome/slout_tongue/seqs.fna: bd7a9d7edb52378055e78c07beea43d3
+/scratch/caporaso/student_microbiome/ucrss_fast//1//new_refseqs.fna: beea4459f7e254491f9e94d01dd495b3
+
+Overridding similiary with 0.600.
+Executing commands.
+
+# Pick Reference OTUs (prefilter) command 
+parallel_pick_otus_uclust_ref.py -i /scratch/caporaso/student_microbiome/slout_tongue/seqs.fna -o /scratch/caporaso/student_microbiome/ucrss_fast//2//prefilter_otus/ -r /scratch/caporaso/gg_otus_4feb2011/rep_set/gg_97_otus_4feb2011.fasta -T --jobs_to_start 150 --max_rejects 8 --enable_rev_strand_match --similarity 0.6 --word_length 8 --stepwords 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Filter prefilter failures from input command 
+filter_fasta.py -f /scratch/caporaso/student_microbiome/slout_tongue/seqs.fna -o /scratch/caporaso/student_microbiome/ucrss_fast//2//prefilter_otus//prefiltered_seqs.fna -s /scratch/caporaso/student_microbiome/ucrss_fast//2//prefilter_otus//seqs_failures.txt -n
+
+Stdout:
+
+Stderr:
+
+# Pick Reference OTUs command 
+parallel_pick_otus_uclust_ref.py -i /scratch/caporaso/student_microbiome/ucrss_fast//2//prefilter_otus//prefiltered_seqs.fna -o /scratch/caporaso/student_microbiome/ucrss_fast//2//step1_otus -r /scratch/caporaso/student_microbiome/ucrss_fast//1//new_refseqs.fna -T --jobs_to_start 150 --max_rejects 8 --stepwords 8 --enable_rev_strand_match --word_length 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Generate full failures fasta file command 
+filter_fasta.py -f /scratch/caporaso/student_microbiome/ucrss_fast//2//prefilter_otus//prefiltered_seqs.fna -s /scratch/caporaso/student_microbiome/ucrss_fast//2//step1_otus/prefiltered_seqs_failures.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//2//step1_otus/failures.fasta
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+# Pick rep set command 
+pick_rep_set.py -i /scratch/caporaso/student_microbiome/ucrss_fast//2//step1_otus/prefiltered_seqs_otus.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//2//step1_otus/step1_rep_set.fna -f /scratch/caporaso/student_microbiome/ucrss_fast//2//prefilter_otus//prefiltered_seqs.fna
+
+Stdout:
+
+Stderr:
+
+# Pick de novo OTUs for new clusters command 
+pick_otus.py -i /scratch/caporaso/student_microbiome/ucrss_fast//2//step1_otus/subsampled_failures.fasta -o /scratch/caporaso/student_microbiome/ucrss_fast//2//step2_otus/ -m uclust  --max_rejects 8 --enable_rev_strand_match --uclust_otu_id_prefix student.microbiome.2.ReferenceOTU --word_length 8 --stepwords 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Pick representative set for subsampled failures command 
+pick_rep_set.py -i /scratch/caporaso/student_microbiome/ucrss_fast//2//step2_otus//subsampled_failures_otus.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//2//step2_otus//step2_rep_set.fna -f /scratch/caporaso/student_microbiome/ucrss_fast//2//step1_otus/subsampled_failures.fasta
+
+Stdout:
+
+Stderr:
+
+# Pick reference OTUs using de novo rep set command 
+parallel_pick_otus_uclust_ref.py -i /scratch/caporaso/student_microbiome/ucrss_fast//2//step1_otus/failures.fasta -o /scratch/caporaso/student_microbiome/ucrss_fast//2//step3_otus/ -r /scratch/caporaso/student_microbiome/ucrss_fast//2//step2_otus//step2_rep_set.fna -T --jobs_to_start 150 --max_rejects 8 --stepwords 8 --enable_rev_strand_match --word_length 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Create fasta file of step3 failures command 
+filter_fasta.py -f /scratch/caporaso/student_microbiome/ucrss_fast//2//step1_otus/failures.fasta -s /scratch/caporaso/student_microbiome/ucrss_fast//2//step3_otus//failures_failures.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//2//step3_otus//failures_failures.fasta
+
+Stdout:
+
+Stderr:
+
+# Pick de novo OTUs on step3 failures command 
+pick_otus.py -i /scratch/caporaso/student_microbiome/ucrss_fast//2//step3_otus//failures_failures.fasta -o /scratch/caporaso/student_microbiome/ucrss_fast//2//step4_otus/ -m uclust  --max_rejects 8 --enable_rev_strand_match --uclust_otu_id_prefix student.microbiome.2.CleanUp.ReferenceOTU --word_length 8 --stepwords 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Merge OTU maps command 
+cat /scratch/caporaso/student_microbiome/ucrss_fast//2//step1_otus/prefiltered_seqs_otus.txt /scratch/caporaso/student_microbiome/ucrss_fast//2//step3_otus//failures_otus.txt /scratch/caporaso/student_microbiome/ucrss_fast//2//step4_otus//failures_failures_otus.txt >> /scratch/caporaso/student_microbiome/ucrss_fast//2//final_otu_map.txt
+
+Stdout:
+
+Stderr:
+
+# Pick representative set for subsampled failures command 
+pick_rep_set.py -i /scratch/caporaso/student_microbiome/ucrss_fast//2//step4_otus//failures_failures_otus.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//2//step4_otus//step4_rep_set.fna -f /scratch/caporaso/student_microbiome/ucrss_fast//2//step3_otus//failures_failures.fasta
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+# Make the otu table command 
+make_otu_table.py -i /scratch/caporaso/student_microbiome/ucrss_fast//2//final_otu_map_mc2.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//2//otu_table_mc2.biom
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+Input file md5 sums:
+/scratch/caporaso/student_microbiome/slout_forehead/seqs.fna: 2b032640810c0e466d0e7fc64d6450bd
+/scratch/caporaso/student_microbiome/ucrss_fast//2//new_refseqs.fna: 9d4052b636b7b95db3abb62b5e8f5cfe
+
+Overridding similiary with 0.600.
+Executing commands.
+
+# Pick Reference OTUs (prefilter) command 
+parallel_pick_otus_uclust_ref.py -i /scratch/caporaso/student_microbiome/slout_forehead/seqs.fna -o /scratch/caporaso/student_microbiome/ucrss_fast//3//prefilter_otus/ -r /scratch/caporaso/gg_otus_4feb2011/rep_set/gg_97_otus_4feb2011.fasta -T --jobs_to_start 150 --max_rejects 8 --enable_rev_strand_match --similarity 0.6 --word_length 8 --stepwords 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Filter prefilter failures from input command 
+filter_fasta.py -f /scratch/caporaso/student_microbiome/slout_forehead/seqs.fna -o /scratch/caporaso/student_microbiome/ucrss_fast//3//prefilter_otus//prefiltered_seqs.fna -s /scratch/caporaso/student_microbiome/ucrss_fast//3//prefilter_otus//seqs_failures.txt -n
+
+Stdout:
+
+Stderr:
+
+# Pick Reference OTUs command 
+parallel_pick_otus_uclust_ref.py -i /scratch/caporaso/student_microbiome/ucrss_fast//3//prefilter_otus//prefiltered_seqs.fna -o /scratch/caporaso/student_microbiome/ucrss_fast//3//step1_otus -r /scratch/caporaso/student_microbiome/ucrss_fast//2//new_refseqs.fna -T --jobs_to_start 150 --max_rejects 8 --stepwords 8 --enable_rev_strand_match --word_length 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Generate full failures fasta file command 
+filter_fasta.py -f /scratch/caporaso/student_microbiome/ucrss_fast//3//prefilter_otus//prefiltered_seqs.fna -s /scratch/caporaso/student_microbiome/ucrss_fast//3//step1_otus/prefiltered_seqs_failures.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//3//step1_otus/failures.fasta
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+# Pick rep set command 
+pick_rep_set.py -i /scratch/caporaso/student_microbiome/ucrss_fast//3//step1_otus/prefiltered_seqs_otus.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//3//step1_otus/step1_rep_set.fna -f /scratch/caporaso/student_microbiome/ucrss_fast//3//prefilter_otus//prefiltered_seqs.fna
+
+Stdout:
+
+Stderr:
+
+# Pick de novo OTUs for new clusters command 
+pick_otus.py -i /scratch/caporaso/student_microbiome/ucrss_fast//3//step1_otus/subsampled_failures.fasta -o /scratch/caporaso/student_microbiome/ucrss_fast//3//step2_otus/ -m uclust  --max_rejects 8 --enable_rev_strand_match --uclust_otu_id_prefix student.microbiome.3.ReferenceOTU --word_length 8 --stepwords 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Pick representative set for subsampled failures command 
+pick_rep_set.py -i /scratch/caporaso/student_microbiome/ucrss_fast//3//step2_otus//subsampled_failures_otus.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//3//step2_otus//step2_rep_set.fna -f /scratch/caporaso/student_microbiome/ucrss_fast//3//step1_otus/subsampled_failures.fasta
+
+Stdout:
+
+Stderr:
+
+# Pick reference OTUs using de novo rep set command 
+parallel_pick_otus_uclust_ref.py -i /scratch/caporaso/student_microbiome/ucrss_fast//3//step1_otus/failures.fasta -o /scratch/caporaso/student_microbiome/ucrss_fast//3//step3_otus/ -r /scratch/caporaso/student_microbiome/ucrss_fast//3//step2_otus//step2_rep_set.fna -T --jobs_to_start 150 --max_rejects 8 --stepwords 8 --enable_rev_strand_match --word_length 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Create fasta file of step3 failures command 
+filter_fasta.py -f /scratch/caporaso/student_microbiome/ucrss_fast//3//step1_otus/failures.fasta -s /scratch/caporaso/student_microbiome/ucrss_fast//3//step3_otus//failures_failures.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//3//step3_otus//failures_failures.fasta
+
+Stdout:
+
+Stderr:
+
+# Pick de novo OTUs on step3 failures command 
+pick_otus.py -i /scratch/caporaso/student_microbiome/ucrss_fast//3//step3_otus//failures_failures.fasta -o /scratch/caporaso/student_microbiome/ucrss_fast//3//step4_otus/ -m uclust  --max_rejects 8 --enable_rev_strand_match --uclust_otu_id_prefix student.microbiome.3.CleanUp.ReferenceOTU --word_length 8 --stepwords 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Merge OTU maps command 
+cat /scratch/caporaso/student_microbiome/ucrss_fast//3//step1_otus/prefiltered_seqs_otus.txt /scratch/caporaso/student_microbiome/ucrss_fast//3//step3_otus//failures_otus.txt /scratch/caporaso/student_microbiome/ucrss_fast//3//step4_otus//failures_failures_otus.txt >> /scratch/caporaso/student_microbiome/ucrss_fast//3//final_otu_map.txt
+
+Stdout:
+
+Stderr:
+
+# Pick representative set for subsampled failures command 
+pick_rep_set.py -i /scratch/caporaso/student_microbiome/ucrss_fast//3//step4_otus//failures_failures_otus.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//3//step4_otus//step4_rep_set.fna -f /scratch/caporaso/student_microbiome/ucrss_fast//3//step3_otus//failures_failures.fasta
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+# Make the otu table command 
+make_otu_table.py -i /scratch/caporaso/student_microbiome/ucrss_fast//3//final_otu_map_mc2.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//3//otu_table_mc2.biom
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+Input file md5 sums:
+/scratch/caporaso/student_microbiome/slout_palm/seqs.fna: f86b7453ad1028e68d7483cfd28108dc
+/scratch/caporaso/student_microbiome/ucrss_fast//3//new_refseqs.fna: bbcc644a82cc9ef1f11913a6c17b993c
+
+Overridding similiary with 0.600.
+Executing commands.
+
+# Pick Reference OTUs (prefilter) command 
+parallel_pick_otus_uclust_ref.py -i /scratch/caporaso/student_microbiome/slout_palm/seqs.fna -o /scratch/caporaso/student_microbiome/ucrss_fast//4//prefilter_otus/ -r /scratch/caporaso/gg_otus_4feb2011/rep_set/gg_97_otus_4feb2011.fasta -T --jobs_to_start 150 --max_rejects 8 --enable_rev_strand_match --similarity 0.6 --word_length 8 --stepwords 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Filter prefilter failures from input command 
+filter_fasta.py -f /scratch/caporaso/student_microbiome/slout_palm/seqs.fna -o /scratch/caporaso/student_microbiome/ucrss_fast//4//prefilter_otus//prefiltered_seqs.fna -s /scratch/caporaso/student_microbiome/ucrss_fast//4//prefilter_otus//seqs_failures.txt -n
+
+Stdout:
+
+Stderr:
+
+# Pick Reference OTUs command 
+parallel_pick_otus_uclust_ref.py -i /scratch/caporaso/student_microbiome/ucrss_fast//4//prefilter_otus//prefiltered_seqs.fna -o /scratch/caporaso/student_microbiome/ucrss_fast//4//step1_otus -r /scratch/caporaso/student_microbiome/ucrss_fast//3//new_refseqs.fna -T --jobs_to_start 150 --max_rejects 8 --stepwords 8 --enable_rev_strand_match --word_length 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Generate full failures fasta file command 
+filter_fasta.py -f /scratch/caporaso/student_microbiome/ucrss_fast//4//prefilter_otus//prefiltered_seqs.fna -s /scratch/caporaso/student_microbiome/ucrss_fast//4//step1_otus/prefiltered_seqs_failures.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//4//step1_otus/failures.fasta
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+# Pick rep set command 
+pick_rep_set.py -i /scratch/caporaso/student_microbiome/ucrss_fast//4//step1_otus/prefiltered_seqs_otus.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//4//step1_otus/step1_rep_set.fna -f /scratch/caporaso/student_microbiome/ucrss_fast//4//prefilter_otus//prefiltered_seqs.fna
+
+Stdout:
+
+Stderr:
+
+# Pick de novo OTUs for new clusters command 
+pick_otus.py -i /scratch/caporaso/student_microbiome/ucrss_fast//4//step1_otus/subsampled_failures.fasta -o /scratch/caporaso/student_microbiome/ucrss_fast//4//step2_otus/ -m uclust  --max_rejects 8 --enable_rev_strand_match --uclust_otu_id_prefix student.microbiome.4.ReferenceOTU --word_length 8 --stepwords 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Pick representative set for subsampled failures command 
+pick_rep_set.py -i /scratch/caporaso/student_microbiome/ucrss_fast//4//step2_otus//subsampled_failures_otus.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//4//step2_otus//step2_rep_set.fna -f /scratch/caporaso/student_microbiome/ucrss_fast//4//step1_otus/subsampled_failures.fasta
+
+Stdout:
+
+Stderr:
+
+# Pick reference OTUs using de novo rep set command 
+parallel_pick_otus_uclust_ref.py -i /scratch/caporaso/student_microbiome/ucrss_fast//4//step1_otus/failures.fasta -o /scratch/caporaso/student_microbiome/ucrss_fast//4//step3_otus/ -r /scratch/caporaso/student_microbiome/ucrss_fast//4//step2_otus//step2_rep_set.fna -T --jobs_to_start 150 --max_rejects 8 --stepwords 8 --enable_rev_strand_match --word_length 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Create fasta file of step3 failures command 
+filter_fasta.py -f /scratch/caporaso/student_microbiome/ucrss_fast//4//step1_otus/failures.fasta -s /scratch/caporaso/student_microbiome/ucrss_fast//4//step3_otus//failures_failures.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//4//step3_otus//failures_failures.fasta
+
+Stdout:
+
+Stderr:
+
+# Pick de novo OTUs on step3 failures command 
+pick_otus.py -i /scratch/caporaso/student_microbiome/ucrss_fast//4//step3_otus//failures_failures.fasta -o /scratch/caporaso/student_microbiome/ucrss_fast//4//step4_otus/ -m uclust  --max_rejects 8 --enable_rev_strand_match --uclust_otu_id_prefix student.microbiome.4.CleanUp.ReferenceOTU --word_length 8 --stepwords 8 --max_accepts 1
+
+Stdout:
+
+Stderr:
+
+# Merge OTU maps command 
+cat /scratch/caporaso/student_microbiome/ucrss_fast//4//step1_otus/prefiltered_seqs_otus.txt /scratch/caporaso/student_microbiome/ucrss_fast//4//step3_otus//failures_otus.txt /scratch/caporaso/student_microbiome/ucrss_fast//4//step4_otus//failures_failures_otus.txt >> /scratch/caporaso/student_microbiome/ucrss_fast//4//final_otu_map.txt
+
+Stdout:
+
+Stderr:
+
+# Pick representative set for subsampled failures command 
+pick_rep_set.py -i /scratch/caporaso/student_microbiome/ucrss_fast//4//step4_otus//failures_failures_otus.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//4//step4_otus//step4_rep_set.fna -f /scratch/caporaso/student_microbiome/ucrss_fast//4//step3_otus//failures_failures.fasta
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+# Make the otu table command 
+make_otu_table.py -i /scratch/caporaso/student_microbiome/ucrss_fast//4//final_otu_map_mc2.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//4//otu_table_mc2.biom
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+Executing commands.
+
+# Merge OTU tables command 
+merge_otu_tables.py -i /scratch/caporaso/student_microbiome/ucrss_fast//0//otu_table_mc2.biom,/scratch/caporaso/student_microbiome/ucrss_fast//1//otu_table_mc2.biom,/scratch/caporaso/student_microbiome/ucrss_fast//2//otu_table_mc2.biom,/scratch/caporaso/student_microbiome/ucrss_fast//3//otu_table_mc2.biom,/scratch/caporaso/student_microbiome/ucrss_fast//4//otu_table_mc2.biom -o /scratch/caporaso/student_microbiome/ucrss_fast//otu_table_mc2.biom
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+# Assign taxonomy command 
+parallel_assign_taxonomy_rdp.py -i /scratch/caporaso/student_microbiome/ucrss_fast//rep_set.fna -o /scratch/caporaso/student_microbiome/ucrss_fast//rdp_assigned_taxonomy -T --jobs_to_start 150
+
+Stdout:
+
+Stderr:
+
+# Align sequences command 
+parallel_align_seqs_pynast.py -i /scratch/caporaso/student_microbiome/ucrss_fast//rep_set.fna -o /scratch/caporaso/student_microbiome/ucrss_fast//pynast_aligned_seqs -T --jobs_to_start 150 
+
+Stdout:
+
+Stderr:
+
+# Filter alignment command 
+filter_alignment.py -o /scratch/caporaso/student_microbiome/ucrss_fast//pynast_aligned_seqs -i /scratch/caporaso/student_microbiome/ucrss_fast//pynast_aligned_seqs/rep_set_aligned.fasta 
+
+Stdout:
+
+Stderr:
+
+# Build phylogenetic tree command 
+make_phylogeny.py -i /scratch/caporaso/student_microbiome/ucrss_fast//pynast_aligned_seqs/rep_set_aligned_pfiltered.fasta -o /scratch/caporaso/student_microbiome/ucrss_fast//rep_set.tre 
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+# Add taxa to OTU table command 
+add_taxa.py -i /scratch/caporaso/student_microbiome/ucrss_fast//otu_table_mc2.biom -t /scratch/caporaso/student_microbiome/ucrss_fast//rdp_assigned_taxonomy/rep_set_tax_assignments.txt -o /scratch/caporaso/student_microbiome/ucrss_fast//otu_table_mc2_w_tax.biom
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+
+Logging stopped at 02:31:28 on 13 Aug 2012
