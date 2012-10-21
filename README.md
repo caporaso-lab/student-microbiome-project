@@ -100,3 +100,12 @@ echo "beta_diversity_through_plots.py -i /Users/caporaso/analysis/student_microb
 
 echo "beta_diversity_through_plots.py -i /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/forehead_closed_ref_filtered_otu_table.biom -o /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/forehead_bdiv_even10000/ -t /scratch/caporaso/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre -m /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/StudentMicrobiomeProject-map.tsv -e 10000 -p /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/bdiv_params.txt" | qsub -keo -N smpforehead10000 -l pvmem=8gb -q memroute
 ```
+
+Merge OTU tables for combined analysis
+--------------------------------------
+
+```
+echo "merge_otu_tables.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/forehead_closed_ref_otu_table.biom,/Users/caporaso/analysis/student-microbiome-project/otu_tables/gut_closed_ref_otu_table.biom,/Users/caporaso/analysis/student-microbiome-project/otu_tables/palm_closed_ref_otu_table.biom,/Users/caporaso/analysis/student-microbiome-project/otu_tables/tongue_closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table.biom" | qsub -keo -N mergesmp -l pvmem=64gb -q memroute
+
+echo "per_library_stats.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table.biom > /Users/caporaso/analysis/student-microbiome-project/otu_table_stats/closed_ref_otu_table_per_lib_stats.txt" | qsub -keo -N smp_pls -l pvmem=32gb -q memroute
+```
