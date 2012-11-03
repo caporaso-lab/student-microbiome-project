@@ -111,3 +111,18 @@ echo "per_library_stats.py -i /Users/caporaso/analysis/student-microbiome-projec
 
 echo "beta_diversity_through_plots.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/bdiv_even10000/ -p /Users/caporaso/analysis/student-microbiome-project/parameters/bdiv_params.txt -t /Users/caporaso/data/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre -m /Users/caporaso/analysis/student-microbiome-project/StudentMicrobiomeProject-map.tsv -e 10000 -aO 50" | qsub -keo -N smp_b10000 -l pvmem=8gb -q memroute
 ```
+
+Filter mislabeled samples
+-------------------------
+```
+echo "single_rarefaction.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table_100.biom -d 100" | qsub -k eo -N smp-rare -l pvmem=64gb -q memroute
+
+echo "single_rarefaction.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table_500.biom -d 500" | qsub -k eo -N smp-rare -l pvmem=64gb -q memroute
+
+echo "single_rarefaction.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table_1000.biom -d 1000" | qsub -k eo -N smp-rare -l pvmem=64gb -q memroute
+
+echo "supervised_learning.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table_100.biom -m /Users/caporaso/analysis/student-microbiome-project/StudentMicrobiomeProject-map.tsv -c "BodySite" -e cv5 -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/supervised_learning100/" | qsub -keo -N smp_rf  -l pvmem=16gb -q memroute
+
+
+
+```
