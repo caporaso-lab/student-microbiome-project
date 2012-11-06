@@ -115,14 +115,25 @@ echo "beta_diversity_through_plots.py -i /Users/caporaso/analysis/student-microb
 Filter mislabeled samples
 -------------------------
 ```
-echo "single_rarefaction.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table_100.biom -d 100" | qsub -k eo -N smp-rare -l pvmem=64gb -q memroute
+echo "filter_otus_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/mislabeling/closed_ref_otu_table_s10.biom -s 10" | qsub -keo -N filtotus -l pvmem=64gb -q memroute
 
-echo "single_rarefaction.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table_500.biom -d 500" | qsub -k eo -N smp-rare -l pvmem=64gb -q memroute
+echo "single_rarefaction.py -i /Users/caporaso/analysis/student-microbiome-project/mislabeling/closed_ref_otu_table_s10.biom -o /Users/caporaso/analysis/student-microbiome-project/mislabeling/closed_ref_otu_table_s10_1000.biom -d 1000" | qsub -k eo -N smp-rare -l pvmem=64gb -q memroute
 
-echo "single_rarefaction.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table_1000.biom -d 1000" | qsub -k eo -N smp-rare -l pvmem=64gb -q memroute
+filter_samples_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/mislabeling/closed_ref_otu_table_s10_1000.biom -o /Users/caporaso/analysis/student-microbiome-project/mislabeling/closed_ref_otu_table_s10_1000_no_controls.biom -m /Users/caporaso/analysis/student-microbiome-project/StudentMicrobiomeProject-map.tsv -s 'Control:no'
 
-echo "supervised_learning.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table_100.biom -m /Users/caporaso/analysis/student-microbiome-project/StudentMicrobiomeProject-map.tsv -c "BodySite" -e cv5 -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/supervised_learning100/" | qsub -keo -N smp_rf  -l pvmem=16gb -q memroute
+echo "supervised_learning.py -i /Users/caporaso/analysis/student-microbiome-project/mislabeling/closed_ref_otu_table_s10_1000_no_controls.biom -m /Users/caporaso/analysis/student-microbiome-project/StudentMicrobiomeProject-map.tsv -c "BodySite" -e cv5 -o /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/" | qsub -keo -N smp_rf  -l pvmem=16gb -q memroute
 
+cd /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/
+
+make_3d_plots.py -i ../../bdiv_even10000/unweighted_unifrac_pc.txt -m mislabeling.txt -o unifrac_color_by_mislabeling -b mislabeled_at_0.05,mislabeled_at_0.10,mislabeled_at_0.15,mislabeled_at_0.20,mislabeled_at_0.25,mislabeled_at_0.30,mislabeled_at_0.35,mislabeled_at_0.40,mislabeled_at_0.45,mislabeled_at_0.50
 
 
 ```
+
+Reviewing the mislabeling.txt file in the context of the 3D PCoA plots colored by mislabeled samples, we'll remove the samples have a <= 10% of being correctly labeled. These are two gut samples:
+
+G10362
+G11388
+
+which will be filtered from all analyses.
+
