@@ -127,13 +127,27 @@ cd /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/
 
 make_3d_plots.py -i ../../bdiv_even10000/unweighted_unifrac_pc.txt -m mislabeling.txt -o unifrac_color_by_mislabeling -b mislabeled_at_0.05,mislabeled_at_0.10,mislabeled_at_0.15,mislabeled_at_0.20,mislabeled_at_0.25,mislabeled_at_0.30,mislabeled_at_0.35,mislabeled_at_0.40,mislabeled_at_0.45,mislabeled_at_0.50
 
+filter_samples_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table.biom_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
+filter_samples_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/forehead_closed_ref_filtered_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/forehead_closed_ref_filtered_otu_table.biom_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
+filter_samples_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/forehead_closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/forehead_closed_ref_otu_table.biom_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
+filter_samples_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/gut_closed_ref_filtered_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/gut_closed_ref_filtered_otu_table.biom_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
+filter_samples_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/gut_closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/gut_closed_ref_otu_table.biom_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
+filter_samples_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/palm_closed_ref_filtered_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/palm_closed_ref_filtered_otu_table.biom_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
+filter_samples_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/palm_closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/palm_closed_ref_otu_table.biom_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
+filter_samples_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/tongue_closed_ref_filtered_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/tongue_closed_ref_filtered_otu_table.biom_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
+filter_samples_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/tongue_closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/tongue_closed_ref_otu_table.biom_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'   
+
+mv closed_ref_otu_table.biom_ closed_ref_otu_table.biom
+mv forehead_closed_ref_filtered_otu_table.biom_ forehead_closed_ref_filtered_otu_table.biom
+mv forehead_closed_ref_otu_table.biom_ forehead_closed_ref_otu_table.biom
+mv gut_closed_ref_filtered_otu_table.biom_ gut_closed_ref_filtered_otu_table.biom
+mv gut_closed_ref_otu_table.biom_ gut_closed_ref_otu_table.biom
+mv palm_closed_ref_filtered_otu_table.biom_ palm_closed_ref_filtered_otu_table.biom
+mv palm_closed_ref_otu_table.biom_ palm_closed_ref_otu_table.biom
+mv tongue_closed_ref_filtered_otu_table.biom_ tongue_closed_ref_filtered_otu_table.biom
+mv tongue_closed_ref_otu_table.biom_ tongue_closed_ref_otu_table.biom
 
 ```
 
-Reviewing the mislabeling.txt file in the context of the 3D PCoA plots colored by mislabeled samples, we'll remove the samples have a <= 10% of being correctly labeled. These are two gut samples:
-
-G10362
-G11388
-
-which will be filtered from all analyses.
+Four samples were identified as mislabeled and excluded from downstream analyses.
 
