@@ -147,7 +147,23 @@ mv palm_closed_ref_otu_table.biom_ palm_closed_ref_otu_table.biom
 mv tongue_closed_ref_filtered_otu_table.biom_ tongue_closed_ref_filtered_otu_table.biom
 mv tongue_closed_ref_otu_table.biom_ tongue_closed_ref_otu_table.biom
 
+filter_distance_matrix.py -i /Users/caporaso/analysis/student-microbiome-project/beta_diversity/even10000_unweighted_unifrac_dm.txt -o /Users/caporaso/analysis/student-microbiome-project/beta_diversity/even10000_unweighted_unifrac_dm.txt_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
+filter_distance_matrix.py -i /Users/caporaso/analysis/student-microbiome-project/beta_diversity/even10000_weighted_unifrac_dm.txt -o /Users/caporaso/analysis/student-microbiome-project/beta_diversity/even10000_weighted_unifrac_dm.txt_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
+filter_distance_matrix.py -i /Users/caporaso/analysis/student-microbiome-project/beta_diversity/forehead_even10000_unweighted_unifrac_dm.txt -o /Users/caporaso/analysis/student-microbiome-project/beta_diversity/forehead_even10000_unweighted_unifrac_dm.txt_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
+filter_distance_matrix.py -i /Users/caporaso/analysis/student-microbiome-project/beta_diversity/forehead_even10000_weighted_unifrac_dm.txt -o /Users/caporaso/analysis/student-microbiome-project/beta_diversity/forehead_even10000_weighted_unifrac_dm.txt_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
+filter_distance_matrix.py -i /Users/caporaso/analysis/student-microbiome-project/beta_diversity/gut_even10000_unweighted_unifrac_dm.txt -o /Users/caporaso/analysis/student-microbiome-project/beta_diversity/gut_even10000_unweighted_unifrac_dm.txt_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
+filter_distance_matrix.py -i /Users/caporaso/analysis/student-microbiome-project/beta_diversity/gut_even10000_weighted_unifrac_dm.txt -o /Users/caporaso/analysis/student-microbiome-project/beta_diversity/gut_even10000_weighted_unifrac_dm.txt_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
+filter_distance_matrix.py -i /Users/caporaso/analysis/student-microbiome-project/beta_diversity/palm_even10000_unweighted_unifrac_dm.txt -o /Users/caporaso/analysis/student-microbiome-project/beta_diversity/palm_even10000_unweighted_unifrac_dm.txt_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
+filter_distance_matrix.py -i /Users/caporaso/analysis/student-microbiome-project/beta_diversity/palm_even10000_weighted_unifrac_dm.txt -o /Users/caporaso/analysis/student-microbiome-project/beta_diversity/palm_even10000_weighted_unifrac_dm.txt_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
+filter_distance_matrix.py -i /Users/caporaso/analysis/student-microbiome-project/beta_diversity/tongue_even10000_unweighted_unifrac_dm.txt -o /Users/caporaso/analysis/student-microbiome-project/beta_diversity/tongue_even10000_unweighted_unifrac_dm.txt_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
+filter_distance_matrix.py -i /Users/caporaso/analysis/student-microbiome-project/beta_diversity/tongue_even10000_weighted_unifrac_dm.txt -o /Users/caporaso/analysis/student-microbiome-project/beta_diversity/tongue_even10000_weighted_unifrac_dm.txt_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
+
+
+In [2]: fps = !ls
+In [5]: for fp in fps:
+   ...:     old = '%s_' % fp
+   ...:     !mv $old $fp
+
 ```
 
 Four samples were identified as mislabeled and excluded from downstream analyses.
-
