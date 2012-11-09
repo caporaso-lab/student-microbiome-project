@@ -67,7 +67,13 @@ echo "split_libraries_fastq.py -i /home/shared/Illumina_hiseq_UCB/Illumina030220
 OTU picking
 -----------
 ```
-pick_subsampled_reference_otus_through_otu_table.py -i /scratch/caporaso/student_microbiome/slout_wk1_only/seqs.fna,/scratch/caporaso/student_microbiome/slout_fecal/seqs.fna,/scratch/caporaso/student_microbiome/slout_tongue/seqs.fna,/scratch/caporaso/student_microbiome/slout_forehead/seqs.fna,/scratch/caporaso/student_microbiome/slout_palm/seqs.fna -r /scratch/caporaso/gg_otus_4feb2011/rep_set/gg_97_otus_4feb2011.fasta -o /scratch/caporaso/student_microbiome/ucrss_fast/ -p /scratch/caporaso/student_microbiome/ucrss_params.txt -n student.microbiome -aO 50
+pick_reference_otus_through_otu_table.py -i /scratch/caporaso/student_microbiome/slout_fecal/seqs.fna -o /scratch/leffj/student_microbiome/ucr_fecal/ -r /home/leffj/gg_files/gg_otus_4feb2011/rep_set/gg_97_otus_4feb2011.fasta -t /home/leffj/gg_files/gg_otus_4feb2011/taxonomies/greengenes_tax.txt -aO 50
+
+pick_reference_otus_through_otu_table.py -i /scratch/caporaso/student_microbiome/slout_tongue/seqs.fna -o /scratch/leffj/student_microbiome/ucr_tongue/ -r /home/leffj/gg_files/gg_otus_4feb2011/rep_set/gg_97_otus_4feb2011.fasta -t /home/leffj/gg_files/gg_otus_4feb2011/taxonomies/greengenes_tax.txt -aO 50
+
+pick_reference_otus_through_otu_table.py -i /scratch/caporaso/student_microbiome/slout_forehead/seqs.fna -o /scratch/leffj/student_microbiome/ucr_forehead/ -r /home/leffj/gg_files/gg_otus_4feb2011/rep_set/gg_97_otus_4feb2011.fasta -t /home/leffj/gg_files/gg_otus_4feb2011/taxonomies/greengenes_tax.txt -aO 50
+
+pick_reference_otus_through_otu_table.py -i /scratch/caporaso/student_microbiome/slout_palm/seqs.fna -o /scratch/leffj/student_microbiome/ucr_palm/ -r /home/leffj/gg_files/gg_otus_4feb2011/rep_set/gg_97_otus_4feb2011.fasta -t /home/leffj/gg_files/gg_otus_4feb2011/taxonomies/greengenes_tax.txt -aO 50
 ```
 
 OTU table filtering
