@@ -1,0 +1,6 @@
+# The tests of significance were performed using a two-sided Student's two-sample t-test.
+# Entries marked with "N/A" could not be calculated because at least one of the groups
+# of distances was empty, both groups each contained only a single distance, or
+# the test could not be performed (e.g. no variance in the groups).
+Group 1	Group 2	t statistic	Parametric p-value	Parametric p-value (Bonferroni-corrected)	Nonparametric p-value	Nonparametric p-value (Bonferroni-corrected)
+All within PersonalID	All between PersonalID	-33.9332870053	8.8388170754e-252	8.8388170754e-252	N/A	N/A
