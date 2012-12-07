@@ -1,0 +1,8 @@
+# The tests of significance were performed using a two-sided Student's two-sample t-test.
+# Entries marked with "N/A" could not be calculated because at least one of the groups
+# of distances was empty, both groups each contained only a single distance, or
+# the test could not be performed (e.g. no variance in the groups).
+Group 1	Group 2	t statistic	Parametric p-value	Parametric p-value (Bonferroni-corrected)	Nonparametric p-value	Nonparametric p-value (Bonferroni-corrected)
+Yes vs. Yes	All within Antibiotic_disturbance	-24.0256328271	2.20829846624e-127	6.62489539872e-127	N/A	N/A
+Yes vs. Yes	No vs. No	-26.5092279297	1.42016230763e-154	4.26048692288e-154	N/A	N/A
+All within Antibiotic_disturbance	No vs. No	-5.97740320893	2.26926304911e-09	6.80778914732e-09	N/A	N/A
