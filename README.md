@@ -159,9 +159,9 @@ echo "alpha_rarefaction.py -i /scratch/caporaso/student_microbiome/student-micro
 
 # Oops, forgot to include shannon in the set of metrics to apply so computing after.
 
+parallel_alpha_diversity.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/arare_even10000/rarefaction/ -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/arare_even10000/alpha_div_s/ --jobs_to_start 100 -m shannon
 collate_alpha.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/arare_even10000/alpha_div_s/ -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/arare_even10000/alpha_div_collated/
 
-parallel_alpha_diversity.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/arare_even10000/rarefaction/ -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/arare_even10000/alpha_div_s/ --jobs_to_start 100 -m shannon
 
 ```
 
