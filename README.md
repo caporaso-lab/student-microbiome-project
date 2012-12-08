@@ -125,13 +125,33 @@ echo "supervised_learning.py -i /scratch/caporaso/student_microbiome/student-mic
 echo "filter_samples_from_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10_no_mislabeled_010.biom -m /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'" | qsub -keo -N filtmisl -l pvmem=32gb -q memroute
 ```
 
+Diversity analyses
+------------------
+
 Compute UniFrac distance matrices and generate PCoA plots.
 ```
 echo "beta_diversity_through_plots.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10_no_mislabeled_010.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000 -e 10000 -aO 100 -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv -p /scratch/caporaso/student_microbiome/student-microbiome-project/parameters/bdiv_params.txt -t /Users/caporaso/data/gg_12_10_otus/trees/97_otus.tree" | qsub -keo -N smp-bdiv -l pvmem=32gb -q memroute
 ```
 
-Diversity analyses
-------------------
+Create per-body-site distance matrices
+```
+echo 'filter_distance_matrix.py -i /scratch/caporaso/student_microbiome/student-microbiome-project/beta-diversity/unweighted_unifrac_dm.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project/beta-diversity/unweighted_unifrac_forehead_dm.txt -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv -s "BodySite:forehead"' | qsub -keo -N dmforehead -l pvmem=8gb -q memroute
+
+echo 'filter_distance_matrix.py -i /scratch/caporaso/student_microbiome/student-microbiome-project/beta-diversity/unweighted_unifrac_dm.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project/beta-diversity/unweighted_unifrac_gut_dm.txt -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv -s "BodySite:gut"' | qsub -keo -N dmgut -l pvmem=8gb -q memroute
+
+echo 'filter_distance_matrix.py -i /scratch/caporaso/student_microbiome/student-microbiome-project/beta-diversity/unweighted_unifrac_dm.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project/beta-diversity/unweighted_unifrac_palm_dm.txt -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv -s "BodySite:palm"' | qsub -keo -N dmpalm -l pvmem=8gb -q memroute
+
+echo 'filter_distance_matrix.py -i /scratch/caporaso/student_microbiome/student-microbiome-project/beta-diversity/unweighted_unifrac_dm.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project/beta-diversity/unweighted_unifrac_tongue_dm.txt -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv -s "BodySite:tongue"' | qsub -keo -N dmtongue -l pvmem=8gb -q memroute
+
+echo 'filter_distance_matrix.py -i /scratch/caporaso/student_microbiome/student-microbiome-project/beta-diversity/weighted_unifrac_dm.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project/beta-diversity/weighted_unifrac_forehead_dm.txt -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv -s "BodySite:forehead"' | qsub -keo -N dmforehead -l pvmem=8gb -q memroute
+
+echo 'filter_distance_matrix.py -i /scratch/caporaso/student_microbiome/student-microbiome-project/beta-diversity/weighted_unifrac_dm.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project/beta-diversity/weighted_unifrac_gut_dm.txt -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv -s "BodySite:gut"' | qsub -keo -N dmgut -l pvmem=8gb -q memroute
+
+echo 'filter_distance_matrix.py -i /scratch/caporaso/student_microbiome/student-microbiome-project/beta-diversity/weighted_unifrac_dm.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project/beta-diversity/weighted_unifrac_palm_dm.txt -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv -s "BodySite:palm"' | qsub -keo -N dmpalm -l pvmem=8gb -q memroute
+
+echo 'filter_distance_matrix.py -i /scratch/caporaso/student_microbiome/student-microbiome-project/beta-diversity/weighted_unifrac_dm.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project/beta-diversity/weighted_unifrac_tongue_dm.txt -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv -s "BodySite:tongue"' | qsub -keo -N dmtongue -l pvmem=8gb -q memroute
+```
+
 
 Compute alpha diversity and rarefaction plots.
 ```

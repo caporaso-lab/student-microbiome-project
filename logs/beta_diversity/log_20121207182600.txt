@@ -1,0 +1,147 @@
+Logging started at 18:26:00 on 07 Dec 2012
+QIIME version: 1.5.0-dev
+
+qiime_config values:
+blastmat_dir	/Users/caporaso/blast-2.2.16/data
+sc_queue	all.q
+pynast_template_alignment_fp	/Users/caporaso/data/gg_core/core_set_aligned.fasta.imputed
+cluster_jobs_fp	/Users/caporaso/bin/cluster_jobs_16.py
+assign_taxonomy_reference_seqs_fp	/Users/caporaso/data/gg_12_10_otus/rep_set/97_otus.fasta
+torque_queue	friendlyq
+qiime_test_data_dir	/Users/caporaso/code/qiime_test_data
+template_alignment_lanemask_fp	/Users/caporaso/data/gg_core/lanemask_in_1s_and_0s.txt
+jobs_to_start	3
+cloud_environment	False
+qiime_scripts_dir	/Users/caporaso/code/Qiime/scripts/
+denoiser_min_per_core	50
+python_exe_fp	python
+temp_dir	/Users/caporaso/temp/
+blastall_fp	/Users/caporaso/blast-2.2.16/bin/blastall
+seconds_to_sleep	1
+assign_taxonomy_id_to_taxonomy_fp	/Users/caporaso/data/gg_12_10_otus/taxonomy/97_otu_taxonomy.txt
+
+parameter file values:
+make_3d_plots:custom_axes	WeeksSinceStart
+parallel:jobs_to_start	100
+
+Input file md5 sums:
+/scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10_no_mislabeled_010.biom: 6869a3bf65c132125eef801c29fde1f5
+/scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv: 28343f06b6a1a6705bfe119eb8ff9641
+/Users/caporaso/data/gg_12_10_otus/trees/97_otus.tree: 05a48b4775eaa75ec4073cd7c02f1236
+
+Executing commands.
+
+# Sample OTU table at 10000 seqs/sample command 
+python /Users/caporaso/code/Qiime/scripts//single_rarefaction.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10_no_mislabeled_010.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10_no_mislabeled_010_even10000.biom -d 10000
+
+Stdout:
+
+Stderr:
+
+# Build prefs file command 
+python /Users/caporaso/code/Qiime/scripts//make_prefs_file.py -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/prefs.txt  --mapping_headers_to_use BarcodeSequence,PersonalID,Control,Mislabeled,GutTimeseries,TongueTimeseries,PalmTimeseries,ForeheadTimeseries,AnyTimeseries,WeeksSinceStart,WeekDescription,BodySite,Sickness_disturbance,Antibiotic_disturbance,menstruation_disturbance,Pielou,observed_species,PD_whole_tree,WeekNumber,TotalIndividualWeeks,StartWeek,StopWeek,ShellfishAllergy,GlutenIntolerant,Roomates,BMI,Asthma,OtherInfo,DailyMultivitamin,GreekHouse,SmokeCigarettes,OtherMedication,OnCampusHousing,ZipCode,PeanutAllergy,Cats,LactoseIntolerant,TreeNutAllergy,ArtificialTanning,Tonsils,Chickenpox,Dogs,Fluvaccine,SwimmingPoolHotTubUse,DrinkAlcohol,OtherSupplements,PKU,ExerciseRoutine,BiteFingernails,Diet,Antibiotics,RaceEthnicity,HormonalBirthControl,TraveledOutOfUS,OtherAllergies,SeasonalAllergies,BeeStingAllergies,PetAllergies,Diabetes,FacialCosmetics,FabricSoftener,Pregnant,Gender,Age,DominantHand,MoveToCurrentLocation,Csection,DeodorantAntiperspirant,OverTheCounterFacialAcne,HoursOfSleep,FlossTeeth,SunAllergies,DrugAllergies,BMIclass,Appendix,SkinConditions,ExerciseIndoorsOutdoors,CampusDining,BrushTeeth,PrescriptionForFacialAcne,WeightChanges,PoisonIvyOakAllergies,OtherSpecialDiet,IBD,Description
+
+Stdout:
+
+Stderr:
+
+# Beta Diversity (weighted_unifrac) command 
+python /Users/caporaso/code/Qiime/scripts//parallel_beta_diversity.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10_no_mislabeled_010_even10000.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000 --metrics weighted_unifrac -T  -t /Users/caporaso/data/gg_12_10_otus/trees/97_otus.tree --jobs_to_start 100
+
+Stdout:
+
+Stderr:
+
+# Rename distance matrix (weighted_unifrac) command 
+mv /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/weighted_unifrac_all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10_no_mislabeled_010_even10000.txt /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/weighted_unifrac_dm.txt
+
+Stdout:
+
+Stderr:
+
+# Principal coordinates (weighted_unifrac) command 
+python /Users/caporaso/code/Qiime/scripts//principal_coordinates.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/weighted_unifrac_dm.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/weighted_unifrac_pc.txt 
+
+Stdout:
+
+Stderr:
+
+# Make 3D plots (continuous coloring, weighted_unifrac) command 
+python /Users/caporaso/code/Qiime/scripts//make_3d_plots.py -p /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/prefs.txt -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/weighted_unifrac_pc.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/weighted_unifrac_3d_continuous/ -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv --custom_axes WeeksSinceStart
+
+Stdout:
+
+Stderr:
+
+# Make 3D plots (discrete coloring, weighted_unifrac) command 
+python /Users/caporaso/code/Qiime/scripts//make_3d_plots.py -b "BarcodeSequence,PersonalID,Control,Mislabeled,GutTimeseries,TongueTimeseries,PalmTimeseries,ForeheadTimeseries,AnyTimeseries,WeeksSinceStart,WeekDescription,BodySite,Sickness_disturbance,Antibiotic_disturbance,menstruation_disturbance,Pielou,observed_species,PD_whole_tree,WeekNumber,TotalIndividualWeeks,StartWeek,StopWeek,ShellfishAllergy,GlutenIntolerant,Roomates,BMI,Asthma,OtherInfo,DailyMultivitamin,GreekHouse,SmokeCigarettes,OtherMedication,OnCampusHousing,ZipCode,PeanutAllergy,Cats,LactoseIntolerant,TreeNutAllergy,ArtificialTanning,Tonsils,Chickenpox,Dogs,Fluvaccine,SwimmingPoolHotTubUse,DrinkAlcohol,OtherSupplements,PKU,ExerciseRoutine,BiteFingernails,Diet,Antibiotics,RaceEthnicity,HormonalBirthControl,TraveledOutOfUS,OtherAllergies,SeasonalAllergies,BeeStingAllergies,PetAllergies,Diabetes,FacialCosmetics,FabricSoftener,Pregnant,Gender,Age,DominantHand,MoveToCurrentLocation,Csection,DeodorantAntiperspirant,OverTheCounterFacialAcne,HoursOfSleep,FlossTeeth,SunAllergies,DrugAllergies,BMIclass,Appendix,SkinConditions,ExerciseIndoorsOutdoors,CampusDining,BrushTeeth,PrescriptionForFacialAcne,WeightChanges,PoisonIvyOakAllergies,OtherSpecialDiet,IBD,Description" -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/weighted_unifrac_pc.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/weighted_unifrac_3d_discrete/ -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv --custom_axes WeeksSinceStart
+
+Stdout:
+
+Stderr:
+
+# Make 2D plots (continuous coloring, weighted_unifrac) command 
+python /Users/caporaso/code/Qiime/scripts//make_2d_plots.py -p /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/prefs.txt -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/weighted_unifrac_pc.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/weighted_unifrac_2d_continuous/ -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv 
+
+Stdout:
+
+Stderr:
+
+# Make 2D plots (discrete coloring, weighted_unifrac) command 
+python /Users/caporaso/code/Qiime/scripts//make_2d_plots.py -b "BarcodeSequence,PersonalID,Control,Mislabeled,GutTimeseries,TongueTimeseries,PalmTimeseries,ForeheadTimeseries,AnyTimeseries,WeeksSinceStart,WeekDescription,BodySite,Sickness_disturbance,Antibiotic_disturbance,menstruation_disturbance,Pielou,observed_species,PD_whole_tree,WeekNumber,TotalIndividualWeeks,StartWeek,StopWeek,ShellfishAllergy,GlutenIntolerant,Roomates,BMI,Asthma,OtherInfo,DailyMultivitamin,GreekHouse,SmokeCigarettes,OtherMedication,OnCampusHousing,ZipCode,PeanutAllergy,Cats,LactoseIntolerant,TreeNutAllergy,ArtificialTanning,Tonsils,Chickenpox,Dogs,Fluvaccine,SwimmingPoolHotTubUse,DrinkAlcohol,OtherSupplements,PKU,ExerciseRoutine,BiteFingernails,Diet,Antibiotics,RaceEthnicity,HormonalBirthControl,TraveledOutOfUS,OtherAllergies,SeasonalAllergies,BeeStingAllergies,PetAllergies,Diabetes,FacialCosmetics,FabricSoftener,Pregnant,Gender,Age,DominantHand,MoveToCurrentLocation,Csection,DeodorantAntiperspirant,OverTheCounterFacialAcne,HoursOfSleep,FlossTeeth,SunAllergies,DrugAllergies,BMIclass,Appendix,SkinConditions,ExerciseIndoorsOutdoors,CampusDining,BrushTeeth,PrescriptionForFacialAcne,WeightChanges,PoisonIvyOakAllergies,OtherSpecialDiet,IBD,Description" -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/weighted_unifrac_pc.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/weighted_unifrac_2d_discrete/ -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv 
+
+Stdout:
+
+Stderr:
+
+# Beta Diversity (unweighted_unifrac) command 
+python /Users/caporaso/code/Qiime/scripts//parallel_beta_diversity.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10_no_mislabeled_010_even10000.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000 --metrics unweighted_unifrac -T  -t /Users/caporaso/data/gg_12_10_otus/trees/97_otus.tree --jobs_to_start 100
+
+Stdout:
+
+Stderr:
+
+# Rename distance matrix (unweighted_unifrac) command 
+mv /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/unweighted_unifrac_all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10_no_mislabeled_010_even10000.txt /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/unweighted_unifrac_dm.txt
+
+Stdout:
+
+Stderr:
+
+# Principal coordinates (unweighted_unifrac) command 
+python /Users/caporaso/code/Qiime/scripts//principal_coordinates.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/unweighted_unifrac_dm.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/unweighted_unifrac_pc.txt 
+
+Stdout:
+
+Stderr:
+
+# Make 3D plots (continuous coloring, unweighted_unifrac) command 
+python /Users/caporaso/code/Qiime/scripts//make_3d_plots.py -p /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/prefs.txt -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/unweighted_unifrac_pc.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/unweighted_unifrac_3d_continuous/ -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv --custom_axes WeeksSinceStart
+
+Stdout:
+
+Stderr:
+
+# Make 3D plots (discrete coloring, unweighted_unifrac) command 
+python /Users/caporaso/code/Qiime/scripts//make_3d_plots.py -b "BarcodeSequence,PersonalID,Control,Mislabeled,GutTimeseries,TongueTimeseries,PalmTimeseries,ForeheadTimeseries,AnyTimeseries,WeeksSinceStart,WeekDescription,BodySite,Sickness_disturbance,Antibiotic_disturbance,menstruation_disturbance,Pielou,observed_species,PD_whole_tree,WeekNumber,TotalIndividualWeeks,StartWeek,StopWeek,ShellfishAllergy,GlutenIntolerant,Roomates,BMI,Asthma,OtherInfo,DailyMultivitamin,GreekHouse,SmokeCigarettes,OtherMedication,OnCampusHousing,ZipCode,PeanutAllergy,Cats,LactoseIntolerant,TreeNutAllergy,ArtificialTanning,Tonsils,Chickenpox,Dogs,Fluvaccine,SwimmingPoolHotTubUse,DrinkAlcohol,OtherSupplements,PKU,ExerciseRoutine,BiteFingernails,Diet,Antibiotics,RaceEthnicity,HormonalBirthControl,TraveledOutOfUS,OtherAllergies,SeasonalAllergies,BeeStingAllergies,PetAllergies,Diabetes,FacialCosmetics,FabricSoftener,Pregnant,Gender,Age,DominantHand,MoveToCurrentLocation,Csection,DeodorantAntiperspirant,OverTheCounterFacialAcne,HoursOfSleep,FlossTeeth,SunAllergies,DrugAllergies,BMIclass,Appendix,SkinConditions,ExerciseIndoorsOutdoors,CampusDining,BrushTeeth,PrescriptionForFacialAcne,WeightChanges,PoisonIvyOakAllergies,OtherSpecialDiet,IBD,Description" -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/unweighted_unifrac_pc.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/unweighted_unifrac_3d_discrete/ -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv --custom_axes WeeksSinceStart
+
+Stdout:
+
+Stderr:
+
+# Make 2D plots (continuous coloring, unweighted_unifrac) command 
+python /Users/caporaso/code/Qiime/scripts//make_2d_plots.py -p /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/prefs.txt -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/unweighted_unifrac_pc.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/unweighted_unifrac_2d_continuous/ -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv 
+
+Stdout:
+
+Stderr:
+
+# Make 2D plots (discrete coloring, unweighted_unifrac) command 
+python /Users/caporaso/code/Qiime/scripts//make_2d_plots.py -b "BarcodeSequence,PersonalID,Control,Mislabeled,GutTimeseries,TongueTimeseries,PalmTimeseries,ForeheadTimeseries,AnyTimeseries,WeeksSinceStart,WeekDescription,BodySite,Sickness_disturbance,Antibiotic_disturbance,menstruation_disturbance,Pielou,observed_species,PD_whole_tree,WeekNumber,TotalIndividualWeeks,StartWeek,StopWeek,ShellfishAllergy,GlutenIntolerant,Roomates,BMI,Asthma,OtherInfo,DailyMultivitamin,GreekHouse,SmokeCigarettes,OtherMedication,OnCampusHousing,ZipCode,PeanutAllergy,Cats,LactoseIntolerant,TreeNutAllergy,ArtificialTanning,Tonsils,Chickenpox,Dogs,Fluvaccine,SwimmingPoolHotTubUse,DrinkAlcohol,OtherSupplements,PKU,ExerciseRoutine,BiteFingernails,Diet,Antibiotics,RaceEthnicity,HormonalBirthControl,TraveledOutOfUS,OtherAllergies,SeasonalAllergies,BeeStingAllergies,PetAllergies,Diabetes,FacialCosmetics,FabricSoftener,Pregnant,Gender,Age,DominantHand,MoveToCurrentLocation,Csection,DeodorantAntiperspirant,OverTheCounterFacialAcne,HoursOfSleep,FlossTeeth,SunAllergies,DrugAllergies,BMIclass,Appendix,SkinConditions,ExerciseIndoorsOutdoors,CampusDining,BrushTeeth,PrescriptionForFacialAcne,WeightChanges,PoisonIvyOakAllergies,OtherSpecialDiet,IBD,Description" -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/unweighted_unifrac_pc.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/unweighted_unifrac_2d_discrete/ -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv 
+
+Stdout:
+
+Stderr:
+
+
+Logging stopped at 00:49:24 on 08 Dec 2012
