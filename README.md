@@ -6,7 +6,7 @@ Central repository for data and analysis tools for the Student Microbiome Projec
 Description of data files
 -------------------------
 
-``otu_tables/`` : closed-reference OTU tables - filtered tables have been manually processed by Gilberto Flores to remove samples with fewer than 10,000 sequences and OTUs that were present in negative controls. 
+``otu_tables/`` : closed-reference OTU tables
 
 ``otu_table_stats/`` : output of running ``per_library_stats.py`` on all files in ``otu_tables/``
 
@@ -67,109 +67,87 @@ echo "split_libraries_fastq.py -i /home/shared/Illumina_hiseq_UCB/Illumina030220
 OTU picking
 -----------
 ```
-pick_reference_otus_through_otu_table.py -i /scratch/caporaso/student_microbiome/slout_fecal/seqs.fna -o /scratch/leffj/student_microbiome/ucr_fecal/ -r /home/leffj/gg_files/gg_otus_4feb2011/rep_set/gg_97_otus_4feb2011.fasta -t /home/leffj/gg_files/gg_otus_4feb2011/taxonomies/greengenes_tax.txt -aO 50
+echo "pick_reference_otus_through_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/slout_fecal/seqs.fna -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_fecal/ -r /Users/caporaso/data/gg_12_10_otus/rep_set/97_otus.fasta -t /Users/caporaso/data/gg_12_10_otus/taxonomy/97_otu_taxonomy.txt -aO 50 -p /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_params.txt" | qsub -keo -N smp-fecal -l pvmem=16gb -q memroute
 
-pick_reference_otus_through_otu_table.py -i /scratch/caporaso/student_microbiome/slout_tongue/seqs.fna -o /scratch/leffj/student_microbiome/ucr_tongue/ -r /home/leffj/gg_files/gg_otus_4feb2011/rep_set/gg_97_otus_4feb2011.fasta -t /home/leffj/gg_files/gg_otus_4feb2011/taxonomies/greengenes_tax.txt -aO 50
+echo "pick_reference_otus_through_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/slout_forehead/seqs.fna -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_forehead/ -r /Users/caporaso/data/gg_12_10_otus/rep_set/97_otus.fasta -t /Users/caporaso/data/gg_12_10_otus/taxonomy/97_otu_taxonomy.txt -aO 50 -p /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_params.txt" | qsub -keo -N smp-forehead -l pvmem=16gb -q memroute
 
-pick_reference_otus_through_otu_table.py -i /scratch/caporaso/student_microbiome/slout_forehead/seqs.fna -o /scratch/leffj/student_microbiome/ucr_forehead/ -r /home/leffj/gg_files/gg_otus_4feb2011/rep_set/gg_97_otus_4feb2011.fasta -t /home/leffj/gg_files/gg_otus_4feb2011/taxonomies/greengenes_tax.txt -aO 50
+echo "pick_reference_otus_through_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/slout_tongue/seqs.fna -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_tongue/ -r /Users/caporaso/data/gg_12_10_otus/rep_set/97_otus.fasta -t /Users/caporaso/data/gg_12_10_otus/taxonomy/97_otu_taxonomy.txt -aO 50 -p /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_params.txt" | qsub -keo -N smp-tongue -l pvmem=16gb -q memroute
 
-pick_reference_otus_through_otu_table.py -i /scratch/caporaso/student_microbiome/slout_palm/seqs.fna -o /scratch/leffj/student_microbiome/ucr_palm/ -r /home/leffj/gg_files/gg_otus_4feb2011/rep_set/gg_97_otus_4feb2011.fasta -t /home/leffj/gg_files/gg_otus_4feb2011/taxonomies/greengenes_tax.txt -aO 50
+echo "pick_reference_otus_through_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/slout_palm/seqs.fna -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_palm/ -r /Users/caporaso/data/gg_12_10_otus/rep_set/97_otus.fasta -t /Users/caporaso/data/gg_12_10_otus/taxonomy/97_otu_taxonomy.txt -aO 50 -p /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_params.txt" | qsub -keo -N smp-palm -l pvmem=16gb -q memroute
+
+# week one only data
+echo "pick_reference_otus_through_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/slout_wk1_only/seqs.fna -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_wk1/ -r /Users/caporaso/data/gg_12_10_otus/rep_set/97_otus.fasta -t /Users/caporaso/data/gg_12_10_otus/taxonomy/97_otu_taxonomy.txt -aO 50 -p /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_params.txt" | qsub -keo -N smp-wk1 -l pvmem=16gb -q memroute
+
 ```
+
 
 OTU table filtering
 -------------------
-
-NEED GILBERT'S NOTES
-
-Alpha rarefaction
------------------
-
+First we remove samples that are not in the mapping file. Some of these had issues during prep, etc.
 ```
-echo "alpha_rarefaction.py -i /scratch/gifl2111/SMP/Working_OTU_Tables/Forehead/forehead_closed_ref_working_otu_table.biom -o /home/caporaso/analysis/student_microbiome/24sept2012/forehead/arare_max10000/ -t /scratch/caporaso/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre -m /scratch/gifl2111/SMP/Working_OTU_Tables/Forehead/forehead_working_mf.txt -aO 25 -e 10000" | qsub -keo -N smpmax10000 -l pvmem=8gb -q memroute
+filter_samples_from_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_fecal/uclust_ref_picked_otus/otu_table.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_fecal/uclust_ref_picked_otus/otu_table_sfiltered.biom --sample_id_fp /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv 
 
-echo "alpha_rarefaction.py -i /scratch/gifl2111/SMP/Working_OTU_Tables/Gut/gut_closed_ref_working_otu_table.biom -o /home/caporaso/analysis/student_microbiome/24sept2012/gut/arare_max10000/ -t /scratch/caporaso/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre -m /scratch/gifl2111/SMP/Working_OTU_Tables/Gut/gut_working_mf.txt -aO 25 -e 10000" | qsub -keo -N smpmax10000 -l pvmem=8gb -q memroute
+filter_samples_from_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_forehead/uclust_ref_picked_otus/otu_table.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_forehead/uclust_ref_picked_otus/otu_table_sfiltered.biom --sample_id_fp /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv 
 
-echo "alpha_rarefaction.py -i /scratch/gifl2111/SMP/Working_OTU_Tables/Tongue/tongue_closed_ref_working_otu_table.biom -o /home/caporaso/analysis/student_microbiome/24sept2012/tongue/arare_max10000/ -t /scratch/caporaso/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre -m /scratch/gifl2111/SMP/Working_OTU_Tables/Tongue/tongue_working_mf.txt -aO 25 -e 10000" | qsub -keo -N smpmax10000 -l pvmem=8gb -q memroute
+filter_samples_from_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_tongue/uclust_ref_picked_otus/otu_table.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_tongue/uclust_ref_picked_otus/otu_table_sfiltered.biom --sample_id_fp /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv 
 
-echo "alpha_rarefaction.py -i /scratch/gifl2111/SMP/Working_OTU_Tables/Palm/palm_closed_ref_working_otu_table.biom -o /home/caporaso/analysis/student_microbiome/24sept2012/palm/arare_max10000/ -t /scratch/caporaso/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre -m /scratch/gifl2111/SMP/Working_OTU_Tables/Palm/palm_working_mf.txt -aO 25 -e 10000" | qsub -keo -N smpmax10000 -l pvmem=8gb -q memroute
+filter_samples_from_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_palm/uclust_ref_picked_otus/otu_table.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_palm/uclust_ref_picked_otus/otu_table_sfiltered.biom --sample_id_fp /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv
 ```
 
-Beta diversity
---------------
-
+Next we create a master OTU table by merging the four body sites
 ```
-echo "beta_diversity_through_plots.py -i /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/palm_closed_ref_filtered_otu_table.biom -o /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/palm_bdiv_even10000/ -t /scratch/caporaso/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre -m /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/StudentMicrobiomeProject-map.tsv -e 10000 -p /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/bdiv_params.txt" | qsub -keo -N smppalm10000 -l pvmem=8gb -q memroute
-
-echo "beta_diversity_through_plots.py -i /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/tongue_closed_ref_filtered_otu_table.biom -o /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/tongue_bdiv_even10000/ -t /scratch/caporaso/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre -m /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/StudentMicrobiomeProject-map.tsv -e 10000 -p /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/bdiv_params.txt" | qsub -keo -N smptongue10000 -l pvmem=8gb -q memroute
-
-echo "beta_diversity_through_plots.py -i /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/gut_closed_ref_filtered_otu_table.biom -o /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/gut_bdiv_even10000/ -t /scratch/caporaso/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre -m /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/StudentMicrobiomeProject-map.tsv -e 10000 -p /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/bdiv_params.txt" | qsub -keo -N smpgut10000 -l pvmem=8gb -q memroute
-
-echo "beta_diversity_through_plots.py -i /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/forehead_closed_ref_filtered_otu_table.biom -o /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/forehead_bdiv_even10000/ -t /scratch/caporaso/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre -m /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/StudentMicrobiomeProject-map.tsv -e 10000 -p /Users/caporaso/analysis/student_microbiome/24sept2012/student-microbiome-project/otu_tables/bdiv_params.txt" | qsub -keo -N smpforehead10000 -l pvmem=8gb -q memroute
+echo "merge_otu_tables.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_fecal/uclust_ref_picked_otus/otu_table_sfiltered.biom,/scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_forehead/uclust_ref_picked_otus/otu_table_sfiltered.biom,/scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_tongue/uclust_ref_picked_otus/otu_table_sfiltered.biom,/scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC_palm/uclust_ref_picked_otus/otu_table_sfiltered.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/all_body_sites_sfiltered.biom" | qsub -keo -N merge-smp -l pvmem=32gb -q memroute
 ```
 
-Merge OTU tables for combined analysis
---------------------------------------
-
+Another round of filtering. We're requring a minimum of 10k sequences per sample.
 ```
-echo "merge_otu_tables.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/forehead_closed_ref_otu_table.biom,/Users/caporaso/analysis/student-microbiome-project/otu_tables/gut_closed_ref_otu_table.biom,/Users/caporaso/analysis/student-microbiome-project/otu_tables/palm_closed_ref_otu_table.biom,/Users/caporaso/analysis/student-microbiome-project/otu_tables/tongue_closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table.biom" | qsub -keo -N mergesmp -l pvmem=64gb -q memroute
-
-echo "per_library_stats.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table.biom > /Users/caporaso/analysis/student-microbiome-project/otu_table_stats/closed_ref_otu_table_per_lib_stats.txt" | qsub -keo -N smp_pls -l pvmem=32gb -q memroute
-
-echo "beta_diversity_through_plots.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/bdiv_even10000/ -p /Users/caporaso/analysis/student-microbiome-project/parameters/bdiv_params.txt -t /Users/caporaso/data/gg_otus_4feb2011/trees/gg_97_otus_4feb2011.tre -m /Users/caporaso/analysis/student-microbiome-project/StudentMicrobiomeProject-map.tsv -e 10000 -aO 50" | qsub -keo -N smp_b10000 -l pvmem=8gb -q memroute
+echo "filter_samples_from_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/all_body_sites_sfiltered.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/all_body_sites_sfiltered_mc10k.biom -n 10000" | qsub -keo -N smp-filt -l pvmem=32gb -q memroute
 ```
 
-Filter mislabeled samples
--------------------------
+Next we apply a filtering step to remove OTUs that show up in high abundance in our negative control samples (i.e., extraction and swab blanks). The specific revision of the script used in this step can be found [here](https://gist.github.com/4197809/bf1df4cae8f742777736ee08d3c1c4471753996a). Then filter samples which have <10k sequences after this OTU filtering step, and finally remove the negative control samples from the OTU table.
 ```
-echo "filter_otus_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/mislabeling/closed_ref_otu_table_s10.biom -s 10" | qsub -keo -N filtotus -l pvmem=64gb -q memroute
+echo 'cd /Users/caporaso/code/filter_control_otus ; python filter_control_otus.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/all_body_sites_sfiltered_mc10k.biom -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv -a 0.005 -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/control_filtering/ -s "PersonalID:SwabBlank,NTC,ntc,ExtBlank"' | qsub -keo -N smp-filt -l pvmem=64gb -q memroute
 
-echo "single_rarefaction.py -i /Users/caporaso/analysis/student-microbiome-project/mislabeling/closed_ref_otu_table_s10.biom -o /Users/caporaso/analysis/student-microbiome-project/mislabeling/closed_ref_otu_table_s10_1000.biom -d 1000" | qsub -k eo -N smp-rare -l pvmem=64gb -q memroute
+echo "filter_samples_from_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/control_filtering/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/control_filtering/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k.biom -n 10000" | qsub -keo -N smp-filt -l pvmem=32gb -q memroute
 
-filter_samples_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/mislabeling/closed_ref_otu_table_s10_1000.biom -o /Users/caporaso/analysis/student-microbiome-project/mislabeling/closed_ref_otu_table_s10_1000_no_controls.biom -m /Users/caporaso/analysis/student-microbiome-project/StudentMicrobiomeProject-map.tsv -s 'Control:no'
-
-echo "supervised_learning.py -i /Users/caporaso/analysis/student-microbiome-project/mislabeling/closed_ref_otu_table_s10_1000_no_controls.biom -m /Users/caporaso/analysis/student-microbiome-project/StudentMicrobiomeProject-map.tsv -c "BodySite" -e cv5 -o /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/" | qsub -keo -N smp_rf  -l pvmem=16gb -q memroute
-
-cd /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/
-
-make_3d_plots.py -i ../../bdiv_even10000/unweighted_unifrac_pc.txt -m mislabeling.txt -o unifrac_color_by_mislabeling -b mislabeled_at_0.05,mislabeled_at_0.10,mislabeled_at_0.15,mislabeled_at_0.20,mislabeled_at_0.25,mislabeled_at_0.30,mislabeled_at_0.35,mislabeled_at_0.40,mislabeled_at_0.45,mislabeled_at_0.50
-
-filter_samples_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/closed_ref_otu_table.biom_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
-filter_samples_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/forehead_closed_ref_filtered_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/forehead_closed_ref_filtered_otu_table.biom_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
-filter_samples_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/forehead_closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/forehead_closed_ref_otu_table.biom_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
-filter_samples_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/gut_closed_ref_filtered_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/gut_closed_ref_filtered_otu_table.biom_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
-filter_samples_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/gut_closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/gut_closed_ref_otu_table.biom_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
-filter_samples_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/palm_closed_ref_filtered_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/palm_closed_ref_filtered_otu_table.biom_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
-filter_samples_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/palm_closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/palm_closed_ref_otu_table.biom_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
-filter_samples_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/tongue_closed_ref_filtered_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/tongue_closed_ref_filtered_otu_table.biom_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
-filter_samples_from_otu_table.py -i /Users/caporaso/analysis/student-microbiome-project/otu_tables/tongue_closed_ref_otu_table.biom -o /Users/caporaso/analysis/student-microbiome-project/otu_tables/tongue_closed_ref_otu_table.biom_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'   
-
-mv closed_ref_otu_table.biom_ closed_ref_otu_table.biom
-mv forehead_closed_ref_filtered_otu_table.biom_ forehead_closed_ref_filtered_otu_table.biom
-mv forehead_closed_ref_otu_table.biom_ forehead_closed_ref_otu_table.biom
-mv gut_closed_ref_filtered_otu_table.biom_ gut_closed_ref_filtered_otu_table.biom
-mv gut_closed_ref_otu_table.biom_ gut_closed_ref_otu_table.biom
-mv palm_closed_ref_filtered_otu_table.biom_ palm_closed_ref_filtered_otu_table.biom
-mv palm_closed_ref_otu_table.biom_ palm_closed_ref_otu_table.biom
-mv tongue_closed_ref_filtered_otu_table.biom_ tongue_closed_ref_filtered_otu_table.biom
-mv tongue_closed_ref_otu_table.biom_ tongue_closed_ref_otu_table.biom
-
-filter_distance_matrix.py -i /Users/caporaso/analysis/student-microbiome-project/beta_diversity/even10000_unweighted_unifrac_dm.txt -o /Users/caporaso/analysis/student-microbiome-project/beta_diversity/even10000_unweighted_unifrac_dm.txt_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
-filter_distance_matrix.py -i /Users/caporaso/analysis/student-microbiome-project/beta_diversity/even10000_weighted_unifrac_dm.txt -o /Users/caporaso/analysis/student-microbiome-project/beta_diversity/even10000_weighted_unifrac_dm.txt_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
-filter_distance_matrix.py -i /Users/caporaso/analysis/student-microbiome-project/beta_diversity/forehead_even10000_unweighted_unifrac_dm.txt -o /Users/caporaso/analysis/student-microbiome-project/beta_diversity/forehead_even10000_unweighted_unifrac_dm.txt_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
-filter_distance_matrix.py -i /Users/caporaso/analysis/student-microbiome-project/beta_diversity/forehead_even10000_weighted_unifrac_dm.txt -o /Users/caporaso/analysis/student-microbiome-project/beta_diversity/forehead_even10000_weighted_unifrac_dm.txt_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
-filter_distance_matrix.py -i /Users/caporaso/analysis/student-microbiome-project/beta_diversity/gut_even10000_unweighted_unifrac_dm.txt -o /Users/caporaso/analysis/student-microbiome-project/beta_diversity/gut_even10000_unweighted_unifrac_dm.txt_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
-filter_distance_matrix.py -i /Users/caporaso/analysis/student-microbiome-project/beta_diversity/gut_even10000_weighted_unifrac_dm.txt -o /Users/caporaso/analysis/student-microbiome-project/beta_diversity/gut_even10000_weighted_unifrac_dm.txt_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
-filter_distance_matrix.py -i /Users/caporaso/analysis/student-microbiome-project/beta_diversity/palm_even10000_unweighted_unifrac_dm.txt -o /Users/caporaso/analysis/student-microbiome-project/beta_diversity/palm_even10000_unweighted_unifrac_dm.txt_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
-filter_distance_matrix.py -i /Users/caporaso/analysis/student-microbiome-project/beta_diversity/palm_even10000_weighted_unifrac_dm.txt -o /Users/caporaso/analysis/student-microbiome-project/beta_diversity/palm_even10000_weighted_unifrac_dm.txt_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
-filter_distance_matrix.py -i /Users/caporaso/analysis/student-microbiome-project/beta_diversity/tongue_even10000_unweighted_unifrac_dm.txt -o /Users/caporaso/analysis/student-microbiome-project/beta_diversity/tongue_even10000_unweighted_unifrac_dm.txt_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
-filter_distance_matrix.py -i /Users/caporaso/analysis/student-microbiome-project/beta_diversity/tongue_even10000_weighted_unifrac_dm.txt -o /Users/caporaso/analysis/student-microbiome-project/beta_diversity/tongue_even10000_weighted_unifrac_dm.txt_ -m /Users/caporaso/analysis/student-microbiome-project/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'
-
-
-In [2]: fps = !ls
-In [5]: for fp in fps:
-   ...:     old = '%s_' % fp
-   ...:     !mv $old $fp
-
+echo 'filter_samples_from_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/control_filtering/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/control_filtering/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered.biom -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv -s "PersonalID:*,!SwabBlank,!NTC,!ntc,!ExtBlank"' | qsub -keo -N smp-filt -l pvmem=32gb -q memroute
 ```
 
-Four samples were identified as mislabeled and excluded from downstream analyses.
+Now identify samples that are likely to be mislabeled and remove them.
+```
+# filter OTUs in fewer than 10 samples
+echo "filter_otus_from_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/control_filtering/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10.biom -s 10" | qsub -keo -N filtotus -l pvmem=32gb -q memroute
+
+echo "single_rarefaction.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10_even1000.biom -d 1000" | qsub -keo -N filtotus -l pvmem=32gb -q memroute
+
+echo "supervised_learning.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10_even1000.biom -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv -c "BodySite" -e cv5 -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/s10_1000/" | qsub -keo -N smp_rf  -l pvmem=16gb -q memroute
+
+echo "filter_samples_from_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10_no_mislabeled_010.biom -m /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/s10_1000/mislabeling.txt -s 'mislabeled_at_0.10:FALSE'" | qsub -keo -N filtmisl -l pvmem=32gb -q memroute
+```
+
+Compute UniFrac distance matrices and generate PCoA plots.
+```
+echo "beta_diversity_through_plots.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10_no_mislabeled_010.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000 -e 10000 -aO 100 -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv -p /scratch/caporaso/student_microbiome/student-microbiome-project/parameters/bdiv_params.txt -t /Users/caporaso/data/gg_12_10_otus/trees/97_otus.tree" | qsub -keo -N smp-bdiv -l pvmem=32gb -q memroute
+```
+
+Compute alpha diversity and rarefaction plots.
+```
+echo "alpha_rarefaction.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10_no_mislabeled_010.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/arare_even10000 -e 10000 -aO 100 -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv -p /scratch/caporaso/student_microbiome/student-microbiome-project/parameters/bdiv_params.txt -t /Users/caporaso/data/gg_12_10_otus/trees/97_otus.tree" | qsub -keo -N smp-arare -l pvmem=32gb -q memroute
+```
+
+Split the full OTU table into per-body site OTU tables
+```
+echo "split_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10_no_mislabeled_010.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/per_BodySite_otu_tables/ -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv -f BodySite" | qsub -keo -N split-smp -l pvmem=64gb -q memroute
+```
+
+Sort the OTU tables and build taxa summary plots. The sorted OTU tables are the final working per-body-site OTU tables.
+```
+echo "sort_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/per_BodySite_otu_tables/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10_no_mislabeled_010_gut.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/per_BodySite_otu_tables/otu_table_gut.biom -l /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv ; summarize_taxa_through_plots.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/per_BodySite_otu_tables/otu_table_gut.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/per_BodySite_otu_tables/taxa_plots_gut/" | qsub -keo -N gut-tax -l pvmem=16gb -q memroute
+
+echo "sort_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/per_BodySite_otu_tables/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10_no_mislabeled_010_tongue.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/per_BodySite_otu_tables/otu_table_tongue.biom -l /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv ; summarize_taxa_through_plots.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/per_BodySite_otu_tables/otu_table_tongue.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/per_BodySite_otu_tables/taxa_plots_tongue/" | qsub -keo -N tongue-tax -l pvmem=16gb -q memroute
+
+echo "sort_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/per_BodySite_otu_tables/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10_no_mislabeled_010_forehead.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/per_BodySite_otu_tables/otu_table_forehead.biom -l /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv ; summarize_taxa_through_plots.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/per_BodySite_otu_tables/otu_table_forehead.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/per_BodySite_otu_tables/taxa_plots_forehead/" | qsub -keo -N forehead-tax -l pvmem=16gb -q memroute
+
+echo "sort_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/per_BodySite_otu_tables/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10_no_mislabeled_010_palm.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/per_BodySite_otu_tables/otu_table_palm.biom -l /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv ; summarize_taxa_through_plots.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/per_BodySite_otu_tables/otu_table_palm.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/per_BodySite_otu_tables/taxa_plots_palm/"  | qsub -keo -N palm-tax -l pvmem=16gb -q memroute
+
+```
