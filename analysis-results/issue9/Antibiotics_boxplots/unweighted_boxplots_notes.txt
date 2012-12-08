@@ -1,0 +1,17 @@
+#December 6th, 2012
+#forehead
+make_distance_boxplots.py -d /home/ubuntu/data/college_student__microbiome/forehead_only/forehead_even10000_unweighted_unifrac_dm_tc_only.txt
+ -o /home/ubuntu/data/college_student__microbiome/forehead_only/unweighted_boxplots_forehead_PID/forehead_even10000_unweighted_unifrac_box_plots_antibiotic -m /home/ubuntu/data/college_student__microbiome/StudentMicrobiomeProject_map.tsv -f "Antibiotic_disturbance,PersonalID" --sort --height 8 --width 20 --suppress_all_between --save_raw_data --suppress_individual_between --color_individual_within_by_field "Antibiotic_disturbance"
+
+#gut
+make_distance_boxplots.py -d /home/ubuntu/data/college_student__microbiome/gut_only/gut_even10000_unweighted_unifrac_dm_tc_only.txt -o /home/ubuntu/data/college_student__microbiome/gut_only/unweighted_boxplots_gut_PID/gut_even10000_unweighted_unifrac_box_plots_antibiotic -m /home/ubuntu/data/college_student__microbiome/StudentMicrobiomeProject_map.tsv -f "Antibiotic_disturbance,PersonalID" --sort --height 8 --width 20
+ --suppress_all_between --save_raw_data --suppress_individual_between --color_individual_within_by_field "Antibiotic_disturbance"
+
+#tongue
+
+make_distance_boxplots.py -d /home/ubuntu/data/college_student__microbiome/tongue_only/tongue_even10000_unweighted_unifrac_dm_tc_only.txt -o /home/ubuntu/data/college_student__microbiome/tongue_only/unweighted_boxplots_tongue_PID/tongue_even10000_unweighted_unifrac_box_plots_antibiotic -m /home/ubuntu/data/college_student__microbiome/StudentMicrobiomeProject_map.tsv -f "Antibiotic_disturbance,PersonalID" --sort --height 8 --width 20 --suppress_all_between --save_raw_data --suppress_individual_between --color_individual_within_by_field "Antibiotic_disturbance"
+
+#palm
+
+make_distance_boxplots.py -d /home/ubuntu/data/college_student__microbiome/palm_only/palm_even10000_unweighted_unifrac_dm_tc_only.txt
+ -o /home/ubuntu/data/college_student__microbiome/palm_only/unweighted_boxplots_palm_PID/palm_even10000_unweighted_unifrac_box_plots_antibiotic -m /home/ubuntu/data/college_student__microbiome/StudentMicrobiomeProject_map.tsv -f "Antibiotic_disturbance,PersonalID" --sort --height 8 --width 20 --suppress_all_between --save_raw_data --suppress_individual_between --color_individual_within_by_field "Antibiotic_disturbance"
