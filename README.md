@@ -156,6 +156,13 @@ echo 'filter_distance_matrix.py -i /scratch/caporaso/student_microbiome/student-
 Compute alpha diversity and rarefaction plots.
 ```
 echo "alpha_rarefaction.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/all_body_sites_sfiltered_mc10k.control_filtered_median_0.005_mc10k_sfiltered_s10_no_mislabeled_010.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/arare_even10000 -e 10000 -aO 100 -m /scratch/caporaso/student_microbiome/StudentMicrobiomeProject-map.tsv -p /scratch/caporaso/student_microbiome/student-microbiome-project/parameters/bdiv_params.txt -t /Users/caporaso/data/gg_12_10_otus/trees/97_otus.tree" | qsub -keo -N smp-arare -l pvmem=32gb -q memroute
+
+# Oops, forgot to include shannon in the set of metrics to apply so computing after.
+
+collate_alpha.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/arare_even10000/alpha_div_s/ -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/arare_even10000/alpha_div_collated/
+
+parallel_alpha_diversity.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/arare_even10000/rarefaction/ -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/arare_even10000/alpha_div_s/ --jobs_to_start 100 -m shannon
+
 ```
 
 Split the full OTU table into per-body site OTU tables
