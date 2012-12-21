@@ -22,6 +22,7 @@ OTU table only including samples that are included in tongue timeseries
 File tracking
 -------------
 
+These commands were all run from the directory containing this README.md.
 ```
 gzip -c /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table.biom > otu_table.biom.gz
 gzip -c /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table.ts_only.biom > otu_table.ts_only.biom.gz
@@ -29,5 +30,11 @@ gzip -c /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data
 gzip -c /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table_ts_by_body_site/otu_table.ts_only_tongue.biom > otu_table_tongue.ts_only.biom.gz
 gzip -c /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table_ts_by_body_site/otu_table.ts_only_gut.biom > otu_table_gut.ts_only.biom.gz
 gzip -c /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table_ts_by_body_site/otu_table.ts_only_forehead.biom > otu_table_forehead.ts_only.biom.gz
+# note that the initial file name was bad on this one:
 gzip -c /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table_even1000.biom > otu_table_even10000.biom.gz
+gzip otu_table_even10000.ts_only.biom
+gzip -c /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table_even_10000_ts_by_body_site/otu_table_even10000.ts_only_gut.biom > otu_table_even10000_gut.ts_only.biom.gz
+gzip -c /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table_even_10000_ts_by_body_site/otu_table_even10000.ts_only_palm.biom > otu_table_even10000_palm.ts_only.biom.gz
+gzip -c /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table_even_10000_ts_by_body_site/otu_table_even10000.ts_only_tongue.biom > otu_table_even10000_tongue.ts_only.biom.gz
+gzip -c /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table_even_10000_ts_by_body_site/otu_table_even10000.ts_only_forehead.biom > otu_table_even10000_forehead.ts_only.biom.gz
 ```
