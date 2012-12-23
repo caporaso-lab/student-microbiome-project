@@ -143,7 +143,20 @@ Compute UniFrac distance matrices and generate PCoA plots.
 ```
 echo "single_rarefaction.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table_even1000.biom -d 10000" | qsub -keo -N smp-srare
 
+# Note: the output file was incorrect in the above command (should have made it otu_table_even10000.biom, so 10k instead of 1k). The 
+# error follows through in the next couple of commands.
 parallel_beta_diversity.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table_even1000.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/ -O 100 -U /Users/caporaso/bin/cluster_jobs_8.py -t /Users/caporaso/data/gg_12_10_otus/trees/97_otus.tree
+
+cd /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/
+mv unweighted_unifrac_otu_table_even1000.txt unweighted_unifrac_dm.txt
+mv weighted_unifrac_otu_table_even1000.txt weighted_unifrac_dm.txt
+
+parallel_multiple_rarefactions.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table.biom -m 10 -x 10000 -s 999 -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/arare_10000//rarefaction/  --jobs_to_start 50
+
+parallel_alpha_diversity.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/arare_10000//rarefaction/ -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/arare_10000//alpha_div/ --metrics PD_whole_tree,chao1,observed_species,shannon -t /Users/caporaso/data/gg_12_10_otus/trees/97_otus.tree --jobs_to_start 50
+
+collate_alpha.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/arare_10000/alpha_div -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/arare_10000/alpha_div_collated/
+
 ```
 
 Generate timeseries only full and per-BodySite OTU tables
@@ -153,11 +166,11 @@ Generate timeseries only full and per-BodySite OTU tables
 filter_samples_from_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table.ts_only.biom -s "AnyTimeseries:Yes"  -m /scratch/caporaso/student_microbiome/SMP-map_w_ts.tsv
 
 split_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table.ts_only.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table_ts_by_body_site/ -m /scratch/caporaso/student_microbiome/SMP-map_w_ts.tsv -f BodySite
+
+filter_samples_from_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project/otu-tables/otu_table_even10000.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project/otu-tables/otu_table_even10000.ts_only.biom -s "AnyTimeseries:Yes"  -m /scratch/caporaso/student_microbiome/SMP-map_w_ts.tsv
+
+split_otu_table.py -i /scratch/caporaso/student_microbiome/student-microbiome-project/otu-tables/otu_table_even10000.ts_only.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table_even_10000_ts_by_body_site/ -m /scratch/caporaso/student_microbiome/SMP-map_w_ts.tsv -f BodySite
 ```
-
-
-Everything below here is staged and waiting for re-run
-------------------------------------------------------
 
 Filter distance matrices to timeseries only
 -------------------------------------------
@@ -189,13 +202,19 @@ Run PCoA on select distance matrices
 ```
 echo 'principal_coordinates.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/unweighted_unifrac_dm.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/unweighted_unifrac_pc.txt' | qsub -keo -N pc -l pvmem=8gb -q memroute
 
-echo 'principal_coordiantes.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/unweighted_unifrac_dm.ts_only.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/unweighted_unifrac_pc.ts_only.txt' | qsub -keo -N pcts -l pvmem=8gb -q memroute
+echo 'principal_coordinates.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/unweighted_unifrac_dm.ts_only.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/unweighted_unifrac_pc.ts_only.txt' | qsub -keo -N pcts -l pvmem=8gb -q memroute
+
+echo 'principal_coordinates.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/weighted_unifrac_dm.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/weighted_unifrac_pc.txt' | qsub -keo -N pc -l pvmem=8gb -q memroute
+
+echo 'principal_coordinates.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/weighted_unifrac_dm.ts_only.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/weighted_unifrac_pc.ts_only.txt' | qsub -keo -N pcts -l pvmem=8gb -q memroute
+
+
 ```
 
 Generate alpha rarefaction data and plots
 -----------------------------------------
 ```
-alpha_rarefaction.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/arare_10000/ -e 10000 -m /scratch/caporaso/student_microbiome/SMP-map_w_ts.tsv -p /scratch/caporaso/student_microbiome/student-microbiome-project/parameters/arare_params.txt -t /Users/caporaso/data/gg_12_10_otus/trees/97_otus.tree -aO 23
+echo "alpha_rarefaction.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/otu_table.biom -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/arare_10000/ -e 10000 -m /scratch/caporaso/student_microbiome/SMP-map_w_ts.tsv -p /scratch/caporaso/student_microbiome/student-microbiome-project/parameters/arare_params.txt -t /Users/caporaso/data/gg_12_10_otus/trees/97_otus.tree -aO 50" | qsub -k oe -N smp-arare -l pvmem=8gb -q memroute
 
 ```
 
