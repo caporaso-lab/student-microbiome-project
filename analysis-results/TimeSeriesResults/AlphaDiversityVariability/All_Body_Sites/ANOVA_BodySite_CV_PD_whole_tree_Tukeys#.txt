@@ -1,0 +1,14 @@
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = CV_PD_whole_tree ~ BodySite, data = map)
+
+$BodySite
+                       diff         lwr          upr     p adj
+Gut-Forehead    -0.04460060 -0.07513836 -0.014062828 0.0011116
+Palm-Forehead    0.01638790 -0.01590795  0.048683750 0.5565562
+Tongue-Forehead -0.07795208 -0.10799327 -0.047910895 0.0000000
+Palm-Gut         0.06098850  0.02823023  0.093746768 0.0000143
+Tongue-Gut      -0.03335148 -0.06388925 -0.002813716 0.0260993
+Tongue-Palm     -0.09433998 -0.12663583 -0.062044132 0.0000000
+

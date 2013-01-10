@@ -1,0 +1,12 @@
+
+	Welch Two Sample t-test
+
+data:  Mean_Shannon by Gender 
+t = -3.0089, df = 65.067, p-value = 0.003727
+alternative hypothesis: true difference in means is not equal to 0 
+95 percent confidence interval:
+ -0.6083026 -0.1229505 
+sample estimates:
+mean in group female   mean in group male 
+            4.985785             5.351411 
+

@@ -1,0 +1,11 @@
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = Mean_observed_species ~ University, data = mapGUT)
+
+$University
+              diff       lwr      upr     p adj
+NAU-CU  12.7437831 -31.25586 56.74343 0.7682548
+NCS-CU  11.9292899 -49.98547 73.84405 0.8896113
+NCS-NAU -0.8144931 -61.74429 60.11530 0.9994359
+

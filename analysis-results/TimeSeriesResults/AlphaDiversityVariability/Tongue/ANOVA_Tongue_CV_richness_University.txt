@@ -1,0 +1,3 @@
+            Df  Sum Sq  Mean Sq F value Pr(>F)
+University   2 0.00071 0.000353   0.087  0.917
+Residuals   77 0.31361 0.004073               

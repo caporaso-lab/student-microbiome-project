@@ -1,0 +1,12 @@
+
+	Welch Two Sample t-test
+
+data:  Mean_PD_whole_tree by Gender 
+t = -1.8798, df = 51.785, p-value = 0.06576
+alternative hypothesis: true difference in means is not equal to 0 
+95 percent confidence interval:
+ -4.3968379  0.1436675 
+sample estimates:
+mean in group female   mean in group male 
+            28.01272             30.13931 
+

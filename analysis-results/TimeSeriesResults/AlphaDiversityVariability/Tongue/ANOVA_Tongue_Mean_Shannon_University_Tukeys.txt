@@ -1,0 +1,11 @@
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = Mean_Shannon ~ University, data = mapTON)
+
+$University
+                diff        lwr       upr     p adj
+NAU-CU   0.079990953 -0.1392275 0.2992094 0.6594665
+NCS-CU   0.070930078 -0.2152777 0.3571379 0.8246717
+NCS-NAU -0.009060875 -0.2901345 0.2720127 0.9967332
+

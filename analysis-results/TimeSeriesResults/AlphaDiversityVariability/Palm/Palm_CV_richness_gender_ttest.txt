@@ -1,0 +1,12 @@
+
+	Welch Two Sample t-test
+
+data:  CV_observed_species by Gender 
+t = 1.3608, df = 56.809, p-value = 0.179
+alternative hypothesis: true difference in means is not equal to 0 
+95 percent confidence interval:
+ -0.01628629  0.08534261 
+sample estimates:
+mean in group female   mean in group male 
+           0.2591262            0.2245981 
+

@@ -1,0 +1,11 @@
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = CV_PD_whole_tree ~ University, data = mapFORE)
+
+$University
+               diff          lwr        upr     p adj
+NAU-CU  -0.03025738 -0.080962752 0.02044799 0.3326357
+NCS-CU   0.04173725 -0.023956477 0.10743097 0.2880210
+NCS-NAU  0.07199463  0.006300904 0.13768835 0.0283057
+
