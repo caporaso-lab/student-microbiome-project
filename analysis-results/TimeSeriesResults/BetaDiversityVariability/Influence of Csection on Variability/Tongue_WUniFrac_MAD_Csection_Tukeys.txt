@@ -1,0 +1,11 @@
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = MAD_Tongue_Weighted ~ Csection, data = mapTON)
+
+$Csection
+                    diff         lwr        upr     p adj
+not.sure-no  -0.01871859 -0.10504999 0.06761281 0.8626566
+yes-no        0.01421333 -0.01953085 0.04795751 0.5748171
+yes-not.sure  0.03293193 -0.05717116 0.12303502 0.6584480
+

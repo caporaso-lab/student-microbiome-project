@@ -1,0 +1,12 @@
+
+	Welch Two Sample t-test
+
+data:  MEAN_Forehead_Unweighted by Gender 
+t = 1.0702, df = 52.961, p-value = 0.2894
+alternative hypothesis: true difference in means is not equal to 0 
+95 percent confidence interval:
+ -0.008504407  0.027961354 
+sample estimates:
+mean in group female   mean in group male 
+           0.5933097            0.5835812 
+

@@ -1,0 +1,19 @@
+
+Call:
+lm(formula = MEAN_Tongue_Weighted ~ MEAN_Gut_Weighted, data = map)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.137091 -0.045463 -0.007678  0.036742  0.216142 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        0.27023    0.02774   9.741 1.36e-14 ***
+MEAN_Gut_Weighted  0.19008    0.07637   2.489   0.0152 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Residual standard error: 0.07183 on 69 degrees of freedom
+Multiple R-squared: 0.08238,	Adjusted R-squared: 0.06908 
+F-statistic: 6.194 on 1 and 69 DF,  p-value: 0.01523 
+

@@ -1,0 +1,12 @@
+
+	Welch Two Sample t-test
+
+data:  MAD_Gut_Unweighted by SeasonalAllergies 
+t = 1.201, df = 64.646, p-value = 0.2341
+alternative hypothesis: true difference in means is not equal to 0 
+95 percent confidence interval:
+ -0.004759472  0.019114273 
+sample estimates:
+ mean in group no mean in group yes 
+       0.06161186        0.05443446 
+

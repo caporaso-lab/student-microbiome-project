@@ -1,0 +1,12 @@
+
+	Welch Two Sample t-test
+
+data:  MAD_Palm_Weighted by SeasonalAllergies 
+t = -0.4965, df = 58.736, p-value = 0.6214
+alternative hypothesis: true difference in means is not equal to 0 
+95 percent confidence interval:
+ -0.02654366  0.01599046 
+sample estimates:
+ mean in group no mean in group yes 
+        0.1017779         0.1070545 
+

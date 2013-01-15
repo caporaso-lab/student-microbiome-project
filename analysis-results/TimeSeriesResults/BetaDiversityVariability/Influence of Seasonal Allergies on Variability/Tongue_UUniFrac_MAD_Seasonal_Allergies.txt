@@ -1,0 +1,12 @@
+
+	Welch Two Sample t-test
+
+data:  MAD_Tongue_Unweighted by SeasonalAllergies 
+t = 0.8719, df = 75.733, p-value = 0.386
+alternative hypothesis: true difference in means is not equal to 0 
+95 percent confidence interval:
+ -0.005428371  0.013881623 
+sample estimates:
+ mean in group no mean in group yes 
+       0.05930499        0.05507836 
+

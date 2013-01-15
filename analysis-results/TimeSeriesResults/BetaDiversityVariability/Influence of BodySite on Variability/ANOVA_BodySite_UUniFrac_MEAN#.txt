@@ -1,0 +1,5 @@
+             Df Sum Sq Mean Sq F value Pr(>F)    
+BodySite      3 2.5428  0.8476     409 <2e-16 ***
+Residuals   292 0.6052  0.0021                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 

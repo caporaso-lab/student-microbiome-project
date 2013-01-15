@@ -1,0 +1,11 @@
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = MEAN_Forehead_Weighted ~ Csection, data = mapFORE)
+
+$Csection
+                    diff         lwr        upr     p adj
+not.sure-no  -0.01986974 -0.12576094 0.08602146 0.8951898
+yes-no        0.04754452 -0.00281679 0.09790583 0.0683011
+yes-not.sure  0.06741426 -0.04519705 0.18002557 0.3302142
+

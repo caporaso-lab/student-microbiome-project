@@ -1,0 +1,12 @@
+
+	Welch Two Sample t-test
+
+data:  MAD_Palm_Weighted by Gender 
+t = -0.5114, df = 43.279, p-value = 0.6117
+alternative hypothesis: true difference in means is not equal to 0 
+95 percent confidence interval:
+ -0.02659433  0.01583405 
+sample estimates:
+mean in group female   mean in group male 
+          0.09963649           0.10501663 
+

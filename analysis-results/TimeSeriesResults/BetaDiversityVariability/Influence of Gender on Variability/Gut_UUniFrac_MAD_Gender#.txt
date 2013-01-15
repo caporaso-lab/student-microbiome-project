@@ -1,0 +1,12 @@
+
+	Welch Two Sample t-test
+
+data:  MAD_Gut_Unweighted by Gender 
+t = 2.8154, df = 67.11, p-value = 0.006389
+alternative hypothesis: true difference in means is not equal to 0 
+95 percent confidence interval:
+ 0.004467896 0.026232270 
+sample estimates:
+mean in group female   mean in group male 
+          0.06364317           0.04829309 
+

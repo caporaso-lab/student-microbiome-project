@@ -1,0 +1,3 @@
+            Df Sum Sq  Mean Sq F value Pr(>F)
+Csection     2 0.0146 0.007314    1.34  0.268
+Residuals   72 0.3931 0.005460               

@@ -1,0 +1,12 @@
+
+	Welch Two Sample t-test
+
+data:  MEAN_Gut_Weighted by Gender 
+t = 1.1108, df = 61.295, p-value = 0.271
+alternative hypothesis: true difference in means is not equal to 0 
+95 percent confidence interval:
+ -0.02296913  0.08038697 
+sample estimates:
+mean in group female   mean in group male 
+           0.3511650            0.3224561 
+

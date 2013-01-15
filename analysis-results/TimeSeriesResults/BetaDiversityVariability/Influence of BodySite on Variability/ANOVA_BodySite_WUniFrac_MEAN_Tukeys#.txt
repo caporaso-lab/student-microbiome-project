@@ -1,0 +1,14 @@
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = MEAN_Weighted ~ BodySite, data = map)
+
+$BodySite
+                        diff         lwr        upr     p adj
+Gut-Forehead     0.089302226  0.05431568 0.12428877 0.0000000
+Palm-Forehead    0.076199282  0.03919854 0.11320003 0.0000012
+Tongue-Forehead  0.087848753  0.05343113 0.12226637 0.0000000
+Palm-Gut        -0.013102944 -0.05063348 0.02442759 0.8037187
+Tongue-Gut      -0.001453473 -0.03644002 0.03353307 0.9995565
+Tongue-Palm      0.011649471 -0.02535127 0.04865022 0.8480610
+

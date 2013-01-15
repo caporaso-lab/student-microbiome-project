@@ -1,0 +1,11 @@
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = MEAN_Gut_Weighted ~ Csection, data = mapGUT)
+
+$Csection
+                    diff         lwr        upr     p adj
+not.sure-no  -0.12571348 -0.28528734 0.03386039 0.1502907
+yes-no       -0.01277352 -0.08910482 0.06355778 0.9155024
+yes-not.sure  0.11293996 -0.05647298 0.28235290 0.2541927
+

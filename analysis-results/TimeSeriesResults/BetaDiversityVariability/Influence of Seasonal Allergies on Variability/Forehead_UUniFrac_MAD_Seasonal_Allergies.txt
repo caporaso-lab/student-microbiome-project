@@ -1,0 +1,12 @@
+
+	Welch Two Sample t-test
+
+data:  MAD_Forehead_Unweighted by SeasonalAllergies 
+t = -0.468, df = 74.242, p-value = 0.6411
+alternative hypothesis: true difference in means is not equal to 0 
+95 percent confidence interval:
+ -0.01092291  0.00676747 
+sample estimates:
+ mean in group no mean in group yes 
+       0.03873684        0.04081456 
+

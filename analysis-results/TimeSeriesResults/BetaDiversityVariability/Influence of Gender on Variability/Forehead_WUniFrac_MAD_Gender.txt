@@ -1,0 +1,12 @@
+
+	Welch Two Sample t-test
+
+data:  MAD_Forehead_Weighted by Gender 
+t = 1.5832, df = 59.911, p-value = 0.1186
+alternative hypothesis: true difference in means is not equal to 0 
+95 percent confidence interval:
+ -0.003696803  0.031756306 
+sample estimates:
+mean in group female   mean in group male 
+          0.08663121           0.07260146 
+

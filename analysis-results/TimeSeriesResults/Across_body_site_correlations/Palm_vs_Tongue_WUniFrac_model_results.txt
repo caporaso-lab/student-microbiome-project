@@ -1,0 +1,19 @@
+
+Call:
+lm(formula = MEAN_Tongue_Weighted ~ MEAN_Palm_Weighted, data = map)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.13898 -0.05074 -0.01260  0.04755  0.15704 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)         0.32173    0.05449   5.904 2.18e-07 ***
+MEAN_Palm_Weighted  0.03711    0.16388   0.226    0.822    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Residual standard error: 0.07659 on 56 degrees of freedom
+Multiple R-squared: 0.000915,	Adjusted R-squared: -0.01693 
+F-statistic: 0.05129 on 1 and 56 DF,  p-value: 0.8217 
+

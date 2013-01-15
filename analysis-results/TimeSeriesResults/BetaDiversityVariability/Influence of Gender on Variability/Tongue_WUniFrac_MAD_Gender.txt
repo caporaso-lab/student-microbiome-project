@@ -1,0 +1,12 @@
+
+	Welch Two Sample t-test
+
+data:  MAD_Tongue_Weighted by Gender 
+t = 0.1034, df = 48.982, p-value = 0.9181
+alternative hypothesis: true difference in means is not equal to 0 
+95 percent confidence interval:
+ -0.02407120  0.02668148 
+sample estimates:
+mean in group female   mean in group male 
+           0.1320362            0.1307310 
+

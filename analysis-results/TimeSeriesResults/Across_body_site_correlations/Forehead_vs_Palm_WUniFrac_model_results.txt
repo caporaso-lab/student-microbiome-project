@@ -1,0 +1,19 @@
+
+Call:
+lm(formula = MEAN_Palm_Weighted ~ MEAN_Forehead_Weighted, data = map)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.123901 -0.040303 -0.001588  0.038353  0.109644 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)              0.2484     0.0244  10.181 1.31e-14 ***
+MEAN_Forehead_Weighted   0.3196     0.0960   3.329  0.00151 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Residual standard error: 0.05613 on 59 degrees of freedom
+Multiple R-squared: 0.1581,	Adjusted R-squared: 0.1439 
+F-statistic: 11.08 on 1 and 59 DF,  p-value: 0.001505 
+

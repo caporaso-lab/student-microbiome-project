@@ -1,0 +1,20 @@
+
+Call:
+lm(formula = MEAN_Gut_Unweighted ~ MEAN_Forehead_Unweighted, 
+    data = map)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.09075 -0.03358 -0.00240  0.02770  0.17388 
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)               0.32183    0.09294   3.463 0.000923 ***
+MEAN_Forehead_Unweighted  0.28716    0.15750   1.823 0.072597 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Residual standard error: 0.04898 on 69 degrees of freedom
+Multiple R-squared: 0.04596,	Adjusted R-squared: 0.03214 
+F-statistic: 3.324 on 1 and 69 DF,  p-value: 0.0726 
+

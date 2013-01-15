@@ -1,0 +1,12 @@
+
+	Welch Two Sample t-test
+
+data:  MEAN_Tongue_Unweighted by Gender 
+t = 0.8057, df = 55.785, p-value = 0.4238
+alternative hypothesis: true difference in means is not equal to 0 
+95 percent confidence interval:
+ -0.01521916  0.03569485 
+sample estimates:
+mean in group female   mean in group male 
+           0.3792070            0.3689692 
+

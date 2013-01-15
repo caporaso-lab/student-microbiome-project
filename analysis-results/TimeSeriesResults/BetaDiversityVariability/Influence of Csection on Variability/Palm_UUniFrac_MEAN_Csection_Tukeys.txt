@@ -1,0 +1,11 @@
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = MEAN_Palm_Unweighted ~ Csection, data = mapPALM)
+
+$Csection
+                    diff         lwr        upr     p adj
+not.sure-no   0.02848757 -0.02573467 0.08270981 0.4212522
+yes-no        0.01039432 -0.01910170 0.03989034 0.6751419
+yes-not.sure -0.01809325 -0.07683046 0.04064396 0.7402686
+

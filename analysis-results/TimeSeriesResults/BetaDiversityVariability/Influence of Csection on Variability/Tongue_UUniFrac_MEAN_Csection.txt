@@ -1,0 +1,6 @@
+            Df  Sum Sq  Mean Sq F value Pr(>F)  
+Csection     2 0.01517 0.007587   3.115 0.0501 .
+Residuals   76 0.18511 0.002436                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+1 observation deleted due to missingness
