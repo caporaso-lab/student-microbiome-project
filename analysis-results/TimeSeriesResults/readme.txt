@@ -40,7 +40,7 @@ divSum.f=function(mega_map_fp){
 
 
 
-The script used to summarize within individual beat diversity metrics is below.
+The script used to summarize within individual beta diversity metrics is below.
 
 #calculate an overall variance, standard deviation, mean, and median absolute deviation (MAD) of the unifrac distance for each biome
 varDistance.f=function(dist_fp, map_fp){
@@ -55,8 +55,7 @@ varDistance.f=function(dist_fp, map_fp){
 	
 	v.out=NULL
 	for(i in 1:length(u)){
-	##dist.tmp=dist[map[,"PersonalID"]==u[i],map[,"PersonalID"]==u[i]]
-    ##dist.toKeep = match(map[,"SampleID"][map[,"SiteID"]==u[i]],row.names(dist))
+
 	dist.toKeep = match(map[,"SampleID"][map[,"PersonalID"]==u[i]],row.names(dist))
 	dist.tmp=dist[dist.toKeep,dist.toKeep]
 	v=var(as.dist(dist.tmp))
