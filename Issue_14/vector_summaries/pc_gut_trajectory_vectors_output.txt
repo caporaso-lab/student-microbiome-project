@@ -1,0 +1,1433 @@
+Vectors algorithm: trajectory
+
+Grouped by "ShellfishAllergy", probability: 0.298482
+For group: "na", the group means is: 0.734364720606
+The info is: {'trajectory': 2.4530535100246706}
+For group: "no", the group means is: 1.15008851131
+The info is: {'trajectory': 39.119474802232489}
+
+Grouped by "GlutenIntolerant", probability: 0.058132
+For group: "yes", the group means is: 0.661955548346
+The info is: {'trajectory': 3.0349237892128036}
+For group: "no", the group means is: 1.14699158535
+The info is: {'trajectory': 38.698131418078006}
+
+Grouped by "OtherMedication", probability: 0.058525
+For group: "yes.NSAIDs", the group means is: 1.10443712985
+The info is: {'trajectory': 3.2889788354412874}
+For group: "yes.androgel.gabapentin.metrotropolol.calcium.blocker", the group means is: 1.14035559922
+The info is: {'trajectory': 3.7678985720930855}
+For group: "yes.amitriptyline", the group means is: 0.477412143135
+The info is: {'trajectory': 1.4337176847182831}
+For group: "yes.codeine.cough", the group means is: 1.24115732161
+The info is: {'trajectory': 3.354963734133511}
+For group: "yes.claritin.buproprion.citalopram", the group means is: 0.337459405899
+The info is: {'trajectory': 1.033830119803486}
+For group: "yes.fluoxetine.adderall.crestor", the group means is: 1.4158051789
+The info is: {'trajectory': 4.0501805097382579}
+For group: "yes.sertraline.HCL.Zoloft.balsalazide.disodium.alprazolam.infliximab.ergocalciferol", the group means is: 0.675424774571
+The info is: {'trajectory': 2.7919307847793409}
+For group: "yes.allergies", the group means is: 0.59633728812
+The info is: {'trajectory': 1.7526980943659003}
+For group: "yes.zyrtec", the group means is: 0.677291545154
+The info is: {'trajectory': 1.9219803138221176}
+For group: "yes.advil.tylenol.and.claritin.as.needed", the group means is: 0.938998928792
+The info is: {'trajectory': 4.0737165210962729}
+For group: "no", the group means is: 1.14056395746
+The info is: {'trajectory': 32.482813646801844}
+For group: "yes.muscle.relaxants.Aleve", the group means is: 1.42512398408
+The info is: {'trajectory': 6.6916983195746083}
+For group: "yes.ibuprofen.maxalt", the group means is: 0.793710906476
+The info is: {'trajectory': 2.1442890534713714}
+For group: "yes.ibuprofen.hydrocodone", the group means is: 1.27634979942
+The info is: {'trajectory': 2.2138513105019344}
+For group: "yes.chronic.pain.control.Lyrica.and.Ultram.allegra", the group means is: 1.43052054732
+The info is: {'trajectory': 4.3519262879334875}
+For group: "yes.insulin.novolog", the group means is: 0.720785348413
+The info is: {'trajectory': 4.2514939637696862}
+For group: "yes.take.zyrted.for.seasonal.allergies", the group means is: 0.864668467733
+The info is: {'trajectory': 3.1437843045837424}
+For group: "yes.zolmitriptan", the group means is: 0.747222871918
+The info is: {'trajectory': 2.2910484963162823}
+For group: "yes.paxil.humatrope", the group means is: 0.612568678805
+The info is: {'trajectory': 1.6776358881767763}
+For group: "yes.baclaphin.naproxin.citalopram", the group means is: 2.18013580792
+The info is: {'trajectory': 5.9216128082171293}
+For group: "yes.lorazepan.Ativan.PRN", the group means is: 0.5686458401
+The info is: {'trajectory': 1.8859540549142719}
+For group: "yes.acyclovir.usually.every.few.months.anti.viral", the group means is: 0.514090789386
+The info is: {'trajectory': 1.749115582673255}
+For group: "yes.metformin.for.polycystic.ovarian.syndrom", the group means is: 1.28939540681
+The info is: {'trajectory': 4.6907921902756859}
+For group: "yes.celexa.sonata", the group means is: 1.39544201906
+The info is: {'trajectory': 4.6603973924988802}
+
+Grouped by "BMI", probability: 0.000000
+For group: "22.86256437", the group means is: 1.23803625372
+The info is: {'trajectory': 2.7342112057233718}
+For group: "21.74285248", the group means is: 1.14529149656
+The info is: {'trajectory': 3.2168771436099828}
+For group: "23.61830085", the group means is: 2.03231286782
+The info is: {'trajectory': 6.6460593423659935}
+For group: "24.29542216", the group means is: 0.959100973128
+The info is: {'trajectory': 3.5848489831851573}
+For group: "27.4384363", the group means is: 2.04200181927
+The info is: {'trajectory': 6.6408985995248573}
+For group: "22.95923584", the group means is: 0.677291545154
+The info is: {'trajectory': 1.9219803138221176}
+For group: "20.67417373", the group means is: 0.169940036594
+The info is: {'trajectory': 0.54637987180227399}
+For group: "23.73402323", the group means is: 0.449054592048
+The info is: {'trajectory': 1.3109761179187207}
+For group: "23.20537035", the group means is: 0.938998928792
+The info is: {'trajectory': 4.0737165210962729}
+For group: "20.04742842", the group means is: 0.499839605992
+The info is: {'trajectory': 1.5642648533609294}
+For group: "19.22455882", the group means is: 0.624177090669
+The info is: {'trajectory': 1.817451151283374}
+For group: "23.08822977", the group means is: 1.03130792198
+The info is: {'trajectory': 3.2390695236444556}
+For group: "21.14377217", the group means is: 0.864668467733
+The info is: {'trajectory': 3.1437843045837424}
+For group: "18.56129515", the group means is: 2.62391714181
+The info is: {'trajectory': 9.161158443560236}
+For group: "18.30910364", the group means is: 1.62022615136
+The info is: {'trajectory': 5.6283677630427125}
+For group: "na", the group means is: 1.28636001581
+The info is: {'trajectory': 5.7188053822776963}
+For group: "21.78934648", the group means is: 1.51191006049
+The info is: {'trajectory': 4.0501805097382579}
+For group: "20.71344042", the group means is: 1.4158051789
+The info is: {'trajectory': 2.1727144831073435}
+For group: "22.14252896", the group means is: 0.625740510678
+The info is: {'trajectory': 1.6723468596440669}
+For group: "25.82704578", the group means is: 0.553874767805
+The info is: {'trajectory': 1.033830119803486}
+For group: "21.85555509", the group means is: 0.337459405899
+The info is: {'trajectory': 2.2138513105019344}
+For group: "24.12901516", the group means is: 0.720785348413
+The info is: {'trajectory': 5.6029007068550492}
+For group: "16.82148897", the group means is: 1.48676066813
+The info is: {'trajectory': 2.2963795659000508}
+For group: "18.88126313", the group means is: 0.826019632441
+The info is: {'trajectory': 1.7397552352731924}
+For group: "25.84814631", the group means is: 0.872909979166
+The info is: {'trajectory': 4.6603973924988802}
+For group: "23.40337214", the group means is: 0.549250860698
+The info is: {'trajectory': 1.7526980943659003}
+For group: "27.89405196", the group means is: 0.795084739113
+The info is: {'trajectory': 6.8186522460513119}
+For group: "25.06722089", the group means is: 0.59633728812
+The info is: {'trajectory': 3.5984892141940885}
+For group: "27.46365545", the group means is: 2.23943965101
+The info is: {'trajectory': 6.6916983195746083}
+For group: "17.75428231", the group means is: 0.791689355121
+The info is: {'trajectory': 1.8510096085606413}
+For group: "19.96884013", the group means is: 1.42512398408
+The info is: {'trajectory': 3.9653421990989979}
+For group: "20.80087514", the group means is: 0.658757482639
+The info is: {'trajectory': 3.7778096979680966}
+For group: "18.2900515", the group means is: 1.08477606572
+The info is: {'trajectory': 1.8859540549142719}
+For group: "22.31422006", the group means is: 0.696455329515
+The info is: {'trajectory': 2.1338671434012157}
+For group: "21.92687484", the group means is: 0.734364720606
+The info is: {'trajectory': 3.0705780283376867}
+For group: "22.23995609", the group means is: 0.696784127662
+The info is: {'trajectory': 1.8167731822770727}
+For group: "22.67356881", the group means is: 0.911908572746
+The info is: {'trajectory': 2.2442951607791688}
+For group: "20.08422449", the group means is: 0.635265436747
+The info is: {'trajectory': 5.6942452084691206}
+For group: "19.93581039", the group means is: 0.681267316801
+The info is: {'trajectory': 4.2514939637696862}
+For group: "26.58108052", the group means is: 0.785889706703
+The info is: {'trajectory': 1.6356051119506194}
+For group: "18.39779826", the group means is: 1.27634979942
+The info is: {'trajectory': 2.4002106466526061}
+For group: "18.6528664", the group means is: 0.612568678805
+The info is: {'trajectory': 1.6776358881767763}
+For group: "21.28670873", the group means is: 1.7952414334
+The info is: {'trajectory': 5.6602317616056732}
+For group: "21.9480618", the group means is: 0.747222871918
+The info is: {'trajectory': 2.2910484963162823}
+For group: "24.79963244", the group means is: 1.40009755515
+The info is: {'trajectory': 4.2554790733324106}
+For group: "25.10464676", the group means is: 0.916838754222
+The info is: {'trajectory': 3.3147183990600553}
+For group: "31.840989", the group means is: 0.473890358906
+The info is: {'trajectory': 4.4594760358124086}
+For group: "33.83659527", the group means is: 1.28939540681
+The info is: {'trajectory': 4.6907921902756859}
+For group: "25.10435382", the group means is: 1.0729929712
+The info is: {'trajectory': 5.3649739318468077}
+For group: "20.37112665", the group means is: 1.12889710051
+The info is: {'trajectory': 3.8778421175509417}
+For group: "19.4614799", the group means is: 0.401308306002
+The info is: {'trajectory': 1.2271295415395007}
+For group: "26.60838591", the group means is: 1.56413067942
+The info is: {'trajectory': 5.9567778185232854}
+For group: "17.54149987", the group means is: 1.39544201906
+The info is: {'trajectory': 1.994507137234397}
+For group: "25.39969916", the group means is: 0.5686458401
+The info is: {'trajectory': 2.4530535100246706}
+For group: "20.59774159", the group means is: 1.10443712985
+The info is: {'trajectory': 3.2889788354412874}
+For group: "20.36066949", the group means is: 0.601904308108
+The info is: {'trajectory': 3.9890215360939245}
+For group: "22.95737403", the group means is: 1.50352249945
+The info is: {'trajectory': 3.1053399170163805}
+For group: "27.70587572", the group means is: 1.50251314349
+The info is: {'trajectory': 2.9881930641959618}
+For group: "22.70997751", the group means is: 1.19333131082
+The info is: {'trajectory': 3.9897070152955854}
+For group: "20.08770228", the group means is: 1.13190092043
+The info is: {'trajectory': 13.755431467533704}
+For group: "23.67479197", the group means is: 1.29707591045
+The info is: {'trajectory': 4.4441091604348557}
+For group: "23.05590828", the group means is: 1.26272714272
+The info is: {'trajectory': 3.6594607775364492}
+For group: "22.15090043", the group means is: 1.80678026482
+The info is: {'trajectory': 7.6478323899949157}
+
+Grouped by "Asthma", probability: 0.201724
+For group: "yes", the group means is: 1.0023173442
+The info is: {'trajectory': 12.436202544286745}
+For group: "no", the group means is: 1.15469711341
+The info is: {'trajectory': 36.797146259111166}
+
+Grouped by "OtherInfo", probability: 0.038780
+For group: "I.work.with.exotic.wild.animals.on.a.weekly.basis.and.come.into.direct.contact.with.wildcats.number.of.species.wolves.wild.New.Guinea.singing.dogs.and.lemurs.I.also.come.in.contact.with.a.variety.of.meats.and.dead.animals.while.butchering.and.preparing.food.for.the.wild.animals.at.the.cneter.where.I.work.", the group means is: 0.938998928792
+The info is: {'trajectory': 4.0737165210962729}
+For group: "Starting.the.tanning.bed.midway.through.the.experiment", the group means is: 1.03130792198
+The info is: {'trajectory': 3.2390695236444556}
+For group: "I.do.not.wear.shoes.inside.the.house", the group means is: 1.26272714272
+The info is: {'trajectory': 3.6594607775364492}
+For group: "I.had.gall.bladder.pancreatitis.in.August.September.still.eating.a.low.fat.diet", the group means is: 1.7952414334
+The info is: {'trajectory': 1.2271295415395007}
+For group: "chews.tobacco", the group means is: 0.878691143703
+The info is: {'trajectory': 2.7945523295314931}
+For group: "I.write.mainly.left.handed.will.sometimes.write.right.handed.I.do.most.all.other.things.right.handed.I.have.eczema.or.psoriasis.I.had.chicken.pox.twice.on.the.secodn.time.I.had.gotten.a.fever.of.107..age.10.For.facial.cosmetics.I.just.use.a.daily.moisturizer.I.do.occasionally.go.in.a.sauna.1.to.2.times.per.week.Amount.of.execise.fluctuates.per.week.depending.on.workload.Multivitamin.contains.probiotic.I.eat.a.glutten.free.vegan.diet.with.almost.all.food.RAW.varies.on.workload.per.week.", the group means is: 0.449054592048
+The info is: {'trajectory': 1.3109761179187207}
+For group: "tanning.lotion.I.mentioned.that.I.have.3plus.roomates.because.I.am.married.and.have.3.kids", the group means is: 0.401308306002
+The info is: {'trajectory': 35.204603029580284}
+For group: "Eat.meat.1.to.2.times.a.week", the group means is: 1.80491136632
+The info is: {'trajectory': 6.3815505354249797}
+For group: "I.use.prescription.acne.gel.differin.0.1percent.I.was.found.to.have.mono.about.5.months.ago", the group means is: 0.474500274681
+The info is: {'trajectory': 1.5179668407621343}
+For group: "may.get.a.pet", the group means is: 0.982987991103
+The info is: {'trajectory': 2.8703066701530719}
+For group: "summers.in.Alaska", the group means is: 0.795084739113
+The info is: {'trajectory': 2.2910484963162823}
+For group: "ferrets.IUD", the group means is: 0.734364720606
+The info is: {'trajectory': 2.4530535100246706}
+For group: "I.think.I.may.have.eczema.or.psoriasis.", the group means is: 1.50251314349
+The info is: {'trajectory': 3.9890215360939245}
+For group: "na", the group means is: 1.17562749766
+The info is: {'trajectory': 5.6602317616056732}
+For group: "Owns.an.african.grey.parrot.and.six.bearded.dragons.I.handle.all.of.them.on.a.regular.basis.Additionally.I.am.breeding.the.lizards.and.have.over.100.eggs.that.I.tend.to.on.a.daily.basis.in.an.incubator.", the group means is: 0.785889706703
+The info is: {'trajectory': 2.4002106466526061}
+For group: "I.have.IBS.I.may.have.both.Eczema.and.Psoriasis.or.other.form.of.skin.condition.I.am.allergic.to.metal.I.have.a.number.of.health.issues.yet.to.be.explained.by.doctors.not.that.they.haven.t.tried.", the group means is: 0.477412143135
+The info is: {'trajectory': 2.7342112057233718}
+For group: "previously.diagnosed.with.colitis.but.later.attributed.to.gluten.intoerance.does.experience.acute.stress.related.eczema.outbreaks", the group means is: 0.747222871918
+The info is: {'trajectory': 1.994507137234397}
+For group: "Tuesday.Thursday.in.Flagstaff.Fr.Monday.Queen.Creek.AZ", the group means is: 0.601904308108
+The info is: {'trajectory': 1.4337176847182831}
+
+Grouped by "menstruation_disturbance", probability: 0.000077
+For group: "Yes", the group means is: 1.28818860533
+The info is: {'trajectory': 33.614877188063083}
+For group: "No", the group means is: 0.957329184974
+The info is: {'trajectory': 20.152528815577977}
+
+Grouped by "DailyMultivitamin", probability: 0.492311
+For group: "yes", the group means is: 1.10219366799
+The info is: {'trajectory': 21.75945741098651}
+For group: "no", the group means is: 1.16118816787
+The info is: {'trajectory': 31.969453115481226}
+
+Grouped by "GreekHouse", probability: 0.499899
+For group: "yes", the group means is: 0.878691143703
+The info is: {'trajectory': 2.7945523295314931}
+For group: "no", the group means is: 1.14869226187
+The info is: {'trajectory': 39.112049594893449}
+
+Grouped by "SmokeCigarettes", probability: 0.743439
+For group: "regularly", the group means is: 1.50251314349
+The info is: {'trajectory': 9.6171812095228866}
+For group: "rarely", the group means is: 1.09844639699
+The info is: {'trajectory': 3.9890215360939245}
+For group: "occasionally", the group means is: 0.878691143703
+The info is: {'trajectory': 37.86875422299736}
+For group: "never", the group means is: 1.15444014564
+The info is: {'trajectory': 2.7945523295314931}
+
+Grouped by "IBD", probability: 0.158233
+For group: "Yes.IBS", the group means is: 0.477412143135
+The info is: {'trajectory': 1.4337176847182831}
+For group: "Crohns", the group means is: 1.14035559922
+The info is: {'trajectory': 3.7678985720930855}
+For group: "Colitis", the group means is: 0.771055545898
+The info is: {'trajectory': 3.7560578778677418}
+For group: "no", the group means is: 1.15982943913
+The info is: {'trajectory': 38.756638235725802}
+
+Grouped by "Roomates", probability: 0.498445
+For group: "0", the group means is: 1.0901526884
+The info is: {'trajectory': 6.8103494334091339}
+For group: "na", the group means is: 0.793710906476
+The info is: {'trajectory': 2.1442890534713714}
+For group: "1", the group means is: 1.11807555071
+The info is: {'trajectory': 23.290054633479969}
+For group: "3.plus", the group means is: 0.998238146309
+The info is: {'trajectory': 15.642501745964832}
+For group: "3", the group means is: 1.14141130607
+The info is: {'trajectory': 18.565390702298391}
+For group: "2", the group means is: 1.30524820753
+The info is: {'trajectory': 19.040883505045166}
+
+Grouped by "OnCampusHousing", probability: 0.120545
+For group: "yes", the group means is: 1.30974132715
+The info is: {'trajectory': 15.866938037104084}
+For group: "no", the group means is: 1.12098699303
+The info is: {'trajectory': 35.703402234209896}
+
+Grouped by "ZipCode", probability: 0.000590
+For group: "28782", the group means is: 1.19333131082
+The info is: {'trajectory': 3.9897070152955854}
+For group: "27513", the group means is: 1.14529149656
+The info is: {'trajectory': 10.765772704085132}
+For group: "86001", the group means is: 1.05018201407
+The info is: {'trajectory': 20.040274853505345}
+For group: "27607", the group means is: 1.21018213359
+The info is: {'trajectory': 5.8709075551057808}
+For group: "86004", the group means is: 1.44127865212
+The info is: {'trajectory': 10.969231394106625}
+For group: "na", the group means is: 1.56330362103
+The info is: {'trajectory': 3.9890215360939245}
+For group: "27606", the group means is: 1.50251314349
+The info is: {'trajectory': 3.2168771436099828}
+For group: "86015", the group means is: 0.747222871918
+The info is: {'trajectory': 1.6776358881767763}
+For group: "80305", the group means is: 0.872909979166
+The info is: {'trajectory': 9.4752566080474505}
+For group: "80310", the group means is: 1.08264774105
+The info is: {'trajectory': 4.0737165210962729}
+For group: "27302", the group means is: 0.938998928792
+The info is: {'trajectory': 2.2442951607791688}
+For group: "80021", the group means is: 0.681267316801
+The info is: {'trajectory': 8.4480204211355989}
+For group: "80020", the group means is: 1.20123891219
+The info is: {'trajectory': 2.2963795659000508}
+For group: "80027", the group means is: 0.826019632441
+The info is: {'trajectory': 4.4594760358124086}
+For group: "85388", the group means is: 1.50352249945
+The info is: {'trajectory': 2.2910484963162823}
+For group: "27613", the group means is: 0.675424774571
+The info is: {'trajectory': 2.7919307847793409}
+For group: "27612", the group means is: 2.23943965101
+The info is: {'trajectory': 6.8186522460513119}
+For group: "27695", the group means is: 1.4158051789
+The info is: {'trajectory': 4.0501805097382579}
+For group: "80504", the group means is: 1.03130792198
+The info is: {'trajectory': 3.2390695236444556}
+For group: "80602", the group means is: 2.62391714181
+The info is: {'trajectory': 9.161158443560236}
+For group: "28655", the group means is: 0.612568678805
+The info is: {'trajectory': 2.9881930641959618}
+For group: "80302", the group means is: 1.12507591964
+The info is: {'trajectory': 12.942298925240229}
+For group: "80303", the group means is: 1.06603549724
+The info is: {'trajectory': 13.154977548769045}
+For group: "80401", the group means is: 0.878691143703
+The info is: {'trajectory': 2.7945523295314931}
+For group: "80013", the group means is: 0.473890358906
+The info is: {'trajectory': 1.6356051119506194}
+
+Grouped by "PeanutAllergy", probability: 0.298482
+For group: "na", the group means is: 0.734364720606
+The info is: {'trajectory': 2.4530535100246706}
+For group: "no", the group means is: 1.15008851131
+The info is: {'trajectory': 39.119474802232489}
+
+Grouped by "Cats", probability: 0.144285
+For group: "yes", the group means is: 1.27134171058
+The info is: {'trajectory': 19.383881317915442}
+For group: "no", the group means is: 1.1195115741
+The info is: {'trajectory': 34.162575637201307}
+
+Grouped by "LactoseIntolerant", probability: 0.292954
+For group: "yes", the group means is: 1.02110957966
+The info is: {'trajectory': 11.031064374395685}
+For group: "no", the group means is: 1.16998875248
+The info is: {'trajectory': 38.057161274143077}
+
+Grouped by "TreeNutAllergy", probability: 0.298482
+For group: "na", the group means is: 0.734364720606
+The info is: {'trajectory': 2.4530535100246706}
+For group: "no", the group means is: 1.15008851131
+The info is: {'trajectory': 39.119474802232489}
+
+Grouped by "ArtificialTanning", probability: 0.759414
+For group: "yes.tanning.beds", the group means is: 1.03130792198
+The info is: {'trajectory': 3.2390695236444556}
+For group: "no", the group means is: 1.14618135207
+The info is: {'trajectory': 39.077798283024237}
+
+Grouped by "Chickenpox", probability: 0.714031
+For group: "yes", the group means is: 1.15194380771
+The info is: {'trajectory': 33.47042691786455}
+For group: "no", the group means is: 1.11699399478
+The info is: {'trajectory': 20.55881841494082}
+
+Grouped by AmbiguousTimepoint: Only one value in the group.
+
+Grouped by "Fluvaccine", probability: 0.589960
+For group: "6.months", the group means is: 1.10028737407
+The info is: {'trajectory': 18.693973371431891}
+For group: "over.a.year", the group means is: 1.15287502143
+The info is: {'trajectory': 34.106149427630889}
+
+Grouped by "WeekNumber", probability: 0.562655
+For group: "10", the group means is: 1.98444758264
+The info is: {'trajectory': 12.223644631259788}
+For group: "6", the group means is: 1.72504727938
+The info is: {'trajectory': [1.2718976878334891]}
+For group: "1", the group means is: 1.89973331914
+The info is: {'trajectory': 18.151351054024246}
+For group: "3", the group means is: 1.98311809105
+The info is: {'trajectory': 19.710997248728752}
+For group: "2", the group means is: 2.16467387131
+The info is: {'trajectory': 20.251206840234794}
+For group: "5", the group means is: 1.91867021379
+The info is: {'trajectory': 18.534565735896713}
+For group: "4", the group means is: 2.09029177412
+The info is: {'trajectory': 19.845965517776861}
+For group: "7", the group means is: 1.85663572857
+The info is: {'trajectory': 17.392774433123133}
+For group: "7.5", the group means is: 1.27189768783
+The info is: {'trajectory': 16.239716158856368}
+For group: "9", the group means is: 2.04290086178
+The info is: {'trajectory': 18.092461101967714}
+For group: "8", the group means is: 2.15880540827
+The info is: {'trajectory': 19.966594219658525}
+
+Grouped by "FlossTeeth", probability: 0.485686
+For group: "regularly", the group means is: 1.1745606629
+The info is: {'trajectory': 18.797559418737745}
+For group: "daily", the group means is: 1.05542437574
+The info is: {'trajectory': 20.12689606079579}
+For group: "rarely", the group means is: 1.26745704784
+The info is: {'trajectory': 11.500249452186321}
+For group: "occasionally", the group means is: 1.08386869471
+The info is: {'trajectory': 18.955949496116066}
+For group: "never", the group means is: 1.18487412812
+The info is: {'trajectory': 16.500704024636061}
+
+Grouped by "TotalIndividualWeeks", probability: 0.000000
+For group: "11", the group means is: 0.6992781688
+The info is: {'trajectory': 6.4944943098486689}
+For group: "10", the group means is: 1.2862699709
+The info is: {'trajectory': 29.358772572871661}
+For group: "13", the group means is: 0.594224380519
+The info is: {'trajectory': 4.1576969002356066}
+For group: "12", the group means is: 0.921550487693
+The info is: {'trajectory': 8.1859694630660815}
+For group: "14", the group means is: 0.337459405899
+The info is: {'trajectory': 1.033830119803486}
+For group: "7", the group means is: 1.61161595727
+The info is: {'trajectory': 10.502748011725428}
+For group: "9", the group means is: 1.28535432143
+The info is: {'trajectory': 18.332066355572096}
+For group: "8", the group means is: 0.828562674999
+The info is: {'trajectory': 7.1814655858170484}
+
+Grouped by "DrinkAlcohol", probability: 0.288798
+For group: "regularly", the group means is: 1.00855029836
+The info is: {'trajectory': 23.640743198113078}
+For group: "daily", the group means is: 0.793710906476
+The info is: {'trajectory': 12.073914175617224}
+For group: "rarely", the group means is: 1.27240748771
+The info is: {'trajectory': 14.621626469803363}
+For group: "occasionally", the group means is: 1.12033514766
+The info is: {'trajectory': 24.872026043879519}
+For group: "never", the group means is: 1.15459426904
+The info is: {'trajectory': 2.1442890534713714}
+
+Grouped by "OtherSupplements", probability: 0.002529
+For group: "yes.vitamin.D.fish.oil.B12.calcium", the group means is: 0.625740510678
+The info is: {'trajectory': 2.1727144831073435}
+For group: "yes.fish.oil..creatine..whey.protein", the group means is: 0.553874767805
+The info is: {'trajectory': 1.6723468596440669}
+For group: "yes.acai.pills", the group means is: 0.734364720606
+The info is: {'trajectory': 1.4886370251521539}
+For group: "yes.vitamin.C.flaxseed.oil", the group means is: 0.476444956518
+The info is: {'trajectory': 6.6916983195746083}
+For group: "yes.glucosamine.chondroitin", the group means is: 1.42512398408
+The info is: {'trajectory': 33.852484250334022}
+For group: "no", the group means is: 1.15255232781
+The info is: {'trajectory': 6.8186522460513119}
+For group: "yes.occaionally.take.fish.oil.sulfur.and.extra.calcium.not.always.consistently", the group means is: 2.23943965101
+The info is: {'trajectory': 2.7342112057233718}
+For group: "yes.bulgarian.tribulus.GNC.Amplified.mass.xxx.amplified.wheybolic.extreme.go.and.ravage", the group means is: 0.785889706703
+The info is: {'trajectory': 2.2910484963162823}
+For group: "yes.vitamin.B.complex", the group means is: 0.747222871918
+The info is: {'trajectory': 1.3109761179187207}
+For group: "yes.spirulina..hemp.protein", the group means is: 0.449054592048
+The info is: {'trajectory': 4.0501805097382579}
+For group: "yes.vitamin.D", the group means is: 1.4158051789
+The info is: {'trajectory': 1.7526980943659003}
+For group: "yes.protein.supplement.and.thermogenic.stimulator", the group means is: 0.878691143703
+The info is: {'trajectory': 2.7945523295314931}
+For group: "yes.protein.shakes", the group means is: 0.59633728812
+The info is: {'trajectory': 2.4530535100246706}
+For group: "yes.calcium", the group means is: 1.7952414334
+The info is: {'trajectory': 5.6602317616056732}
+For group: "yes.flaxseed.oil", the group means is: 0.499839605992
+The info is: {'trajectory': 1.5642648533609294}
+For group: "yes", the group means is: 1.51191006049
+The info is: {'trajectory': 5.6029007068550492}
+For group: "yes.daily.calcium.and.Vitamin.D", the group means is: 0.675424774571
+The info is: {'trajectory': 2.7919307847793409}
+For group: "yes.several.supplememtns.regarding.workout..Glutamine..creatine..pre.and.post.workout", the group means is: 1.03130792198
+The info is: {'trajectory': 3.2390695236444556}
+For group: "yes.omega3", the group means is: 0.624177090669
+The info is: {'trajectory': 1.817451151283374}
+
+Grouped by "ExerciseRoutine", probability: 0.024123
+For group: "regularly", the group means is: 0.998783345306
+The info is: {'trajectory': 15.214722465966762}
+For group: "daily", the group means is: 1.10357624176
+The info is: {'trajectory': 22.757743910000759}
+For group: "rarely", the group means is: 1.35183109253
+The info is: {'trajectory': 4.599409744079086}
+For group: "occasionally", the group means is: 1.25038421932
+The info is: {'trajectory': 19.544634457729607}
+For group: "never", the group means is: 1.57508465571
+The info is: {'trajectory': 17.905207367560337}
+
+Grouped by "BiteFingernails", probability: 0.818888
+For group: "yes", the group means is: 1.15814076139
+The info is: {'trajectory': 22.966100984041887}
+For group: "no", the group means is: 1.1382982641
+The info is: {'trajectory': 31.689255666030128}
+
+Grouped by "WeekDescription", probability: 0.535178
+For group: "week.7.5", the group means is: 1.27189768783
+The info is: {'trajectory': [1.2718976878334891]}
+For group: "week.2", the group means is: 2.16467387131
+The info is: {'trajectory': 12.223644631259788}
+For group: "week.1", the group means is: 1.89973331914
+The info is: {'trajectory': 18.151351054024246}
+For group: "week.10", the group means is: 1.98444758264
+The info is: {'trajectory': 20.251206840234794}
+For group: "week.3", the group means is: 1.98311809105
+The info is: {'trajectory': 19.710997248728752}
+For group: "week.4", the group means is: 2.09029177412
+The info is: {'trajectory': 19.845965517776861}
+For group: "week.5", the group means is: 1.91867021379
+The info is: {'trajectory': 18.534565735896713}
+For group: "week.6", the group means is: 1.71406860971
+The info is: {'trajectory': 16.158266810822504}
+For group: "week.7", the group means is: 1.85663572857
+The info is: {'trajectory': 17.392774433123133}
+For group: "week.8", the group means is: 2.15880540827
+The info is: {'trajectory': 19.966594219658525}
+For group: "week.9", the group means is: 2.0424565182
+The info is: {'trajectory': 18.066857349311604}
+
+Grouped by "Diet", probability: 0.578540
+For group: "omnivore", the group means is: 1.10487708712
+The info is: {'trajectory': 35.7502167341598}
+For group: "omnivore.no.red.meat", the group means is: 1.27634979942
+The info is: {'trajectory': 4.8939444340856264}
+For group: "omnivore.but.no.red.meat", the group means is: 1.56413067942
+The info is: {'trajectory': 5.9567778185232854}
+For group: "vegan", the group means is: 0.866815360222
+The info is: {'trajectory': 4.2514939637696862}
+For group: "vegetarian.seafood", the group means is: 1.17362514318
+The info is: {'trajectory': 7.5358039435394986}
+
+Grouped by "Dogs", probability: 0.279010
+For group: "yes", the group means is: 1.10793970189
+The info is: {'trajectory': 23.570159668759381}
+For group: "no", the group means is: 1.20018280322
+The info is: {'trajectory': 31.742023873748256}
+
+Grouped by "SkinConditions", probability: 0.048865
+For group: "psoriasis", the group means is: 0.337459405899
+The info is: {'trajectory': 1.033830119803486}
+For group: "rosacea", the group means is: 0.696784127662
+The info is: {'trajectory': 2.1338671434012157}
+For group: "none", the group means is: 1.13630644228
+The info is: {'trajectory': 35.635921421247509}
+For group: "eczema.psoriasis", the group means is: 0.910390836114
+The info is: {'trajectory': 4.3058990054489401}
+For group: "na", the group means is: 1.7952414334
+The info is: {'trajectory': 5.6602317616056732}
+For group: "other.subacute.cutaneous.lupus.erythematosus.this.is.non.scarring.nonatrophy.producing.photosensitive.dermatosis", the group means is: 0.601904308108
+The info is: {'trajectory': 1.994507137234397}
+For group: "eczema", the group means is: 1.27153465644
+The info is: {'trajectory': 11.992526334320537}
+
+Grouped by "Antibiotics", probability: 0.487379
+For group: "week", the group means is: 0.926578691762
+The info is: {'trajectory': 6.9286184781496152}
+For group: "6.months", the group means is: 1.13794586524
+The info is: {'trajectory': 17.179017052311966}
+For group: "month", the group means is: 1.20675620818
+The info is: {'trajectory': 23.535520024712511}
+For group: "within.year", the group means is: 1.2387754143
+The info is: {'trajectory': 23.124237632823124}
+For group: "over.a.year", the group means is: 1.11048698129
+The info is: {'trajectory': 9.5273068425523437}
+
+Grouped by "Appendix", probability: 0.168967
+For group: "yes", the group means is: 1.51224739399
+The info is: {'trajectory': 7.349081021508888}
+For group: "no", the group means is: 1.13450841047
+The info is: {'trajectory': 38.448023277659097}
+
+Grouped by BodySite: Only one value in the group.
+
+Grouped by ForeheadTimeseries: Only one value in the group.
+
+Grouped by "TraveledOutOfUS", probability: 0.316113
+For group: "within.year", the group means is: 1.04807620203
+The info is: {'trajectory': 17.876380423658194}
+For group: "month", the group means is: 1.35397302754
+The info is: {'trajectory': 7.9399946585664161}
+For group: "over.a.year", the group means is: 1.11669402408
+The info is: {'trajectory': 29.096901463214969}
+For group: "3.months", the group means is: 1.34813502886
+The info is: {'trajectory': 11.583702518391403}
+For group: "6.months", the group means is: 1.1006278639
+The info is: {'trajectory': 10.664673658079375}
+
+Grouped by "OtherAllergies", probability: 0.004820
+For group: "na", the group means is: 0.734364720606
+The info is: {'trajectory': 2.4530535100246706}
+For group: "yes", the group means is: 1.74560962362
+The info is: {'trajectory': 11.01675525414443}
+For group: "no", the group means is: 1.12900172336
+The info is: {'trajectory': 37.666273001014495}
+
+Grouped by "SeasonalAllergies", probability: 0.072237
+For group: "na", the group means is: 0.55981863758
+The info is: {'trajectory': 1.6392993882360614}
+For group: "yes", the group means is: 1.08034530656
+The info is: {'trajectory': 24.720060682082952}
+For group: "no", the group means is: 1.22984051447
+The info is: {'trajectory': 30.991947692837698}
+
+Grouped by AnyTimeseries: Only one value in the group.
+
+Grouped by "BeeStingAllergies", probability: 0.709044
+For group: "yes", the group means is: 1.2168588935
+The info is: {'trajectory': 8.2479305790200801}
+For group: "no", the group means is: 1.13577588416
+The info is: {'trajectory': 38.049041446580304}
+
+Grouped by "University", probability: 0.925053
+For group: "NCS", the group means is: 1.1517924855
+The info is: {'trajectory': 13.069677429360121}
+For group: "CU", the group means is: 1.12897025404
+The info is: {'trajectory': 26.078962351420387}
+For group: "NAU", the group means is: 1.16438701958
+The info is: {'trajectory': 26.276137075416571}
+
+Grouped by "Diabetes", probability: 0.843069
+For group: "yes.type.I", the group means is: 1.09447712387
+The info is: {'trajectory': 5.1296205381023503}
+For group: "no", the group means is: 1.14750474302
+The info is: {'trajectory': 38.963648013082242}
+
+Grouped by "SwimmingPoolHotTubUse", probability: 0.697769
+For group: "regularly", the group means is: 0.734364720606
+The info is: {'trajectory': 27.227187380542134}
+For group: "rarely", the group means is: 1.15934446403
+The info is: {'trajectory': 2.4530535100246706}
+For group: "occasionally", the group means is: 1.041282187
+The info is: {'trajectory': 26.596353003177828}
+For group: "never", the group means is: 1.13889776186
+The info is: {'trajectory': 7.3072432721476455}
+
+Grouped by TongueTimeseries: Only one value in the group.
+
+Grouped by "FacialCosmetics", probability: 0.000128
+For group: "regularly", the group means is: 1.34551804759
+The info is: {'trajectory': 11.098581749333693}
+For group: "daily", the group means is: 1.11385028966
+The info is: {'trajectory': 17.419478172823968}
+For group: "rarely", the group means is: 1.85325799886
+The info is: {'trajectory': 18.672143312347323}
+For group: "occasionally", the group means is: 1.27861279824
+The info is: {'trajectory': 10.14309354221446}
+For group: "never", the group means is: 0.966728632728
+The info is: {'trajectory': 24.460267529595654}
+
+Grouped by "FabricSoftener", probability: 0.276985
+For group: "yes", the group means is: 1.08567495038
+The info is: {'trajectory': 24.446595624947154}
+For group: "no", the group means is: 1.17503839753
+The info is: {'trajectory': 29.949244619771921}
+
+Grouped by "Pregnant", probability: 0.276997
+For group: "not.sure", the group means is: 0.681267316801
+The info is: {'trajectory': 2.2442951607791688}
+For group: "yes.abortion.on.Feb.4", the group means is: 1.57508465571
+The info is: {'trajectory': 4.599409744079086}
+For group: "no", the group means is: 1.14047563586
+The info is: {'trajectory': 38.632993233455807}
+
+Grouped by "Gender", probability: 0.000203
+For group: "na", the group means is: 0.898252944941
+The info is: {'trajectory': 2.6798708916853577}
+For group: "male", the group means is: 0.913584421038
+The info is: {'trajectory': 17.243608756093195}
+For group: "female", the group means is: 1.27025381147
+The info is: {'trajectory': 34.982368851212762}
+
+Grouped by "Age", probability: 0.000303
+For group: "24", the group means is: 1.51686462705
+The info is: {'trajectory': 7.5065979739475415}
+For group: "25", the group means is: 0.643959010808
+The info is: {'trajectory': 3.6535074374716148}
+For group: "26", the group means is: 1.10443712985
+The info is: {'trajectory': 3.2889788354412874}
+For group: "27", the group means is: 1.2531261286
+The info is: {'trajectory': 5.857902118295879}
+For group: "20", the group means is: 0.994249811763
+The info is: {'trajectory': 15.541681564260712}
+For group: "21", the group means is: 1.30848340728
+The info is: {'trajectory': 22.045711992630679}
+For group: "22", the group means is: 1.19772852243
+The info is: {'trajectory': 17.593648770507262}
+For group: "23", the group means is: 1.02871911936
+The info is: {'trajectory': 7.6191091360623551}
+For group: "19", the group means is: 0.857555839675
+The info is: {'trajectory': 5.0739592143535202}
+For group: "18", the group means is: 1.19333131082
+The info is: {'trajectory': 3.9897070152955854}
+For group: "30", the group means is: 1.68988152423
+The info is: {'trajectory': 8.0933258952711196}
+For group: "37", the group means is: 0.635265436747
+The info is: {'trajectory': 1.8167731822770727}
+For group: "29", the group means is: 0.401308306002
+The info is: {'trajectory': 1.2271295415395007}
+For group: "36", the group means is: 0.5686458401
+The info is: {'trajectory': 1.8859540549142719}
+For group: "33", the group means is: 0.55981863758
+The info is: {'trajectory': 1.6392993882360614}
+For group: "55", the group means is: 0.916838754222
+The info is: {'trajectory': 3.3147183990600553}
+For group: "32", the group means is: 0.5109887238
+The info is: {'trajectory': 2.4925435223144419}
+For group: "na", the group means is: 1.83366418897
+The info is: {'trajectory': 9.7516719478456917}
+For group: "41", the group means is: 1.43052054732
+The info is: {'trajectory': 4.3519262879334875}
+For group: "51", the group means is: 0.793710906476
+The info is: {'trajectory': 2.1442890534713714}
+
+Grouped by "DominantHand", probability: 0.403291
+For group: "ambidextrous", the group means is: 1.22190450614
+The info is: {'trajectory': 8.0367365909364086}
+For group: "right", the group means is: 1.12582883556
+The info is: {'trajectory': 36.542023719243595}
+For group: "left", the group means is: 1.3418840478
+The info is: {'trajectory': 11.547990712534586}
+
+Grouped by "MoveToCurrentLocation", probability: 0.246422
+For group: "6.months", the group means is: 1.49237080527
+The info is: {'trajectory': 9.1866957607731266}
+For group: "over.a.year", the group means is: 1.13649005236
+The info is: {'trajectory': 5.9517366886776042}
+For group: "within.year", the group means is: 1.02938528194
+The info is: {'trajectory': 37.720206478668899}
+
+Grouped by SampleID: this value can not be used
+
+Grouped by "Csection", probability: 0.009705
+For group: "not.sure", the group means is: 0.700592564803
+The info is: {'trajectory': 4.71472009659802}
+For group: "yes", the group means is: 1.3369253505
+The info is: {'trajectory': 20.266061595200465}
+For group: "no", the group means is: 1.12537740694
+The info is: {'trajectory': 33.268297697437376}
+
+Grouped by "DeodorantAntiperspirant", probability: 0.110441
+For group: "not.sure", the group means is: 1.23987513718
+The info is: {'trajectory': 19.698984997036291}
+For group: "neither", the group means is: 1.00381649704
+The info is: {'trajectory': 8.7906350358308263}
+For group: "deodorant", the group means is: 1.1716578415
+The info is: {'trajectory': 18.457102654943782}
+For group: "deodarant", the group means is: 1.16291265589
+The info is: {'trajectory': 18.03235889293995}
+For group: "antiperspirant", the group means is: 0.968577916977
+The info is: {'trajectory': 17.029447331130697}
+
+Grouped by "ExerciseIndoorsOutdoors", probability: 0.004099
+For group: "indoor", the group means is: 1.13810985692
+The info is: {'trajectory': 18.476387202188409}
+For group: "both", the group means is: 1.28920999112
+The info is: {'trajectory': 22.100837885277613}
+For group: "outdoor", the group means is: 1.28247473451
+The info is: {'trajectory': 19.093373115677384}
+For group: "both.seasonal", the group means is: 0.625740510678
+The info is: {'trajectory': 2.1727144831073435}
+For group: "seasonal", the group means is: 0.935079723943
+The info is: {'trajectory': 17.014770268916429}
+
+Grouped by "PrescriptionForFacialAcne", probability: 0.593970
+For group: "yes", the group means is: 1.04847615246
+The info is: {'trajectory': 7.4135267530268321}
+For group: "no", the group means is: 1.14777952514
+The info is: {'trajectory': 38.506763762835746}
+
+Grouped by "SiteID", probability: 0.000000
+For group: "NCS233.gut", the group means is: 0.677291545154
+The info is: {'trajectory': 9.161158443560236}
+For group: "CUB003.gut", the group means is: 2.62391714181
+The info is: {'trajectory': 3.7678985720930855}
+For group: "NAU146.gut", the group means is: 1.10443712985
+The info is: {'trajectory': 1.5179668407621343}
+For group: "CUB010.gut", the group means is: 0.514090789386
+The info is: {'trajectory': 2.2442951607791688}
+For group: "CUB000.gut", the group means is: 0.681267316801
+The info is: {'trajectory': 1.033830119803486}
+For group: "NAU157.gut", the group means is: 0.337459405899
+The info is: {'trajectory': 1.8859540549142719}
+For group: "CUB028.gut", the group means is: 1.26272714272
+The info is: {'trajectory': 4.6603973924988802}
+For group: "NAU114.gut", the group means is: 1.39544201906
+The info is: {'trajectory': 5.6283677630427125}
+For group: "NAU101.gut", the group means is: 1.62022615136
+The info is: {'trajectory': 1.817451151283374}
+For group: "CUB027.gut", the group means is: 1.51191006049
+The info is: {'trajectory': 1.6356051119506194}
+For group: "CUB052.gut", the group means is: 0.473890358906
+The info is: {'trajectory': 1.6776358881767763}
+For group: "NAU105.gut", the group means is: 0.898252944941
+The info is: {'trajectory': 2.7919307847793409}
+For group: "NCS204.gut", the group means is: 0.675424774571
+The info is: {'trajectory': 1.4886370251521539}
+For group: "CUB049.gut", the group means is: 0.476444956518
+The info is: {'trajectory': 6.6916983195746083}
+For group: "NAU139.gut", the group means is: 0.474500274681
+The info is: {'trajectory': 2.7342112057233718}
+For group: "CUB044.gut", the group means is: 0.785889706703
+The info is: {'trajectory': 3.2168771436099828}
+For group: "NCS214.gut", the group means is: 1.50251314349
+The info is: {'trajectory': 3.9890215360939245}
+For group: "NAU129.gut", the group means is: 1.27634979942
+The info is: {'trajectory': 4.2514939637696862}
+For group: "CUB004.gut", the group means is: 0.872909979166
+The info is: {'trajectory': 1.5642648533609294}
+For group: "CUB026.gut", the group means is: 0.696784127662
+The info is: {'trajectory': 2.1338671434012157}
+For group: "NAU117.gut", the group means is: 1.57508465571
+The info is: {'trajectory': 1.8510096085606413}
+For group: "CUB037.gut", the group means is: 0.658757482639
+The info is: {'trajectory': 3.1257398840357853}
+For group: "NAU121.gut", the group means is: 0.947227798753
+The info is: {'trajectory': 4.4594760358124086}
+For group: "CUB012.gut", the group means is: 1.56413067942
+The info is: {'trajectory': 3.0705780283376867}
+For group: "NAU130.gut", the group means is: 0.911908572746
+The info is: {'trajectory': 1.7397552352731924}
+For group: "NAU154.gut", the group means is: 0.549250860698
+The info is: {'trajectory': 2.2138513105019344}
+For group: "CUB009.gut", the group means is: 0.477412143135
+The info is: {'trajectory': 3.2390695236444556}
+For group: "CUB015.gut", the group means is: 0.720785348413
+The info is: {'trajectory': 6.3815505354249797}
+For group: "CUB040.gut", the group means is: 1.03130792198
+The info is: {'trajectory': 4.2554790733324106}
+For group: "CUB038.gut", the group means is: 1.80491136632
+The info is: {'trajectory': 2.7945523295314931}
+For group: "NAU108.gut", the group means is: 1.40009755515
+The info is: {'trajectory': 6.8186522460513119}
+For group: "NAU119.gut", the group means is: 0.878691143703
+The info is: {'trajectory': 2.1727144831073435}
+For group: "CUB048.gut", the group means is: 0.625740510678
+The info is: {'trajectory': 3.5848489831851573}
+For group: "NCS212.gut", the group means is: 0.959100973128
+The info is: {'trajectory': 4.0737165210962729}
+For group: "CUB019.gut", the group means is: 1.08477606572
+The info is: {'trajectory': 3.8778421175509417}
+For group: "NCS253.gut", the group means is: 0.938998928792
+The info is: {'trajectory': 6.6460593423659935}
+For group: "NAU155.gut", the group means is: 2.03231286782
+The info is: {'trajectory': 5.6602317616056732}
+For group: "CUB036.gut", the group means is: 1.7952414334
+The info is: {'trajectory': 1.6392993882360614}
+For group: "NAU144.gut", the group means is: 0.55981863758
+The info is: {'trajectory': 7.6478323899949157}
+For group: "NAU124.gut", the group means is: 1.80678026482
+The info is: {'trajectory': 1.8167731822770727}
+For group: "NAU148.gut", the group means is: 0.635265436747
+The info is: {'trajectory': 2.4002106466526061}
+For group: "NAU159.gut", the group means is: 1.14035559922
+The info is: {'trajectory': 4.599409744079086}
+For group: "NAU107.gut", the group means is: 1.12889710051
+The info is: {'trajectory': 4.6907921902756859}
+For group: "CUB017.gut", the group means is: 1.28939540681
+The info is: {'trajectory': 3.2889788354412874}
+For group: "NCS255.gut", the group means is: 2.23943965101
+The info is: {'trajectory': 1.9219803138221176}
+For group: "NAU147.gut", the group means is: 0.793710906476
+The info is: {'trajectory': 2.1442890534713714}
+For group: "NAU136.gut", the group means is: 0.624177090669
+The info is: {'trajectory': 3.1053399170163805}
+For group: "CUB032.gut", the group means is: 0.826019632441
+The info is: {'trajectory': 2.2963795659000508}
+For group: "NCS213.gut", the group means is: 1.19333131082
+The info is: {'trajectory': 0.54637987180227399}
+For group: "CUB056.gut", the group means is: 0.449054592048
+The info is: {'trajectory': 5.6029007068550492}
+For group: "NAU109.gut", the group means is: 1.29707591045
+The info is: {'trajectory': 3.9897070152955854}
+For group: "CUB008.gut", the group means is: 0.169940036594
+The info is: {'trajectory': 1.3109761179187207}
+For group: "CUB050.gut", the group means is: 1.43052054732
+The info is: {'trajectory': 4.4441091604348557}
+For group: "NCS237.gut", the group means is: 0.612568678805
+The info is: {'trajectory': 1.749115582673255}
+For group: "NCS203.gut", the group means is: 1.14529149656
+The info is: {'trajectory': 4.3519262879334875}
+For group: "NAU150.gut", the group means is: 0.499839605992
+The info is: {'trajectory': 2.6798708916853577}
+For group: "NAU164.gut", the group means is: 1.50352249945
+The info is: {'trajectory': 1.7526980943659003}
+For group: "CUB011.gut", the group means is: 0.401308306002
+The info is: {'trajectory': 2.9881930641959618}
+For group: "CUB053.gut", the group means is: 0.864668467733
+The info is: {'trajectory': 5.9567778185232854}
+For group: "NAU132.gut", the group means is: 1.48676066813
+The info is: {'trajectory': 1.2271295415395007}
+For group: "NAU137.gut", the group means is: 1.24115732161
+The info is: {'trajectory': 3.1437843045837424}
+For group: "NAU123.gut", the group means is: 0.59633728812
+The info is: {'trajectory': 5.7188053822776963}
+For group: "CUB029.gut", the group means is: 0.553874767805
+The info is: {'trajectory': 3.9653421990989979}
+For group: "NAU133.gut", the group means is: 0.795084739113
+The info is: {'trajectory': 1.6723468596440669}
+For group: "NAU106.gut", the group means is: 0.747222871918
+The info is: {'trajectory': 2.2910484963162823}
+For group: "NAU156.gut", the group means is: 2.18013580792
+The info is: {'trajectory': 5.9216128082171293}
+For group: "NCS248.gut", the group means is: 1.4158051789
+The info is: {'trajectory': 4.0501805097382579}
+For group: "CUB042.gut", the group means is: 0.5686458401
+The info is: {'trajectory': 3.6594607775364492}
+For group: "NAU153.gut", the group means is: 0.734364720606
+The info is: {'trajectory': 2.4530535100246706}
+For group: "NAU149.gut", the group means is: 0.916838754222
+The info is: {'trajectory': 3.3147183990600553}
+For group: "CUB033.gut", the group means is: 2.04200181927
+The info is: {'trajectory': 6.6408985995248573}
+For group: "NAU110.gut", the group means is: 0.601904308108
+The info is: {'trajectory': 1.994507137234397}
+For group: "NAU160.gut", the group means is: 0.982987991103
+The info is: {'trajectory': 2.8703066701530719}
+For group: "NCS263.gut", the group means is: 1.13190092043
+The info is: {'trajectory': 3.354963734133511}
+For group: "CUB007.gut", the group means is: 1.42512398408
+The info is: {'trajectory': 1.4337176847182831}
+
+Grouped by GutTimeseries: Only one value in the group.
+
+Grouped by "Sickness_disturbance", probability: 0.128936
+For group: "Yes", the group means is: 1.09925468579
+The info is: {'trajectory': 30.699666781452216}
+For group: "No", the group means is: 1.23401477253
+The info is: {'trajectory': 24.004636372211689}
+
+Grouped by "HormonalBirthControl", probability: 0.337586
+For group: "yes.I.have.an.IUD", the group means is: 1.80491136632
+The info is: {'trajectory': 6.3815505354249797}
+For group: "no", the group means is: 1.09470492057
+The info is: {'trajectory': 29.366463439442075}
+For group: "IUD", the group means is: 0.734364720606
+The info is: {'trajectory': 2.4530535100246706}
+For group: "NuvaRing", the group means is: 1.27746355068
+The info is: {'trajectory': 7.5721077236624721}
+For group: "DMPA", the group means is: 1.19333131082
+The info is: {'trajectory': 3.9897070152955854}
+For group: "pill", the group means is: 1.19631821798
+The info is: {'trajectory': 22.466312828231647}
+
+Grouped by "SunAllergies", probability: 0.206799
+For group: "yes", the group means is: 1.46242831122
+The info is: {'trajectory': 7.4513910814055961}
+For group: "no", the group means is: 1.13615734106
+The info is: {'trajectory': 38.459400390307103}
+
+Grouped by "HoursOfSleep", probability: 0.069445
+For group: "6.7", the group means is: 1.22541438812
+The info is: {'trajectory': 25.792704375147739}
+For group: "greater.than.8", the group means is: 1.12413464783
+The info is: {'trajectory': 10.945442124660248}
+For group: "7.8", the group means is: 1.02950481775
+The info is: {'trajectory': 24.182116232630577}
+For group: "5.6", the group means is: 1.36535548843
+The info is: {'trajectory': 11.391133941655321}
+
+Grouped by Control: Only one value in the group.
+
+Grouped by PalmTimeseries: Only one value in the group.
+
+Grouped by SequenceCountAbove10000: this value can not be used
+
+Grouped by "RaceEthnicity", probability: 0.271553
+For group: "caucasian.asian", the group means is: 1.42512398408
+The info is: {'trajectory': 6.6916983195746083}
+For group: "na", the group means is: 0.635265436747
+The info is: {'trajectory': 1.8167731822770727}
+For group: "asian.or.pacific.islander", the group means is: 1.26034731784
+The info is: {'trajectory': 7.2249316459859765}
+For group: "caucasian", the group means is: 1.12276500212
+The info is: {'trajectory': 1.9219803138221176}
+For group: "hispanic", the group means is: 1.25070092877
+The info is: {'trajectory': 12.787853847248961}
+For group: "half.white.hispanic", the group means is: 0.499839605992
+The info is: {'trajectory': 1.5642648533609294}
+For group: "other", the group means is: 1.51191006049
+The info is: {'trajectory': 5.6029007068550492}
+For group: "caucasian.hispanic", the group means is: 0.677291545154
+The info is: {'trajectory': 34.131933602161254}
+
+Grouped by "PersonalIDBodySite", probability: 0.000000
+For group: "NAU155gut", the group means is: 2.03231286782
+The info is: {'trajectory': 2.4530535100246706}
+For group: "CUB004gut", the group means is: 0.872909979166
+The info is: {'trajectory': 6.6460593423659935}
+For group: "NAU129gut", the group means is: 1.27634979942
+The info is: {'trajectory': 1.6776358881767763}
+For group: "NAU124gut", the group means is: 1.80678026482
+The info is: {'trajectory': 2.9881930641959618}
+For group: "CUB019gut", the group means is: 1.08477606572
+The info is: {'trajectory': 7.6478323899949157}
+For group: "NAU121gut", the group means is: 0.947227798753
+The info is: {'trajectory': 3.9653421990989979}
+For group: "NCS214gut", the group means is: 1.50251314349
+The info is: {'trajectory': 3.1257398840357853}
+For group: "NAU107gut", the group means is: 1.12889710051
+The info is: {'trajectory': 3.1053399170163805}
+For group: "NAU106gut", the group means is: 0.747222871918
+The info is: {'trajectory': 3.9890215360939245}
+For group: "CUB007gut", the group means is: 1.42512398408
+The info is: {'trajectory': 3.8778421175509417}
+For group: "NAU114gut", the group means is: 1.39544201906
+The info is: {'trajectory': 2.2910484963162823}
+For group: "CUB012gut", the group means is: 1.56413067942
+The info is: {'trajectory': 4.6603973924988802}
+For group: "CUB036gut", the group means is: 1.7952414334
+The info is: {'trajectory': 5.9567778185232854}
+For group: "CUB053gut", the group means is: 0.864668467733
+The info is: {'trajectory': 4.3519262879334875}
+For group: "NAU119gut", the group means is: 0.878691143703
+The info is: {'trajectory': 3.1437843045837424}
+For group: "CUB010gut", the group means is: 0.514090789386
+The info is: {'trajectory': 2.7945523295314931}
+For group: "NCS204gut", the group means is: 0.675424774571
+The info is: {'trajectory': 1.749115582673255}
+For group: "NCS248gut", the group means is: 1.4158051789
+The info is: {'trajectory': 2.7919307847793409}
+For group: "NAU153gut", the group means is: 0.734364720606
+The info is: {'trajectory': 4.0501805097382579}
+For group: "NAU150gut", the group means is: 0.499839605992
+The info is: {'trajectory': 1.5179668407621343}
+For group: "CUB011gut", the group means is: 0.401308306002
+The info is: {'trajectory': 4.0737165210962729}
+For group: "NCS213gut", the group means is: 1.19333131082
+The info is: {'trajectory': 3.3147183990600553}
+For group: "CUB008gut", the group means is: 0.169940036594
+The info is: {'trajectory': 1.5642648533609294}
+For group: "CUB009gut", the group means is: 0.477412143135
+The info is: {'trajectory': 1.2271295415395007}
+For group: "NAU117gut", the group means is: 1.57508465571
+The info is: {'trajectory': 0.54637987180227399}
+For group: "CUB049gut", the group means is: 0.476444956518
+The info is: {'trajectory': 4.599409744079086}
+For group: "CUB050gut", the group means is: 1.43052054732
+The info is: {'trajectory': 1.4886370251521539}
+For group: "NAU137gut", the group means is: 1.24115732161
+The info is: {'trajectory': 5.6602317616056732}
+For group: "NAU108gut", the group means is: 1.40009755515
+The info is: {'trajectory': 3.354963734133511}
+For group: "CUB040gut", the group means is: 1.03130792198
+The info is: {'trajectory': 4.2554790733324106}
+For group: "CUB003gut", the group means is: 2.62391714181
+The info is: {'trajectory': 3.2390695236444556}
+For group: "NAU123gut", the group means is: 0.59633728812
+The info is: {'trajectory': 9.161158443560236}
+For group: "CUB027gut", the group means is: 1.51191006049
+The info is: {'trajectory': 1.7526980943659003}
+For group: "CUB048gut", the group means is: 0.625740510678
+The info is: {'trajectory': 5.6029007068550492}
+For group: "NAU133gut", the group means is: 0.795084739113
+The info is: {'trajectory': 2.1442890534713714}
+For group: "NAU156gut", the group means is: 2.18013580792
+The info is: {'trajectory': 2.1727144831073435}
+For group: "CUB033gut", the group means is: 2.04200181927
+The info is: {'trajectory': 2.4002106466526061}
+For group: "CUB017gut", the group means is: 1.28939540681
+The info is: {'trajectory': 5.9216128082171293}
+For group: "NAU160gut", the group means is: 0.982987991103
+The info is: {'trajectory': 4.6907921902756859}
+For group: "NAU147gut", the group means is: 0.793710906476
+The info is: {'trajectory': 2.8703066701530719}
+For group: "CUB038gut", the group means is: 1.80491136632
+The info is: {'trajectory': 4.2514939637696862}
+For group: "NAU157gut", the group means is: 0.337459405899
+The info is: {'trajectory': 6.3815505354249797}
+For group: "NCS263gut", the group means is: 1.13190092043
+The info is: {'trajectory': 1.033830119803486}
+For group: "NAU130gut", the group means is: 0.911908572746
+The info is: {'trajectory': 4.4594760358124086}
+For group: "CUB029gut", the group means is: 0.553874767805
+The info is: {'trajectory': 1.4337176847182831}
+For group: "NAU132gut", the group means is: 1.48676066813
+The info is: {'trajectory': 3.0705780283376867}
+For group: "NCS212gut", the group means is: 0.959100973128
+The info is: {'trajectory': 1.6723468596440669}
+For group: "NCS237gut", the group means is: 0.612568678805
+The info is: {'trajectory': 5.7188053822776963}
+For group: "NCS203gut", the group means is: 1.14529149656
+The info is: {'trajectory': 3.5848489831851573}
+For group: "NAU105gut", the group means is: 0.898252944941
+The info is: {'trajectory': 2.6798708916853577}
+For group: "CUB028gut", the group means is: 1.26272714272
+The info is: {'trajectory': 3.2168771436099828}
+For group: "CUB032gut", the group means is: 0.826019632441
+The info is: {'trajectory': 1.994507137234397}
+For group: "CUB037gut", the group means is: 0.658757482639
+The info is: {'trajectory': 3.6594607775364492}
+For group: "CUB026gut", the group means is: 0.696784127662
+The info is: {'trajectory': 2.2963795659000508}
+For group: "NAU109gut", the group means is: 1.29707591045
+The info is: {'trajectory': 1.8510096085606413}
+For group: "NAU139gut", the group means is: 0.474500274681
+The info is: {'trajectory': 2.1338671434012157}
+For group: "NCS253gut", the group means is: 0.938998928792
+The info is: {'trajectory': 4.4441091604348557}
+For group: "CUB015gut", the group means is: 0.720785348413
+The info is: {'trajectory': 6.6916983195746083}
+For group: "NAU144gut", the group means is: 0.55981863758
+The info is: {'trajectory': 3.9897070152955854}
+For group: "NAU110gut", the group means is: 0.601904308108
+The info is: {'trajectory': 1.6392993882360614}
+For group: "CUB042gut", the group means is: 0.5686458401
+The info is: {'trajectory': 1.8859540549142719}
+For group: "NAU159gut", the group means is: 1.14035559922
+The info is: {'trajectory': 3.7678985720930855}
+For group: "NAU136gut", the group means is: 0.624177090669
+The info is: {'trajectory': 1.817451151283374}
+For group: "CUB056gut", the group means is: 0.449054592048
+The info is: {'trajectory': 1.3109761179187207}
+For group: "CUB044gut", the group means is: 0.785889706703
+The info is: {'trajectory': 1.9219803138221176}
+For group: "NCS233gut", the group means is: 0.677291545154
+The info is: {'trajectory': 2.7342112057233718}
+For group: "NAU101gut", the group means is: 1.62022615136
+The info is: {'trajectory': 5.6283677630427125}
+For group: "NAU148gut", the group means is: 0.635265436747
+The info is: {'trajectory': 1.8167731822770727}
+For group: "NCS255gut", the group means is: 2.23943965101
+The info is: {'trajectory': 6.8186522460513119}
+For group: "CUB052gut", the group means is: 0.473890358906
+The info is: {'trajectory': 1.6356051119506194}
+For group: "NAU164gut", the group means is: 1.50352249945
+The info is: {'trajectory': 6.6408985995248573}
+For group: "CUB000gut", the group means is: 0.681267316801
+The info is: {'trajectory': 1.7397552352731924}
+For group: "NAU146gut", the group means is: 1.10443712985
+The info is: {'trajectory': 3.2889788354412874}
+For group: "NAU149gut", the group means is: 0.916838754222
+The info is: {'trajectory': 2.2138513105019344}
+For group: "NAU154gut", the group means is: 0.549250860698
+The info is: {'trajectory': 2.2442951607791688}
+
+Grouped by "Antibiotic_disturbance", probability: 0.085371
+For group: "Yes", the group means is: 1.00546142234
+The info is: {'trajectory': 15.694058616775607}
+For group: "No", the group means is: 1.1772293253
+The info is: {'trajectory': 35.688732735111827}
+
+Grouped by "BrushTeeth", probability: 0.270428
+For group: "regularly", the group means is: 0.974725005154
+The info is: {'trajectory': 8.1661371760977293}
+For group: "daily", the group means is: 1.16155124374
+The info is: {'trajectory': 38.575756016141803}
+
+Grouped by "DrugAllergies", probability: 0.219429
+For group: "yes", the group means is: 1.0399354591
+The info is: {'trajectory': 16.191493203343882}
+For group: "no", the group means is: 1.17179639094
+The info is: {'trajectory': 35.983741603148175}
+
+Grouped by "OverTheCounterFacialAcne", probability: 0.000064
+For group: "yes", the group means is: 0.927121089097
+The info is: {'trajectory': 19.102409907511728}
+For group: "no", the group means is: 1.26549568732
+The info is: {'trajectory': 33.750077024641492}
+
+Grouped by "StartWeek", probability: 0.338594
+For group: "1", the group means is: 1.15875538832
+The info is: {'trajectory': 38.558893380522427}
+For group: "2", the group means is: 0.978259159805
+The info is: {'trajectory': 7.6869079252850687}
+
+Grouped by "CampusDining", probability: 0.515603
+For group: "yes", the group means is: 1.24368956318
+The info is: {'trajectory': 11.593876606440936}
+For group: "no", the group means is: 1.14042830223
+The info is: {'trajectory': 37.412559064768608}
+
+Grouped by "BMIclass", probability: 0.265437
+For group: "na", the group means is: 1.28636001581
+The info is: {'trajectory': 13.755431467533704}
+For group: "normal", the group means is: 1.08271492572
+The info is: {'trajectory': 13.218682418361293}
+For group: "overweight", the group means is: 1.14553956576
+The info is: {'trajectory': 15.594233306716268}
+For group: "obese", the group means is: 1.01100072345
+The info is: {'trajectory': 6.1972621907562431}
+For group: "underweight", the group means is: 1.34157991488
+The info is: {'trajectory': 28.820394735276356}
+
+Grouped by "Tonsils", probability: 0.576819
+For group: "yes", the group means is: 1.22373460032
+The info is: {'trajectory': 14.807046932304326}
+For group: "no", the group means is: 1.15188629
+The info is: {'trajectory': 37.047870934150659}
+
+Grouped by "StopWeek", probability: 0.040344
+For group: "11", the group means is: 0.975806590736
+The info is: {'trajectory': 7.5335209345335832}
+For group: "10", the group means is: 1.20982399786
+The info is: {'trajectory': 32.59269607190334}
+For group: "13", the group means is: 1.11281687717
+The info is: {'trajectory': 9.7586250754539741}
+For group: "12", the group means is: 0.911211151921
+The info is: {'trajectory': 10.920463139776775}
+For group: "14", the group means is: 0.790402993866
+The info is: {'trajectory': 6.1614099633311588}
+For group: "7", the group means is: 1.51876772631
+The info is: {'trajectory': 6.8111378671890099}
+For group: "9", the group means is: 1.22745697492
+The info is: {'trajectory': 5.6955739520897968}
+For group: "8", the group means is: 1.52167090591
+The info is: {'trajectory': 6.9772106515881571}
+
+Grouped by "WeightChanges", probability: 0.343443
+For group: "decreased", the group means is: 1.19439689325
+The info is: {'trajectory': 9.8686687716888581}
+For group: "increased", the group means is: 0.962492541029
+The info is: {'trajectory': 9.5704218614622807}
+For group: "stable", the group means is: 1.1719618876
+The info is: {'trajectory': 36.852395482642841}
+
+Grouped by "PoisonIvyOakAllergies", probability: 0.239126
+For group: "yes", the group means is: 1.0105493002
+The info is: {'trajectory': 10.931995417773535}
+For group: "no", the group means is: 1.17036370888
+The info is: {'trajectory': 38.013991833816604}
+
+Grouped by "OtherSpecialDiet", probability: 0.000359
+For group: "yes.gluten.free..70percent.raw", the group means is: 0.449054592048
+The info is: {'trajectory': 1.5642648533609294}
+For group: "yes.mostly.plant.based.with.occassional.dairy.and.meat", the group means is: 1.12889710051
+The info is: {'trajectory': 1.3109761179187207}
+For group: "yes.organic", the group means is: 0.499839605992
+The info is: {'trajectory': 36.770390145143743}
+For group: "yes.mostly.following.a.low.carb.diet.less.than.20g", the group means is: 2.23943965101
+The info is: {'trajectory': 3.8778421175509417}
+For group: "no", the group means is: 1.13845451718
+The info is: {'trajectory': 6.8186522460513119}
+For group: "yes.low.fat.diet", the group means is: 1.7952414334
+The info is: {'trajectory': 5.6602317616056732}
+For group: "yes.low.oil.whole.graon.eat.4.6.timers.per.day.small.meals", the group means is: 0.938998928792
+The info is: {'trajectory': 4.0737165210962729}
+For group: "yes", the group means is: 0.169940036594
+The info is: {'trajectory': 0.54637987180227399}
+
+Grouped by "WeeksSinceStart", probability: 0.249454
+For group: "0.5", the group means is: 2.46600200313
+The info is: {'trajectory': 12.797082284012458}
+For group: "1", the group means is: 1.85477123859
+The info is: {'trajectory': 18.096825341428321}
+For group: "0", the group means is: 1.89854870422
+The info is: {'trajectory': 18.709704222904623}
+For group: "3", the group means is: 2.23581158364
+The info is: {'trajectory': 21.795766892088871}
+For group: "2", the group means is: 1.94664341126
+The info is: {'trajectory': 19.046282574409911}
+For group: "5", the group means is: 1.87162471166
+The info is: {'trajectory': 18.165304355379369}
+For group: "4", the group means is: 1.84127118706
+The info is: {'trajectory': 15.464126062105183}
+For group: "7", the group means is: 1.74485138127
+The info is: {'trajectory': 12.465724959393686}
+For group: "6", the group means is: 1.90098794345
+The info is: {'trajectory': 16.715056496435498}
+For group: "9", the group means is: 2.17225762362
+The info is: {'trajectory': 14.668683810506614}
+For group: "8", the group means is: 2.05874506846
+The info is: {'trajectory': 19.145202554978759}
+
+Grouped by "PersonalID", probability: 0.000000
+For group: "NAU129", the group means is: 1.27634979942
+The info is: {'trajectory': 4.2514939637696862}
+For group: "CUB012", the group means is: 1.56413067942
+The info is: {'trajectory': 5.9567778185232854}
+For group: "CUB011", the group means is: 0.401308306002
+The info is: {'trajectory': 1.2271295415395007}
+For group: "CUB010", the group means is: 0.514090789386
+The info is: {'trajectory': 1.749115582673255}
+For group: "CUB017", the group means is: 1.28939540681
+The info is: {'trajectory': 4.6907921902756859}
+For group: "NAU160", the group means is: 0.982987991103
+The info is: {'trajectory': 2.8703066701530719}
+For group: "CUB015", the group means is: 0.720785348413
+The info is: {'trajectory': 2.2138513105019344}
+For group: "NAU148", the group means is: 0.635265436747
+The info is: {'trajectory': 1.8167731822770727}
+For group: "NAU121", the group means is: 0.947227798753
+The info is: {'trajectory': 3.1257398840357853}
+For group: "NAU146", the group means is: 1.10443712985
+The info is: {'trajectory': 3.2889788354412874}
+For group: "CUB019", the group means is: 1.08477606572
+The info is: {'trajectory': 3.9653421990989979}
+For group: "NAU144", the group means is: 0.55981863758
+The info is: {'trajectory': 1.6392993882360614}
+For group: "NAU164", the group means is: 1.50352249945
+The info is: {'trajectory': 1.817451151283374}
+For group: "NAU124", the group means is: 1.80678026482
+The info is: {'trajectory': 7.6478323899949157}
+For group: "CUB008", the group means is: 0.169940036594
+The info is: {'trajectory': 6.3815505354249797}
+For group: "CUB038", the group means is: 1.80491136632
+The info is: {'trajectory': 1.5179668407621343}
+For group: "CUB007", the group means is: 1.42512398408
+The info is: {'trajectory': 6.8186522460513119}
+For group: "NCS263", the group means is: 1.13190092043
+The info is: {'trajectory': 1.3109761179187207}
+For group: "CUB056", the group means is: 0.449054592048
+The info is: {'trajectory': 6.6408985995248573}
+For group: "CUB033", the group means is: 2.04200181927
+The info is: {'trajectory': 2.2963795659000508}
+For group: "CUB032", the group means is: 0.826019632441
+The info is: {'trajectory': 3.1437843045837424}
+For group: "CUB053", the group means is: 0.864668467733
+The info is: {'trajectory': 1.6356051119506194}
+For group: "CUB052", the group means is: 0.473890358906
+The info is: {'trajectory': 1.8510096085606413}
+For group: "CUB037", the group means is: 0.658757482639
+The info is: {'trajectory': 5.6602317616056732}
+For group: "CUB036", the group means is: 1.7952414334
+The info is: {'trajectory': 3.3147183990600553}
+For group: "NAU154", the group means is: 0.549250860698
+The info is: {'trajectory': 1.033830119803486}
+For group: "NAU149", the group means is: 0.916838754222
+The info is: {'trajectory': 1.9219803138221176}
+For group: "CUB004", the group means is: 0.872909979166
+The info is: {'trajectory': 4.0501805097382579}
+For group: "CUB003", the group means is: 2.62391714181
+The info is: {'trajectory': 4.6603973924988802}
+For group: "NCS233", the group means is: 0.677291545154
+The info is: {'trajectory': 2.1442890534713714}
+For group: "NAU114", the group means is: 1.39544201906
+The info is: {'trajectory': 4.599409744079086}
+For group: "NAU147", the group means is: 0.793710906476
+The info is: {'trajectory': 1.994507137234397}
+For group: "NAU117", the group means is: 1.57508465571
+The info is: {'trajectory': 3.7678985720930855}
+For group: "NAU110", the group means is: 0.601904308108
+The info is: {'trajectory': 2.7919307847793409}
+For group: "NAU133", the group means is: 0.795084739113
+The info is: {'trajectory': 4.0737165210962729}
+For group: "NCS204", the group means is: 0.675424774571
+The info is: {'trajectory': 4.3519262879334875}
+For group: "NAU101", the group means is: 1.62022615136
+The info is: {'trajectory': 2.7945523295314931}
+For group: "CUB050", the group means is: 1.43052054732
+The info is: {'trajectory': 3.2168771436099828}
+For group: "NAU119", the group means is: 0.878691143703
+The info is: {'trajectory': 2.9881930641959618}
+For group: "NAU106", the group means is: 0.747222871918
+The info is: {'trajectory': 1.6776358881767763}
+For group: "NCS203", the group means is: 1.14529149656
+The info is: {'trajectory': 6.6916983195746083}
+For group: "NCS248", the group means is: 1.4158051789
+The info is: {'trajectory': 2.2442951607791688}
+For group: "NAU139", the group means is: 0.474500274681
+The info is: {'trajectory': 6.6460593423659935}
+For group: "CUB000", the group means is: 0.681267316801
+The info is: {'trajectory': 5.9216128082171293}
+For group: "NAU155", the group means is: 2.03231286782
+The info is: {'trajectory': 9.161158443560236}
+For group: "NAU156", the group means is: 2.18013580792
+The info is: {'trajectory': 5.7188053822776963}
+For group: "NAU157", the group means is: 0.337459405899
+The info is: {'trajectory': 2.4002106466526061}
+For group: "NAU132", the group means is: 1.48676066813
+The info is: {'trajectory': 3.0705780283376867}
+For group: "NAU159", the group means is: 1.14035559922
+The info is: {'trajectory': 0.54637987180227399}
+For group: "NAU130", the group means is: 0.911908572746
+The info is: {'trajectory': 1.4337176847182831}
+For group: "NAU136", the group means is: 0.624177090669
+The info is: {'trajectory': 3.354963734133511}
+For group: "CUB009", the group means is: 0.477412143135
+The info is: {'trajectory': 3.2390695236444556}
+For group: "NAU137", the group means is: 1.24115732161
+The info is: {'trajectory': 3.9897070152955854}
+For group: "CUB040", the group means is: 1.03130792198
+The info is: {'trajectory': 3.6594607775364492}
+For group: "CUB028", the group means is: 1.26272714272
+The info is: {'trajectory': 1.6723468596440669}
+For group: "CUB029", the group means is: 0.553874767805
+The info is: {'trajectory': 2.7342112057233718}
+For group: "CUB044", the group means is: 0.785889706703
+The info is: {'trajectory': 2.1727144831073435}
+For group: "CUB048", the group means is: 0.625740510678
+The info is: {'trajectory': 1.4886370251521539}
+For group: "CUB049", the group means is: 0.476444956518
+The info is: {'trajectory': 2.4530535100246706}
+For group: "NAU153", the group means is: 0.734364720606
+The info is: {'trajectory': 2.1338671434012157}
+For group: "CUB026", the group means is: 0.696784127662
+The info is: {'trajectory': 5.6029007068550492}
+For group: "CUB027", the group means is: 1.51191006049
+The info is: {'trajectory': 1.7526980943659003}
+For group: "NAU123", the group means is: 0.59633728812
+The info is: {'trajectory': 1.5642648533609294}
+For group: "NAU150", the group means is: 0.499839605992
+The info is: {'trajectory': 4.4594760358124086}
+For group: "CUB042", the group means is: 0.5686458401
+The info is: {'trajectory': 1.8859540549142719}
+For group: "NAU105", the group means is: 0.898252944941
+The info is: {'trajectory': 5.6283677630427125}
+For group: "NCS255", the group means is: 2.23943965101
+The info is: {'trajectory': 3.8778421175509417}
+For group: "NCS253", the group means is: 0.938998928792
+The info is: {'trajectory': 2.2910484963162823}
+For group: "NAU107", the group means is: 1.12889710051
+The info is: {'trajectory': 2.6798708916853577}
+For group: "NCS237", the group means is: 0.612568678805
+The info is: {'trajectory': 3.1053399170163805}
+For group: "NCS213", the group means is: 1.19333131082
+The info is: {'trajectory': 1.7397552352731924}
+For group: "NCS212", the group means is: 0.959100973128
+The info is: {'trajectory': 3.5848489831851573}
+For group: "NAU109", the group means is: 1.29707591045
+The info is: {'trajectory': 4.4441091604348557}
+For group: "NAU108", the group means is: 1.40009755515
+The info is: {'trajectory': 4.2554790733324106}
+For group: "NCS214", the group means is: 1.50251314349
+The info is: {'trajectory': 3.9890215360939245}

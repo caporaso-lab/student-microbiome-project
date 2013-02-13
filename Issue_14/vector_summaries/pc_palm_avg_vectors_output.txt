@@ -1,0 +1,2295 @@
+Vectors algorithm: avg
+
+Grouped by ShellfishAllergy: Only one value in the group.
+
+Grouped by "GlutenIntolerant", probability: 0.000044
+For group: "yes", the group means is: 0.585078677924
+The info is: {'avg': 0.58507867792359503}
+For group: "no", the group means is: 1.1528613898
+The info is: {'avg': 1.1528613897984183}
+
+Grouped by "OtherMedication", probability: 0.000000
+For group: "yes.claritin.buproprion.citalopram", the group means is: 0.534757262654
+The info is: {'avg': 0.57672351354011964}
+For group: "yes.zyrtec", the group means is: 0.57672351354
+The info is: {'avg': 0.47165458276650069}
+For group: "yes.metformin.for.polycystic.ovarian.syndrom", the group means is: 0.869459714445
+The info is: {'avg': 0.45998820477592306}
+For group: "yes.aderoll.ADD.medication.", the group means is: 0.459988204776
+The info is: {'avg': 0.8399302590476998}
+For group: "yes.advil.tylenol.and.claritin.as.needed", the group means is: 0.839930259048
+The info is: {'avg': 0.62155475589548359}
+For group: "yes.ambien", the group means is: 0.621554755895
+The info is: {'avg': 0.49415192989015011}
+For group: "yes.chronic.pain.control.Lyrica.and.Ultram.allegra", the group means is: 0.49415192989
+The info is: {'avg': 0.77053296047303588}
+For group: "yes.insulin.novolog", the group means is: 0.538932938638
+The info is: {'avg': 0.53893293863840319}
+For group: "no", the group means is: 1.12393778188
+The info is: {'avg': 1.1239377818754324}
+For group: "yes.amitriptyline", the group means is: 1.11117143352
+The info is: {'avg': 1.111171433522121}
+For group: "yes.zolmitriptan", the group means is: 0.37975096319
+The info is: {'avg': 0.37975096318985446}
+For group: "yes.muscle.relaxants.Aleve", the group means is: 0.770532960473
+The info is: {'avg': 0.45533431450970457}
+For group: "yes.ibuprofen.maxalt", the group means is: 0.58284157691
+The info is: {'avg': 0.58284157690977068}
+For group: "yes.levothyroxin.fluoxetine", the group means is: 0.45533431451
+The info is: {'avg': 0.50415888940555309}
+For group: "yes.acyclovir.usually.every.few.months.anti.viral", the group means is: 0.504158889406
+The info is: {'avg': 0.53475726265412427}
+For group: "yes.lorazepan.Ativan.PRN", the group means is: 0.508419886599
+The info is: {'avg': 0.50841988659852499}
+For group: "yes.take.zyrted.for.seasonal.allergies", the group means is: 0.679481501939
+The info is: {'avg': 0.67948150193879175}
+For group: "yes.fluoxetine.adderall.crestor", the group means is: 0.650225640941
+The info is: {'avg': 0.65022564094083379}
+For group: "yes.sertraline.HCL.Zoloft.balsalazide.disodium.alprazolam.infliximab.ergocalciferol", the group means is: 0.471654582767
+The info is: {'avg': 0.86945971444528558}
+For group: "yes.allergies", the group means is: 0.755463957842
+The info is: {'avg': 0.75546395784191267}
+
+Grouped by "BMI", probability: 0.000000
+For group: "22.86256437", the group means is: 1.49212084189
+The info is: {'avg': 0.54929567950522384}
+For group: "21.74285248", the group means is: 1.05037417057
+The info is: {'avg': 1.0503741705731855}
+For group: "23.61830085", the group means is: 0.750133472656
+The info is: {'avg': 0.75013347265639585}
+For group: "24.29542216", the group means is: 0.581180761146
+The info is: {'avg': 0.5811807611459997}
+For group: "27.4384363", the group means is: 0.582360896783
+The info is: {'avg': 0.5823608967828513}
+For group: "22.95923584", the group means is: 0.57672351354
+The info is: {'avg': 0.57672351354011964}
+For group: "20.67417373", the group means is: 0.717286801159
+The info is: {'avg': 0.71728680115875931}
+For group: "23.73402323", the group means is: 0.489928361517
+The info is: {'avg': 0.48992836151707148}
+For group: "22.46843982", the group means is: 0.810285366492
+The info is: {'avg': 0.8102853664915628}
+For group: "20.04742842", the group means is: 0.778359553286
+The info is: {'avg': 0.7783595532861598}
+For group: "19.22455882", the group means is: 0.403366871025
+The info is: {'avg': 0.40336687102459962}
+For group: "23.08822977", the group means is: 0.914389776214
+The info is: {'avg': 0.91438977621376372}
+For group: "21.14377217", the group means is: 0.679481501939
+The info is: {'avg': 0.67948150193879175}
+For group: "18.56129515", the group means is: 1.18665190386
+The info is: {'avg': 1.1866519038565502}
+For group: "18.30910364", the group means is: 0.677829609185
+The info is: {'avg': 0.67782960918503643}
+For group: "16.82148897", the group means is: 0.441839852089
+The info is: {'avg': 0.30042129021209313}
+For group: "20.71344042", the group means is: 0.650225640941
+The info is: {'avg': 0.65022564094083379}
+For group: "22.14252896", the group means is: 0.75401798971
+The info is: {'avg': 0.75401798971038081}
+For group: "21.91006308", the group means is: 0.45533431451
+The info is: {'avg': 0.45533431450970457}
+For group: "21.85555509", the group means is: 0.534757262654
+The info is: {'avg': 0.53475726265412427}
+For group: "24.12901516", the group means is: 0.538932938638
+The info is: {'avg': 0.53893293863840319}
+For group: "21.78934648", the group means is: 0.300421290212
+The info is: {'avg': 0.44183985208879489}
+For group: "19.4614799", the group means is: 0.528141437329
+The info is: {'avg': 0.5281414373285036}
+For group: "25.84814631", the group means is: 0.714878269616
+The info is: {'avg': 0.40141611431007868}
+For group: "23.40337214", the group means is: 0.40141611431
+The info is: {'avg': 0.4724360455229667}
+For group: "25.10464676", the group means is: 0.472436045523
+The info is: {'avg': 0.75546395784191267}
+For group: "25.06722089", the group means is: 0.755463957842
+The info is: {'avg': 0.48872480574010818}
+For group: "25.82704578", the group means is: 0.604955624684
+The info is: {'avg': 0.77053296047303588}
+For group: "17.75428231", the group means is: 0.48872480574
+The info is: {'avg': 0.67854279509405646}
+For group: "19.96884013", the group means is: 0.770532960473
+The info is: {'avg': 0.48416254789768981}
+For group: "20.80087514", the group means is: 0.678542795094
+The info is: {'avg': 1.1510230956207761}
+For group: "18.2900515", the group means is: 0.484162547898
+The info is: {'avg': 0.71702533488913844}
+For group: "22.31422006", the group means is: 1.15102309562
+The info is: {'avg': 0.59848475923175448}
+For group: "33.83659527", the group means is: 0.869459714445
+The info is: {'avg': 0.60495562468376896}
+For group: "22.23995609", the group means is: 0.598484759232
+The info is: {'avg': 0.67485726675907387}
+For group: "32.09777117", the group means is: 0.717025334889
+The info is: {'avg': 0.77686660823963272}
+For group: "20.08422449", the group means is: 0.674857266759
+The info is: {'avg': 1.492120841888618}
+For group: "19.93581039", the group means is: 0.77686660824
+The info is: {'avg': 0.45998820477592306}
+For group: "26.58108052", the group means is: 0.549295679505
+The info is: {'avg': 0.62155475589548359}
+For group: "25.74717699", the group means is: 0.459988204776
+The info is: {'avg': 0.57282299480357712}
+For group: "23.62762713", the group means is: 0.621554755895
+The info is: {'avg': 0.8399302590476998}
+For group: "24.03069852", the group means is: 0.572822994804
+The info is: {'avg': 0.37975096318985446}
+For group: "23.20537035", the group means is: 0.839930259048
+The info is: {'avg': 0.75592156844377256}
+For group: "22.95737403", the group means is: 0.755921568444
+The info is: {'avg': 0.3857924481853573}
+For group: "31.840989", the group means is: 0.385792448185
+The info is: {'avg': 0.44553672687524148}
+For group: "21.9480618", the group means is: 0.37975096319
+The info is: {'avg': 0.70234763935157329}
+For group: "27.89405196", the group means is: 0.445536726875
+The info is: {'avg': 0.49979739947285967}
+For group: "25.39969916", the group means is: 0.508419886599
+The info is: {'avg': 0.50841988659852499}
+For group: "20.36066949", the group means is: 0.499797399473
+The info is: {'avg': 0.71373935089907636}
+For group: "20.08770228", the group means is: 0.577211578732
+The info is: {'avg': 0.57721157873160456}
+For group: "27.70587572", the group means is: 0.713739350899
+The info is: {'avg': 0.7148782696164877}
+For group: "22.70997751", the group means is: 0.826010863276
+The info is: {'avg': 0.82601086327583262}
+For group: "na", the group means is: 0.985506626594
+The info is: {'avg': 0.98550662659367161}
+For group: "26.60838591", the group means is: 0.702347639352
+The info is: {'avg': 0.86945971444528558}
+For group: "23.67479197", the group means is: 0.55963841288
+The info is: {'avg': 0.55963841288011607}
+For group: "23.05590828", the group means is: 0.641719389842
+The info is: {'avg': 0.64171938984225885}
+
+Grouped by "Asthma", probability: 0.910438
+For group: "yes", the group means is: 1.13848572245
+The info is: {'avg': 1.1384857224495779}
+For group: "no", the group means is: 1.14775055313
+The info is: {'avg': 1.1477505531338883}
+
+Grouped by "OtherInfo", probability: 0.000000
+For group: "I.work.with.exotic.wild.animals.on.a.weekly.basis.and.come.into.direct.contact.with.wildcats.number.of.species.wolves.wild.New.Guinea.singing.dogs.and.lemurs.I.also.come.in.contact.with.a.variety.of.meats.and.dead.animals.while.butchering.and.preparing.food.for.the.wild.animals.at.the.cneter.where.I.work.", the group means is: 0.839930259048
+The info is: {'avg': 0.8399302590476998}
+For group: "Starting.the.tanning.bed.midway.through.the.experiment", the group means is: 0.914389776214
+The info is: {'avg': 0.91438977621376372}
+For group: "I.do.not.wear.shoes.inside.the.house", the group means is: 0.641719389842
+The info is: {'avg': 0.64171938984225885}
+For group: "I.write.mainly.left.handed.will.sometimes.write.right.handed.I.do.most.all.other.things.right.handed.I.have.eczema.or.psoriasis.I.had.chicken.pox.twice.on.the.secodn.time.I.had.gotten.a.fever.of.107..age.10.For.facial.cosmetics.I.just.use.a.daily.moisturizer.I.do.occasionally.go.in.a.sauna.1.to.2.times.per.week.Amount.of.execise.fluctuates.per.week.depending.on.workload.Multivitamin.contains.probiotic.I.eat.a.glutten.free.vegan.diet.with.almost.all.food.RAW.varies.on.workload.per.week.", the group means is: 0.489928361517
+The info is: {'avg': 0.37975096318985446}
+For group: "na", the group means is: 1.10998117221
+The info is: {'avg': 0.48992836151707148}
+For group: "Eat.meat.1.to.2.times.a.week", the group means is: 0.829013429778
+The info is: {'avg': 1.1099811722127857}
+For group: "I.think.I.may.have.eczema.or.psoriasis.", the group means is: 0.713739350899
+The info is: {'avg': 0.82901342977840864}
+For group: "may.get.a.pet", the group means is: 0.48872480574
+The info is: {'avg': 0.48872480574010818}
+For group: "summers.in.Alaska", the group means is: 0.445536726875
+The info is: {'avg': 0.44553672687524148}
+For group: "I.have.IBS.I.may.have.both.Eczema.and.Psoriasis.or.other.form.of.skin.condition.I.am.allergic.to.metal.I.have.a.number.of.health.issues.yet.to.be.explained.by.doctors.not.that.they.haven.t.tried.", the group means is: 1.11117143352
+The info is: {'avg': 1.111171433522121}
+For group: "tanning.lotion.I.mentioned.that.I.have.3plus.roomates.because.I.am.married.and.have.3.kids", the group means is: 0.528141437329
+The info is: {'avg': 0.5281414373285036}
+For group: "On.the.third.testing.sample.I.accidentally.contaminated.my.oral.sample.with.my.hands.I.had.just.taken.medication.and.saw.that.it.had.gotten.on.the.swab.and.stupidly.tried.to.wipe.it.off.with.my.hand.the.medication.is.blue.", the group means is: 0.459988204776
+The info is: {'avg': 0.45998820477592306}
+For group: "Owns.an.african.grey.parrot.and.six.bearded.dragons.I.handle.all.of.them.on.a.regular.basis.Additionally.I.am.breeding.the.lizards.and.have.over.100.eggs.that.I.tend.to.on.a.daily.basis.in.an.incubator.", the group means is: 0.549295679505
+The info is: {'avg': 0.54929567950522384}
+For group: "previously.diagnosed.with.colitis.but.later.attributed.to.gluten.intoerance.does.experience.acute.stress.related.eczema.outbreaks", the group means is: 0.37975096319
+The info is: {'avg': 0.49979739947285967}
+For group: "Tuesday.Thursday.in.Flagstaff.Fr.Monday.Queen.Creek.AZ", the group means is: 0.499797399473
+The info is: {'avg': 0.71373935089907636}
+
+Grouped by "menstruation_disturbance", probability: 0.605603
+For group: "Yes", the group means is: 1.14654439111
+The info is: {'avg': 1.1465443911066111}
+For group: "No", the group means is: 1.11677328833
+The info is: {'avg': 1.1167732883331967}
+
+Grouped by "DailyMultivitamin", probability: 0.065008
+For group: "yes", the group means is: 1.05227433635
+The info is: {'avg': 1.0522743363502491}
+For group: "no", the group means is: 1.1642283095
+The info is: {'avg': 1.1642283094951089}
+
+Grouped by GreekHouse: Only one value in the group.
+
+Grouped by "SmokeCigarettes", probability: 0.118310
+For group: "regularly", the group means is: 0.713739350899
+The info is: {'avg': 1.0301536797881172}
+For group: "rarely", the group means is: 1.03015367979
+The info is: {'avg': 0.71373935089907636}
+For group: "occasionally", the group means is: 0.810285366492
+The info is: {'avg': 1.1256959622167284}
+For group: "never", the group means is: 1.12569596222
+The info is: {'avg': 0.8102853664915628}
+
+Grouped by "IBD", probability: 0.918438
+For group: "Yes.IBS", the group means is: 1.11117143352
+The info is: {'avg': 1.111171433522121}
+For group: "Colitis", the group means is: 1.08561323943
+The info is: {'avg': 1.0856132394317466}
+For group: "no", the group means is: 1.15031803785
+The info is: {'avg': 1.1503180378532889}
+
+Grouped by "Roomates", probability: 0.000000
+For group: "0", the group means is: 1.34334011318
+The info is: {'avg': 0.51585780576247542}
+For group: "na", the group means is: 0.58284157691
+The info is: {'avg': 0.58284157690977068}
+For group: "1", the group means is: 1.1742838787
+The info is: {'avg': 1.1742838787029648}
+For group: "3.plus", the group means is: 0.515857805762
+The info is: {'avg': 1.3433401131819169}
+For group: "3", the group means is: 0.956427432192
+The info is: {'avg': 0.95642743219229809}
+For group: "2", the group means is: 1.0890319714
+The info is: {'avg': 1.0890319714036998}
+
+Grouped by "OnCampusHousing", probability: 0.000262
+For group: "yes", the group means is: 0.885783813723
+The info is: {'avg': 0.88578381372300008}
+For group: "no", the group means is: 1.18555459301
+The info is: {'avg': 1.1855545930118445}
+
+Grouped by "ZipCode", probability: 0.000000
+For group: "27040", the group means is: 0.717025334889
+The info is: {'avg': 0.71702533488913844}
+For group: "28782", the group means is: 0.826010863276
+The info is: {'avg': 0.82601086327583262}
+For group: "86004", the group means is: 1.01581041004
+The info is: {'avg': 1.0158104100443002}
+For group: "27606", the group means is: 0.713739350899
+The info is: {'avg': 1.1965237334911361}
+For group: "27607", the group means is: 0.893653295611
+The info is: {'avg': 0.89365329561077955}
+For group: "na", the group means is: 0.758135300277
+The info is: {'avg': 0.75813530027730669}
+For group: "27513", the group means is: 1.05037417057
+The info is: {'avg': 0.71373935089907636}
+For group: "80310", the group means is: 0.644786077946
+The info is: {'avg': 1.0503741705731855}
+For group: "27302", the group means is: 0.839930259048
+The info is: {'avg': 0.64478607794586329}
+For group: "80021", the group means is: 0.77686660824
+The info is: {'avg': 0.8399302590476998}
+For group: "80020", the group means is: 1.31083762864
+The info is: {'avg': 0.77686660823963272}
+For group: "85388", the group means is: 0.755921568444
+The info is: {'avg': 1.3108376286437011}
+For group: "86001", the group means is: 1.19652373349
+The info is: {'avg': 0.75592156844377256}
+For group: "27717", the group means is: 0.621554755895
+The info is: {'avg': 0.62155475589548359}
+For group: "27613", the group means is: 0.471654582767
+The info is: {'avg': 0.47165458276650069}
+For group: "86015", the group means is: 0.37975096319
+The info is: {'avg': 0.37975096318985446}
+For group: "27695", the group means is: 0.650225640941
+The info is: {'avg': 0.65022564094083379}
+For group: "80504", the group means is: 0.914389776214
+The info is: {'avg': 0.91438977621376372}
+For group: "80602", the group means is: 1.18665190386
+The info is: {'avg': 1.1866519038565502}
+For group: "80305", the group means is: 0.714878269616
+The info is: {'avg': 0.7148782696164877}
+For group: "80302", the group means is: 1.31604406845
+The info is: {'avg': 1.3160440684542458}
+For group: "80303", the group means is: 0.868857371932
+The info is: {'avg': 0.86885737193239476}
+For group: "80013", the group means is: 0.385792448185
+The info is: {'avg': 0.3857924481853573}
+
+Grouped by PeanutAllergy: Only one value in the group.
+
+Grouped by "Cats", probability: 0.161960
+For group: "yes", the group means is: 1.17447049025
+The info is: {'avg': 1.1744704902529801}
+For group: "no", the group means is: 1.08018986485
+The info is: {'avg': 1.0801898648533499}
+
+Grouped by "LactoseIntolerant", probability: 0.823274
+For group: "yes", the group means is: 1.16777755833
+The info is: {'avg': 1.1677775583278946}
+For group: "no", the group means is: 1.14921115062
+The info is: {'avg': 1.1492111506239477}
+
+Grouped by TreeNutAllergy: Only one value in the group.
+
+Grouped by "ArtificialTanning", probability: 0.245345
+For group: "yes.tanning.beds", the group means is: 0.914389776214
+The info is: {'avg': 0.91438977621376372}
+For group: "no", the group means is: 1.15313753996
+The info is: {'avg': 1.1531375399573647}
+
+Grouped by "Chickenpox", probability: 0.000000
+For group: "yes", the group means is: 1.23429629618
+The info is: {'avg': 1.2342962961782369}
+For group: "no", the group means is: 0.847078820785
+The info is: {'avg': 0.84707882078477348}
+
+Grouped by AmbiguousTimepoint: Only one value in the group.
+
+Grouped by "Fluvaccine", probability: 0.002971
+For group: "6.months", the group means is: 1.06357144483
+The info is: {'avg': 1.0635714448341473}
+For group: "over.a.year", the group means is: 1.18514666856
+The info is: {'avg': 0.45998820477592306}
+For group: "within.year", the group means is: 0.459988204776
+The info is: {'avg': 1.185146668556825}
+
+Grouped by "WeekNumber", probability: 0.754085
+For group: "10", the group means is: 1.03029161556
+The info is: {'avg': 1.0302916155639912}
+For group: "1", the group means is: 1.11499626304
+The info is: {'avg': 1.114996263038448}
+For group: "3", the group means is: 1.12452665856
+The info is: {'avg': 1.1245266585618026}
+For group: "2", the group means is: 1.19100627288
+The info is: {'avg': 1.1910062728842028}
+For group: "5", the group means is: 0.993805896432
+The info is: {'avg': 0.99380589643172146}
+For group: "4", the group means is: 1.15391811956
+The info is: {'avg': 1.1539181195643784}
+For group: "7", the group means is: 1.23749049685
+The info is: {'avg': 1.2374904968538289}
+For group: "6", the group means is: 1.2066966337
+The info is: {'avg': 1.2066966337048133}
+For group: "9", the group means is: 1.14349392151
+The info is: {'avg': 1.143493921511519}
+For group: "8", the group means is: 1.1540872976
+The info is: {'avg': 1.1540872975952394}
+
+Grouped by "FlossTeeth", probability: 0.121399
+For group: "regularly", the group means is: 1.2135970421
+The info is: {'avg': 1.1877872029367071}
+For group: "daily", the group means is: 1.14981598332
+The info is: {'avg': 1.2135970420988209}
+For group: "rarely", the group means is: 1.18778720294
+The info is: {'avg': 0.90630967987711619}
+For group: "occasionally", the group means is: 1.07962705195
+The info is: {'avg': 1.0796270519528628}
+For group: "never", the group means is: 0.906309679877
+The info is: {'avg': 1.1498159833208184}
+
+Grouped by "TotalIndividualWeeks", probability: 0.000000
+For group: "11", the group means is: 1.04706468668
+The info is: {'avg': 1.047064686679805}
+For group: "10", the group means is: 1.27910328725
+The info is: {'avg': 1.279103287254731}
+For group: "13", the group means is: 0.857621639015
+The info is: {'avg': 0.85762163901472843}
+For group: "12", the group means is: 0.90254730945
+The info is: {'avg': 0.90254730944986505}
+For group: "14", the group means is: 0.534757262654
+The info is: {'avg': 0.53475726265412427}
+For group: "7", the group means is: 1.33311291135
+The info is: {'avg': 1.3331129113455933}
+For group: "9", the group means is: 1.02101343071
+The info is: {'avg': 1.0210134307121759}
+For group: "8", the group means is: 0.770936515846
+The info is: {'avg': 0.77093651584596012}
+
+Grouped by "DrinkAlcohol", probability: 0.000017
+For group: "regularly", the group means is: 1.14030606993
+The info is: {'avg': 1.2120014547628517}
+For group: "daily", the group means is: 0.58284157691
+The info is: {'avg': 1.1403060699328258}
+For group: "rarely", the group means is: 1.21200145476
+The info is: {'avg': 0.91914165047041418}
+For group: "occasionally", the group means is: 0.954553587188
+The info is: {'avg': 0.95455358718795358}
+For group: "never", the group means is: 0.91914165047
+The info is: {'avg': 0.58284157690977068}
+
+Grouped by "OtherSupplements", probability: 0.000000
+For group: "yes.vitamin.D.fish.oil.B12.calcium", the group means is: 0.75401798971
+The info is: {'avg': 0.75401798971038081}
+For group: "yes.fish.oil..creatine..whey.protein", the group means is: 0.604955624684
+The info is: {'avg': 0.60495562468376896}
+For group: "yes.glucosamine.chondroitin", the group means is: 0.770532960473
+The info is: {'avg': 0.77053296047303588}
+For group: "no", the group means is: 1.19531180718
+The info is: {'avg': 1.1953118071835296}
+For group: "yes.bulgarian.tribulus.GNC.Amplified.mass.xxx.amplified.wheybolic.extreme.go.and.ravage", the group means is: 0.549295679505
+The info is: {'avg': 0.54929567950522384}
+For group: "yes.melatonin", the group means is: 0.621554755895
+The info is: {'avg': 0.62155475589548359}
+For group: "yes.spirulina..hemp.protein", the group means is: 0.489928361517
+The info is: {'avg': 0.48992836151707148}
+For group: "yes.vitamin.D", the group means is: 0.650225640941
+The info is: {'avg': 0.65022564094083379}
+For group: "yes.vitamin.B.complex", the group means is: 0.37975096319
+The info is: {'avg': 0.37975096318985446}
+For group: "yes.protein.shakes", the group means is: 0.755463957842
+The info is: {'avg': 0.75546395784191267}
+For group: "yes.flaxseed.oil", the group means is: 0.778359553286
+The info is: {'avg': 0.7783595532861598}
+For group: "yes", the group means is: 0.300421290212
+The info is: {'avg': 0.30042129021209313}
+For group: "yes.Lglutamine.Larginine.Lglycine.BCAAs.proteinpowder.reishi.mushroom.extract", the group means is: 0.45533431451
+The info is: {'avg': 0.40336687102459962}
+For group: "yes.daily.calcium.and.Vitamin.D", the group means is: 0.471654582767
+The info is: {'avg': 0.47165458276650069}
+For group: "yes.several.supplememtns.regarding.workout..Glutamine..creatine..pre.and.post.workout", the group means is: 0.914389776214
+The info is: {'avg': 0.91438977621376372}
+For group: "yes.omega3", the group means is: 0.403366871025
+The info is: {'avg': 0.45533431450970457}
+
+Grouped by "ExerciseRoutine", probability: 0.000213
+For group: "regularly", the group means is: 1.09606577468
+The info is: {'avg': 1.0958207836616756}
+For group: "rarely", the group means is: 1.09582078366
+The info is: {'avg': 1.0960657746826519}
+For group: "occasionally", the group means is: 1.32835697279
+The info is: {'avg': 1.3283569727939328}
+For group: "daily", the group means is: 0.960597768808
+The info is: {'avg': 0.96059776880799519}
+
+Grouped by "BiteFingernails", probability: 0.003753
+For group: "yes", the group means is: 1.04816094933
+The info is: {'avg': 1.0481609493278319}
+For group: "no", the group means is: 1.21536715867
+The info is: {'avg': 1.2153671586741868}
+
+Grouped by "WeekDescription", probability: 0.754085
+For group: "week.2", the group means is: 1.19100627288
+The info is: {'avg': 1.0302916155639912}
+For group: "week.1", the group means is: 1.11499626304
+The info is: {'avg': 1.114996263038448}
+For group: "week.10", the group means is: 1.03029161556
+The info is: {'avg': 1.1910062728842028}
+For group: "week.3", the group means is: 1.12452665856
+The info is: {'avg': 1.1245266585618026}
+For group: "week.4", the group means is: 1.15391811956
+The info is: {'avg': 1.1539181195643784}
+For group: "week.5", the group means is: 0.993805896432
+The info is: {'avg': 0.99380589643172146}
+For group: "week.6", the group means is: 1.2066966337
+The info is: {'avg': 1.2066966337048133}
+For group: "week.7", the group means is: 1.23749049685
+The info is: {'avg': 1.2374904968538289}
+For group: "week.8", the group means is: 1.1540872976
+The info is: {'avg': 1.1540872975952394}
+For group: "week.9", the group means is: 1.14349392151
+The info is: {'avg': 1.143493921511519}
+
+Grouped by "Diet", probability: 0.051788
+For group: "omnivore", the group means is: 1.14579448187
+The info is: {'avg': 1.1457944818712178}
+For group: "omnivore.but.no.red.meat", the group means is: 0.702347639352
+The info is: {'avg': 0.70234763935157329}
+For group: "vegan", the group means is: 1.19915808972
+The info is: {'avg': 1.1991580897219964}
+For group: "vegetarian.seafood", the group means is: 0.770532960473
+The info is: {'avg': 0.77053296047303588}
+
+Grouped by "Dogs", probability: 0.000000
+For group: "yes", the group means is: 1.17299004463
+The info is: {'avg': 1.1729900446345078}
+For group: "no", the group means is: 0.879793494731
+The info is: {'avg': 0.87979349473142887}
+
+Grouped by "SkinConditions", probability: 0.000277
+For group: "psoriasis", the group means is: 0.534757262654
+The info is: {'avg': 0.53475726265412427}
+For group: "rosacea", the group means is: 0.598484759232
+The info is: {'avg': 0.59848475923175448}
+For group: "none", the group means is: 1.11163515004
+The info is: {'avg': 1.1116351500445867}
+For group: "eczema.psoriasis", the group means is: 1.25513018788
+The info is: {'avg': 1.2551301878769219}
+For group: "other.subacute.cutaneous.lupus.erythematosus.this.is.non.scarring.nonatrophy.producing.photosensitive.dermatosis", the group means is: 0.499797399473
+The info is: {'avg': 0.49979739947285967}
+For group: "eczema", the group means is: 1.12010579013
+The info is: {'avg': 1.1201057901308042}
+
+Grouped by "Antibiotics", probability: 0.008920
+For group: "week", the group means is: 0.797230043803
+The info is: {'avg': 0.79723004380253537}
+For group: "6.months", the group means is: 1.09971999552
+The info is: {'avg': 1.0997199955155395}
+For group: "month", the group means is: 0.944825123986
+The info is: {'avg': 1.0824128005913671}
+For group: "within.year", the group means is: 1.22776234692
+The info is: {'avg': 1.227762346922437}
+For group: "over.a.year", the group means is: 1.08241280059
+The info is: {'avg': 0.94482512398561724}
+
+Grouped by "Appendix", probability: 0.017938
+For group: "yes", the group means is: 0.778020799549
+The info is: {'avg': 0.77802079954872339}
+For group: "no", the group means is: 1.16348197263
+The info is: {'avg': 1.1634819726308943}
+
+Grouped by BodySite: Only one value in the group.
+
+Grouped by ForeheadTimeseries: Only one value in the group.
+
+Grouped by "TraveledOutOfUS", probability: 0.000005
+For group: "within.year", the group means is: 1.38086020288
+The info is: {'avg': 1.3808602028833026}
+For group: "month", the group means is: 0.778050233844
+The info is: {'avg': 0.96206265037319483}
+For group: "over.a.year", the group means is: 1.09864476332
+The info is: {'avg': 1.0986447633247569}
+For group: "3.months", the group means is: 1.15086728016
+The info is: {'avg': 1.1508672801644928}
+For group: "6.months", the group means is: 0.962062650373
+The info is: {'avg': 0.77805023384387306}
+
+Grouped by "OtherAllergies", probability: 0.000140
+For group: "yes", the group means is: 0.789937422289
+The info is: {'avg': 0.78993742228907737}
+For group: "no", the group means is: 1.17338097226
+The info is: {'avg': 0.45533431450970457}
+For group: "yes.soy", the group means is: 0.45533431451
+The info is: {'avg': 1.1733809722582025}
+
+Grouped by "SeasonalAllergies", probability: 0.174983
+For group: "yes", the group means is: 1.18429717725
+The info is: {'avg': 1.1842971772458279}
+For group: "no", the group means is: 1.10764055861
+The info is: {'avg': 1.1076405586055886}
+
+Grouped by AnyTimeseries: Only one value in the group.
+
+Grouped by "BeeStingAllergies", probability: 0.680205
+For group: "yes", the group means is: 1.08552126898
+The info is: {'avg': 1.0855212689813729}
+For group: "no", the group means is: 1.15245412187
+The info is: {'avg': 1.1524541218735695}
+
+Grouped by "University", probability: 0.658809
+For group: "NCS", the group means is: 1.08783160233
+The info is: {'avg': 1.0878316023273633}
+For group: "CU", the group means is: 1.14290046445
+The info is: {'avg': 1.1429004644479845}
+For group: "NAU", the group means is: 1.16246503541
+The info is: {'avg': 1.1624650354073587}
+
+Grouped by "Diabetes", probability: 0.001973
+For group: "yes.type.I", the group means is: 0.692277892936
+The info is: {'avg': 0.6922778929358897}
+For group: "no", the group means is: 1.16678271644
+The info is: {'avg': 1.1667827164447957}
+
+Grouped by "SwimmingPoolHotTubUse", probability: 0.005850
+For group: "rarely", the group means is: 1.08896064835
+The info is: {'avg': 1.0889606483478449}
+For group: "occasionally", the group means is: 0.581180761146
+The info is: {'avg': 1.2027335535706642}
+For group: "never", the group means is: 1.20273355357
+The info is: {'avg': 0.5811807611459997}
+
+Grouped by TongueTimeseries: Only one value in the group.
+
+Grouped by "FacialCosmetics", probability: 0.000049
+For group: "regularly", the group means is: 0.875045872074
+The info is: {'avg': 0.93599213070803611}
+For group: "daily", the group means is: 1.29407336179
+The info is: {'avg': 0.87504587207399764}
+For group: "rarely", the group means is: 0.935992130708
+The info is: {'avg': 1.1112309539947596}
+For group: "occasionally", the group means is: 1.09366119691
+The info is: {'avg': 1.0936611969081376}
+For group: "never", the group means is: 1.11123095399
+The info is: {'avg': 1.2940733617858557}
+
+Grouped by "FabricSoftener", probability: 0.160466
+For group: "yes", the group means is: 1.18442293116
+The info is: {'avg': 1.1844229311563119}
+For group: "no", the group means is: 1.10367043889
+The info is: {'avg': 1.1036704388919831}
+
+Grouped by "Pregnant", probability: 0.067838
+For group: "not.sure", the group means is: 0.77686660824
+The info is: {'avg': 0.77686660823963272}
+For group: "no", the group means is: 1.15365415178
+The info is: {'avg': 1.1536541517843848}
+
+Grouped by "Gender", probability: 0.019188
+For group: "na", the group means is: 0.455580667976
+The info is: {'avg': 0.45558066797607616}
+For group: "male", the group means is: 1.12685041342
+The info is: {'avg': 1.1268504134220751}
+For group: "female", the group means is: 1.15133482123
+The info is: {'avg': 1.151334821228007}
+
+Grouped by "Age", probability: 0.000000
+For group: "24", the group means is: 1.05318321931
+The info is: {'avg': 1.0531832193110995}
+For group: "25", the group means is: 0.817106691062
+The info is: {'avg': 0.81710669106239997}
+For group: "27", the group means is: 0.803820362177
+The info is: {'avg': 0.80382036217723729}
+For group: "20", the group means is: 1.25235331403
+The info is: {'avg': 1.2523533140337011}
+For group: "21", the group means is: 0.87811665269
+The info is: {'avg': 0.87811665268963379}
+For group: "22", the group means is: 1.05622336939
+The info is: {'avg': 1.0562233693888339}
+For group: "23", the group means is: 0.844364204571
+The info is: {'avg': 0.84436420457147865}
+For group: "19", the group means is: 0.57672351354
+The info is: {'avg': 0.57672351354011964}
+For group: "18", the group means is: 0.883081043951
+The info is: {'avg': 0.88308104395138953}
+For group: "30", the group means is: 0.750133472656
+The info is: {'avg': 0.75013347265639585}
+For group: "37", the group means is: 0.674857266759
+The info is: {'avg': 0.67485726675907387}
+For group: "29", the group means is: 0.528141437329
+The info is: {'avg': 0.5281414373285036}
+For group: "36", the group means is: 0.508419886599
+The info is: {'avg': 0.50841988659852499}
+For group: "55", the group means is: 0.472436045523
+The info is: {'avg': 0.4724360455229667}
+For group: "32", the group means is: 0.705914511573
+The info is: {'avg': 0.7059145115727512}
+For group: "na", the group means is: 0.520738942173
+The info is: {'avg': 0.52073894217322636}
+For group: "41", the group means is: 0.49415192989
+The info is: {'avg': 0.49415192989015011}
+For group: "51", the group means is: 0.58284157691
+The info is: {'avg': 0.58284157690977068}
+
+Grouped by "DominantHand", probability: 0.042042
+For group: "ambidextrous", the group means is: 1.19672739827
+The info is: {'avg': 1.1967273982695261}
+For group: "right", the group means is: 1.16110578843
+The info is: {'avg': 1.1611057884296079}
+For group: "left", the group means is: 0.880895882397
+The info is: {'avg': 0.88089588239678152}
+
+Grouped by "MoveToCurrentLocation", probability: 0.000039
+For group: "6.months", the group means is: 1.72519827802
+The info is: {'avg': 1.725198278018063}
+For group: "over.a.year", the group means is: 1.13525718521
+The info is: {'avg': 0.82465617927092327}
+For group: "within.year", the group means is: 0.824656179271
+The info is: {'avg': 1.1352571852089819}
+
+Grouped by SampleID: this value can not be used
+
+Grouped by "Csection", probability: 0.060343
+For group: "not.sure", the group means is: 0.884297000842
+The info is: {'avg': 0.88429700084203644}
+For group: "yes", the group means is: 1.1057169108
+The info is: {'avg': 1.1057169107982789}
+For group: "no", the group means is: 1.17467002055
+The info is: {'avg': 1.1746700205503837}
+
+Grouped by "DeodorantAntiperspirant", probability: 0.000000
+For group: "not.sure", the group means is: 1.01813696962
+The info is: {'avg': 1.0181369696214866}
+For group: "neither", the group means is: 0.703416943449
+The info is: {'avg': 0.70341694344920769}
+For group: "deodorant", the group means is: 1.03512343549
+The info is: {'avg': 1.0351234354914598}
+For group: "deodarant", the group means is: 1.27393147159
+The info is: {'avg': 1.2739314715947645}
+For group: "antiperspirant", the group means is: 1.27711433977
+The info is: {'avg': 1.2771143397705627}
+
+Grouped by "ExerciseIndoorsOutdoors", probability: 0.006440
+For group: "indoor", the group means is: 1.07654026209
+The info is: {'avg': 1.2444762317648475}
+For group: "both", the group means is: 1.21748119927
+The info is: {'avg': 1.2174811992707157}
+For group: "outdoor", the group means is: 1.24447623176
+The info is: {'avg': 1.0765402620941273}
+For group: "both.seasonal", the group means is: 0.75401798971
+The info is: {'avg': 0.75401798971038081}
+For group: "seasonal", the group means is: 1.01750985724
+The info is: {'avg': 1.0175098572429495}
+
+Grouped by "PrescriptionForFacialAcne", probability: 0.591297
+For group: "yes", the group means is: 1.20817844494
+The info is: {'avg': 1.2081784449381949}
+For group: "no", the group means is: 1.14599031798
+The info is: {'avg': 1.1459903179801441}
+
+Grouped by "SiteID", probability: 0.000259
+For group: "CUB044.palm", the group means is: 0.549295679505
+The info is: {'avg': 0.54929567950522384}
+For group: "NAU148.palm", the group means is: 0.674857266759
+The info is: {'avg': 0.67485726675907387}
+For group: "CUB038.palm", the group means is: 0.829013429778
+The info is: {'avg': 0.82901342977840864}
+For group: "CUB010.palm", the group means is: 0.504158889406
+The info is: {'avg': 0.71702533488913844}
+For group: "CUB000.palm", the group means is: 0.77686660824
+The info is: {'avg': 0.50415888940555309}
+For group: "NCS203.palm", the group means is: 1.05037417057
+The info is: {'avg': 1.0503741705731855}
+For group: "CUB037.palm", the group means is: 0.678542795094
+The info is: {'avg': 0.8102853664915628}
+For group: "NAU155.palm", the group means is: 0.750133472656
+The info is: {'avg': 0.75013347265639585}
+For group: "NCS233.palm", the group means is: 0.57672351354
+The info is: {'avg': 0.40336687102459962}
+For group: "NAU101.palm", the group means is: 0.677829609185
+The info is: {'avg': 0.57672351354011964}
+For group: "CUB052.palm", the group means is: 0.385792448185
+The info is: {'avg': 0.67782960918503643}
+For group: "NAU147.palm", the group means is: 0.58284157691
+The info is: {'avg': 0.3857924481853573}
+For group: "NCS212.palm", the group means is: 0.581180761146
+The info is: {'avg': 0.45218295082622767}
+For group: "CUB019.palm", the group means is: 0.484162547898
+The info is: {'avg': 0.5811807611459997}
+For group: "NAU150.palm", the group means is: 0.778359553286
+The info is: {'avg': 0.48416254789768981}
+For group: "NCS253.palm", the group means is: 0.839930259048
+The info is: {'avg': 0.8399302590476998}
+For group: "CUB015.palm", the group means is: 0.538932938638
+The info is: {'avg': 0.53893293863840319}
+For group: "NAU136.palm", the group means is: 0.403366871025
+The info is: {'avg': 0.58284157690977068}
+For group: "CUB051.palm", the group means is: 0.810285366492
+The info is: {'avg': 0.40141611431007868}
+For group: "NAU133.palm", the group means is: 0.445536726875
+The info is: {'avg': 0.71728680115875931}
+For group: "NCS210.palm", the group means is: 0.572822994804
+The info is: {'avg': 0.67854279509405646}
+For group: "NAU154.palm", the group means is: 0.40141611431
+The info is: {'avg': 0.44553672687524148}
+For group: "CUB012.palm", the group means is: 0.702347639352
+The info is: {'avg': 0.4724360455229667}
+For group: "NAU132.palm", the group means is: 0.441839852089
+The info is: {'avg': 0.57282299480357712}
+For group: "NAU121.palm", the group means is: 0.452182950826
+The info is: {'avg': 0.77686660823963272}
+For group: "CUB056.palm", the group means is: 0.489928361517
+The info is: {'avg': 0.70234763935157329}
+For group: "NCS243.palm", the group means is: 0.621554755895
+The info is: {'avg': 0.59848475923175448}
+For group: "NCS234.palm", the group means is: 0.717025334889
+The info is: {'avg': 0.75592156844377256}
+For group: "CUB003.palm", the group means is: 1.18665190386
+The info is: {'avg': 0.48992836151707148}
+For group: "NAU123.palm", the group means is: 0.755463957842
+The info is: {'avg': 0.62155475589548359}
+For group: "CUB009.palm", the group means is: 1.11117143352
+The info is: {'avg': 0.65022564094083379}
+For group: "CUB007.palm", the group means is: 0.770532960473
+The info is: {'avg': 0.37975096318985446}
+For group: "NCS263.palm", the group means is: 0.577211578732
+The info is: {'avg': 1.1866519038565502}
+For group: "NAU109.palm", the group means is: 0.55963841288
+The info is: {'avg': 0.75546395784191267}
+For group: "NCS214.palm", the group means is: 0.713739350899
+The info is: {'avg': 0.57721157873160456}
+For group: "NCS204.palm", the group means is: 0.471654582767
+The info is: {'avg': 0.77053296047303588}
+For group: "NAU164.palm", the group means is: 0.755921568444
+The info is: {'avg': 1.111171433522121}
+For group: "NAU110.palm", the group means is: 0.499797399473
+The info is: {'avg': 0.71373935089907636}
+For group: "CUB016.palm", the group means is: 0.459988204776
+The info is: {'avg': 0.47165458276650069}
+For group: "NAU105.palm", the group means is: 0.455580667976
+The info is: {'avg': 0.55963841288011607}
+For group: "CUB042.palm", the group means is: 0.508419886599
+The info is: {'avg': 0.45998820477592306}
+For group: "NAU106.palm", the group means is: 0.37975096319
+The info is: {'avg': 0.45558066797607616}
+For group: "CUB029.palm", the group means is: 0.604955624684
+The info is: {'avg': 0.64171938984225885}
+For group: "NCS213.palm", the group means is: 0.826010863276
+The info is: {'avg': 0.60495562468376896}
+For group: "CUB027.palm", the group means is: 0.300421290212
+The info is: {'avg': 0.82601086327583262}
+For group: "NAU134.palm", the group means is: 0.45533431451
+The info is: {'avg': 0.30042129021209313}
+For group: "NAU149.palm", the group means is: 0.472436045523
+The info is: {'avg': 0.45533431450970457}
+For group: "NAU157.palm", the group means is: 0.534757262654
+The info is: {'avg': 0.44183985208879489}
+For group: "CUB008.palm", the group means is: 0.717286801159
+The info is: {'avg': 0.53475726265412427}
+For group: "CUB026.palm", the group means is: 0.598484759232
+The info is: {'avg': 0.49979739947285967}
+For group: "NAU160.palm", the group means is: 0.48872480574
+The info is: {'avg': 0.48872480574010818}
+For group: "NCS248.palm", the group means is: 0.650225640941
+The info is: {'avg': 0.7148782696164877}
+For group: "CUB011.palm", the group means is: 0.528141437329
+The info is: {'avg': 0.5281414373285036}
+For group: "CUB004.palm", the group means is: 0.714878269616
+The info is: {'avg': 0.7783595532861598}
+For group: "CUB050.palm", the group means is: 0.49415192989
+The info is: {'avg': 0.49415192989015011}
+For group: "CUB048.palm", the group means is: 0.75401798971
+The info is: {'avg': 0.75401798971038081}
+For group: "CUB033.palm", the group means is: 0.582360896783
+The info is: {'avg': 0.5823608967828513}
+For group: "CUB017.palm", the group means is: 0.869459714445
+The info is: {'avg': 0.86945971444528558}
+For group: "CUB040.palm", the group means is: 0.914389776214
+The info is: {'avg': 0.91438977621376372}
+For group: "CUB028.palm", the group means is: 0.641719389842
+The info is: {'avg': 0.50841988659852499}
+For group: "CUB053.palm", the group means is: 0.679481501939
+The info is: {'avg': 0.67948150193879175}
+
+Grouped by GutTimeseries: Only one value in the group.
+
+Grouped by "Sickness_disturbance", probability: 0.048380
+For group: "Yes", the group means is: 1.19386474355
+The info is: {'avg': 1.1938647435459939}
+For group: "No", the group means is: 1.07959350901
+The info is: {'avg': 1.0795935090062967}
+
+Grouped by "HormonalBirthControl", probability: 0.073217
+For group: "yes.I.have.an.IUD", the group means is: 0.829013429778
+The info is: {'avg': 0.82901342977840864}
+For group: "DMPA", the group means is: 0.826010863276
+The info is: {'avg': 0.82601086327583262}
+For group: "pill", the group means is: 1.25263504007
+The info is: {'avg': 1.2526350400697368}
+For group: "NuvaRing", the group means is: 1.01089857835
+The info is: {'avg': 1.0108985783531124}
+For group: "no", the group means is: 1.12568978509
+The info is: {'avg': 1.1256897850877856}
+
+Grouped by "SunAllergies", probability: 0.001299
+For group: "yes", the group means is: 1.59398010851
+The info is: {'avg': 1.5939801085094347}
+For group: "no", the group means is: 1.12807148693
+The info is: {'avg': 1.128071486931522}
+
+Grouped by "HoursOfSleep", probability: 0.049063
+For group: "6.7", the group means is: 1.07336397831
+The info is: {'avg': 1.0733639783098854}
+For group: "greater.than.8", the group means is: 1.30993080699
+The info is: {'avg': 1.3099308069874773}
+For group: "7.8", the group means is: 1.19476791514
+The info is: {'avg': 1.1947679151352644}
+For group: "less.than.5", the group means is: 0.717025334889
+The info is: {'avg': 0.71702533488913844}
+For group: "5.6", the group means is: 1.13969489571
+The info is: {'avg': 1.1396948957084976}
+
+Grouped by Control: Only one value in the group.
+
+Grouped by PalmTimeseries: Only one value in the group.
+
+Grouped by "SequenceCountAbove10000", probability: 0.000000
+For group: "22505", the group means is: 0.715468985163
+The info is: {'avg': [0.71546898516251833]}
+For group: "19718", the group means is: 0.67789376728
+The info is: {'avg': [0.67789376727996242]}
+For group: "20913", the group means is: 1.19088430243
+The info is: {'avg': [1.1908843024254603]}
+For group: "14677", the group means is: 1.21270880917
+The info is: {'avg': [1.212708809165997]}
+For group: "26476", the group means is: 0.697609292621
+The info is: {'avg': [0.69760929262096982]}
+For group: "46820", the group means is: 0.712441879905
+The info is: {'avg': [0.7124418799051575]}
+For group: "26379", the group means is: 0.842738397769
+The info is: {'avg': [0.84273839776945092]}
+For group: "23442", the group means is: 1.27247626022
+The info is: {'avg': [1.2724762602165487]}
+For group: "34808", the group means is: 1.4815417855
+The info is: {'avg': [1.4815417854988355]}
+For group: "11981", the group means is: 1.60297411215
+The info is: {'avg': [1.6029741121504284]}
+For group: "10898", the group means is: 0.0966353341414
+The info is: {'avg': [1.7206706855925193]}
+For group: "19706", the group means is: 1.49705122664
+The info is: {'avg': [0.096635334141417603]}
+For group: "27499", the group means is: 1.10333834393
+The info is: {'avg': [2.1183334616235552]}
+For group: "18426", the group means is: 1.07879665344
+The info is: {'avg': [1.1033383439336371]}
+For group: "10244", the group means is: 1.15253818585
+The info is: {'avg': [1.0787966534444107]}
+For group: "22186", the group means is: 0.734333850302
+The info is: {'avg': 0.68517337989378879}
+For group: "19376", the group means is: 0.208541302741
+The info is: {'avg': [0.73433385030177134]}
+For group: "26830", the group means is: 0.281227639968
+The info is: {'avg': [0.20854130274148877]}
+For group: "11187", the group means is: 0.736785527631
+The info is: {'avg': [0.28122763996836148]}
+For group: "32714", the group means is: 1.05279576745
+The info is: {'avg': [0.73678552763092786]}
+For group: "44343", the group means is: 0.363098391641
+The info is: {'avg': [1.0527957674508088]}
+For group: "58256", the group means is: 1.13938876841
+The info is: {'avg': [0.36309839164057317]}
+For group: "25853", the group means is: 0.995202915571
+The info is: {'avg': [0.27347266712637008]}
+For group: "15756", the group means is: 0.894977185188
+The info is: {'avg': [1.1393887684147808]}
+For group: "18013", the group means is: 0.363060874488
+The info is: {'avg': [0.39264031859256515]}
+For group: "31910", the group means is: 0.195104134729
+The info is: {'avg': [0.89497718518752956]}
+For group: "29328", the group means is: 3.06797711472
+The info is: {'avg': [3.1184939839982579]}
+For group: "46139", the group means is: 3.22341711822
+The info is: {'avg': [0.19510413472850444]}
+For group: "16171", the group means is: 1.02490926852
+The info is: {'avg': [3.067977114718587]}
+For group: "27172", the group means is: 2.48936198529
+The info is: {'avg': [3.2234171182190128]}
+For group: "30999", the group means is: 1.03333380179
+The info is: {'avg': [1.0249092685195718]}
+For group: "15534", the group means is: 0.357059657065
+The info is: {'avg': [2.4893619852918274]}
+For group: "43593", the group means is: 1.72067068559
+The info is: {'avg': [1.0333338017865301]}
+For group: "34437", the group means is: 1.39052800487
+The info is: {'avg': [0.35705965706546056]}
+For group: "25529", the group means is: 1.42666425077
+The info is: {'avg': [0.88772579469305934]}
+For group: "43981", the group means is: 1.16293608237
+The info is: {'avg': [1.3905280048749644]}
+For group: "43986", the group means is: 0.94544745373
+The info is: {'avg': [1.4266642507702298]}
+For group: "29132", the group means is: 1.20155277211
+The info is: {'avg': [1.1629360823733068]}
+For group: "29135", the group means is: 1.17366062788
+The info is: {'avg': [0.94544745373007355]}
+For group: "17861", the group means is: 0.882446228623
+The info is: {'avg': [1.2015527721064043]}
+For group: "26095", the group means is: 0.314647180638
+The info is: {'avg': [1.1736606278787867]}
+For group: "37131", the group means is: 3.01699815498
+The info is: {'avg': [0.88244622862344513]}
+For group: "40334", the group means is: 0.4105796338
+The info is: {'avg': [0.31464718063842823]}
+For group: "26258", the group means is: 1.31311114586
+The info is: {'avg': [3.0169981549810219]}
+For group: "43972", the group means is: 1.41651305969
+The info is: {'avg': [0.41057963379966933]}
+For group: "29521", the group means is: 0.41253818087
+The info is: {'avg': [1.3131111458573592]}
+For group: "34504", the group means is: 0.771939721866
+The info is: {'avg': [1.4165130596910829]}
+For group: "20740", the group means is: 0.829465802812
+The info is: {'avg': [0.41253818087008937]}
+For group: "33094", the group means is: 2.74702252177
+The info is: {'avg': [0.77193972186619353]}
+For group: "47649", the group means is: 1.31483729362
+The info is: {'avg': [0.82946580281187643]}
+For group: "37523", the group means is: 0.650775441429
+The info is: {'avg': [1.3148372936184853]}
+For group: "28240", the group means is: 1.16518281039
+The info is: {'avg': [0.65077544142929766]}
+For group: "44908", the group means is: 2.92765561388
+The info is: {'avg': [1.1651828103926194]}
+For group: "45566", the group means is: 2.25521280985
+The info is: {'avg': [2.9276556138822052]}
+For group: "16811", the group means is: 1.30869323006
+The info is: {'avg': [2.2552128098543629]}
+For group: "45684", the group means is: 2.87985178533
+The info is: {'avg': [1.3086932300556209]}
+For group: "16684", the group means is: 1.0496135056
+The info is: {'avg': [2.8798517853274919]}
+For group: "31178", the group means is: 0.603340385672
+The info is: {'avg': [1.1751684108144727]}
+For group: "53023", the group means is: 1.64700700453
+The info is: {'avg': [0.60334038567234272]}
+For group: "34185", the group means is: 1.83177176955
+The info is: {'avg': [1.6470070045303091]}
+For group: "23891", the group means is: 1.59806530627
+The info is: {'avg': [1.8317717695504527]}
+For group: "10418", the group means is: 1.18553760248
+The info is: {'avg': [1.5980653062682568]}
+For group: "24125", the group means is: 1.61158930713
+The info is: {'avg': [1.1855376024834248]}
+For group: "26536", the group means is: 1.20055357543
+The info is: {'avg': [1.3604596224733323]}
+For group: "27999", the group means is: 1.58607998297
+The info is: {'avg': [1.6115893071342291]}
+For group: "63290", the group means is: 1.16012087247
+The info is: {'avg': [1.2005535754349912]}
+For group: "32876", the group means is: 1.79481250592
+The info is: {'avg': [1.5860799829657695]}
+For group: "24696", the group means is: 1.34430017988
+The info is: {'avg': [1.1601208724654082]}
+For group: "21722", the group means is: 0.685902669725
+The info is: {'avg': [1.7948125059215909]}
+For group: "38317", the group means is: 1.99292252259
+The info is: {'avg': [1.3443001798794436]}
+For group: "24458", the group means is: 0.533202319626
+The info is: {'avg': [0.68590266972535119]}
+For group: "17347", the group means is: 0.694364631177
+The info is: {'avg': [1.9929225225904981]}
+For group: "33174", the group means is: 0.476689326633
+The info is: {'avg': [0.53320231962629205]}
+For group: "26978", the group means is: 1.17213872205
+The info is: {'avg': [0.69436463117725522]}
+For group: "16539", the group means is: 1.20592397012
+The info is: {'avg': [0.47668932663322866]}
+For group: "32617", the group means is: 0.909276346681
+The info is: {'avg': [1.1721387220548924]}
+For group: "12624", the group means is: 0.441329262673
+The info is: {'avg': [1.2059239701191924]}
+For group: "45389", the group means is: 2.4972530658
+The info is: {'avg': [0.90927634668089408]}
+For group: "35678", the group means is: 0.685173379894
+The info is: {'avg': [0.44132926267324046]}
+For group: "37252", the group means is: 1.06441843654
+The info is: {'avg': [2.4972530658019498]}
+For group: "21539", the group means is: 1.40520814172
+The info is: {'avg': [1.1525381858533006]}
+For group: "34870", the group means is: 1.2745987812
+The info is: {'avg': [1.064418436541541]}
+For group: "18338", the group means is: 1.05843554638
+The info is: {'avg': [1.4052081417219462]}
+For group: "21532", the group means is: 1.08140590511
+The info is: {'avg': [1.2745987811981354]}
+For group: "29241", the group means is: 0.934191812626
+The info is: {'avg': [1.0584355463806661]}
+For group: "17947", the group means is: 0.888624345955
+The info is: {'avg': [1.0814059051086662]}
+For group: "25620", the group means is: 0.570775662299
+The info is: {'avg': [0.93419181262611151]}
+For group: "27020", the group means is: 1.64032209807
+The info is: {'avg': [0.88862434595454431]}
+For group: "31643", the group means is: 0.718065768609
+The info is: {'avg': [0.57077566229933707]}
+For group: "29961", the group means is: 1.09391674952
+The info is: {'avg': [0.56982842008154433]}
+For group: "41768", the group means is: 0.847566344322
+The info is: {'avg': [0.71806576860861071]}
+For group: "16586", the group means is: 0.749548906486
+The info is: {'avg': [1.093916749518699]}
+For group: "24333", the group means is: 1.78106972682
+The info is: {'avg': [0.84756634432185385]}
+For group: "32304", the group means is: 0.883618011235
+The info is: {'avg': [0.7495489064858285]}
+For group: "24230", the group means is: 0.773287825754
+The info is: {'avg': [1.7810697268225981]}
+For group: "27282", the group means is: 0.887725794693
+The info is: {'avg': [0.88361801123487183]}
+For group: "41607", the group means is: 1.74641879634
+The info is: {'avg': [0.77328782575369426]}
+For group: "32719", the group means is: 2.52201598363
+The info is: {'avg': [1.7464187963449871]}
+For group: "23263", the group means is: 1.41936265475
+The info is: {'avg': [2.5220159836315847]}
+For group: "11406", the group means is: 0.968357069311
+The info is: {'avg': [0.96835706931132615]}
+For group: "43399", the group means is: 0.629878941806
+The info is: {'avg': [1.0117660062566729]}
+For group: "20608", the group means is: 0.498153920746
+The info is: {'avg': [0.6298789418059737]}
+For group: "10932", the group means is: 1.68059209916
+The info is: {'avg': [0.59334602350373911]}
+For group: "26383", the group means is: 0.535440152879
+The info is: {'avg': [1.680592099156861]}
+For group: "39966", the group means is: 0.687995795506
+The info is: {'avg': [0.53758852105614252]}
+For group: "46611", the group means is: 0.669420391752
+The info is: {'avg': [0.68799579550604384]}
+For group: "16363", the group means is: 0.831098688933
+The info is: {'avg': [1.2148749790595661]}
+For group: "32125", the group means is: 1.46085693448
+The info is: {'avg': [0.83109868893310235]}
+For group: "28362", the group means is: 0.214859811211
+The info is: {'avg': [1.4608569344821312]}
+For group: "36192", the group means is: 0.875734810156
+The info is: {'avg': [0.21485981121137065]}
+For group: "26805", the group means is: 1.379282631
+The info is: {'avg': [0.85481668600702698]}
+For group: "46183", the group means is: 0.404674321537
+The info is: {'avg': [1.3792826310006658]}
+For group: "24245", the group means is: 1.19594953934
+The info is: {'avg': [1.1959495393360633]}
+For group: "11162", the group means is: 0.365023045945
+The info is: {'avg': [2.2413807922290361]}
+For group: "38108", the group means is: 0.933263333774
+The info is: {'avg': [0.93326333377414472]}
+For group: "64940", the group means is: 0.520060613482
+The info is: {'avg': [1.7853478990280094]}
+For group: "39790", the group means is: 0.966037117367
+The info is: {'avg': [0.85550422844052021]}
+For group: "47735", the group means is: 1.62482431656
+The info is: {'avg': [0.96603711736736098]}
+For group: "34798", the group means is: 0.854394208765
+The info is: {'avg': [1.6248243165590008]}
+For group: "50955", the group means is: 2.00545962582
+The info is: {'avg': [0.85439420876466243]}
+For group: "27958", the group means is: 0.486083132889
+The info is: {'avg': [2.0054596258165831]}
+For group: "45233", the group means is: 0.442807078897
+The info is: {'avg': [0.48608313288881366]}
+For group: "36872", the group means is: 1.70100714788
+The info is: {'avg': [0.44280707889741872]}
+For group: "34558", the group means is: 1.23210870197
+The info is: {'avg': [1.701007147884295]}
+For group: "39181", the group means is: 2.00270591932
+The info is: {'avg': [1.2321087019708172]}
+For group: "10341", the group means is: 0.655399937903
+The info is: {'avg': [2.0027059193155381]}
+For group: "17169", the group means is: 1.64483627777
+The info is: {'avg': [0.65539993790294016]}
+For group: "24411", the group means is: 1.58784921145
+The info is: {'avg': [1.6448362777666785]}
+For group: "35834", the group means is: 0.555531695357
+The info is: {'avg': [1.5878492114525258]}
+For group: "26623", the group means is: 1.51497030774
+The info is: {'avg': [0.55553169535676528]}
+For group: "31517", the group means is: 0.765608873568
+The info is: {'avg': [1.5149703077409422]}
+For group: "50796", the group means is: 1.01185497422
+The info is: {'avg': [0.77977689299965081]}
+For group: "25830", the group means is: 0.558906781257
+The info is: {'avg': [0.76560887356836793]}
+For group: "23293", the group means is: 0.582749337591
+The info is: {'avg': [1.0118549742243592]}
+For group: "22579", the group means is: 0.99969888835
+The info is: {'avg': [0.58274933759068059]}
+For group: "18560", the group means is: 1.09095004888
+The info is: {'avg': [1.0550500004081989]}
+For group: "10116", the group means is: 0.907046169003
+The info is: {'avg': [0.99969888835000742]}
+For group: "10117", the group means is: 1.51508391785
+The info is: {'avg': [1.0909500488837764]}
+For group: "48516", the group means is: 0.782802264273
+The info is: {'avg': [0.90704616900341273]}
+For group: "24664", the group means is: 1.71086969385
+The info is: {'avg': [1.5150839178464663]}
+For group: "13098", the group means is: 1.11476720069
+The info is: {'avg': [0.78280226427269017]}
+For group: "24464", the group means is: 0.50116315591
+The info is: {'avg': [1.7108696938457923]}
+For group: "35843", the group means is: 1.33573051827
+The info is: {'avg': [1.114767200685858]}
+For group: "19142", the group means is: 1.74075654081
+The info is: {'avg': [0.50116315591018901]}
+For group: "36503", the group means is: 1.16080489645
+The info is: {'avg': [1.3357305182689696]}
+For group: "15745", the group means is: 1.27543995912
+The info is: {'avg': [1.740756540809036]}
+For group: "25353", the group means is: 0.533564667349
+The info is: {'avg': [1.1608048964535211]}
+For group: "15623", the group means is: 1.0743044834
+The info is: {'avg': [1.2754399591196588]}
+For group: "19206", the group means is: 0.529256002187
+The info is: {'avg': [0.5335646673492096]}
+For group: "16099", the group means is: 1.71312525254
+The info is: {'avg': [1.0743044834033435]}
+For group: "22017", the group means is: 1.28235354014
+The info is: {'avg': [0.52925600218655011]}
+For group: "20290", the group means is: 0.980406776982
+The info is: {'avg': [1.7131252525418448]}
+For group: "13757", the group means is: 1.50079166993
+The info is: {'avg': [1.2823535401424009]}
+For group: "30562", the group means is: 0.225491144667
+The info is: {'avg': [0.98040677698151024]}
+For group: "48589", the group means is: 0.612080674169
+The info is: {'avg': [1.5007916699349018]}
+For group: "30566", the group means is: 1.54026402218
+The info is: {'avg': [0.22549114466736891]}
+For group: "29729", the group means is: 0.225491939374
+The info is: {'avg': [0.61208067416927603]}
+For group: "14194", the group means is: 0.697432590593
+The info is: {'avg': [1.5402640221834498]}
+For group: "33643", the group means is: 2.11833346162
+The info is: {'avg': [0.22549193937355971]}
+For group: "33642", the group means is: 2.29597758088
+The info is: {'avg': [0.69743259059310025]}
+For group: "14295", the group means is: 1.38605202974
+The info is: {'avg': [1.4970512266361453]}
+For group: "27145", the group means is: 0.280725033217
+The info is: {'avg': [2.2959775808805101]}
+For group: "30447", the group means is: 1.56247553443
+The info is: {'avg': [1.3860520297448784]}
+For group: "27267", the group means is: 0.636694805571
+The info is: {'avg': [0.28072503321671111]}
+For group: "16324", the group means is: 1.22275058981
+The info is: {'avg': [1.5624755344271803]}
+For group: "47559", the group means is: 2.56639579488
+The info is: {'avg': [0.59738322077500761]}
+For group: "24806", the group means is: 0.670269269048
+The info is: {'avg': [0.63669480557119507]}
+For group: "65582", the group means is: 0.953682868406
+The info is: {'avg': [1.222750589809481]}
+For group: "14336", the group means is: 0.487650526332
+The info is: {'avg': [2.5663957948839831]}
+For group: "17877", the group means is: 0.266748677973
+The info is: {'avg': [0.67026926904797612]}
+For group: "32361", the group means is: 1.68205353221
+The info is: {'avg': [0.95368286840551986]}
+For group: "18345", the group means is: 1.03304203821
+The info is: {'avg': [0.48765052633188954]}
+For group: "19964", the group means is: 0.756043430941
+The info is: {'avg': 0.26674867797335727}
+For group: "25278", the group means is: 1.21487497906
+The info is: {'avg': [1.6820535322142616]}
+For group: "16713", the group means is: 0.930600590461
+The info is: {'avg': [1.033042038212834]}
+For group: "20220", the group means is: 0.487857487961
+The info is: {'avg': [0.75604343094138604]}
+For group: "29531", the group means is: 0.835638277904
+The info is: {'avg': [0.66942039175212542]}
+For group: "24368", the group means is: 1.17311327516
+The info is: {'avg': [0.93060059046097876]}
+For group: "24362", the group means is: 2.11092822392
+The info is: {'avg': [0.48785748796119383]}
+For group: "19562", the group means is: 1.12370448244
+The info is: {'avg': [0.83563827790388467]}
+For group: "30201", the group means is: 0.537588521056
+The info is: {'avg': [1.1731132751586872]}
+For group: "23658", the group means is: 1.67129292969
+The info is: {'avg': [2.1109282239247253]}
+For group: "34694", the group means is: 1.87498553163
+The info is: {'avg': [1.123704482435641]}
+For group: "17124", the group means is: 0.576395511526
+The info is: {'avg': [0.53544015287871161]}
+For group: "23085", the group means is: 1.13235458712
+The info is: {'avg': [1.6712929296879855]}
+For group: "11019", the group means is: 1.35056738599
+The info is: {'avg': [1.8749855316262336]}
+For group: "31498", the group means is: 0.726908075177
+The info is: {'avg': [0.57639551152585744]}
+For group: "11017", the group means is: 0.507996847733
+The info is: {'avg': [1.1323545871167922]}
+For group: "10629", the group means is: 1.03625678113
+The info is: {'avg': [1.3505673859886049]}
+For group: "23013", the group means is: 1.59621137224
+The info is: {'avg': [0.72690807517653666]}
+For group: "44782", the group means is: 1.25314306291
+The info is: {'avg': [0.50799684773269449]}
+For group: "45876", the group means is: 0.643351495649
+The info is: {'avg': [1.0362567811276366]}
+For group: "33446", the group means is: 1.18550145779
+The info is: {'avg': [1.5962113722362778]}
+For group: "34566", the group means is: 1.79581754792
+The info is: {'avg': [0.5854640200944673]}
+For group: "34604", the group means is: 1.2342152187
+The info is: {'avg': [0.64335149564856742]}
+For group: "49310", the group means is: 3.27240429708
+The info is: {'avg': [1.1855014577851755]}
+For group: "62572", the group means is: 1.70213700651
+The info is: {'avg': [1.7958175479239067]}
+For group: "36541", the group means is: 2.90448880367
+The info is: {'avg': [1.2342152187023316]}
+For group: "32863", the group means is: 0.784884415589
+The info is: {'avg': [3.2724042970839764]}
+For group: "13199", the group means is: 1.06808580472
+The info is: {'avg': [1.7021370065092261]}
+For group: "33049", the group means is: 0.437608122513
+The info is: {'avg': [2.9044888036671925]}
+For group: "36010", the group means is: 2.71158785026
+The info is: {'avg': [0.78488441558855349]}
+For group: "28777", the group means is: 0.706324235607
+The info is: {'avg': [1.0680858047236683]}
+For group: "18132", the group means is: 0.56228899613
+The info is: {'avg': [0.43760812251295039]}
+For group: "36782", the group means is: 1.7163285436
+The info is: {'avg': [2.7115878502599138]}
+For group: "24581", the group means is: 1.48364268359
+The info is: {'avg': [0.70632423560729418]}
+For group: "63506", the group means is: 1.36045962247
+The info is: {'avg': [1.7163285435963325]}
+For group: "33348", the group means is: 2.89725373503
+The info is: {'avg': [1.4836426835935228]}
+For group: "45000", the group means is: 2.10124423748
+The info is: {'avg': [1.419362654753074]}
+For group: "22446", the group means is: 0.769659928035
+The info is: {'avg': [2.897253735028519]}
+For group: "25642", the group means is: 0.702943162376
+The info is: {'avg': [2.1012442374798299]}
+For group: "14878", the group means is: 1.32786234379
+The info is: {'avg': [0.76965992803474426]}
+For group: "45008", the group means is: 0.475774972675
+The info is: {'avg': [0.70294316237567533]}
+For group: "18234", the group means is: 1.57526278808
+The info is: {'avg': [1.3278623437887533]}
+For group: "26352", the group means is: 1.93638409833
+The info is: {'avg': [0.47577497267520424]}
+For group: "26069", the group means is: 2.24138079223
+The info is: {'avg': [1.5752627880778369]}
+For group: "34949", the group means is: 1.96046822495
+The info is: {'avg': [1.9363840983316081]}
+For group: "20465", the group means is: 0.408142568322
+The info is: {'avg': [0.3650230459450961]}
+For group: "22293", the group means is: 1.21662910625
+The info is: {'avg': [1.9604682249467782]}
+For group: "37268", the group means is: 1.73027763346
+The info is: {'avg': [0.40814256832211049]}
+For group: "63270", the group means is: 0.533826409798
+The info is: {'avg': [1.2166291062512111]}
+For group: "33299", the group means is: 1.21421980614
+The info is: {'avg': [0.52006061348247701]}
+For group: "24065", the group means is: 0.402373552129
+The info is: {'avg': [1.7302776334613856]}
+For group: "37262", the group means is: 1.24245704636
+The info is: {'avg': [0.53382640979819529]}
+For group: "37260", the group means is: 2.58648305859
+The info is: {'avg': [1.214219806138356]}
+For group: "32501", the group means is: 0.380538781733
+The info is: {'avg': [0.40237355212854198]}
+For group: "23338", the group means is: 0.585464020094
+The info is: {'avg': [1.2424570463564886]}
+For group: "16559", the group means is: 1.0995992154
+The info is: {'avg': [2.5864830585859675]}
+For group: "42852", the group means is: 0.796144780734
+The info is: {'avg': [0.38053878173276517]}
+For group: "19039", the group means is: 0.759346097226
+The info is: {'avg': [1.2531430629117324]}
+For group: "18835", the group means is: 1.6579782053
+The info is: {'avg': [1.0521818836165471]}
+For group: "32914", the group means is: 1.22784301086
+The info is: {'avg': [0.79614478073365957]}
+For group: "32043", the group means is: 0.778943204403
+The info is: {'avg': [0.75934609722612734]}
+For group: "19924", the group means is: 0.784052515576
+The info is: {'avg': [1.6579782053033003]}
+For group: "30238", the group means is: 1.32233907262
+The info is: {'avg': [1.2278430108634459]}
+For group: "40311", the group means is: 1.42006424802
+The info is: {'avg': 0.77894320440337439}
+For group: "26798", the group means is: 1.41359350384
+The info is: {'avg': [0.78405251557570488]}
+For group: "43955", the group means is: 2.2388390895
+The info is: {'avg': [1.322339072618737]}
+For group: "21012", the group means is: 0.275853572154
+The info is: {'avg': [1.4200642480221135]}
+For group: "26814", the group means is: 0.872538637183
+The info is: {'avg': [1.4135935038376417]}
+For group: "42479", the group means is: 1.38961712485
+The info is: {'avg': [2.2388390895033772]}
+For group: "16616", the group means is: 0.993999091659
+The info is: {'avg': [0.27585357215432821]}
+For group: "35418", the group means is: 0.938894255042
+The info is: {'avg': [0.87253863718258473]}
+For group: "31728", the group means is: 0.968258915414
+The info is: {'avg': [1.3896171248536096]}
+For group: "37162", the group means is: 0.262228624812
+The info is: {'avg': [0.99399909165865474]}
+For group: "31933", the group means is: 1.52429066871
+The info is: {'avg': [0.93889425504226431]}
+For group: "29576", the group means is: 1.25678192558
+The info is: {'avg': [0.96825891541368514]}
+For group: "21887", the group means is: 1.33142269583
+The info is: {'avg': [0.26222862481214437]}
+For group: "40070", the group means is: 1.3914179569
+The info is: {'avg': [1.5242906687057984]}
+For group: "41681", the group means is: 1.13366891625
+The info is: {'avg': [1.256781925579967]}
+For group: "37948", the group means is: 0.593353156579
+The info is: {'avg': [1.3314226958344328]}
+For group: "30244", the group means is: 0.87776068143
+The info is: {'avg': [1.3914179568959564]}
+For group: "40814", the group means is: 1.33448856494
+The info is: {'avg': [1.1336689162547735]}
+For group: "59555", the group means is: 3.118493984
+The info is: {'avg': [0.59335315657931675]}
+For group: "18159", the group means is: 1.43047909013
+The info is: {'avg': [0.87776068143036901]}
+For group: "41818", the group means is: 0.507484385769
+The info is: {'avg': [1.3344885649438509]}
+For group: "25503", the group means is: 0.909013337045
+The info is: {'avg': [0.36306087448770663]}
+For group: "24394", the group means is: 1.28321480842
+The info is: {'avg': [1.4304790901291593]}
+For group: "26075", the group means is: 1.08138870487
+The info is: {'avg': [0.50748438576895882]}
+For group: "28425", the group means is: 1.17516841081
+The info is: {'avg': [0.90901333704463172]}
+For group: "11114", the group means is: 0.739628728555
+The info is: {'avg': [1.2832148084223778]}
+For group: "29970", the group means is: 0.802946223433
+The info is: {'avg': [1.0813887048651241]}
+For group: "11460", the group means is: 1.71909682896
+The info is: {'avg': [1.0496135056047649]}
+For group: "31208", the group means is: 2.202194934
+The info is: {'avg': [0.73962872855456863]}
+For group: "17315", the group means is: 1.09721965243
+The info is: {'avg': [0.80294622343329347]}
+For group: "34462", the group means is: 0.594344335715
+The info is: {'avg': [1.7190968289587099]}
+For group: "13510", the group means is: 0.493947723377
+The info is: {'avg': [2.2021949339963243]}
+For group: "11469", the group means is: 1.60274460402
+The info is: {'avg': [1.0972196524261948]}
+For group: "38455", the group means is: 2.03531402925
+The info is: {'avg': [0.59434433571519552]}
+For group: "24198", the group means is: 0.593346023504
+The info is: {'avg': [3.2629222614212403]}
+For group: "23764", the group means is: 0.915912809088
+The info is: {'avg': [1.6027446040228333]}
+For group: "38806", the group means is: 0.854816686007
+The info is: {'avg': [2.0353140292473513]}
+For group: "10688", the group means is: 0.996886798326
+The info is: {'avg': [0.49815392074636111]}
+For group: "48826", the group means is: 0.976760050517
+The info is: {'avg': [0.9159128090875065]}
+For group: "17159", the group means is: 0.393675956725
+The info is: {'avg': [0.87573481015569477]}
+For group: "13923", the group means is: 1.22203953638
+The info is: {'avg': [0.99688679832612537]}
+For group: "27071", the group means is: 0.489744644255
+The info is: {'avg': [0.97676005051731141]}
+For group: "11025", the group means is: 0.611473376611
+The info is: {'avg': [0.39367595672457323]}
+For group: "24772", the group means is: 1.7719772455
+The info is: {'avg': [1.2220395363766474]}
+For group: "50402", the group means is: 1.63469105132
+The info is: {'avg': [0.48974464425467495]}
+For group: "14502", the group means is: 0.288115098831
+The info is: {'avg': [0.61147337661144696]}
+For group: "15050", the group means is: 1.39768894985
+The info is: {'avg': [0.80421114451011511]}
+For group: "38949", the group means is: 0.783606396307
+The info is: {'avg': [1.6346910513231707]}
+For group: "36748", the group means is: 0.291987130996
+The info is: {'avg': [0.28811509883077979]}
+For group: "28732", the group means is: 1.76302550549
+The info is: {'avg': [1.3976889498517413]}
+For group: "36295", the group means is: 1.09928826355
+The info is: {'avg': [0.51812928718953633]}
+For group: "11204", the group means is: 1.86152601567
+The info is: {'avg': [0.29198713099597706]}
+For group: "34736", the group means is: 1.11699054248
+The info is: {'avg': [1.7630255054860826]}
+For group: "34638", the group means is: 1.39799342966
+The info is: {'avg': [1.0992882635502426]}
+For group: "23307", the group means is: 0.778124931274
+The info is: {'avg': [1.8615260156706324]}
+For group: "19071", the group means is: 1.64617203619
+The info is: {'avg': [1.1169905424758553]}
+For group: "17492", the group means is: 0.751928247472
+The info is: {'avg': [1.3979934296562759]}
+For group: "39085", the group means is: 2.07319161975
+The info is: {'avg': [0.77812493127375226]}
+For group: "37434", the group means is: 1.17612112797
+The info is: {'avg': [1.6461720361903769]}
+For group: "37345", the group means is: 1.24251053228
+The info is: {'avg': [0.75192824747156761]}
+For group: "50066", the group means is: 1.0732882938
+The info is: {'avg': [2.0731916197480289]}
+For group: "33409", the group means is: 1.35362979213
+The info is: {'avg': [1.1761211279734616]}
+For group: "33155", the group means is: 0.684148624778
+The info is: {'avg': [1.2425105322825649]}
+For group: "39161", the group means is: 0.80421114451
+The info is: {'avg': [1.0732882938008568]}
+For group: "15886", the group means is: 1.85940857545
+The info is: {'avg': [1.35362979212551]}
+For group: "41101", the group means is: 0.161970761766
+The info is: {'avg': [0.68414862477788962]}
+For group: "40049", the group means is: 1.0632555961
+The info is: {'avg': [1.7719772455021667]}
+For group: "19358", the group means is: 0.83403586351
+The info is: {'avg': [1.8594085754481091]}
+For group: "30173", the group means is: 0.915955757739
+The info is: {'avg': [0.16197076176633107]}
+For group: "44568", the group means is: 0.646728253545
+The info is: {'avg': [1.0632555961021033]}
+For group: "32775", the group means is: 2.10739414067
+The info is: {'avg': [0.83403586351000603]}
+For group: "45910", the group means is: 0.718280688608
+The info is: {'avg': [0.91595575773902216]}
+For group: "48160", the group means is: 2.8995951657
+The info is: {'avg': [0.64672825354477836]}
+For group: "20431", the group means is: 0.289189193116
+The info is: {'avg': [1.0995992153997944]}
+For group: "27854", the group means is: 0.956103200637
+The info is: {'avg': [0.71828068860822059]}
+For group: "30572", the group means is: 0.806356037765
+The info is: {'avg': [2.8995951656992283]}
+For group: "30579", the group means is: 1.19516147623
+The info is: {'avg': [0.28918919311615504]}
+For group: "20025", the group means is: 1.06265949825
+The info is: {'avg': [2.1073941406714876]}
+For group: "27238", the group means is: 1.01935374591
+The info is: {'avg': [0.95610320063651677]}
+For group: "22092", the group means is: 1.3807500944
+The info is: {'avg': [0.80635603776473397]}
+For group: "30479", the group means is: 2.77702545317
+The info is: {'avg': [1.1951614762266078]}
+For group: "37480", the group means is: 0.982520886925
+The info is: {'avg': [1.0626594982452393]}
+For group: "55631", the group means is: 0.673591399357
+The info is: {'avg': [1.7319985944915872]}
+For group: "40035", the group means is: 3.4423424354
+The info is: {'avg': [1.3807500943997262]}
+For group: "37333", the group means is: 0.142368587623
+The info is: {'avg': [2.7770254531673007]}
+For group: "31788", the group means is: 1.34804346556
+The info is: {'avg': [0.98252088692504813]}
+For group: "17208", the group means is: 0.26208264694
+The info is: {'avg': [0.67359139935736601]}
+For group: "18052", the group means is: 1.83755967217
+The info is: {'avg': [3.4423424353973129]}
+For group: "23530", the group means is: 1.13568117482
+The info is: {'avg': [0.14236858762261967]}
+For group: "39429", the group means is: 0.952779583961
+The info is: {'avg': [1.3480434655555316]}
+For group: "32073", the group means is: 0.310583640602
+The info is: {'avg': [0.26208264694015532]}
+For group: "19912", the group means is: 1.15744886718
+The info is: {'avg': [1.8375596721723495]}
+For group: "46227", the group means is: 1.11557154028
+The info is: {'avg': [1.347951872491747]}
+For group: "30193", the group means is: 1.48528606804
+The info is: {'avg': [0.952779583961475]}
+For group: "26988", the group means is: 1.12788133551
+The info is: {'avg': [0.31058364060183469]}
+For group: "28548", the group means is: 2.98058422457
+The info is: {'avg': [1.1574488671813954]}
+For group: "27452", the group means is: 0.830837486777
+The info is: {'avg': [1.115571540278989]}
+For group: "32087", the group means is: 1.31453439339
+The info is: {'avg': [1.4852860680385711]}
+For group: "40722", the group means is: 3.49329564895
+The info is: {'avg': [1.1278813355107415]}
+For group: "47414", the group means is: 1.37186111189
+The info is: {'avg': [2.9805842245653023]}
+For group: "20894", the group means is: 1.40682384914
+The info is: {'avg': [0.83083748677735958]}
+For group: "17111", the group means is: 0.478488976913
+The info is: {'avg': [1.3145343933929323]}
+For group: "23139", the group means is: 0.751994035617
+The info is: {'avg': [1.7818668405059452]}
+For group: "18223", the group means is: 1.15355127957
+The info is: {'avg': [3.4932956489512992]}
+For group: "31536", the group means is: 0.233322983161
+The info is: {'avg': [1.371861111886864]}
+For group: "27633", the group means is: 0.377534700146
+The info is: {'avg': [1.4068238491369851]}
+For group: "41969", the group means is: 0.951529656138
+The info is: {'avg': [0.47848897691266973]}
+For group: "35888", the group means is: 0.232544079169
+The info is: {'avg': [0.75199403561687916]}
+For group: "45460", the group means is: 0.392640318593
+The info is: {'avg': [1.9475516386758576]}
+For group: "25998", the group means is: 0.933236275968
+The info is: {'avg': [0.23332298316080397]}
+For group: "26779", the group means is: 0.858581275659
+The info is: {'avg': [0.37753470014600277]}
+For group: "47793", the group means is: 0.663681978126
+The info is: {'avg': [0.9515296561382145]}
+For group: "14547", the group means is: 1.43924490262
+The info is: {'avg': [0.23254407916917602]}
+For group: "34457", the group means is: 0.833045547467
+The info is: {'avg': [0.99520291557138019]}
+For group: "11636", the group means is: 1.11126083924
+The info is: {'avg': [0.9332362759684838]}
+For group: "11739", the group means is: 1.27665840836
+The info is: {'avg': [0.8585812756594724]}
+For group: "14018", the group means is: 2.08126981822
+The info is: {'avg': [0.66368197812555718]}
+For group: "23789", the group means is: 0.928741325272
+The info is: {'avg': [1.4392449026192431]}
+For group: "48543", the group means is: 0.998802122955
+The info is: {'avg': [0.83304554746724457]}
+For group: "34678", the group means is: 1.41930100887
+The info is: {'avg': [1.1112608392352938]}
+For group: "21251", the group means is: 0.569828420082
+The info is: {'avg': [1.276658408364209]}
+For group: "16464", the group means is: 0.504861893706
+The info is: {'avg': [2.0812698182191145]}
+For group: "13812", the group means is: 1.1632062002
+The info is: {'avg': [0.92874132527165476]}
+For group: "10362", the group means is: 1.81566784404
+The info is: {'avg': [0.99880212295516824]}
+For group: "24605", the group means is: 1.32329537421
+The info is: {'avg': [1.419301008874424]}
+For group: "27748", the group means is: 1.56170131337
+The info is: {'avg': [1.640322098072726]}
+For group: "16905", the group means is: 1.257683498
+The info is: {'avg': [0.6564115559863104]}
+For group: "27097", the group means is: 0.616570207961
+The info is: {'avg': [1.1632062001969086]}
+For group: "22328", the group means is: 1.31848612697
+The info is: {'avg': [1.8156678440362393]}
+For group: "28608", the group means is: 0.779776893
+The info is: {'avg': [1.3232953742125093]}
+For group: "34681", the group means is: 1.05505000041
+The info is: {'avg': [1.5617013133673066]}
+For group: "25925", the group means is: 0.133845833165
+The info is: {'avg': [1.257683498000838]}
+For group: "26297", the group means is: 0.907912716374
+The info is: {'avg': [0.6165702079606814]}
+For group: "35078", the group means is: 1.84864594371
+The info is: {'avg': [1.3184861269706674]}
+For group: "12357", the group means is: 0.960486537408
+The info is: {'avg': [2.7470225217669886]}
+For group: "24434", the group means is: 1.48950304218
+The info is: {'avg': [0.63406956113836066]}
+For group: "19482", the group means is: 1.70278107504
+The info is: {'avg': [0.13384583316505966]}
+For group: "16515", the group means is: 0.716481501809
+The info is: {'avg': [0.90791271637448934]}
+For group: "57957", the group means is: 0.220248110068
+The info is: {'avg': [1.8486459437133047]}
+For group: "28009", the group means is: 2.70456813588
+The info is: {'avg': [0.96048653740762746]}
+For group: "39645", the group means is: 0.444261477032
+The info is: {'avg': [1.4895030421818249]}
+For group: "35792", the group means is: 1.63623508301
+The info is: {'avg': [1.7027810750415284]}
+For group: "28593", the group means is: 0.855504228441
+The info is: {'avg': [0.71648150180859793]}
+For group: "13703", the group means is: 1.05300683596
+The info is: {'avg': [0.22024811006801914]}
+For group: "37274", the group means is: 1.39611107477
+The info is: {'avg': [2.70456813587617]}
+For group: "25451", the group means is: 0.824482304812
+The info is: {'avg': [0.44426147703249758]}
+For group: "35340", the group means is: 2.81753713275
+The info is: {'avg': [1.6362350830110488]}
+For group: "44223", the group means is: 1.88341310862
+The info is: {'avg': [1.0530068359649576]}
+For group: "33452", the group means is: 1.55856114015
+The info is: {'avg': [1.3961110747748489]}
+For group: "39114", the group means is: 0.552693663828
+The info is: {'avg': [0.65278109747428403]}
+For group: "19007", the group means is: 0.731965443507
+The info is: {'avg': [1.8834131086236563]}
+For group: "32925", the group means is: 2.36135073431
+The info is: {'avg': [1.5585611401507826]}
+For group: "16768", the group means is: 1.59221114161
+The info is: {'avg': [0.55269366382833274]}
+For group: "11199", the group means is: 1.69690465518
+The info is: {'avg': [0.73196544350659409]}
+For group: "18319", the group means is: 0.802326787227
+The info is: {'avg': [2.3613507343092039]}
+For group: "25172", the group means is: 0.493114890422
+The info is: {'avg': [1.592211141611469]}
+For group: "15163", the group means is: 0.971071808989
+The info is: {'avg': [1.6969046551824949]}
+For group: "18765", the group means is: 0.454147445062
+The info is: {'avg': [0.80232678722674722]}
+For group: "41783", the group means is: 1.01517591711
+The info is: {'avg': [0.49311489042151252]}
+For group: "41541", the group means is: 0.51812928719
+The info is: {'avg': [0.97107180898898671]}
+For group: "16569", the group means is: 1.35235438662
+The info is: {'avg': [0.45414744506223992]}
+For group: "20276", the group means is: 2.77740378231
+The info is: {'avg': [1.0151759171104744]}
+For group: "34989", the group means is: 1.0347595361
+The info is: {'avg': [0.78360639630729645]}
+For group: "25377", the group means is: 0.86473313991
+The info is: {'avg': [1.3523543866233114]}
+For group: "18794", the group means is: 0.75683056534
+The info is: {'avg': [2.7774037823067994]}
+For group: "31923", the group means is: 2.50913155618
+The info is: {'avg': [1.0347595360964239]}
+For group: "14420", the group means is: 1.6423596235
+The info is: {'avg': [0.86473313991043155]}
+For group: "32503", the group means is: 1.05218188362
+The info is: {'avg': [0.75683056533996385]}
+For group: "27167", the group means is: 0.666236790717
+The info is: {'avg': [2.5091315561785956]}
+For group: "37209", the group means is: 0.239785521526
+The info is: {'avg': [0.11010639052480808]}
+For group: "44033", the group means is: 1.94755163868
+The info is: {'avg': [0.66623679071732556]}
+For group: "24829", the group means is: 0.656411555986
+The info is: {'avg': [0.23978552152589486]}
+For group: "49058", the group means is: 1.12298125043
+The info is: {'avg': [1.1535512795713827]}
+For group: "31267", the group means is: 0.643256732203
+The info is: {'avg': [0.50486189370577683]}
+For group: "24822", the group means is: 0.347199767339
+The info is: {'avg': [1.1229812504305263]}
+For group: "32027", the group means is: 0.711236832277
+The info is: {'avg': [0.64325673220272139]}
+For group: "38286", the group means is: 0.652781097474
+The info is: {'avg': [0.34719976733915925]}
+For group: "24636", the group means is: 0.91597663018
+The info is: {'avg': [0.71123683227680223]}
+For group: "16307", the group means is: 0.417212838797
+The info is: {'avg': [0.82448230481203111]}
+For group: "45428", the group means is: 0.822532607201
+The info is: {'avg': [0.91597663018047715]}
+For group: "26083", the group means is: 0.834962962048
+The info is: {'avg': [0.41721283879739363]}
+For group: "25894", the group means is: 1.07812371151
+The info is: {'avg': [0.8225326072013307]}
+For group: "25584", the group means is: 1.47342025231
+The info is: {'avg': [0.83496296204835796]}
+For group: "26249", the group means is: 1.62949013015
+The info is: {'avg': [1.0781237115066082]}
+For group: "31631", the group means is: 1.0007639786
+The info is: {'avg': [1.4734202523123192]}
+For group: "17240", the group means is: 1.39065587815
+The info is: {'avg': [1.6294901301475289]}
+For group: "34107", the group means is: 3.32108999953
+The info is: {'avg': [1.3906558781503906]}
+For group: "18630", the group means is: 1.89112840433
+The info is: {'avg': [3.3210899995284571]}
+For group: "23772", the group means is: 1.1833593779
+The info is: {'avg': [1.8911284043326042]}
+For group: "11228", the group means is: 1.67620244799
+The info is: {'avg': [1.1833593778967291]}
+For group: "17608", the group means is: 1.12469330836
+The info is: {'avg': [1.6762024479877788]}
+For group: "30917", the group means is: 1.401911415
+The info is: {'avg': [1.4019114150016929]}
+For group: "14480", the group means is: 0.863961776067
+The info is: {'avg': [0.86396177606674784]}
+For group: "25208", the group means is: 0.893847454073
+The info is: {'avg': [0.89384745407316035]}
+For group: "20754", the group means is: 2.16127524531
+The info is: {'avg': [2.1612752453084414]}
+For group: "61912", the group means is: 2.0409270529
+The info is: {'avg': [2.0409270528997148]}
+For group: "60589", the group means is: 0.707031416046
+The info is: {'avg': [0.7070314160461274]}
+For group: "38172", the group means is: 0.899251739024
+The info is: {'avg': [0.89925173902419786]}
+For group: "38173", the group means is: 0.92125036756
+The info is: {'avg': [0.92125036756036049]}
+For group: "49112", the group means is: 1.07216216402
+The info is: {'avg': [1.072162164017487]}
+For group: "20853", the group means is: 1.02065504884
+The info is: {'avg': [1.020655048839997]}
+For group: "35616", the group means is: 1.78534789903
+The info is: {'avg': [2.8175371327475061]}
+For group: "33467", the group means is: 0.567759915195
+The info is: {'avg': [0.56775991519534619]}
+For group: "23311", the group means is: 1.16868380305
+The info is: {'avg': [1.1686838030532805]}
+For group: "42824", the group means is: 1.19041962829
+The info is: {'avg': [1.1904196282893309]}
+For group: "21458", the group means is: 1.1611120616
+The info is: {'avg': [1.1611120616043789]}
+For group: "39157", the group means is: 0.937586639341
+The info is: {'avg': [0.93758663934080633]}
+For group: "30963", the group means is: 0.627203228504
+The info is: {'avg': [0.62720322850394916]}
+For group: "51356", the group means is: 0.600827938987
+The info is: {'avg': [0.60082793898703613]}
+For group: "21698", the group means is: 1.37569502577
+The info is: {'avg': [1.375695025772522]}
+For group: "51588", the group means is: 1.01176600626
+The info is: {'avg': [0.40467432153702732]}
+For group: "33410", the group means is: 0.525257819524
+The info is: {'avg': [0.52525781952398809]}
+For group: "41323", the group means is: 2.3011049222
+The info is: {'avg': [2.3011049221974345]}
+For group: "38308", the group means is: 1.27764024267
+The info is: {'avg': [1.2776402426702269]}
+For group: "36524", the group means is: 1.03625582046
+The info is: {'avg': [1.0362558204647467]}
+For group: "38508", the group means is: 2.8664697209
+The info is: {'avg': [2.86646972090087]}
+For group: "22034", the group means is: 2.06867255399
+The info is: {'avg': [2.0686725539878648]}
+For group: "33200", the group means is: 0.448371582679
+The info is: {'avg': [0.44837158267897514]}
+For group: "23404", the group means is: 0.88165780185
+The info is: {'avg': [0.88165780185033682]}
+For group: "31886", the group means is: 0.73024068364
+The info is: {'avg': [0.73024068363996542]}
+For group: "27846", the group means is: 1.2749794955
+The info is: {'avg': [1.274979495500334]}
+For group: "29090", the group means is: 1.09193354024
+The info is: {'avg': [1.0919335402395236]}
+For group: "21527", the group means is: 0.485043834754
+The info is: {'avg': [0.48504383475435586]}
+For group: "30461", the group means is: 0.541507671599
+The info is: {'avg': [0.54150767159870294]}
+For group: "13563", the group means is: 0.769059431465
+The info is: {'avg': [0.76905943146513922]}
+For group: "18503", the group means is: 0.777576588093
+The info is: {'avg': [0.77757658809297858]}
+For group: "31849", the group means is: 0.549987921413
+The info is: {'avg': [0.54998792141281783]}
+For group: "25633", the group means is: 0.711941332463
+The info is: {'avg': [0.7119413324627879]}
+For group: "18911", the group means is: 1.63899202524
+The info is: {'avg': [1.6389920252416166]}
+For group: "34280", the group means is: 0.641555795993
+The info is: {'avg': [0.64155579599258317]}
+For group: "15153", the group means is: 0.965837948566
+The info is: {'avg': [0.96583794856587102]}
+For group: "37813", the group means is: 2.37094205859
+The info is: {'avg': [2.3709420585897756]}
+For group: "16732", the group means is: 1.47061692179
+The info is: {'avg': [1.4706169217859979]}
+For group: "54160", the group means is: 0.273472667126
+The info is: {'avg': [1.1246933083633559]}
+For group: "30860", the group means is: 1.31620798928
+The info is: {'avg': [1.3162079892766958]}
+For group: "30311", the group means is: 1.06314879104
+The info is: {'avg': [1.0631487910429347]}
+For group: "28477", the group means is: 1.90908966853
+The info is: {'avg': [1.9090896685348711]}
+For group: "12976", the group means is: 1.53158718227
+The info is: {'avg': [1.5315871822716349]}
+For group: "12973", the group means is: 0.406250507716
+The info is: {'avg': [0.40625050771585003]}
+For group: "32064", the group means is: 1.09655341083
+The info is: {'avg': [1.0965534108348989]}
+For group: "42790", the group means is: 3.26292226142
+The info is: {'avg': [0.4939477233774775]}
+For group: "30260", the group means is: 0.502640681248
+The info is: {'avg': [0.50264068124823613]}
+For group: "19996", the group means is: 0.367454506867
+The info is: {'avg': [0.36745450686731984]}
+For group: "29828", the group means is: 0.27273219687
+The info is: {'avg': [0.27273219687011524]}
+For group: "17324", the group means is: 0.606870630315
+The info is: {'avg': [0.60687063031464861]}
+For group: "40871", the group means is: 1.73199859449
+The info is: {'avg': [1.0193537459140563]}
+For group: "40872", the group means is: 1.43848699819
+The info is: {'avg': [1.4384869981850119]}
+For group: "10679", the group means is: 1.34795187249
+The info is: {'avg': [1.1356811748229689]}
+For group: "31524", the group means is: 0.849268547897
+The info is: {'avg': [0.84926854789653905]}
+For group: "15575", the group means is: 0.51059654005
+The info is: {'avg': [0.51059654005006527]}
+For group: "19831", the group means is: 0.884004617502
+The info is: {'avg': [0.8840046175018712]}
+For group: "36369", the group means is: 0.779948536254
+The info is: {'avg': [0.77994853625412786]}
+For group: "32118", the group means is: 0.634069561138
+The info is: {'avg': [0.56228899613010896]}
+For group: "12290", the group means is: 1.48507362147
+The info is: {'avg': [1.4850736214715914]}
+For group: "26761", the group means is: 2.271132527
+The info is: {'avg': [2.2711325270001601]}
+For group: "26923", the group means is: 0.425572078577
+The info is: {'avg': [0.42557207857740054]}
+For group: "26116", the group means is: 0.986910820992
+The info is: {'avg': [0.98691082099198957]}
+For group: "43653", the group means is: 1.94789362053
+The info is: {'avg': [1.9478936205324513]}
+For group: "34535", the group means is: 1.30401303357
+The info is: {'avg': [1.3040130335694677]}
+For group: "17218", the group means is: 1.88953768537
+The info is: {'avg': [1.8895376853724193]}
+For group: "15979", the group means is: 0.245749687288
+The info is: {'avg': [0.245749687287833]}
+For group: "19423", the group means is: 0.110106390525
+The info is: {'avg': [1.0007639786004165]}
+For group: "31457", the group means is: 1.19260705142
+The info is: {'avg': [1.1926070514246663]}
+For group: "46202", the group means is: 1.29307541827
+The info is: {'avg': [1.2930754182716122]}
+For group: "35711", the group means is: 0.547122610256
+The info is: {'avg': [0.54712261025569908]}
+For group: "34908", the group means is: 0.800929301279
+The info is: {'avg': [0.80092930127902096]}
+For group: "17171", the group means is: 1.42507986273
+The info is: {'avg': [1.4250798627324917]}
+For group: "21365", the group means is: 1.6832389857
+The info is: {'avg': [1.6832389856988859]}
+For group: "21364", the group means is: 0.397986680178
+The info is: {'avg': [0.3979866801781623]}
+For group: "60779", the group means is: 0.424749555388
+The info is: {'avg': [0.42474955538830494]}
+For group: "28198", the group means is: 1.78186684051
+The info is: {'avg': [1.6423596234994855]}
+For group: "41688", the group means is: 1.92263265127
+The info is: {'avg': [1.9226326512699154]}
+For group: "31904", the group means is: 0.986317430817
+The info is: {'avg': [0.98631743081716783]}
+For group: "12166", the group means is: 0.993429184075
+The info is: {'avg': [0.99342918407495995]}
+For group: "34142", the group means is: 0.597383220775
+The info is: {'avg': [0.55890678125731719]}
+For group: "31038", the group means is: 0.909821023234
+The info is: {'avg': [0.90982102323355407]}
+For group: "42897", the group means is: 0.661172799653
+The info is: {'avg': [0.66117279965321729]}
+
+Grouped by "RaceEthnicity", probability: 0.000001
+For group: "caucasian.asian", the group means is: 0.770532960473
+The info is: {'avg': 0.77053296047303588}
+For group: "na", the group means is: 0.674857266759
+The info is: {'avg': 0.67485726675907387}
+For group: "asian.or.pacific.islander", the group means is: 0.684404994943
+The info is: {'avg': 0.68440499494284512}
+For group: "caucasian", the group means is: 1.17075867325
+The info is: {'avg': 0.57672351354011964}
+For group: "hispanic", the group means is: 1.19131870841
+The info is: {'avg': 1.1913187084127008}
+For group: "half.white.hispanic", the group means is: 0.778359553286
+The info is: {'avg': 0.7783595532861598}
+For group: "other", the group means is: 0.300421290212
+The info is: {'avg': 0.30042129021209313}
+For group: "caucasian.hispanic", the group means is: 0.57672351354
+The info is: {'avg': 1.1707586732531143}
+
+Grouped by "PersonalIDBodySite", probability: 0.000259
+For group: "NAU106palm", the group means is: 0.37975096319
+The info is: {'avg': 0.37975096318985446}
+For group: "CUB003palm", the group means is: 1.18665190386
+The info is: {'avg': 0.53475726265412427}
+For group: "NAU121palm", the group means is: 0.452182950826
+The info is: {'avg': 0.45218295082622767}
+For group: "CUB019palm", the group means is: 0.484162547898
+The info is: {'avg': 0.75546395784191267}
+For group: "CUB033palm", the group means is: 0.582360896783
+The info is: {'avg': 0.5823608967828513}
+For group: "NCS234palm", the group means is: 0.717025334889
+The info is: {'avg': 0.71702533488913844}
+For group: "CUB000palm", the group means is: 0.77686660824
+The info is: {'avg': 0.77686660823963272}
+For group: "CUB004palm", the group means is: 0.714878269616
+The info is: {'avg': 0.7148782696164877}
+For group: "NAU133palm", the group means is: 0.445536726875
+The info is: {'avg': 0.8102853664915628}
+For group: "CUB028palm", the group means is: 0.641719389842
+The info is: {'avg': 0.64171938984225885}
+For group: "CUB007palm", the group means is: 0.770532960473
+The info is: {'avg': 0.77053296047303588}
+For group: "CUB053palm", the group means is: 0.679481501939
+The info is: {'avg': 0.67948150193879175}
+For group: "NAU110palm", the group means is: 0.499797399473
+The info is: {'avg': 0.45533431450970457}
+For group: "NAU134palm", the group means is: 0.45533431451
+The info is: {'avg': 0.71373935089907636}
+For group: "NCS214palm", the group means is: 0.713739350899
+The info is: {'avg': 0.47165458276650069}
+For group: "NCS204palm", the group means is: 0.471654582767
+The info is: {'avg': 0.57672351354011964}
+For group: "NAU101palm", the group means is: 0.677829609185
+The info is: {'avg': 0.8399302590476998}
+For group: "NCS253palm", the group means is: 0.839930259048
+The info is: {'avg': 0.30042129021209313}
+For group: "CUB027palm", the group means is: 0.300421290212
+The info is: {'avg': 0.53893293863840319}
+For group: "CUB015palm", the group means is: 0.538932938638
+The info is: {'avg': 0.4724360455229667}
+For group: "NAU149palm", the group means is: 0.472436045523
+The info is: {'avg': 0.5281414373285036}
+For group: "CUB011palm", the group means is: 0.528141437329
+The info is: {'avg': 0.82901342977840864}
+For group: "CUB038palm", the group means is: 0.829013429778
+The info is: {'avg': 0.65022564094083379}
+For group: "CUB016palm", the group means is: 0.459988204776
+The info is: {'avg': 0.48872480574010818}
+For group: "CUB009palm", the group means is: 1.11117143352
+The info is: {'avg': 0.44553672687524148}
+For group: "NAU105palm", the group means is: 0.455580667976
+The info is: {'avg': 1.111171433522121}
+For group: "NAU148palm", the group means is: 0.674857266759
+The info is: {'avg': 0.45558066797607616}
+For group: "NCS233palm", the group means is: 0.57672351354
+The info is: {'avg': 0.67485726675907387}
+For group: "NAU160palm", the group means is: 0.48872480574
+The info is: {'avg': 0.67782960918503643}
+For group: "NAU150palm", the group means is: 0.778359553286
+The info is: {'avg': 0.45998820477592306}
+For group: "CUB050palm", the group means is: 0.49415192989
+The info is: {'avg': 0.49415192989015011}
+For group: "CUB048palm", the group means is: 0.75401798971
+The info is: {'avg': 0.75401798971038081}
+For group: "CUB040palm", the group means is: 0.914389776214
+The info is: {'avg': 0.57721157873160456}
+For group: "CUB012palm", the group means is: 0.702347639352
+The info is: {'avg': 0.91438977621376372}
+For group: "CUB008palm", the group means is: 0.717286801159
+The info is: {'avg': 0.75592156844377256}
+For group: "CUB051palm", the group means is: 0.810285366492
+The info is: {'avg': 0.40336687102459962}
+For group: "NAU132palm", the group means is: 0.441839852089
+The info is: {'avg': 0.67854279509405646}
+For group: "CUB017palm", the group means is: 0.869459714445
+The info is: {'avg': 0.44183985208879489}
+For group: "NCS248palm", the group means is: 0.650225640941
+The info is: {'avg': 0.86945971444528558}
+For group: "NAU154palm", the group means is: 0.40141611431
+The info is: {'avg': 0.7783595532861598}
+For group: "NCS210palm", the group means is: 0.572822994804
+The info is: {'avg': 0.40141611431007868}
+For group: "CUB010palm", the group means is: 0.504158889406
+The info is: {'avg': 0.50415888940555309}
+For group: "CUB026palm", the group means is: 0.598484759232
+The info is: {'avg': 0.59848475923175448}
+For group: "NCS203palm", the group means is: 1.05037417057
+The info is: {'avg': 1.0503741705731855}
+For group: "NCS213palm", the group means is: 0.826010863276
+The info is: {'avg': 0.82601086327583262}
+For group: "CUB042palm", the group means is: 0.508419886599
+The info is: {'avg': 0.50841988659852499}
+For group: "NAU123palm", the group means is: 0.755463957842
+The info is: {'avg': 0.48416254789768981}
+For group: "CUB037palm", the group means is: 0.678542795094
+The info is: {'avg': 0.49979739947285967}
+For group: "CUB052palm", the group means is: 0.385792448185
+The info is: {'avg': 0.3857924481853573}
+For group: "NCS212palm", the group means is: 0.581180761146
+The info is: {'avg': 0.5811807611459997}
+For group: "NAU136palm", the group means is: 0.403366871025
+The info is: {'avg': 0.71728680115875931}
+For group: "NAU109palm", the group means is: 0.55963841288
+The info is: {'avg': 0.55963841288011607}
+For group: "NCS243palm", the group means is: 0.621554755895
+The info is: {'avg': 0.62155475589548359}
+For group: "NAU157palm", the group means is: 0.534757262654
+The info is: {'avg': 1.1866519038565502}
+For group: "NAU155palm", the group means is: 0.750133472656
+The info is: {'avg': 0.75013347265639585}
+For group: "NAU164palm", the group means is: 0.755921568444
+The info is: {'avg': 0.70234763935157329}
+For group: "NCS263palm", the group means is: 0.577211578732
+The info is: {'avg': 0.57282299480357712}
+For group: "CUB044palm", the group means is: 0.549295679505
+The info is: {'avg': 0.54929567950522384}
+For group: "NAU147palm", the group means is: 0.58284157691
+The info is: {'avg': 0.58284157690977068}
+For group: "CUB056palm", the group means is: 0.489928361517
+The info is: {'avg': 0.48992836151707148}
+For group: "CUB029palm", the group means is: 0.604955624684
+The info is: {'avg': 0.60495562468376896}
+
+Grouped by "Antibiotic_disturbance", probability: 0.000009
+For group: "Yes", the group means is: 0.905088258593
+The info is: {'avg': 0.90508825859339459}
+For group: "No", the group means is: 1.21176329964
+The info is: {'avg': 1.2117632996380341}
+
+Grouped by "BrushTeeth", probability: 0.073257
+For group: "regularly", the group means is: 1.30902193586
+The info is: {'avg': 1.309021935864189}
+For group: "daily", the group means is: 1.12669058098
+The info is: {'avg': 1.1266905809836514}
+
+Grouped by "DrugAllergies", probability: 0.042618
+For group: "yes", the group means is: 1.03271722869
+The info is: {'avg': 1.0327172286854343}
+For group: "no", the group means is: 1.1774047336
+The info is: {'avg': 1.1774047336031488}
+
+Grouped by "OverTheCounterFacialAcne", probability: 0.022687
+For group: "yes", the group means is: 1.22449777678
+The info is: {'avg': 1.2244977767810181}
+For group: "no", the group means is: 1.09509495849
+The info is: {'avg': 1.0950949584914396}
+
+Grouped by "StartWeek", probability: 0.000931
+For group: "1", the group means is: 1.16052802194
+The info is: {'avg': 1.1605280219357619}
+For group: "2", the group means is: 0.587863615835
+The info is: {'avg': 0.58786361583549807}
+
+Grouped by "CampusDining", probability: 0.009683
+For group: "yes", the group means is: 0.905033241378
+The info is: {'avg': 0.90503324137847652}
+For group: "no", the group means is: 1.17276567514
+The info is: {'avg': 1.1727656751408897}
+
+Grouped by "BMIclass", probability: 0.102061
+For group: "na", the group means is: 0.985506626594
+The info is: {'avg': 0.98550662659367161}
+For group: "normal", the group means is: 1.13728635434
+The info is: {'avg': 1.0701403632754292}
+For group: "overweight", the group means is: 1.19616095099
+The info is: {'avg': 1.1961609509932578}
+For group: "obese", the group means is: 0.856039491695
+The info is: {'avg': 0.85603949169526405}
+For group: "underweight", the group means is: 1.07014036328
+The info is: {'avg': 1.1372863543411573}
+
+Grouped by "Tonsils", probability: 0.721259
+For group: "yes", the group means is: 1.07037384049
+The info is: {'avg': 1.0703738404877106}
+For group: "no", the group means is: 1.0979194088
+The info is: {'avg': 1.0979194088023774}
+
+Grouped by "StopWeek", probability: 0.000000
+For group: "11", the group means is: 0.913153887618
+The info is: {'avg': 0.913153887617833}
+For group: "10", the group means is: 1.20545084063
+The info is: {'avg': 1.205450840632377}
+For group: "13", the group means is: 0.700006561635
+The info is: {'avg': 0.70000656163531594}
+For group: "12", the group means is: 0.848588013002
+The info is: {'avg': 0.84858801300197229}
+For group: "14", the group means is: 0.748036677742
+The info is: {'avg': 0.74803667774211735}
+For group: "7", the group means is: 0.755921568444
+The info is: {'avg': 0.75592156844377256}
+For group: "9", the group means is: 0.680526631774
+The info is: {'avg': 0.68052663177376749}
+For group: "8", the group means is: 0.520738942173
+The info is: {'avg': 0.52073894217322636}
+
+Grouped by "WeightChanges", probability: 0.054076
+For group: "decreased", the group means is: 0.920799829981
+The info is: {'avg': 0.92079982998124033}
+For group: "increased", the group means is: 1.0737511918
+The info is: {'avg': 1.0737511917981486}
+For group: "stable", the group means is: 1.17423777113
+The info is: {'avg': 1.1742377711304739}
+
+Grouped by "PoisonIvyOakAllergies", probability: 0.000034
+For group: "yes", the group means is: 0.850657196937
+The info is: {'avg': 0.85065719693708142}
+For group: "no", the group means is: 1.19536303422
+The info is: {'avg': 1.1953630342178085}
+
+Grouped by "OtherSpecialDiet", probability: 0.000168
+For group: "yes.gluten.free..70percent.raw", the group means is: 0.489928361517
+The info is: {'avg': 0.48992836151707148}
+For group: "no", the group means is: 1.14839682245
+The info is: {'avg': 1.1483968224496319}
+For group: "yes.meats.veges.nuts.seeds.berries.lots.of.yogurt.kefir", the group means is: 0.45533431451
+The info is: {'avg': 0.45533431450970457}
+For group: "yes.organic", the group means is: 0.778359553286
+The info is: {'avg': 0.7783595532861598}
+For group: "yes.low.oil.whole.graon.eat.4.6.timers.per.day.small.meals", the group means is: 0.839930259048
+The info is: {'avg': 0.8399302590476998}
+For group: "yes", the group means is: 0.717286801159
+The info is: {'avg': 0.71728680115875931}
+
+Grouped by "WeeksSinceStart", probability: 0.888832
+For group: "0.5", the group means is: 1.26012275229
+The info is: {'avg': 1.2601227522893133}
+For group: "1", the group means is: 1.09582045311
+The info is: {'avg': 1.0958204531119538}
+For group: "0", the group means is: 1.11214103199
+The info is: {'avg': 1.112141031992365}
+For group: "3", the group means is: 1.15179421308
+The info is: {'avg': 1.1517942130847214}
+For group: "2", the group means is: 1.09021998185
+The info is: {'avg': 1.0902199818461311}
+For group: "5", the group means is: 1.13467373729
+The info is: {'avg': 1.1346737372858573}
+For group: "4", the group means is: 1.14443140285
+The info is: {'avg': 1.1444314028463778}
+For group: "7", the group means is: 1.23356246292
+The info is: {'avg': 1.2335624629196913}
+For group: "6", the group means is: 1.23779787736
+The info is: {'avg': 1.2377978773554259}
+For group: "9", the group means is: 1.01948289829
+The info is: {'avg': 1.0194828982933037}
+For group: "8", the group means is: 1.05793645847
+The info is: {'avg': 1.0579364584698525}
+
+Grouped by "PersonalID", probability: 0.000259
+For group: "CUB012", the group means is: 0.702347639352
+The info is: {'avg': 0.7783595532861598}
+For group: "CUB011", the group means is: 0.528141437329
+The info is: {'avg': 0.70234763935157329}
+For group: "CUB010", the group means is: 0.504158889406
+The info is: {'avg': 0.5281414373285036}
+For group: "CUB017", the group means is: 0.869459714445
+The info is: {'avg': 0.50415888940555309}
+For group: "CUB016", the group means is: 0.459988204776
+The info is: {'avg': 0.86945971444528558}
+For group: "CUB015", the group means is: 0.538932938638
+The info is: {'avg': 0.45998820477592306}
+For group: "NAU148", the group means is: 0.674857266759
+The info is: {'avg': 0.53893293863840319}
+For group: "NAU121", the group means is: 0.452182950826
+The info is: {'avg': 0.67485726675907387}
+For group: "CUB019", the group means is: 0.484162547898
+The info is: {'avg': 0.45218295082622767}
+For group: "NAU164", the group means is: 0.755921568444
+The info is: {'avg': 0.48416254789768981}
+For group: "CUB008", the group means is: 0.717286801159
+The info is: {'avg': 0.40336687102459962}
+For group: "CUB038", the group means is: 0.829013429778
+The info is: {'avg': 0.82901342977840864}
+For group: "NAU106", the group means is: 0.37975096319
+The info is: {'avg': 0.48992836151707148}
+For group: "CUB056", the group means is: 0.489928361517
+The info is: {'avg': 0.5823608967828513}
+For group: "CUB033", the group means is: 0.582360896783
+The info is: {'avg': 0.67948150193879175}
+For group: "CUB053", the group means is: 0.679481501939
+The info is: {'avg': 0.3857924481853573}
+For group: "CUB052", the group means is: 0.385792448185
+The info is: {'avg': 0.67854279509405646}
+For group: "CUB037", the group means is: 0.678542795094
+The info is: {'avg': 0.49415192989015011}
+For group: "NAU160", the group means is: 0.48872480574
+The info is: {'avg': 0.71702533488913844}
+For group: "NAU154", the group means is: 0.40141611431
+The info is: {'avg': 0.4724360455229667}
+For group: "NAU149", the group means is: 0.472436045523
+The info is: {'avg': 0.53475726265412427}
+For group: "CUB004", the group means is: 0.714878269616
+The info is: {'avg': 0.48872480574010818}
+For group: "CUB003", the group means is: 1.18665190386
+The info is: {'avg': 0.57672351354011964}
+For group: "NAU101", the group means is: 0.677829609185
+The info is: {'avg': 0.65022564094083379}
+For group: "NAU147", the group means is: 0.58284157691
+The info is: {'avg': 0.58284157690977068}
+For group: "NCS248", the group means is: 0.650225640941
+The info is: {'avg': 0.49979739947285967}
+For group: "CUB051", the group means is: 0.810285366492
+The info is: {'avg': 0.8102853664915628}
+For group: "NCS204", the group means is: 0.471654582767
+The info is: {'avg': 0.47165458276650069}
+For group: "NAU110", the group means is: 0.499797399473
+The info is: {'avg': 0.75546395784191267}
+For group: "CUB050", the group means is: 0.49415192989
+The info is: {'avg': 1.0503741705731855}
+For group: "NAU123", the group means is: 0.755463957842
+The info is: {'avg': 0.7148782696164877}
+For group: "NCS203", the group means is: 1.05037417057
+The info is: {'avg': 0.77053296047303588}
+For group: "NAU150", the group means is: 0.778359553286
+The info is: {'avg': 0.77686660823963272}
+For group: "CUB007", the group means is: 0.770532960473
+The info is: {'avg': 0.75013347265639585}
+For group: "CUB000", the group means is: 0.77686660824
+The info is: {'avg': 1.1866519038565502}
+For group: "NAU155", the group means is: 0.750133472656
+The info is: {'avg': 0.44183985208879489}
+For group: "NAU157", the group means is: 0.534757262654
+The info is: {'avg': 0.44553672687524148}
+For group: "NAU132", the group means is: 0.441839852089
+The info is: {'avg': 0.62155475589548359}
+For group: "NAU133", the group means is: 0.445536726875
+The info is: {'avg': 0.71728680115875931}
+For group: "NCS243", the group means is: 0.621554755895
+The info is: {'avg': 1.111171433522121}
+For group: "NAU136", the group means is: 0.403366871025
+The info is: {'avg': 0.45533431450970457}
+For group: "CUB009", the group means is: 1.11117143352
+The info is: {'avg': 0.57721157873160456}
+For group: "NAU134", the group means is: 0.45533431451
+The info is: {'avg': 0.91438977621376372}
+For group: "NCS263", the group means is: 0.577211578732
+The info is: {'avg': 0.82601086327583262}
+For group: "CUB040", the group means is: 0.914389776214
+The info is: {'avg': 0.64171938984225885}
+For group: "CUB028", the group means is: 0.641719389842
+The info is: {'avg': 0.60495562468376896}
+For group: "CUB029", the group means is: 0.604955624684
+The info is: {'avg': 0.54929567950522384}
+For group: "CUB044", the group means is: 0.549295679505
+The info is: {'avg': 0.75401798971038081}
+For group: "CUB048", the group means is: 0.75401798971
+The info is: {'avg': 0.59848475923175448}
+For group: "CUB026", the group means is: 0.598484759232
+The info is: {'avg': 0.30042129021209313}
+For group: "CUB027", the group means is: 0.300421290212
+The info is: {'avg': 0.75592156844377256}
+For group: "CUB042", the group means is: 0.508419886599
+The info is: {'avg': 0.50841988659852499}
+For group: "NCS233", the group means is: 0.57672351354
+The info is: {'avg': 0.67782960918503643}
+For group: "NCS253", the group means is: 0.839930259048
+The info is: {'avg': 0.8399302590476998}
+For group: "NCS234", the group means is: 0.717025334889
+The info is: {'avg': 0.37975096318985446}
+For group: "NAU105", the group means is: 0.455580667976
+The info is: {'avg': 0.45558066797607616}
+For group: "NCS213", the group means is: 0.826010863276
+The info is: {'avg': 0.40141611431007868}
+For group: "NCS212", the group means is: 0.581180761146
+The info is: {'avg': 0.5811807611459997}
+For group: "NAU109", the group means is: 0.55963841288
+The info is: {'avg': 0.55963841288011607}
+For group: "NCS210", the group means is: 0.572822994804
+The info is: {'avg': 0.57282299480357712}
+For group: "NCS214", the group means is: 0.713739350899
+The info is: {'avg': 0.71373935089907636}

@@ -1,0 +1,1271 @@
+Vectors algorithm: diff
+
+Grouped by ShellfishAllergy: Only one value in the group.
+
+Grouped by "GlutenIntolerant", probability: 0.752695
+For group: "yes", the group means is: -0.0605491755046
+The info is: {'std': 0.45079470682165995, 'mean': -0.060549175504587452}
+For group: "no", the group means is: 0.00136313271639
+The info is: {'std': 0.8718090835030754, 'mean': 0.0013631327163877798}
+
+Grouped by "OtherMedication", probability: 0.999999
+For group: "yes.claritin.buproprion.citalopram", the group means is: 0.0181816905826
+The info is: {'std': 0.42397955890089939, 'mean': -0.040028509094941038}
+For group: "yes.zyrtec", the group means is: -0.0400285090949
+The info is: {'std': 0.41826398651392038, 'mean': -0.056181489209706267}
+For group: "yes.metformin.for.polycystic.ovarian.syndrom", the group means is: 0.174786644216
+The info is: {'std': 0.285478389037708, 'mean': 0.18464804878109065}
+For group: "yes.aderoll.ADD.medication.", the group means is: 0.184648048781
+The info is: {'std': 0.8689258294299802, 'mean': -0.17368806972722425}
+For group: "yes.advil.tylenol.and.claritin.as.needed", the group means is: -0.173688069727
+The info is: {'std': 0.6989513014547627, 'mean': -0.10410005531388289}
+For group: "yes.ambien", the group means is: -0.104100055314
+The info is: {'std': 0.48719385989317732, 'mean': -0.17877859938992627}
+For group: "yes.chronic.pain.control.Lyrica.and.Ultram.allegra", the group means is: -0.17877859939
+The info is: {'std': 0.51357379692648741, 'mean': 0.038992099569248283}
+For group: "yes.insulin.novolog", the group means is: 0.0351921754082
+The info is: {'std': 0.61597070544217869, 'mean': 0.035192175408207613}
+For group: "no", the group means is: 0.00189602879248
+The info is: {'std': 0.82803557826973229, 'mean': 0.0018960287924827178}
+For group: "yes.amitriptyline", the group means is: -0.167811624035
+The info is: {'std': 1.0768801028812107, 'mean': -0.16781162403482491}
+For group: "yes.zolmitriptan", the group means is: 0.0936298900561
+The info is: {'std': 0.27798248752108234, 'mean': 0.093629890056108792}
+For group: "yes.muscle.relaxants.Aleve", the group means is: 0.0389920995692
+The info is: {'std': 0.64063353795581601, 'mean': 0.077279813195116523}
+For group: "yes.ibuprofen.maxalt", the group means is: -0.0130345686614
+The info is: {'std': 0.33926620436547728, 'mean': -0.01303456866143975}
+For group: "yes.levothyroxin.fluoxetine", the group means is: 0.0772798131951
+The info is: {'std': 0.83281887257267107, 'mean': -0.034303753879438514}
+For group: "yes.acyclovir.usually.every.few.months.anti.viral", the group means is: -0.0343037538794
+The info is: {'std': 0.18355842632154765, 'mean': 0.018181690582641963}
+For group: "yes.lorazepan.Ativan.PRN", the group means is: 0.0842207202783
+The info is: {'std': 0.32153011277931753, 'mean': 0.084220720278312552}
+For group: "yes.take.zyrted.for.seasonal.allergies", the group means is: 0.0848364786156
+The info is: {'std': 0.48423109340034282, 'mean': 0.084836478615603506}
+For group: "yes.fluoxetine.adderall.crestor", the group means is: 0.00443234648297
+The info is: {'std': 0.55382441776263258, 'mean': 0.0044323464829688474}
+For group: "yes.sertraline.HCL.Zoloft.balsalazide.disodium.alprazolam.infliximab.ergocalciferol", the group means is: -0.0561814892097
+The info is: {'std': 0.90992205067329845, 'mean': 0.1747866442161338}
+For group: "yes.allergies", the group means is: -0.0760406013059
+The info is: {'std': 0.51968268527180383, 'mean': -0.076040601305868885}
+
+Grouped by "BMI", probability: 1.000000
+For group: "22.86256437", the group means is: -0.209507370874
+The info is: {'std': 0.70362468705174319, 'mean': 0.032589844532869616}
+For group: "21.74285248", the group means is: 0.355832425977
+The info is: {'std': 1.3437211112778873, 'mean': 0.35583242597661346}
+For group: "23.61830085", the group means is: 0.0105029238997
+The info is: {'std': 0.89542378039975756, 'mean': 0.010502923899684959}
+For group: "24.29542216", the group means is: 0.066800632635
+The info is: {'std': 0.57925909544124421, 'mean': 0.066800632635045695}
+For group: "27.4384363", the group means is: 0.0179351701677
+The info is: {'std': 0.57703768341098627, 'mean': 0.017935170167660594}
+For group: "22.95923584", the group means is: -0.0400285090949
+The info is: {'std': 0.42397955890089939, 'mean': -0.040028509094941038}
+For group: "20.67417373", the group means is: 0.0857067418879
+The info is: {'std': 0.91860344061509724, 'mean': 0.085706741887912469}
+For group: "23.73402323", the group means is: -0.121835982965
+The info is: {'std': 0.65949605627968999, 'mean': -0.12183598296483857}
+For group: "22.46843982", the group means is: 0.11612630413
+The info is: {'std': 0.45207888076286951, 'mean': 0.11612630412972073}
+For group: "20.04742842", the group means is: 0.184352098461
+The info is: {'std': 1.3171248660830863, 'mean': 0.18435209846055511}
+For group: "19.22455882", the group means is: -0.235578652892
+The info is: {'std': 0.52951292873998057, 'mean': -0.23557865289158419}
+For group: "23.08822977", the group means is: 0.0437764133907
+The info is: {'std': 0.66989584989683315, 'mean': 0.043776413390718499}
+For group: "21.14377217", the group means is: 0.0848364786156
+The info is: {'std': 0.48423109340034282, 'mean': 0.084836478615603506}
+For group: "18.56129515", the group means is: -0.15704090066
+The info is: {'std': 1.023266061554283, 'mean': -0.15704090066020474}
+For group: "18.30910364", the group means is: -0.0473128583791
+The info is: {'std': 0.44853784466676078, 'mean': -0.047312858379122878}
+For group: "16.82148897", the group means is: -0.0571313257286
+The info is: {'std': 0.20653079783889702, 'mean': -0.017739371459889401}
+For group: "20.71344042", the group means is: 0.00443234648297
+The info is: {'std': 0.55382441776263258, 'mean': 0.0044323464829688474}
+For group: "22.14252896", the group means is: -0.153091468628
+The info is: {'std': 0.97881853561386634, 'mean': -0.15309146862771897}
+For group: "21.91006308", the group means is: 0.0772798131951
+The info is: {'std': 0.64063353795581601, 'mean': 0.077279813195116523}
+For group: "21.85555509", the group means is: 0.0181816905826
+The info is: {'std': 0.18355842632154765, 'mean': 0.018181690582641963}
+For group: "24.12901516", the group means is: 0.0351921754082
+The info is: {'std': 0.61597070544217869, 'mean': 0.035192175408207613}
+For group: "21.78934648", the group means is: -0.0177393714599
+The info is: {'std': 0.8583275939195002, 'mean': -0.0571313257286497}
+For group: "19.4614799", the group means is: -0.166386602487
+The info is: {'std': 0.37107636524010484, 'mean': -0.16638660248746673}
+For group: "25.84814631", the group means is: 0.253999442934
+The info is: {'std': 0.42959050559604745, 'mean': 0.072744924366528796}
+For group: "23.40337214", the group means is: 0.0727449243665
+The info is: {'std': 0.40406455822477744, 'mean': -0.0040775858094327698}
+For group: "25.10464676", the group means is: -0.00407758580943
+The info is: {'std': 0.51968268527180383, 'mean': -0.076040601305868885}
+For group: "25.06722089", the group means is: -0.0760406013059
+The info is: {'std': 0.2882688346193501, 'mean': -0.11355940949705326}
+For group: "25.82704578", the group means is: -0.0925181663473
+The info is: {'std': 0.51357379692648741, 'mean': 0.038992099569248283}
+For group: "17.75428231", the group means is: -0.113559409497
+The info is: {'std': 0.78040644594110364, 'mean': 0.14539980414040027}
+For group: "19.96884013", the group means is: 0.0389920995692
+The info is: {'std': 0.50134666838465225, 'mean': 0.12942561068803837}
+For group: "20.80087514", the group means is: 0.14539980414
+The info is: {'std': 1.1838707619370654, 'mean': -0.26384770053374668}
+For group: "18.2900515", the group means is: 0.129425610688
+The info is: {'std': 1.0130521349523633, 'mean': 0.38937178794091382}
+For group: "22.31422006", the group means is: -0.263847700534
+The info is: {'std': 0.63291154616547041, 'mean': -0.032843667770052022}
+For group: "33.83659527", the group means is: 0.174786644216
+The info is: {'std': 0.50841739087212678, 'mean': -0.092518166347334604}
+For group: "22.23995609", the group means is: -0.0328436677701
+The info is: {'std': 0.50549037454566392, 'mean': -0.34207298631258631}
+For group: "32.09777117", the group means is: 0.389371787941
+The info is: {'std': 0.82301674923417234, 'mean': 0.020489836290976726}
+For group: "20.08422449", the group means is: -0.342072986313
+The info is: {'std': 1.0213312796623943, 'mean': -0.20950737087386098}
+For group: "19.93581039", the group means is: 0.020489836291
+The info is: {'std': 0.285478389037708, 'mean': 0.18464804878109065}
+For group: "26.58108052", the group means is: 0.0325898445329
+The info is: {'std': 0.6989513014547627, 'mean': -0.10410005531388289}
+For group: "25.74717699", the group means is: 0.184648048781
+The info is: {'std': 0.39109222481839495, 'mean': -0.089332560259343163}
+For group: "23.62762713", the group means is: -0.104100055314
+The info is: {'std': 0.8689258294299802, 'mean': -0.17368806972722425}
+For group: "24.03069852", the group means is: -0.0893325602593
+The info is: {'std': 0.27798248752108234, 'mean': 0.093629890056108792}
+For group: "23.20537035", the group means is: -0.173688069727
+The info is: {'std': 0.86973757013178088, 'mean': -0.21051636591772174}
+For group: "22.95737403", the group means is: -0.210516365918
+The info is: {'std': 0.29063990675111595, 'mean': -0.0069029311183909578}
+For group: "31.840989", the group means is: -0.00690293111839
+The info is: {'std': 0.40808198838074211, 'mean': -0.075339091280535037}
+For group: "21.9480618", the group means is: 0.0936298900561
+The info is: {'std': 0.49400990012644996, 'mean': -0.057805442516041965}
+For group: "27.89405196", the group means is: -0.0753390912805
+The info is: {'std': 0.41486412288230451, 'mean': -0.042764143101096316}
+For group: "25.39969916", the group means is: 0.0842207202783
+The info is: {'std': 0.32153011277931753, 'mean': 0.084220720278312552}
+For group: "20.36066949", the group means is: -0.0427641431011
+The info is: {'std': 0.64823485873784692, 'mean': -0.31163578608039461}
+For group: "20.08770228", the group means is: 0.0439389798369
+The info is: {'std': 0.68472752893314692, 'mean': 0.043938979836887826}
+For group: "27.70587572", the group means is: -0.31163578608
+The info is: {'std': 0.98740137144622431, 'mean': 0.25399944293447541}
+For group: "22.70997751", the group means is: 0.257791742
+The info is: {'std': 0.41843906382358842, 'mean': 0.2577917419998717}
+For group: "na", the group means is: -0.025199977498
+The info is: {'std': 0.77068151141723473, 'mean': -0.025199977498003685}
+For group: "26.60838591", the group means is: -0.057805442516
+The info is: {'std': 0.90992205067329845, 'mean': 0.1747866442161338}
+For group: "23.67479197", the group means is: 0.295099214248
+The info is: {'std': 0.65824094324180271, 'mean': 0.29509921424840663}
+For group: "23.05590828", the group means is: -0.173821313296
+The info is: {'std': 0.71062904510685532, 'mean': -0.17382131329641007}
+
+Grouped by "Asthma", probability: 0.936287
+For group: "yes", the group means is: 0.00718565682321
+The info is: {'std': 0.7752145634517803, 'mean': 0.0071856568232053393}
+For group: "no", the group means is: -0.00139778449369
+The info is: {'std': 0.84128221971863715, 'mean': -0.0013977844936938434}
+
+Grouped by "OtherInfo", probability: 0.991450
+For group: "I.work.with.exotic.wild.animals.on.a.weekly.basis.and.come.into.direct.contact.with.wildcats.number.of.species.wolves.wild.New.Guinea.singing.dogs.and.lemurs.I.also.come.in.contact.with.a.variety.of.meats.and.dead.animals.while.butchering.and.preparing.food.for.the.wild.animals.at.the.cneter.where.I.work.", the group means is: -0.173688069727
+The info is: {'std': 0.8689258294299802, 'mean': -0.17368806972722425}
+For group: "Starting.the.tanning.bed.midway.through.the.experiment", the group means is: 0.0437764133907
+The info is: {'std': 0.66989584989683315, 'mean': 0.043776413390718499}
+For group: "I.do.not.wear.shoes.inside.the.house", the group means is: -0.173821313296
+The info is: {'std': 0.71062904510685532, 'mean': -0.17382131329641007}
+For group: "I.write.mainly.left.handed.will.sometimes.write.right.handed.I.do.most.all.other.things.right.handed.I.have.eczema.or.psoriasis.I.had.chicken.pox.twice.on.the.secodn.time.I.had.gotten.a.fever.of.107..age.10.For.facial.cosmetics.I.just.use.a.daily.moisturizer.I.do.occasionally.go.in.a.sauna.1.to.2.times.per.week.Amount.of.execise.fluctuates.per.week.depending.on.workload.Multivitamin.contains.probiotic.I.eat.a.glutten.free.vegan.diet.with.almost.all.food.RAW.varies.on.workload.per.week.", the group means is: -0.121835982965
+The info is: {'std': 0.27798248752108234, 'mean': 0.093629890056108792}
+For group: "na", the group means is: 0.00167743900688
+The info is: {'std': 0.65949605627968999, 'mean': -0.12183598296483857}
+For group: "Eat.meat.1.to.2.times.a.week", the group means is: 0.409141485041
+The info is: {'std': 0.78783457082436148, 'mean': 0.0016774390068832071}
+For group: "I.think.I.may.have.eczema.or.psoriasis.", the group means is: -0.31163578608
+The info is: {'std': 0.8921805751434313, 'mean': 0.40914148504137443}
+For group: "may.get.a.pet", the group means is: -0.113559409497
+The info is: {'std': 0.2882688346193501, 'mean': -0.11355940949705326}
+For group: "summers.in.Alaska", the group means is: -0.0753390912805
+The info is: {'std': 0.40808198838074211, 'mean': -0.075339091280535037}
+For group: "I.have.IBS.I.may.have.both.Eczema.and.Psoriasis.or.other.form.of.skin.condition.I.am.allergic.to.metal.I.have.a.number.of.health.issues.yet.to.be.explained.by.doctors.not.that.they.haven.t.tried.", the group means is: -0.167811624035
+The info is: {'std': 1.0768801028812107, 'mean': -0.16781162403482491}
+For group: "tanning.lotion.I.mentioned.that.I.have.3plus.roomates.because.I.am.married.and.have.3.kids", the group means is: -0.166386602487
+The info is: {'std': 0.37107636524010484, 'mean': -0.16638660248746673}
+For group: "On.the.third.testing.sample.I.accidentally.contaminated.my.oral.sample.with.my.hands.I.had.just.taken.medication.and.saw.that.it.had.gotten.on.the.swab.and.stupidly.tried.to.wipe.it.off.with.my.hand.the.medication.is.blue.", the group means is: 0.184648048781
+The info is: {'std': 0.285478389037708, 'mean': 0.18464804878109065}
+For group: "Owns.an.african.grey.parrot.and.six.bearded.dragons.I.handle.all.of.them.on.a.regular.basis.Additionally.I.am.breeding.the.lizards.and.have.over.100.eggs.that.I.tend.to.on.a.daily.basis.in.an.incubator.", the group means is: 0.0325898445329
+The info is: {'std': 0.70362468705174319, 'mean': 0.032589844532869616}
+For group: "previously.diagnosed.with.colitis.but.later.attributed.to.gluten.intoerance.does.experience.acute.stress.related.eczema.outbreaks", the group means is: 0.0936298900561
+The info is: {'std': 0.41486412288230451, 'mean': -0.042764143101096316}
+For group: "Tuesday.Thursday.in.Flagstaff.Fr.Monday.Queen.Creek.AZ", the group means is: -0.0427641431011
+The info is: {'std': 0.64823485873784692, 'mean': -0.31163578608039461}
+
+Grouped by "menstruation_disturbance", probability: 0.987312
+For group: "Yes", the group means is: 0.00134899256272
+The info is: {'std': 0.89259358357037533, 'mean': 0.0013489925627203983}
+For group: "No", the group means is: 0.00010319276197
+The info is: {'std': 0.86184713174868666, 'mean': 0.00010319276196964996}
+
+Grouped by "DailyMultivitamin", probability: 0.941307
+For group: "yes", the group means is: -0.00464009907985
+The info is: {'std': 0.74890549911252646, 'mean': -0.0046400990798540088}
+For group: "no", the group means is: 0.00110193869222
+The info is: {'std': 0.85934068266943631, 'mean': 0.0011019386922221884}
+
+Grouped by GreekHouse: Only one value in the group.
+
+Grouped by "SmokeCigarettes", probability: 0.739758
+For group: "regularly", the group means is: -0.31163578608
+The info is: {'std': 0.86370880901697045, 'mean': -0.065356190620701735}
+For group: "rarely", the group means is: -0.0653561906207
+The info is: {'std': 0.64823485873784692, 'mean': -0.31163578608039461}
+For group: "occasionally", the group means is: 0.11612630413
+The info is: {'std': 0.80625691339487082, 'mean': 0.0014906417900810696}
+For group: "never", the group means is: 0.00149064179008
+The info is: {'std': 0.45207888076286951, 'mean': 0.11612630412972073}
+
+Grouped by "IBD", probability: 0.602933
+For group: "Yes.IBS", the group means is: -0.167811624035
+The info is: {'std': 1.0768801028812107, 'mean': -0.16781162403482491}
+For group: "Colitis", the group means is: -0.213692366475
+The info is: {'std': 0.74656316471504436, 'mean': -0.21369236647534531}
+For group: "no", the group means is: 0.00136591461989
+The info is: {'std': 0.84348284715270183, 'mean': 0.0013659146198906136}
+
+Grouped by "Roomates", probability: 0.999969
+For group: "0", the group means is: -0.014972630448
+The info is: {'std': 0.35417411612409383, 'mean': 0.033211310279385016}
+For group: "na", the group means is: -0.0130345686614
+The info is: {'std': 0.33926620436547728, 'mean': -0.01303456866143975}
+For group: "1", the group means is: 0.00332984161068
+The info is: {'std': 0.96018665901902445, 'mean': 0.0033298416106786019}
+For group: "3.plus", the group means is: 0.0332113102794
+The info is: {'std': 0.90709151691625256, 'mean': -0.014972630448024323}
+For group: "3", the group means is: -0.000867483813872
+The info is: {'std': 0.76664242411735994, 'mean': -0.00086748381387196033}
+For group: "2", the group means is: -0.00738470147934
+The info is: {'std': 0.8660996836320316, 'mean': -0.0073847014793406683}
+
+Grouped by "OnCampusHousing", probability: 0.946416
+For group: "yes", the group means is: 0.00884973202285
+The info is: {'std': 0.63315130014888565, 'mean': 0.0088497320228455249}
+For group: "no", the group means is: 0.00150066852858
+The info is: {'std': 0.84556303278258216, 'mean': 0.0015006685285793707}
+
+Grouped by "ZipCode", probability: 0.998959
+For group: "27040", the group means is: 0.389371787941
+The info is: {'std': 1.0130521349523633, 'mean': 0.38937178794091382}
+For group: "28782", the group means is: 0.257791742
+The info is: {'std': 0.41843906382358842, 'mean': 0.2577917419998717}
+For group: "86004", the group means is: -0.00636959861468
+The info is: {'std': 0.7733948249768432, 'mean': -0.0063695986146788805}
+For group: "27606", the group means is: -0.31163578608
+The info is: {'std': 0.77298730906286117, 'mean': 0.0023986767410731761}
+For group: "27607", the group means is: 0.011672732974
+The info is: {'std': 0.65980302350105979, 'mean': 0.011672732973995448}
+For group: "na", the group means is: -0.0788991370895
+The info is: {'std': 0.40756024593935719, 'mean': -0.078899137089525437}
+For group: "27513", the group means is: 0.355832425977
+The info is: {'std': 0.64823485873784692, 'mean': -0.31163578608039461}
+For group: "80310", the group means is: 0.02671138823
+The info is: {'std': 1.3437211112778873, 'mean': 0.35583242597661346}
+For group: "27302", the group means is: -0.173688069727
+The info is: {'std': 0.73573849265304225, 'mean': 0.026711388230005819}
+For group: "80021", the group means is: 0.020489836291
+The info is: {'std': 0.8689258294299802, 'mean': -0.17368806972722425}
+For group: "80020", the group means is: -0.092827325091
+The info is: {'std': 0.82301674923417234, 'mean': 0.020489836290976726}
+For group: "85388", the group means is: -0.210516365918
+The info is: {'std': 0.96398682494902155, 'mean': -0.09282732509098994}
+For group: "86001", the group means is: 0.00239867674107
+The info is: {'std': 0.86973757013178088, 'mean': -0.21051636591772174}
+For group: "27717", the group means is: -0.104100055314
+The info is: {'std': 0.6989513014547627, 'mean': -0.10410005531388289}
+For group: "27613", the group means is: -0.0561814892097
+The info is: {'std': 0.41826398651392038, 'mean': -0.056181489209706267}
+For group: "86015", the group means is: 0.0936298900561
+The info is: {'std': 0.27798248752108234, 'mean': 0.093629890056108792}
+For group: "27695", the group means is: 0.00443234648297
+The info is: {'std': 0.55382441776263258, 'mean': 0.0044323464829688474}
+For group: "80504", the group means is: 0.0437764133907
+The info is: {'std': 0.66989584989683315, 'mean': 0.043776413390718499}
+For group: "80602", the group means is: -0.15704090066
+The info is: {'std': 1.023266061554283, 'mean': -0.15704090066020474}
+For group: "80305", the group means is: 0.253999442934
+The info is: {'std': 0.98740137144622431, 'mean': 0.25399944293447541}
+For group: "80302", the group means is: -0.04198775537
+The info is: {'std': 0.93606024591182257, 'mean': -0.041987755369993336}
+For group: "80303", the group means is: -0.016348023055
+The info is: {'std': 0.62588695863710275, 'mean': -0.016348023054981353}
+For group: "80013", the group means is: -0.00690293111839
+The info is: {'std': 0.29063990675111595, 'mean': -0.0069029311183909578}
+
+Grouped by PeanutAllergy: Only one value in the group.
+
+Grouped by "Cats", probability: 0.983165
+For group: "yes", the group means is: 0.00300846754067
+The info is: {'std': 0.84630578135363788, 'mean': 0.0030084675406701019}
+For group: "no", the group means is: 0.00119182595093
+The info is: {'std': 0.83360654658997502, 'mean': 0.0011918259509331496}
+
+Grouped by "LactoseIntolerant", probability: 0.880517
+For group: "yes", the group means is: -0.014540938511
+The info is: {'std': 0.75894429036928923, 'mean': -0.01454093851096038}
+For group: "no", the group means is: 0.00150742829673
+The info is: {'std': 0.82040074468398372, 'mean': 0.0015074282967261243}
+
+Grouped by TreeNutAllergy: Only one value in the group.
+
+Grouped by "ArtificialTanning", probability: 0.888848
+For group: "yes.tanning.beds", the group means is: 0.0437764133907
+The info is: {'std': 0.66989584989683315, 'mean': 0.043776413390718499}
+For group: "no", the group means is: 0.00133061265158
+The info is: {'std': 0.85270553946724159, 'mean': 0.0013306126515832998}
+
+Grouped by "Chickenpox", probability: 0.958241
+For group: "yes", the group means is: -0.00162216568873
+The info is: {'std': 0.83325803749649707, 'mean': -0.001622165688734172}
+For group: "no", the group means is: -0.00588502870894
+The info is: {'std': 0.70163129980073813, 'mean': -0.0058850287089432544}
+
+Grouped by AmbiguousTimepoint: Only one value in the group.
+
+Grouped by "Fluvaccine", probability: 0.893210
+For group: "6.months", the group means is: 0.00544144848574
+The info is: {'std': 0.85532064154530152, 'mean': 0.0054414484857430792}
+For group: "over.a.year", the group means is: -0.00392403658764
+The info is: {'std': 0.285478389037708, 'mean': 0.18464804878109065}
+For group: "within.year", the group means is: 0.184648048781
+The info is: {'std': 0.90592055224410029, 'mean': -0.0039240365876379683}
+
+Grouped by "WeekNumber", probability: 0.999989
+For group: "10", the group means is: -0.068561958516
+The info is: {'std': 1.1764378003469702, 'mean': -0.068561958516016305}
+For group: "1", the group means is: 0.0459664688256
+The info is: {'std': 1.1566943215149972, 'mean': 0.045966468825555627}
+For group: "3", the group means is: 0.0294725628538
+The info is: {'std': 1.1012003593899446, 'mean': 0.029472562853798682}
+For group: "2", the group means is: 0.00507051639165
+The info is: {'std': 1.3061039109483972, 'mean': 0.0050705163916526528}
+For group: "5", the group means is: 0.00918588573912
+The info is: {'std': 0.9843075244028805, 'mean': 0.0091858857391245649}
+For group: "4", the group means is: -0.0581531765668
+The info is: {'std': 1.4306604120294188, 'mean': -0.058153176566800358}
+For group: "7", the group means is: 0.00257261917251
+The info is: {'std': 1.3021556298428811, 'mean': 0.0025726191725118181}
+For group: "6", the group means is: -0.0148115489247
+The info is: {'std': 1.261092663733951, 'mean': -0.014811548924664429}
+For group: "9", the group means is: 0.0313965510912
+The info is: {'std': 1.3019369959215676, 'mean': 0.031396551091160338}
+For group: "8", the group means is: 0.0416600157965
+The info is: {'std': 1.0897308110053787, 'mean': 0.041660015796480369}
+
+Grouped by "FlossTeeth", probability: 0.999048
+For group: "regularly", the group means is: -0.00114272511481
+The info is: {'std': 0.86842753646946647, 'mean': -0.021298538310843981}
+For group: "daily", the group means is: 0.00857023282486
+The info is: {'std': 0.91510923664001664, 'mean': -0.0011427251148144885}
+For group: "rarely", the group means is: -0.0212985383108
+The info is: {'std': 0.93189320769482831, 'mean': 0.030381533069317946}
+For group: "occasionally", the group means is: -0.00117522438542
+The info is: {'std': 0.85752775556670424, 'mean': -0.0011752243854200168}
+For group: "never", the group means is: 0.0303815330693
+The info is: {'std': 1.0110318763244972, 'mean': 0.0085702328248581042}
+
+Grouped by "TotalIndividualWeeks", probability: 0.999927
+For group: "11", the group means is: -0.0572418781535
+The info is: {'std': 0.90662951307120487, 'mean': -0.057241878153521476}
+For group: "10", the group means is: 0.00154092239888
+The info is: {'std': 0.81989911786696401, 'mean': 0.0015409223988798047}
+For group: "13", the group means is: -0.0292123966356
+The info is: {'std': 0.70943225690032186, 'mean': -0.02921239663560524}
+For group: "12", the group means is: -0.0419450329057
+The info is: {'std': 0.802620723184859, 'mean': -0.041945032905685145}
+For group: "14", the group means is: 0.0181816905826
+The info is: {'std': 0.18355842632154765, 'mean': 0.018181690582641963}
+For group: "7", the group means is: -0.00370211194791
+The info is: {'std': 0.96198703024100918, 'mean': -0.0037021119479074315}
+For group: "9", the group means is: -0.00166126694278
+The info is: {'std': 0.77355546206289449, 'mean': -0.0016612669427836836}
+For group: "8", the group means is: -0.0266882599351
+The info is: {'std': 0.71629525737983113, 'mean': -0.026688259935090108}
+
+Grouped by "DrinkAlcohol", probability: 0.999667
+For group: "regularly", the group means is: 0.00565771507648
+The info is: {'std': 0.67773480478768511, 'mean': -0.0038870931763313691}
+For group: "daily", the group means is: -0.0130345686614
+The info is: {'std': 1.033947268982949, 'mean': 0.0056577150764840654}
+For group: "rarely", the group means is: -0.00388709317633
+The info is: {'std': 0.72157186854503874, 'mean': 0.0003042863493976758}
+For group: "occasionally", the group means is: 0.014889118167
+The info is: {'std': 0.88483034356321433, 'mean': 0.014889118166952835}
+For group: "never", the group means is: 0.000304286349398
+The info is: {'std': 0.33926620436547728, 'mean': -0.01303456866143975}
+
+Grouped by "OtherSupplements", probability: 0.999992
+For group: "yes.vitamin.D.fish.oil.B12.calcium", the group means is: -0.153091468628
+The info is: {'std': 0.97881853561386634, 'mean': -0.15309146862771897}
+For group: "yes.fish.oil..creatine..whey.protein", the group means is: -0.0925181663473
+The info is: {'std': 0.50841739087212678, 'mean': -0.092518166347334604}
+For group: "yes.glucosamine.chondroitin", the group means is: 0.0389920995692
+The info is: {'std': 0.51357379692648741, 'mean': 0.038992099569248283}
+For group: "no", the group means is: 0.0017339330667
+The info is: {'std': 0.82936032603450116, 'mean': 0.0017339330667005143}
+For group: "yes.bulgarian.tribulus.GNC.Amplified.mass.xxx.amplified.wheybolic.extreme.go.and.ravage", the group means is: 0.0325898445329
+The info is: {'std': 0.70362468705174319, 'mean': 0.032589844532869616}
+For group: "yes.melatonin", the group means is: -0.104100055314
+The info is: {'std': 0.6989513014547627, 'mean': -0.10410005531388289}
+For group: "yes.spirulina..hemp.protein", the group means is: -0.121835982965
+The info is: {'std': 0.65949605627968999, 'mean': -0.12183598296483857}
+For group: "yes.vitamin.D", the group means is: 0.00443234648297
+The info is: {'std': 0.55382441776263258, 'mean': 0.0044323464829688474}
+For group: "yes.vitamin.B.complex", the group means is: 0.0936298900561
+The info is: {'std': 0.27798248752108234, 'mean': 0.093629890056108792}
+For group: "yes.protein.shakes", the group means is: -0.0760406013059
+The info is: {'std': 0.51968268527180383, 'mean': -0.076040601305868885}
+For group: "yes.flaxseed.oil", the group means is: 0.184352098461
+The info is: {'std': 1.3171248660830863, 'mean': 0.18435209846055511}
+For group: "yes", the group means is: -0.0177393714599
+The info is: {'std': 0.20653079783889702, 'mean': -0.017739371459889401}
+For group: "yes.Lglutamine.Larginine.Lglycine.BCAAs.proteinpowder.reishi.mushroom.extract", the group means is: 0.0772798131951
+The info is: {'std': 0.52951292873998057, 'mean': -0.23557865289158419}
+For group: "yes.daily.calcium.and.Vitamin.D", the group means is: -0.0561814892097
+The info is: {'std': 0.41826398651392038, 'mean': -0.056181489209706267}
+For group: "yes.several.supplememtns.regarding.workout..Glutamine..creatine..pre.and.post.workout", the group means is: 0.0437764133907
+The info is: {'std': 0.66989584989683315, 'mean': 0.043776413390718499}
+For group: "yes.omega3", the group means is: -0.235578652892
+The info is: {'std': 0.64063353795581601, 'mean': 0.077279813195116523}
+
+Grouped by "ExerciseRoutine", probability: 0.996786
+For group: "regularly", the group means is: 9.5318615474e-05
+The info is: {'std': 0.75200021031537889, 'mean': -0.023879995546931817}
+For group: "rarely", the group means is: -0.0238799955469
+The info is: {'std': 0.85517921572946776, 'mean': 9.5318615473972065e-05}
+For group: "occasionally", the group means is: -0.00878754614563
+The info is: {'std': 0.90877708929698986, 'mean': -0.0087875461456252916}
+For group: "daily", the group means is: 0.00593307612371
+The info is: {'std': 0.8093782226524957, 'mean': 0.0059330761237086412}
+
+Grouped by "BiteFingernails", probability: 0.988544
+For group: "yes", the group means is: 0.00228285070204
+The info is: {'std': 0.79557128400920407, 'mean': 0.0022828507020361257}
+For group: "no", the group means is: 0.00122279648427
+The info is: {'std': 0.82454646254056618, 'mean': 0.0012227964842723611}
+
+Grouped by "WeekDescription", probability: 0.999989
+For group: "week.2", the group means is: 0.00507051639165
+The info is: {'std': 1.1764378003469702, 'mean': -0.068561958516016305}
+For group: "week.1", the group means is: 0.0459664688256
+The info is: {'std': 1.1566943215149972, 'mean': 0.045966468825555627}
+For group: "week.10", the group means is: -0.068561958516
+The info is: {'std': 1.3061039109483972, 'mean': 0.0050705163916526528}
+For group: "week.3", the group means is: 0.0294725628538
+The info is: {'std': 1.1012003593899446, 'mean': 0.029472562853798682}
+For group: "week.4", the group means is: -0.0581531765668
+The info is: {'std': 1.4306604120294188, 'mean': -0.058153176566800358}
+For group: "week.5", the group means is: 0.00918588573912
+The info is: {'std': 0.9843075244028805, 'mean': 0.0091858857391245649}
+For group: "week.6", the group means is: -0.0148115489247
+The info is: {'std': 1.261092663733951, 'mean': -0.014811548924664429}
+For group: "week.7", the group means is: 0.00257261917251
+The info is: {'std': 1.3021556298428811, 'mean': 0.0025726191725118181}
+For group: "week.8", the group means is: 0.0416600157965
+The info is: {'std': 1.0897308110053787, 'mean': 0.041660015796480369}
+For group: "week.9", the group means is: 0.0313965510912
+The info is: {'std': 1.3019369959215676, 'mean': 0.031396551091160338}
+
+Grouped by "Diet", probability: 0.991885
+For group: "omnivore", the group means is: 0.00140020536349
+The info is: {'std': 0.83960118919696591, 'mean': 0.0014002053634861917}
+For group: "omnivore.but.no.red.meat", the group means is: -0.057805442516
+The info is: {'std': 0.49400990012644996, 'mean': -0.057805442516041965}
+For group: "vegan", the group means is: -0.0478462107489
+The info is: {'std': 1.1042148093491784, 'mean': -0.047846210748917199}
+For group: "vegetarian.seafood", the group means is: 0.0389920995692
+The info is: {'std': 0.51357379692648741, 'mean': 0.038992099569248283}
+
+Grouped by "Dogs", probability: 0.999514
+For group: "yes", the group means is: -0.00273965760764
+The info is: {'std': 0.90253156456604411, 'mean': -0.0027396576076399348}
+For group: "no", the group means is: -0.00269559007298
+The info is: {'std': 0.72776432253620205, 'mean': -0.0026955900729775015}
+
+Grouped by "SkinConditions", probability: 0.912651
+For group: "psoriasis", the group means is: 0.0181816905826
+The info is: {'std': 0.18355842632154765, 'mean': 0.018181690582641963}
+For group: "rosacea", the group means is: -0.0328436677701
+The info is: {'std': 0.63291154616547041, 'mean': -0.032843667770052022}
+For group: "none", the group means is: 0.00153861646838
+The info is: {'std': 0.83110258606298648, 'mean': 0.0015386164683825305}
+For group: "eczema.psoriasis", the group means is: -0.241639189901
+The info is: {'std': 1.0584898597894561, 'mean': -0.24163918990050434}
+For group: "other.subacute.cutaneous.lupus.erythematosus.this.is.non.scarring.nonatrophy.producing.photosensitive.dermatosis", the group means is: -0.0427641431011
+The info is: {'std': 0.41486412288230451, 'mean': -0.042764143101096316}
+For group: "eczema", the group means is: -0.0895117669653
+The info is: {'std': 0.8326334760520534, 'mean': -0.089511766965260572}
+
+Grouped by "Antibiotics", probability: 0.999909
+For group: "week", the group means is: -0.0161027340713
+The info is: {'std': 0.75927649115153883, 'mean': -0.016102734071327434}
+For group: "6.months", the group means is: -0.00694539424209
+The info is: {'std': 0.7701430514753711, 'mean': -0.0069453942420861789}
+For group: "month", the group means is: -0.0238074674648
+The info is: {'std': 0.80275607139119354, 'mean': -0.015063909970992707}
+For group: "within.year", the group means is: -0.00422207508027
+The info is: {'std': 0.88401386024020645, 'mean': -0.0042220750802670166}
+For group: "over.a.year", the group means is: -0.015063909971
+The info is: {'std': 0.64197113136451811, 'mean': -0.023807467464813086}
+
+Grouped by "Appendix", probability: 0.920807
+For group: "yes", the group means is: 0.0239301773406
+The info is: {'std': 1.0092373926393416, 'mean': 0.023930177340582948}
+For group: "no", the group means is: 0.000762710080733
+The info is: {'std': 0.85313571997473581, 'mean': 0.0007627100807332662}
+
+Grouped by BodySite: Only one value in the group.
+
+Grouped by ForeheadTimeseries: Only one value in the group.
+
+Grouped by "TraveledOutOfUS", probability: 0.982328
+For group: "within.year", the group means is: -0.0322206209392
+The info is: {'std': 0.83722319338752638, 'mean': -0.032220620939246325}
+For group: "month", the group means is: -0.0850271451164
+The info is: {'std': 0.89980005310506528, 'mean': -0.038036447474036117}
+For group: "over.a.year", the group means is: -0.00196313045133
+The info is: {'std': 0.86582374750436464, 'mean': -0.0019631304513343427}
+For group: "3.months", the group means is: -0.0557935351924
+The info is: {'std': 0.81815747639243974, 'mean': -0.055793535192420723}
+For group: "6.months", the group means is: -0.038036447474
+The info is: {'std': 0.69593664283652712, 'mean': -0.08502714511640598}
+
+Grouped by "OtherAllergies", probability: 0.976225
+For group: "yes", the group means is: -0.0134209128509
+The info is: {'std': 0.9872511907077991, 'mean': -0.013420912850876907}
+For group: "no", the group means is: 0.00140020536349
+The info is: {'std': 0.64063353795581601, 'mean': 0.077279813195116523}
+For group: "yes.soy", the group means is: 0.0772798131951
+The info is: {'std': 0.83758210130656696, 'mean': 0.0014002053634861902}
+
+Grouped by "SeasonalAllergies", probability: 0.967614
+For group: "yes", the group means is: -0.000711137946988
+The info is: {'std': 0.85985856297735486, 'mean': -0.00071113794698755915}
+For group: "no", the group means is: 0.00240754735161
+The info is: {'std': 0.86505713982605925, 'mean': 0.0024075473516057509}
+
+Grouped by AnyTimeseries: Only one value in the group.
+
+Grouped by "BeeStingAllergies", probability: 0.598182
+For group: "yes", the group means is: -0.120672272842
+The info is: {'std': 0.98136254880972273, 'mean': -0.12067227284157468}
+For group: "no", the group means is: 0.00134667638581
+The info is: {'std': 0.84821497202929319, 'mean': 0.0013466763858076473}
+
+Grouped by "University", probability: 0.988179
+For group: "NCS", the group means is: 0.00457420683713
+The info is: {'std': 1.0457045698882634, 'mean': 0.004574206837125532}
+For group: "CU", the group means is: -0.00246586135191
+The info is: {'std': 0.81390179830705023, 'mean': -0.0024658613519136026}
+For group: "NAU", the group means is: -0.0118439593577
+The info is: {'std': 0.77880372993620839, 'mean': -0.011843959357666729}
+
+Grouped by "Diabetes", probability: 0.937899
+For group: "yes.type.I", the group means is: 0.0178986680239
+The info is: {'std': 0.64178728514666383, 'mean': 0.017898668023897571}
+For group: "no", the group means is: 0.00135211750252
+The info is: {'std': 0.83953505499134673, 'mean': 0.0013521175025179794}
+
+Grouped by "SwimmingPoolHotTubUse", probability: 0.981021
+For group: "rarely", the group means is: -0.000711137946988
+The info is: {'std': 0.84194771956188186, 'mean': -0.0007111379469875573}
+For group: "occasionally", the group means is: 0.066800632635
+The info is: {'std': 0.83570545970331866, 'mean': 0.0024788820879496232}
+For group: "never", the group means is: 0.00247888208795
+The info is: {'std': 0.57925909544124421, 'mean': 0.066800632635045695}
+
+Grouped by TongueTimeseries: Only one value in the group.
+
+Grouped by "FacialCosmetics", probability: 0.992767
+For group: "regularly", the group means is: -0.0373961372034
+The info is: {'std': 0.65003986348527654, 'mean': 0.057386016661683137}
+For group: "daily", the group means is: 0.00222980535367
+The info is: {'std': 0.65131799672823765, 'mean': -0.037396137203380045}
+For group: "rarely", the group means is: 0.0573860166617
+The info is: {'std': 0.80674685675848146, 'mean': 0.00012109354720928085}
+For group: "occasionally", the group means is: 0.0168547483357
+The info is: {'std': 0.90818821422428919, 'mean': 0.016854748335718626}
+For group: "never", the group means is: 0.000121093547209
+The info is: {'std': 0.85995788707483034, 'mean': 0.002229805353673129}
+
+Grouped by "FabricSoftener", probability: 0.916717
+For group: "yes", the group means is: 0.000105019182535
+The info is: {'std': 0.90268430507338149, 'mean': 0.00010501918253548692}
+For group: "no", the group means is: -0.00806441691408
+The info is: {'std': 0.8523156880775693, 'mean': -0.0080644169140774834}
+
+Grouped by "Pregnant", probability: 0.942554
+For group: "not.sure", the group means is: 0.020489836291
+The info is: {'std': 0.82301674923417234, 'mean': 0.020489836290976726}
+For group: "no", the group means is: -0.00122549296564
+The info is: {'std': 0.84389499660895673, 'mean': -0.0012254929656441052}
+
+Grouped by "Gender", probability: 0.987988
+For group: "na", the group means is: -0.0600785839733
+The info is: {'std': 0.30562640423358289, 'mean': -0.060078583973282675}
+For group: "male", the group means is: 0.000114658624411
+The info is: {'std': 0.83046625898684789, 'mean': 0.00011465862441071789}
+For group: "female", the group means is: 0.00127631956271
+The info is: {'std': 0.90700953991614519, 'mean': 0.0012763195627085251}
+
+Grouped by "Age", probability: 0.999991
+For group: "24", the group means is: 0.0438865400012
+The info is: {'std': 0.68695781041482751, 'mean': 0.043886540001209721}
+For group: "25", the group means is: -0.069119577169
+The info is: {'std': 0.44377096019706669, 'mean': -0.069119577169038923}
+For group: "27", the group means is: 0.0459649073088
+The info is: {'std': 0.82134646171955805, 'mean': 0.045964907308822009}
+For group: "20", the group means is: 0.00023734335253
+The info is: {'std': 0.77925350669801985, 'mean': 0.00023734335253018492}
+For group: "21", the group means is: -0.00734227391306
+The info is: {'std': 0.76311176510282064, 'mean': -0.0073422739130625195}
+For group: "22", the group means is: 0.0123623808394
+The info is: {'std': 0.7841400560979781, 'mean': 0.012362380839449603}
+For group: "23", the group means is: -0.0064347093168
+The info is: {'std': 0.91769611867044365, 'mean': -0.0064347093167978781}
+For group: "19", the group means is: -0.0400285090949
+The info is: {'std': 0.42397955890089939, 'mean': -0.040028509094941038}
+For group: "18", the group means is: 0.0924153068783
+The info is: {'std': 0.80340305290753788, 'mean': 0.092415306878292816}
+For group: "30", the group means is: 0.0105029238997
+The info is: {'std': 0.89542378039975756, 'mean': 0.010502923899684959}
+For group: "37", the group means is: -0.342072986313
+The info is: {'std': 0.50549037454566392, 'mean': -0.34207298631258631}
+For group: "29", the group means is: -0.166386602487
+The info is: {'std': 0.37107636524010484, 'mean': -0.16638660248746673}
+For group: "36", the group means is: 0.0842207202783
+The info is: {'std': 0.32153011277931753, 'mean': 0.084220720278312552}
+For group: "55", the group means is: -0.00407758580943
+The info is: {'std': 0.40406455822477744, 'mean': -0.0040775858094327698}
+For group: "32", the group means is: 0.0472670047942
+The info is: {'std': 0.90269697914868641, 'mean': 0.047267004794172091}
+For group: "na", the group means is: 0.0348610155193
+The info is: {'std': 0.4175112629266548, 'mean': 0.034861015519307315}
+For group: "41", the group means is: -0.17877859939
+The info is: {'std': 0.48719385989317732, 'mean': -0.17877859938992627}
+For group: "51", the group means is: -0.0130345686614
+The info is: {'std': 0.33926620436547728, 'mean': -0.01303456866143975}
+
+Grouped by "DominantHand", probability: 0.820374
+For group: "ambidextrous", the group means is: -0.0847840771777
+The info is: {'std': 0.81351680467581111, 'mean': -0.084784077177708084}
+For group: "right", the group means is: 0.00147422503028
+The info is: {'std': 0.86674110044095676, 'mean': 0.0014742250302784117}
+For group: "left", the group means is: 0.0666107335237
+The info is: {'std': 0.98687444699779536, 'mean': 0.066610733523711455}
+
+Grouped by "MoveToCurrentLocation", probability: 0.548853
+For group: "6.months", the group means is: -0.240750992394
+The info is: {'std': 1.104728942985532, 'mean': -0.24075099239446046}
+For group: "over.a.year", the group means is: 0.0014120214425
+The info is: {'std': 0.61274836865858529, 'mean': -0.027369969141921392}
+For group: "within.year", the group means is: -0.0273699691419
+The info is: {'std': 0.84323162944141961, 'mean': 0.0014120214425029514}
+
+Grouped by SampleID: this value can not be used
+
+Grouped by "Csection", probability: 0.815352
+For group: "not.sure", the group means is: 0.0879261682513
+The info is: {'std': 0.9933811488715355, 'mean': 0.087926168251299119}
+For group: "yes", the group means is: -0.0334255707776
+The info is: {'std': 0.94354016127327289, 'mean': -0.033425570777550789}
+For group: "no", the group means is: 0.0017294526195
+The info is: {'std': 0.82558195978666182, 'mean': 0.0017294526194997389}
+
+Grouped by "DeodorantAntiperspirant", probability: 0.996691
+For group: "not.sure", the group means is: -0.037008927219
+The info is: {'std': 0.87705132791495877, 'mean': -0.037008927218951555}
+For group: "neither", the group means is: -0.00564944843568
+The info is: {'std': 0.74060867339574121, 'mean': -0.0056494484356821046}
+For group: "deodorant", the group means is: -0.000956891362014
+The info is: {'std': 0.78418569047908082, 'mean': -0.00095689136201370121}
+For group: "deodarant", the group means is: 0.00598288847802
+The info is: {'std': 0.69057919707879745, 'mean': 0.005982888478023962}
+For group: "antiperspirant", the group means is: 0.00393704802204
+The info is: {'std': 0.91231516129512602, 'mean': 0.0039370480220376385}
+
+Grouped by "ExerciseIndoorsOutdoors", probability: 0.986078
+For group: "indoor", the group means is: 0.000168328618816
+The info is: {'std': 0.88443792074450656, 'mean': -0.030644784273494423}
+For group: "both", the group means is: -0.00495745216692
+The info is: {'std': 0.77816960958134751, 'mean': -0.0049574521669153724}
+For group: "outdoor", the group means is: -0.0306447842735
+The info is: {'std': 0.65509744696086725, 'mean': 0.00016832861881573791}
+For group: "both.seasonal", the group means is: -0.153091468628
+The info is: {'std': 0.97881853561386634, 'mean': -0.15309146862771897}
+For group: "seasonal", the group means is: -0.00115870728425
+The info is: {'std': 0.86384642510192489, 'mean': -0.0011587072842524518}
+
+Grouped by "PrescriptionForFacialAcne", probability: 0.926150
+For group: "yes", the group means is: -0.0135210873736
+The info is: {'std': 0.84275447256926506, 'mean': -0.013521087373562316}
+For group: "no", the group means is: 0.00139437117447
+The info is: {'std': 0.86771815308674405, 'mean': 0.0013943711744716662}
+
+Grouped by "SiteID", probability: 1.000000
+For group: "CUB044.palm", the group means is: 0.0325898445329
+The info is: {'std': 0.70362468705174319, 'mean': 0.032589844532869616}
+For group: "NAU148.palm", the group means is: -0.342072986313
+The info is: {'std': 0.50549037454566392, 'mean': -0.34207298631258631}
+For group: "CUB038.palm", the group means is: 0.409141485041
+The info is: {'std': 0.8921805751434313, 'mean': 0.40914148504137443}
+For group: "CUB010.palm", the group means is: -0.0343037538794
+The info is: {'std': 1.0130521349523633, 'mean': 0.38937178794091382}
+For group: "CUB000.palm", the group means is: 0.020489836291
+The info is: {'std': 0.83281887257267107, 'mean': -0.034303753879438514}
+For group: "NCS203.palm", the group means is: 0.355832425977
+The info is: {'std': 1.3437211112778873, 'mean': 0.35583242597661346}
+For group: "CUB037.palm", the group means is: 0.14539980414
+The info is: {'std': 0.45207888076286951, 'mean': 0.11612630412972073}
+For group: "NAU155.palm", the group means is: 0.0105029238997
+The info is: {'std': 0.89542378039975756, 'mean': 0.010502923899684959}
+For group: "NCS233.palm", the group means is: -0.0400285090949
+The info is: {'std': 0.52951292873998057, 'mean': -0.23557865289158419}
+For group: "NAU101.palm", the group means is: -0.0473128583791
+The info is: {'std': 0.42397955890089939, 'mean': -0.040028509094941038}
+For group: "CUB052.palm", the group means is: -0.00690293111839
+The info is: {'std': 0.44853784466676078, 'mean': -0.047312858379122878}
+For group: "NAU147.palm", the group means is: -0.0130345686614
+The info is: {'std': 0.29063990675111595, 'mean': -0.0069029311183909578}
+For group: "NCS212.palm", the group means is: 0.066800632635
+The info is: {'std': 0.16693266135004142, 'mean': 0.086773858480177782}
+For group: "CUB019.palm", the group means is: 0.129425610688
+The info is: {'std': 0.57925909544124421, 'mean': 0.066800632635045695}
+For group: "NAU150.palm", the group means is: 0.184352098461
+The info is: {'std': 0.50134666838465225, 'mean': 0.12942561068803837}
+For group: "NCS253.palm", the group means is: -0.173688069727
+The info is: {'std': 0.8689258294299802, 'mean': -0.17368806972722425}
+For group: "CUB015.palm", the group means is: 0.0351921754082
+The info is: {'std': 0.61597070544217869, 'mean': 0.035192175408207613}
+For group: "NAU136.palm", the group means is: -0.235578652892
+The info is: {'std': 0.33926620436547728, 'mean': -0.01303456866143975}
+For group: "CUB051.palm", the group means is: 0.11612630413
+The info is: {'std': 0.42959050559604745, 'mean': 0.072744924366528796}
+For group: "NAU133.palm", the group means is: -0.0753390912805
+The info is: {'std': 0.91860344061509724, 'mean': 0.085706741887912469}
+For group: "NCS210.palm", the group means is: -0.0893325602593
+The info is: {'std': 0.78040644594110364, 'mean': 0.14539980414040027}
+For group: "NAU154.palm", the group means is: 0.0727449243665
+The info is: {'std': 0.40808198838074211, 'mean': -0.075339091280535037}
+For group: "CUB012.palm", the group means is: -0.057805442516
+The info is: {'std': 0.40406455822477744, 'mean': -0.0040775858094327698}
+For group: "NAU132.palm", the group means is: -0.0571313257286
+The info is: {'std': 0.39109222481839495, 'mean': -0.089332560259343163}
+For group: "NAU121.palm", the group means is: 0.0867738584802
+The info is: {'std': 0.82301674923417234, 'mean': 0.020489836290976726}
+For group: "CUB056.palm", the group means is: -0.121835982965
+The info is: {'std': 0.49400990012644996, 'mean': -0.057805442516041965}
+For group: "NCS243.palm", the group means is: -0.104100055314
+The info is: {'std': 0.63291154616547041, 'mean': -0.032843667770052022}
+For group: "NCS234.palm", the group means is: 0.389371787941
+The info is: {'std': 0.86973757013178088, 'mean': -0.21051636591772174}
+For group: "CUB003.palm", the group means is: -0.15704090066
+The info is: {'std': 0.65949605627968999, 'mean': -0.12183598296483857}
+For group: "NAU123.palm", the group means is: -0.0760406013059
+The info is: {'std': 0.6989513014547627, 'mean': -0.10410005531388289}
+For group: "CUB009.palm", the group means is: -0.167811624035
+The info is: {'std': 0.55382441776263258, 'mean': 0.0044323464829688474}
+For group: "CUB007.palm", the group means is: 0.0389920995692
+The info is: {'std': 0.27798248752108234, 'mean': 0.093629890056108792}
+For group: "NCS263.palm", the group means is: 0.0439389798369
+The info is: {'std': 1.023266061554283, 'mean': -0.15704090066020474}
+For group: "NAU109.palm", the group means is: 0.295099214248
+The info is: {'std': 0.51968268527180383, 'mean': -0.076040601305868885}
+For group: "NCS214.palm", the group means is: -0.31163578608
+The info is: {'std': 0.68472752893314692, 'mean': 0.043938979836887826}
+For group: "NCS204.palm", the group means is: -0.0561814892097
+The info is: {'std': 0.51357379692648741, 'mean': 0.038992099569248283}
+For group: "NAU164.palm", the group means is: -0.210516365918
+The info is: {'std': 1.0768801028812107, 'mean': -0.16781162403482491}
+For group: "NAU110.palm", the group means is: -0.0427641431011
+The info is: {'std': 0.64823485873784692, 'mean': -0.31163578608039461}
+For group: "CUB016.palm", the group means is: 0.184648048781
+The info is: {'std': 0.41826398651392038, 'mean': -0.056181489209706267}
+For group: "NAU105.palm", the group means is: -0.0600785839733
+The info is: {'std': 0.65824094324180271, 'mean': 0.29509921424840663}
+For group: "CUB042.palm", the group means is: 0.0842207202783
+The info is: {'std': 0.285478389037708, 'mean': 0.18464804878109065}
+For group: "NAU106.palm", the group means is: 0.0936298900561
+The info is: {'std': 0.30562640423358289, 'mean': -0.060078583973282675}
+For group: "CUB029.palm", the group means is: -0.0925181663473
+The info is: {'std': 0.71062904510685532, 'mean': -0.17382131329641007}
+For group: "NCS213.palm", the group means is: 0.257791742
+The info is: {'std': 0.50841739087212678, 'mean': -0.092518166347334604}
+For group: "CUB027.palm", the group means is: -0.0177393714599
+The info is: {'std': 0.41843906382358842, 'mean': 0.2577917419998717}
+For group: "NAU134.palm", the group means is: 0.0772798131951
+The info is: {'std': 0.20653079783889702, 'mean': -0.017739371459889401}
+For group: "NAU149.palm", the group means is: -0.00407758580943
+The info is: {'std': 0.64063353795581601, 'mean': 0.077279813195116523}
+For group: "NAU157.palm", the group means is: 0.0181816905826
+The info is: {'std': 0.8583275939195002, 'mean': -0.0571313257286497}
+For group: "CUB008.palm", the group means is: 0.0857067418879
+The info is: {'std': 0.18355842632154765, 'mean': 0.018181690582641963}
+For group: "CUB026.palm", the group means is: -0.0328436677701
+The info is: {'std': 0.41486412288230451, 'mean': -0.042764143101096316}
+For group: "NAU160.palm", the group means is: -0.113559409497
+The info is: {'std': 0.2882688346193501, 'mean': -0.11355940949705326}
+For group: "NCS248.palm", the group means is: 0.00443234648297
+The info is: {'std': 0.98740137144622431, 'mean': 0.25399944293447541}
+For group: "CUB011.palm", the group means is: -0.166386602487
+The info is: {'std': 0.37107636524010484, 'mean': -0.16638660248746673}
+For group: "CUB004.palm", the group means is: 0.253999442934
+The info is: {'std': 1.3171248660830863, 'mean': 0.18435209846055511}
+For group: "CUB050.palm", the group means is: -0.17877859939
+The info is: {'std': 0.48719385989317732, 'mean': -0.17877859938992627}
+For group: "CUB048.palm", the group means is: -0.153091468628
+The info is: {'std': 0.97881853561386634, 'mean': -0.15309146862771897}
+For group: "CUB033.palm", the group means is: 0.0179351701677
+The info is: {'std': 0.57703768341098627, 'mean': 0.017935170167660594}
+For group: "CUB017.palm", the group means is: 0.174786644216
+The info is: {'std': 0.90992205067329845, 'mean': 0.1747866442161338}
+For group: "CUB040.palm", the group means is: 0.0437764133907
+The info is: {'std': 0.66989584989683315, 'mean': 0.043776413390718499}
+For group: "CUB028.palm", the group means is: -0.173821313296
+The info is: {'std': 0.32153011277931753, 'mean': 0.084220720278312552}
+For group: "CUB053.palm", the group means is: 0.0848364786156
+The info is: {'std': 0.48423109340034282, 'mean': 0.084836478615603506}
+
+Grouped by GutTimeseries: Only one value in the group.
+
+Grouped by "Sickness_disturbance", probability: 0.990075
+For group: "Yes", the group means is: 0.00139894204606
+The info is: {'std': 0.87332532005296748, 'mean': 0.0013989420460648243}
+For group: "No", the group means is: 0.000418497187218
+The info is: {'std': 0.81274045159705344, 'mean': 0.0004184971872180265}
+
+Grouped by "HormonalBirthControl", probability: 0.767490
+For group: "yes.I.have.an.IUD", the group means is: 0.409141485041
+The info is: {'std': 0.8921805751434313, 'mean': 0.40914148504137443}
+For group: "DMPA", the group means is: 0.257791742
+The info is: {'std': 0.41843906382358842, 'mean': 0.2577917419998717}
+For group: "pill", the group means is: -0.00988648286543
+The info is: {'std': 1.0171026218077566, 'mean': -0.0098864828654289163}
+For group: "NuvaRing", the group means is: 0.07463507893
+The info is: {'std': 1.29240239218653, 'mean': 0.074635078930049809}
+For group: "no", the group means is: 0.0019570121747
+The info is: {'std': 0.78512300302582161, 'mean': 0.0019570121746970747}
+
+Grouped by "SunAllergies", probability: 0.730692
+For group: "yes", the group means is: -0.0698498902061
+The info is: {'std': 0.7308337082580495, 'mean': -0.069849890206100232}
+For group: "no", the group means is: 0.00135485458248
+The info is: {'std': 0.83992491859202201, 'mean': 0.0013548545824825908}
+
+Grouped by "HoursOfSleep", probability: 0.838496
+For group: "6.7", the group means is: -0.00412179014008
+The info is: {'std': 0.81664442092644662, 'mean': -0.0041217901400830842}
+For group: "greater.than.8", the group means is: -0.0241601168113
+The info is: {'std': 1.0732861391894168, 'mean': -0.024160116811271719}
+For group: "7.8", the group means is: -0.00113545685741
+The info is: {'std': 0.79296213043912567, 'mean': -0.0011354568574060465}
+For group: "less.than.5", the group means is: 0.389371787941
+The info is: {'std': 1.0130521349523633, 'mean': 0.38937178794091382}
+For group: "5.6", the group means is: -0.0411209905593
+The info is: {'std': 0.88906968597283687, 'mean': -0.041120990559349146}
+
+Grouped by Control: Only one value in the group.
+
+Grouped by PalmTimeseries: Only one value in the group.
+
+Grouped by SequenceCountAbove10000: this value can not be used
+
+Grouped by "RaceEthnicity", probability: 0.987077
+For group: "caucasian.asian", the group means is: 0.0389920995692
+The info is: {'std': 0.51357379692648741, 'mean': 0.038992099569248283}
+For group: "na", the group means is: -0.342072986313
+The info is: {'std': 0.50549037454566392, 'mean': -0.34207298631258631}
+For group: "asian.or.pacific.islander", the group means is: -0.0821231383635
+The info is: {'std': 0.5757403097970254, 'mean': -0.082123138363545789}
+For group: "caucasian", the group means is: 0.00161666223127
+The info is: {'std': 0.42397955890089939, 'mean': -0.040028509094941038}
+For group: "hispanic", the group means is: -0.0446569808832
+The info is: {'std': 0.71606366252551412, 'mean': -0.044656980883209914}
+For group: "half.white.hispanic", the group means is: 0.184352098461
+The info is: {'std': 1.3171248660830863, 'mean': 0.18435209846055511}
+For group: "other", the group means is: -0.0177393714599
+The info is: {'std': 0.20653079783889702, 'mean': -0.017739371459889401}
+For group: "caucasian.hispanic", the group means is: -0.0400285090949
+The info is: {'std': 0.88139734251521618, 'mean': 0.0016166622312714972}
+
+Grouped by "PersonalIDBodySite", probability: 1.000000
+For group: "NAU106palm", the group means is: 0.0936298900561
+The info is: {'std': 0.27798248752108234, 'mean': 0.093629890056108792}
+For group: "CUB003palm", the group means is: -0.15704090066
+The info is: {'std': 0.18355842632154765, 'mean': 0.018181690582641963}
+For group: "NAU121palm", the group means is: 0.0867738584802
+The info is: {'std': 0.16693266135004142, 'mean': 0.086773858480177782}
+For group: "CUB019palm", the group means is: 0.129425610688
+The info is: {'std': 0.51968268527180383, 'mean': -0.076040601305868885}
+For group: "CUB033palm", the group means is: 0.0179351701677
+The info is: {'std': 0.57703768341098627, 'mean': 0.017935170167660594}
+For group: "NCS234palm", the group means is: 0.389371787941
+The info is: {'std': 1.0130521349523633, 'mean': 0.38937178794091382}
+For group: "CUB000palm", the group means is: 0.020489836291
+The info is: {'std': 0.82301674923417234, 'mean': 0.020489836290976726}
+For group: "CUB004palm", the group means is: 0.253999442934
+The info is: {'std': 0.98740137144622431, 'mean': 0.25399944293447541}
+For group: "NAU133palm", the group means is: -0.0753390912805
+The info is: {'std': 0.45207888076286951, 'mean': 0.11612630412972073}
+For group: "CUB028palm", the group means is: -0.173821313296
+The info is: {'std': 0.71062904510685532, 'mean': -0.17382131329641007}
+For group: "CUB007palm", the group means is: 0.0389920995692
+The info is: {'std': 0.51357379692648741, 'mean': 0.038992099569248283}
+For group: "CUB053palm", the group means is: 0.0848364786156
+The info is: {'std': 0.48423109340034282, 'mean': 0.084836478615603506}
+For group: "NAU110palm", the group means is: -0.0427641431011
+The info is: {'std': 0.64063353795581601, 'mean': 0.077279813195116523}
+For group: "NAU134palm", the group means is: 0.0772798131951
+The info is: {'std': 0.64823485873784692, 'mean': -0.31163578608039461}
+For group: "NCS214palm", the group means is: -0.31163578608
+The info is: {'std': 0.41826398651392038, 'mean': -0.056181489209706267}
+For group: "NCS204palm", the group means is: -0.0561814892097
+The info is: {'std': 0.42397955890089939, 'mean': -0.040028509094941038}
+For group: "NAU101palm", the group means is: -0.0473128583791
+The info is: {'std': 0.8689258294299802, 'mean': -0.17368806972722425}
+For group: "NCS253palm", the group means is: -0.173688069727
+The info is: {'std': 0.20653079783889702, 'mean': -0.017739371459889401}
+For group: "CUB027palm", the group means is: -0.0177393714599
+The info is: {'std': 0.61597070544217869, 'mean': 0.035192175408207613}
+For group: "CUB015palm", the group means is: 0.0351921754082
+The info is: {'std': 0.40406455822477744, 'mean': -0.0040775858094327698}
+For group: "NAU149palm", the group means is: -0.00407758580943
+The info is: {'std': 0.37107636524010484, 'mean': -0.16638660248746673}
+For group: "CUB011palm", the group means is: -0.166386602487
+The info is: {'std': 0.8921805751434313, 'mean': 0.40914148504137443}
+For group: "CUB038palm", the group means is: 0.409141485041
+The info is: {'std': 0.55382441776263258, 'mean': 0.0044323464829688474}
+For group: "CUB016palm", the group means is: 0.184648048781
+The info is: {'std': 0.2882688346193501, 'mean': -0.11355940949705326}
+For group: "CUB009palm", the group means is: -0.167811624035
+The info is: {'std': 0.40808198838074211, 'mean': -0.075339091280535037}
+For group: "NAU105palm", the group means is: -0.0600785839733
+The info is: {'std': 1.0768801028812107, 'mean': -0.16781162403482491}
+For group: "NAU148palm", the group means is: -0.342072986313
+The info is: {'std': 0.30562640423358289, 'mean': -0.060078583973282675}
+For group: "NCS233palm", the group means is: -0.0400285090949
+The info is: {'std': 0.50549037454566392, 'mean': -0.34207298631258631}
+For group: "NAU160palm", the group means is: -0.113559409497
+The info is: {'std': 0.44853784466676078, 'mean': -0.047312858379122878}
+For group: "NAU150palm", the group means is: 0.184352098461
+The info is: {'std': 0.285478389037708, 'mean': 0.18464804878109065}
+For group: "CUB050palm", the group means is: -0.17877859939
+The info is: {'std': 0.48719385989317732, 'mean': -0.17877859938992627}
+For group: "CUB048palm", the group means is: -0.153091468628
+The info is: {'std': 0.97881853561386634, 'mean': -0.15309146862771897}
+For group: "CUB040palm", the group means is: 0.0437764133907
+The info is: {'std': 0.68472752893314692, 'mean': 0.043938979836887826}
+For group: "CUB012palm", the group means is: -0.057805442516
+The info is: {'std': 0.66989584989683315, 'mean': 0.043776413390718499}
+For group: "CUB008palm", the group means is: 0.0857067418879
+The info is: {'std': 0.86973757013178088, 'mean': -0.21051636591772174}
+For group: "CUB051palm", the group means is: 0.11612630413
+The info is: {'std': 0.52951292873998057, 'mean': -0.23557865289158419}
+For group: "NAU132palm", the group means is: -0.0571313257286
+The info is: {'std': 0.78040644594110364, 'mean': 0.14539980414040027}
+For group: "CUB017palm", the group means is: 0.174786644216
+The info is: {'std': 0.8583275939195002, 'mean': -0.0571313257286497}
+For group: "NCS248palm", the group means is: 0.00443234648297
+The info is: {'std': 0.90992205067329845, 'mean': 0.1747866442161338}
+For group: "NAU154palm", the group means is: 0.0727449243665
+The info is: {'std': 1.3171248660830863, 'mean': 0.18435209846055511}
+For group: "NCS210palm", the group means is: -0.0893325602593
+The info is: {'std': 0.42959050559604745, 'mean': 0.072744924366528796}
+For group: "CUB010palm", the group means is: -0.0343037538794
+The info is: {'std': 0.83281887257267107, 'mean': -0.034303753879438514}
+For group: "CUB026palm", the group means is: -0.0328436677701
+The info is: {'std': 0.63291154616547041, 'mean': -0.032843667770052022}
+For group: "NCS203palm", the group means is: 0.355832425977
+The info is: {'std': 1.3437211112778873, 'mean': 0.35583242597661346}
+For group: "NCS213palm", the group means is: 0.257791742
+The info is: {'std': 0.41843906382358842, 'mean': 0.2577917419998717}
+For group: "CUB042palm", the group means is: 0.0842207202783
+The info is: {'std': 0.32153011277931753, 'mean': 0.084220720278312552}
+For group: "NAU123palm", the group means is: -0.0760406013059
+The info is: {'std': 0.50134666838465225, 'mean': 0.12942561068803837}
+For group: "CUB037palm", the group means is: 0.14539980414
+The info is: {'std': 0.41486412288230451, 'mean': -0.042764143101096316}
+For group: "CUB052palm", the group means is: -0.00690293111839
+The info is: {'std': 0.29063990675111595, 'mean': -0.0069029311183909578}
+For group: "NCS212palm", the group means is: 0.066800632635
+The info is: {'std': 0.57925909544124421, 'mean': 0.066800632635045695}
+For group: "NAU136palm", the group means is: -0.235578652892
+The info is: {'std': 0.91860344061509724, 'mean': 0.085706741887912469}
+For group: "NAU109palm", the group means is: 0.295099214248
+The info is: {'std': 0.65824094324180271, 'mean': 0.29509921424840663}
+For group: "NCS243palm", the group means is: -0.104100055314
+The info is: {'std': 0.6989513014547627, 'mean': -0.10410005531388289}
+For group: "NAU157palm", the group means is: 0.0181816905826
+The info is: {'std': 1.023266061554283, 'mean': -0.15704090066020474}
+For group: "NAU155palm", the group means is: 0.0105029238997
+The info is: {'std': 0.89542378039975756, 'mean': 0.010502923899684959}
+For group: "NAU164palm", the group means is: -0.210516365918
+The info is: {'std': 0.49400990012644996, 'mean': -0.057805442516041965}
+For group: "NCS263palm", the group means is: 0.0439389798369
+The info is: {'std': 0.39109222481839495, 'mean': -0.089332560259343163}
+For group: "CUB044palm", the group means is: 0.0325898445329
+The info is: {'std': 0.70362468705174319, 'mean': 0.032589844532869616}
+For group: "NAU147palm", the group means is: -0.0130345686614
+The info is: {'std': 0.33926620436547728, 'mean': -0.01303456866143975}
+For group: "CUB056palm", the group means is: -0.121835982965
+The info is: {'std': 0.65949605627968999, 'mean': -0.12183598296483857}
+For group: "CUB029palm", the group means is: -0.0925181663473
+The info is: {'std': 0.50841739087212678, 'mean': -0.092518166347334604}
+
+Grouped by "Antibiotic_disturbance", probability: 0.908804
+For group: "Yes", the group means is: 0.0118283925344
+The info is: {'std': 0.601991458288341, 'mean': 0.011828392534438589}
+For group: "No", the group means is: 0.00163243454572
+The info is: {'std': 0.84084824292049065, 'mean': 0.0016324345457229242}
+
+Grouped by "BrushTeeth", probability: 0.919199
+For group: "regularly", the group means is: -0.0124578260153
+The info is: {'std': 0.90875939349518153, 'mean': -0.012457826015261051}
+For group: "daily", the group means is: 0.00141800458421
+The info is: {'std': 0.81109262207583033, 'mean': 0.0014180045842084742}
+
+Grouped by "DrugAllergies", probability: 0.965226
+For group: "yes", the group means is: 0.00264996758887
+The info is: {'std': 0.74638420252333615, 'mean': 0.0026499675888748773}
+For group: "no", the group means is: -0.00149981255893
+The info is: {'std': 0.87525614277927599, 'mean': -0.0014998125589269706}
+
+Grouped by "OverTheCounterFacialAcne", probability: 0.956875
+For group: "yes", the group means is: 0.00169226299163
+The info is: {'std': 0.80297559669378127, 'mean': 0.0016922629916269344}
+For group: "no", the group means is: -0.00214781519763
+The info is: {'std': 0.78792746570852734, 'mean': -0.0021478151976271251}
+
+Grouped by "StartWeek", probability: 0.809527
+For group: "1", the group means is: 0.00134127888526
+The info is: {'std': 0.85997824397171607, 'mean': 0.0013412788852633264}
+For group: "2", the group means is: -0.0589435365793
+The info is: {'std': 0.55327655191145475, 'mean': -0.058943536579298683}
+
+Grouped by "CampusDining", probability: 0.920565
+For group: "yes", the group means is: 0.0151767576646
+The info is: {'std': 0.69261641510128746, 'mean': 0.01517675766456731}
+For group: "no", the group means is: 0.00141800458421
+The info is: {'std': 0.83613907082739791, 'mean': 0.0014180045842084733}
+
+Grouped by "BMIclass", probability: 0.993128
+For group: "na", the group means is: -0.025199977498
+The info is: {'std': 0.77068151141723473, 'mean': -0.025199977498003685}
+For group: "normal", the group means is: 0.00207213053791
+The info is: {'std': 0.69444299302519108, 'mean': -0.0092607326525367805}
+For group: "overweight", the group means is: -0.0296619258192
+The info is: {'std': 0.83147554397958179, 'mean': -0.029661925819171216}
+For group: "obese", the group means is: 0.0576166107577
+The info is: {'std': 0.82025172956677961, 'mean': 0.057616610757698167}
+For group: "underweight", the group means is: -0.00926073265254
+The info is: {'std': 0.90000245479234309, 'mean': 0.0020721305379145507}
+
+Grouped by "Tonsils", probability: 0.998644
+For group: "yes", the group means is: 0.00171498742889
+The info is: {'std': 0.74458636052945704, 'mean': 0.0017149874288919929}
+For group: "no", the group means is: 0.00154216166762
+The info is: {'std': 0.8333145291723344, 'mean': 0.0015421616676184328}
+
+Grouped by "StopWeek", probability: 0.996824
+For group: "11", the group means is: -0.0627440561542
+The info is: {'std': 0.86801204196898174, 'mean': -0.062744056154193553}
+For group: "10", the group means is: 0.00192881315201
+The info is: {'std': 0.82855403492879354, 'mean': 0.0019288131520069159}
+For group: "13", the group means is: 0.0468116992983
+The info is: {'std': 0.87583025407286719, 'mean': 0.046811699298338186}
+For group: "12", the group means is: -0.00163675711074
+The info is: {'std': 0.71435083295643731, 'mean': -0.0016367571107409715}
+For group: "14", the group means is: -0.0322383290369
+The info is: {'std': 0.45303238917218785, 'mean': -0.032238329036920157}
+For group: "7", the group means is: -0.210516365918
+The info is: {'std': 0.86973757013178088, 'mean': -0.21051636591772174}
+For group: "9", the group means is: -0.10188674227
+The info is: {'std': 0.72780602379553938, 'mean': -0.1018867422704013}
+For group: "8", the group means is: 0.0348610155193
+The info is: {'std': 0.4175112629266548, 'mean': 0.034861015519307315}
+
+Grouped by "WeightChanges", probability: 0.956052
+For group: "decreased", the group means is: -0.00146554584885
+The info is: {'std': 0.92569932047980386, 'mean': -0.0014655458488504959}
+For group: "increased", the group means is: -0.0374432241207
+The info is: {'std': 0.70584700444192239, 'mean': -0.037443224120669097}
+For group: "stable", the group means is: 0.00157112245011
+The info is: {'std': 0.87094668373576178, 'mean': 0.0015711224501089188}
+
+Grouped by "PoisonIvyOakAllergies", probability: 0.740071
+For group: "yes", the group means is: -0.0338840382218
+The info is: {'std': 0.69277582059623799, 'mean': -0.033884038221797239}
+For group: "no", the group means is: 0.00150404081741
+The info is: {'std': 0.82219994100774896, 'mean': 0.0015040408174076402}
+
+Grouped by "OtherSpecialDiet", probability: 0.974650
+For group: "yes.gluten.free..70percent.raw", the group means is: -0.121835982965
+The info is: {'std': 0.65949605627968999, 'mean': -0.12183598296483857}
+For group: "no", the group means is: 0.00142101520965
+The info is: {'std': 0.84991356808288399, 'mean': 0.0014210152096526532}
+For group: "yes.meats.veges.nuts.seeds.berries.lots.of.yogurt.kefir", the group means is: 0.0772798131951
+The info is: {'std': 0.64063353795581601, 'mean': 0.077279813195116523}
+For group: "yes.organic", the group means is: 0.184352098461
+The info is: {'std': 1.3171248660830863, 'mean': 0.18435209846055511}
+For group: "yes.low.oil.whole.graon.eat.4.6.timers.per.day.small.meals", the group means is: -0.173688069727
+The info is: {'std': 0.8689258294299802, 'mean': -0.17368806972722425}
+For group: "yes", the group means is: 0.0857067418879
+The info is: {'std': 0.91860344061509724, 'mean': 0.085706741887912469}
+
+Grouped by "WeeksSinceStart", probability: 0.999997
+For group: "0.5", the group means is: -0.10128220846
+The info is: {'std': 1.2808549032283272, 'mean': -0.10128220845955294}
+For group: "1", the group means is: 0.00384821786875
+The info is: {'std': 1.0705216440610754, 'mean': 0.0038482178687540519}
+For group: "0", the group means is: 0.0443814181764
+The info is: {'std': 1.1246251208029485, 'mean': 0.044381418176398527}
+For group: "3", the group means is: -0.041053721587
+The info is: {'std': 1.4192528544994876, 'mean': -0.041053721586969322}
+For group: "2", the group means is: 0.0131504882452
+The info is: {'std': 1.0409434547675531, 'mean': 0.013150488245162678}
+For group: "5", the group means is: 0.011851068722
+The info is: {'std': 1.1297920147549239, 'mean': 0.011851068722037301}
+For group: "4", the group means is: -0.0263668004974
+The info is: {'std': 1.1185906236923324, 'mean': -0.026366800497442146}
+For group: "7", the group means is: -0.00577500864693
+The info is: {'std': 1.5179708063234432, 'mean': -0.0057750086469267022}
+For group: "6", the group means is: 0.0153760356649
+The info is: {'std': 1.2165389687201045, 'mean': 0.015376035664902088}
+For group: "9", the group means is: 0.0871937433475
+The info is: {'std': 1.104439511690849, 'mean': 0.08719374334752017}
+For group: "8", the group means is: 0.0158653618315
+The info is: {'std': 1.1539655175087997, 'mean': 0.015865361831548616}
+
+Grouped by "PersonalID", probability: 1.000000
+For group: "CUB012", the group means is: -0.057805442516
+The info is: {'std': 1.3171248660830863, 'mean': 0.18435209846055511}
+For group: "CUB011", the group means is: -0.166386602487
+The info is: {'std': 0.49400990012644996, 'mean': -0.057805442516041965}
+For group: "CUB010", the group means is: -0.0343037538794
+The info is: {'std': 0.37107636524010484, 'mean': -0.16638660248746673}
+For group: "CUB017", the group means is: 0.174786644216
+The info is: {'std': 0.83281887257267107, 'mean': -0.034303753879438514}
+For group: "CUB016", the group means is: 0.184648048781
+The info is: {'std': 0.90992205067329845, 'mean': 0.1747866442161338}
+For group: "CUB015", the group means is: 0.0351921754082
+The info is: {'std': 0.285478389037708, 'mean': 0.18464804878109065}
+For group: "NAU148", the group means is: -0.342072986313
+The info is: {'std': 0.61597070544217869, 'mean': 0.035192175408207613}
+For group: "NAU121", the group means is: 0.0867738584802
+The info is: {'std': 0.50549037454566392, 'mean': -0.34207298631258631}
+For group: "CUB019", the group means is: 0.129425610688
+The info is: {'std': 0.16693266135004142, 'mean': 0.086773858480177782}
+For group: "NAU164", the group means is: -0.210516365918
+The info is: {'std': 0.50134666838465225, 'mean': 0.12942561068803837}
+For group: "CUB008", the group means is: 0.0857067418879
+The info is: {'std': 0.52951292873998057, 'mean': -0.23557865289158419}
+For group: "CUB038", the group means is: 0.409141485041
+The info is: {'std': 0.8921805751434313, 'mean': 0.40914148504137443}
+For group: "NAU106", the group means is: 0.0936298900561
+The info is: {'std': 0.65949605627968999, 'mean': -0.12183598296483857}
+For group: "CUB056", the group means is: -0.121835982965
+The info is: {'std': 0.57703768341098627, 'mean': 0.017935170167660594}
+For group: "CUB033", the group means is: 0.0179351701677
+The info is: {'std': 0.48423109340034282, 'mean': 0.084836478615603506}
+For group: "CUB053", the group means is: 0.0848364786156
+The info is: {'std': 0.29063990675111595, 'mean': -0.0069029311183909578}
+For group: "CUB052", the group means is: -0.00690293111839
+The info is: {'std': 0.78040644594110364, 'mean': 0.14539980414040027}
+For group: "CUB037", the group means is: 0.14539980414
+The info is: {'std': 0.48719385989317732, 'mean': -0.17877859938992627}
+For group: "NAU160", the group means is: -0.113559409497
+The info is: {'std': 1.0130521349523633, 'mean': 0.38937178794091382}
+For group: "NAU154", the group means is: 0.0727449243665
+The info is: {'std': 0.40406455822477744, 'mean': -0.0040775858094327698}
+For group: "NAU149", the group means is: -0.00407758580943
+The info is: {'std': 0.18355842632154765, 'mean': 0.018181690582641963}
+For group: "CUB004", the group means is: 0.253999442934
+The info is: {'std': 0.2882688346193501, 'mean': -0.11355940949705326}
+For group: "CUB003", the group means is: -0.15704090066
+The info is: {'std': 0.42397955890089939, 'mean': -0.040028509094941038}
+For group: "NAU101", the group means is: -0.0473128583791
+The info is: {'std': 0.55382441776263258, 'mean': 0.0044323464829688474}
+For group: "NAU147", the group means is: -0.0130345686614
+The info is: {'std': 0.33926620436547728, 'mean': -0.01303456866143975}
+For group: "NCS248", the group means is: 0.00443234648297
+The info is: {'std': 0.41486412288230451, 'mean': -0.042764143101096316}
+For group: "CUB051", the group means is: 0.11612630413
+The info is: {'std': 0.45207888076286951, 'mean': 0.11612630412972073}
+For group: "NCS204", the group means is: -0.0561814892097
+The info is: {'std': 0.41826398651392038, 'mean': -0.056181489209706267}
+For group: "NAU110", the group means is: -0.0427641431011
+The info is: {'std': 0.51968268527180383, 'mean': -0.076040601305868885}
+For group: "CUB050", the group means is: -0.17877859939
+The info is: {'std': 1.3437211112778873, 'mean': 0.35583242597661346}
+For group: "NAU123", the group means is: -0.0760406013059
+The info is: {'std': 0.98740137144622431, 'mean': 0.25399944293447541}
+For group: "NCS203", the group means is: 0.355832425977
+The info is: {'std': 0.51357379692648741, 'mean': 0.038992099569248283}
+For group: "NAU150", the group means is: 0.184352098461
+The info is: {'std': 0.82301674923417234, 'mean': 0.020489836290976726}
+For group: "CUB007", the group means is: 0.0389920995692
+The info is: {'std': 0.89542378039975756, 'mean': 0.010502923899684959}
+For group: "CUB000", the group means is: 0.020489836291
+The info is: {'std': 1.023266061554283, 'mean': -0.15704090066020474}
+For group: "NAU155", the group means is: 0.0105029238997
+The info is: {'std': 0.8583275939195002, 'mean': -0.0571313257286497}
+For group: "NAU157", the group means is: 0.0181816905826
+The info is: {'std': 0.40808198838074211, 'mean': -0.075339091280535037}
+For group: "NAU132", the group means is: -0.0571313257286
+The info is: {'std': 0.6989513014547627, 'mean': -0.10410005531388289}
+For group: "NAU133", the group means is: -0.0753390912805
+The info is: {'std': 0.91860344061509724, 'mean': 0.085706741887912469}
+For group: "NCS243", the group means is: -0.104100055314
+The info is: {'std': 1.0768801028812107, 'mean': -0.16781162403482491}
+For group: "NAU136", the group means is: -0.235578652892
+The info is: {'std': 0.64063353795581601, 'mean': 0.077279813195116523}
+For group: "CUB009", the group means is: -0.167811624035
+The info is: {'std': 0.68472752893314692, 'mean': 0.043938979836887826}
+For group: "NAU134", the group means is: 0.0772798131951
+The info is: {'std': 0.66989584989683315, 'mean': 0.043776413390718499}
+For group: "NCS263", the group means is: 0.0439389798369
+The info is: {'std': 0.41843906382358842, 'mean': 0.2577917419998717}
+For group: "CUB040", the group means is: 0.0437764133907
+The info is: {'std': 0.71062904510685532, 'mean': -0.17382131329641007}
+For group: "CUB028", the group means is: -0.173821313296
+The info is: {'std': 0.50841739087212678, 'mean': -0.092518166347334604}
+For group: "CUB029", the group means is: -0.0925181663473
+The info is: {'std': 0.70362468705174319, 'mean': 0.032589844532869616}
+For group: "CUB044", the group means is: 0.0325898445329
+The info is: {'std': 0.97881853561386634, 'mean': -0.15309146862771897}
+For group: "CUB048", the group means is: -0.153091468628
+The info is: {'std': 0.63291154616547041, 'mean': -0.032843667770052022}
+For group: "CUB026", the group means is: -0.0328436677701
+The info is: {'std': 0.20653079783889702, 'mean': -0.017739371459889401}
+For group: "CUB027", the group means is: -0.0177393714599
+The info is: {'std': 0.86973757013178088, 'mean': -0.21051636591772174}
+For group: "CUB042", the group means is: 0.0842207202783
+The info is: {'std': 0.32153011277931753, 'mean': 0.084220720278312552}
+For group: "NCS233", the group means is: -0.0400285090949
+The info is: {'std': 0.44853784466676078, 'mean': -0.047312858379122878}
+For group: "NCS253", the group means is: -0.173688069727
+The info is: {'std': 0.8689258294299802, 'mean': -0.17368806972722425}
+For group: "NCS234", the group means is: 0.389371787941
+The info is: {'std': 0.27798248752108234, 'mean': 0.093629890056108792}
+For group: "NAU105", the group means is: -0.0600785839733
+The info is: {'std': 0.30562640423358289, 'mean': -0.060078583973282675}
+For group: "NCS213", the group means is: 0.257791742
+The info is: {'std': 0.42959050559604745, 'mean': 0.072744924366528796}
+For group: "NCS212", the group means is: 0.066800632635
+The info is: {'std': 0.57925909544124421, 'mean': 0.066800632635045695}
+For group: "NAU109", the group means is: 0.295099214248
+The info is: {'std': 0.65824094324180271, 'mean': 0.29509921424840663}
+For group: "NCS210", the group means is: -0.0893325602593
+The info is: {'std': 0.39109222481839495, 'mean': -0.089332560259343163}
+For group: "NCS214", the group means is: -0.31163578608
+The info is: {'std': 0.64823485873784692, 'mean': -0.31163578608039461}
