@@ -16,3 +16,8 @@ supervised_learning.py -i otu_table_rare_1000_palm.biom -m mapping_palm.txt -c "
 supervised_learning.py -i otu_table_rare_1000_tongue.biom -m mapping_tongue.txt -c "University" -e cv5 -o tongue_university_SL/
 
 
+For combined otu table with controls removed:
+
+split_otu_table.py -i otu_table_rare_1000.biom -m StudentMicrobiomeProject.tsv -f Control -o split_by_control
+
+supervised_learning.py -i otu_table_rare_1000_no.biom -m mapping_no.txt -c "University" -e cv5 -o Whole_otu_SL/
