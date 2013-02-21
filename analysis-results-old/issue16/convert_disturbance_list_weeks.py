@@ -63,7 +63,8 @@ def main():
                     except KeyError:
                         print ("Found PID '%s' in disturbance list that is "
                                "not in the SMP mapping file. Marking with two "
-                               "question marks." % pid)
+                               "question marks and leaving cell contents "
+                               "unmodified." % pid)
                         new_line.append('??%s' % cell)
                         continue
 
@@ -84,6 +85,12 @@ def main():
                         new_line.append('%s(%s;%s' %
                                         (new_pid, ','.join(new_weeks), rest))
                     else:
+                        print ("Found PID '%s' in disturbance list with "
+                               "week '%s' that didn't match a week in the "
+                               "WeekDescription column in the SMP mapping "
+                               "file. Marking with a single question mark and "
+                               "leaving cell contents unmodified." %
+                               (new_pid, week))
                         new_line.append('?%s(%s;%s' %
                                         (new_pid, ','.join(weeks), rest))
                 else:
@@ -120,7 +127,6 @@ def build_week_mapping(map_data, map_header):
 
         if pid in week_mapping:
             if week_desc in week_mapping[pid][1]:
-                pass
                 if wss != week_mapping[pid][1][week_desc]:
                     raise ValueError("Encountered ambiguous mapping between "
                                      "PID '%s' and WeekDescription '%s' and "

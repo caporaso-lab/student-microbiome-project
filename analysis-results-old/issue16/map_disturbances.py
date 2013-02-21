@@ -17,18 +17,20 @@ from qiime.parse import parse_mapping_file
 
 # Globals FTW... configure at will.
 schools = ['NCS', 'NAU', 'CUB']
-anti_dist_name = 'Sample_Antibiotic_Disturbance'
-sick_dist_name = 'Sample_Sickness_Disturbance'
-menst_dist_name = 'Sample_Menstruation_Disturbance'
+anti_dist_name = 'SampleAntibioticDisturbance'
+sick_dist_name = 'SampleSicknessDisturbance'
+menst_dist_name = 'SampleMenstruationDisturbance'
 
-anti_headers = ['Amoxicillin', 'Azithromycin', 'Bactrion', 'Cephalexin',
-                'Ciproflaxicin', 'Difucan', 'Doxycycline hyclate',
-                'Nitrofurantin', 'Penicillin', 'Solodyn', 'Sulfameth',
-                'Tretinoin']
-sick_headers = ['Coughing','runny nose', 'body aches', 'fever', 'headache',
+anti_headers = ['solodyn', 'clavulanate', 'difucan', 'azithromyacin',
+                'bactrion', 'zipromycin', 'amoxicillin', 'doxycycline hyclate',
+                'cephalexin', 'nitrofurantin', 'penicillin', 'tretinoin',
+                'sulfameth', 'ciproflaxicin', 'zithromax', 'zithromyacin']
+
+sick_headers = ['coughing', 'runny nose', 'body aches', 'fever', 'headache',
                 'stress ', 'sorethroat', 'stomach ache', 'ear ache',
                 'vomiting', 'diarrhea']
-menst_headers = ['Menstrual cycle']
+
+menst_headers = ['menstrual cycle']
 
 def main():
     smp_map_f = open('smp_map.txt', 'U')
@@ -36,24 +38,24 @@ def main():
             parse_mapping_file(smp_map_f)
     smp_map_f.close()
 
-    dist_f = open('disturbance_list.txt', 'U')
+    dist_f = open('new_disturbance_list.txt', 'U')
     anti_dist_map, sick_dist_map, menst_dist_map = \
             parse_disturbance_file(dist_f)
     dist_f.close()
 
     pid_idx = smp_map_header.index('PersonalID')
-    time_idx = smp_map_header.index('WeeksSinceStart')
+    wss_idx = smp_map_header.index('WeeksSinceStart')
 
-    new_smp_map_header = smp_map_header[:-1]
+    # Add the three new columns at the end.
+    new_smp_map_header = smp_map_header[:]
     new_smp_map_header.extend([anti_dist_name, sick_dist_name,
                                menst_dist_name])
-    new_smp_map_header.append(smp_map_header[-1])
 
     new_smp_map_data = []
     for row in smp_map_data:
-        pid = row[pid_idx][-3:]
-        school = row[pid_idx][:-3]
-        week = row[time_idx]
+        pid = row[pid_idx]
+        school = pid[:-3]
+        week = row[wss_idx]
 
         anti_dist = False
         sick_dist = False
@@ -61,8 +63,9 @@ def main():
 
         # Figure out if we should try to map this sample.
         valid_sample = True
+
         try:
-            pid = int(pid)
+            int(pid[-3:])
         except:
             valid_sample = False
 
@@ -75,9 +78,6 @@ def main():
             valid_sample = False
 
         if valid_sample:
-            # Map weeks since start to Dan's week numbers.
-            week = map_weeks_since_start(school, week)
-
             if pid in anti_dist_map and week in anti_dist_map[pid]:
                 anti_dist = True
             if pid in sick_dist_map and week in sick_dist_map[pid]:
@@ -90,13 +90,13 @@ def main():
         sick_dist_str = 'Yes' if sick_dist else 'No'
         menst_dist_str = 'Yes' if menst_dist else 'No'
 
-        new_row = row[:-1]
+        new_row = row[:]
         new_row.extend([anti_dist_str, sick_dist_str, menst_dist_str])
-        new_row.append(row[-1])
         new_smp_map_data.append(new_row)
 
     new_smp_map_f = open('new_smp_map.txt', 'w')
-    new_smp_map_f.write(format_mapping_file(new_smp_map_header, new_smp_map_data,
+    new_smp_map_f.write(format_mapping_file(new_smp_map_header,
+                                            new_smp_map_data,
                                             smp_map_comments))
     new_smp_map_f.close()
 
@@ -114,6 +114,11 @@ def parse_disturbance_file(dist_f):
             header = cells[0]
             cells = cells[1:]
 
+            if header == 'Disturbance type':
+                # Hack to skip "detailed disturbances" worksheet header. The
+                # other worksheet doesn't have a header line on its own.
+                continue
+
             dist_map = None
             if header in anti_headers:
                 dist_map = anti_dist_map
@@ -126,30 +131,10 @@ def parse_disturbance_file(dist_f):
                 for cell in cells:
                     if cell:
                         pid, rest = cell.split('(')
-                        pid = int(pid)
                         weeks = map(int, rest.split(';')[0].split(','))
                         dist_map[pid].extend(weeks)
 
     return anti_dist_map, sick_dist_map, menst_dist_map
-
-def map_weeks_since_start(school, week):
-    if school == 'NCS':
-        if week < 4:
-            mapped_week = week + 1
-        else:
-            mapped_week = week
-    elif school == 'NAU':
-        if week < 7:
-            mapped_week = week + 1
-        else:
-            mapped_week = week
-    elif school == 'CUB':
-        # TODO: do we need to handle CUB's spring break?
-        mapped_week = week
-    else:
-        raise ValueError("Unrecognizable school.")
-
-    return int(ceil(mapped_week))
 
 
 if __name__ == "__main__":
