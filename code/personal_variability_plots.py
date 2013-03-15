@@ -242,7 +242,6 @@ def main():
                                           "SampleSicknessDisturbance"],
                         disturbed_value="Yes",
                         time_field="WeeksSinceStart")
-    print timeseries_sample_ids['NAU144']
     self_gut, order = get_ordered_coordinates(wpc_h, wpc, [e[1] for e in timeseries_sample_ids['NAU144']])
     self_pc1 = []
     self_pc2 = []
