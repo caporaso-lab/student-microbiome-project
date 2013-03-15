@@ -11,14 +11,15 @@ __maintainer__ = "Greg Caporaso"
 __email__ = "gregcaporaso@gmail.com"
 __status__ = "Development"
 
-
-from qiime.util import parse_command_line_parameters, make_option
 from pylab import hist, xlim, figure, plot, subplot, savefig, ylim
-from qiime.group import get_adjacent_distances
+from mpl_toolkits.mplot3d import Axes3D
 from cogent.draw.distribution_plots import generate_box_plots
+from cogent.maths.stats.test import mc_t_two_sample
 from qiime.parse import parse_distmat, parse_mapping_file_to_dict
 from qiime.util import qiime_open
-from cogent.maths.stats.test import mc_t_two_sample
+from qiime.parse import parse_coords
+from qiime.group import get_adjacent_distances, get_ordered_coordinates
+from qiime.util import parse_command_line_parameters, make_option
 
 script_info = {}
 script_info['brief_description'] = ""
@@ -37,7 +38,8 @@ script_info['version'] = __version__
 
 wdm_fp = "/Users/caporaso/analysis/student-microbiome-project/beta-diversity/weighted_unifrac_dm.txt.gz"
 udm_fp = "/Users/caporaso/analysis/student-microbiome-project/beta-diversity/unweighted_unifrac_dm.txt.gz"
-
+wpc_fp = "/Users/caporaso/analysis/student-microbiome-project/beta-diversity/pcoa/weighted_unifrac_pc.txt.gz"
+upc_fp = "/Users/caporaso/analysis/student-microbiome-project/beta-diversity/pcoa/unweighted_unifrac_pc.txt.gz"
 
 
 def rank_test(data,value='Yes',tails='high'):
@@ -196,20 +198,84 @@ def plot_adjacent_unifracs(dm_header,
                 plot_adjacent_unifrac(datum,dm_header,dm_data,map_data,line_color=color)
     savefig(output_fp)
 
+def plot_self_v_other_pcoa(
+              self_pc1s,
+              self_pc2s,
+              self_pc3s,
+              other_pc1s,
+              other_pc2s,
+              other_pc3s,
+              self_colors,
+              other_colors,
+              labels,
+              disturbed_markers,
+              output_fp):
+    fig = figure()
+    ax  = fig.add_subplot(111, projection = '3d')
+
+    for i in range(len(self_pc1s)):
+        ax.plot(self_pc1s[i], self_pc2s[i], self_pc3s[i],'-.', color = self_colors[i])
+        for j in range(len(self_pc1s[i])):
+            ax.scatter(self_pc1s[i][j],self_pc2s[i][j],self_pc3s[i][j],marker=disturbed_markers[j])
+
+    for i in range(len(other_pc1s)):
+        ax.scatter(other_pc1s[i], other_pc2s[i], other_pc2s[i], color = other_colors[i])
+
+    savefig(output_fp)
+
 def main():
     option_parser, opts, args =\
        parse_command_line_parameters(**script_info)
 
     m = parse_mapping_file_to_dict(open(opts.mapping_fp,'U'))[0]
+
+    wpc_h, wpc, _, _ = parse_coords(qiime_open(wpc_fp))
+    upc_h, upc, _, _ = parse_coords(qiime_open(upc_fp))
+    
+    timeseries_sample_ids = get_timeseries_sample_ids(
+                        mapping_d=m,
+                        inclusion_field="GutTimeseries",
+                        inclusion_value="Yes",
+                        personal_id_field="PersonalID",
+                        disturbed_fields=["SampleAntibioticDisturbance",
+                                          "SampleMenstruationDisturbance",
+                                          "SampleSicknessDisturbance"],
+                        disturbed_value="Yes",
+                        time_field="WeeksSinceStart")
+    print timeseries_sample_ids['NAU144']
+    self_gut, order = get_ordered_coordinates(wpc_h, wpc, [e[1] for e in timeseries_sample_ids['NAU144']])
+    self_pc1 = []
+    self_pc2 = []
+    self_pc3 = []
+    for vector in self_gut:
+        self_pc1.append(vector[0])
+        self_pc2.append(vector[1])
+        self_pc3.append(vector[2])
+    other_pc1 = wpc[:,0]
+    other_pc2 = wpc[:,1]
+    other_pc3 = wpc[:,2]
+    plot_self_v_other_pcoa(
+              [self_pc1],
+              [self_pc2],
+              [self_pc3],
+              [other_pc1],
+              [other_pc2],
+              [other_pc3],
+              ['b'],
+              ['r'],
+              ['gut'],
+              ['o'] * len(self_pc1),
+              "pc.pdf")
+    exit()
     wh, wdm = parse_distmat(qiime_open(wdm_fp,'U'))
     uh, udm = parse_distmat(qiime_open(udm_fp,'U'))
 
     plot_adjacent_unifracs(uh,udm,m,["GutTimeseries","TongueTimeseries","ForeheadTimeseries","PalmTimeseries"],
                            "Yes",["SampleAntibioticDisturbance","SampleMenstruationDisturbance","SampleSicknessDisturbance"],
-                           "Yes",output_fp='unweighted-abx.pdf')
+                           "Yes",output_fp='unweighted-unifrac.pdf')
     plot_adjacent_unifracs(wh,wdm,m,["GutTimeseries","TongueTimeseries","ForeheadTimeseries","PalmTimeseries"],
                            "Yes",["SampleAntibioticDisturbance","SampleMenstruationDisturbance","SampleSicknessDisturbance"],
-                           "Yes",output_fp='weighted-abx.pdf')
+                           "Yes",output_fp='weighted-unifrac.pdf')
 
     r = score_ranked_adjacent_unifracs(m,
                                        udm,
