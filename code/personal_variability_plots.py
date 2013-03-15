@@ -38,74 +38,7 @@ script_info['version'] = __version__
 wdm_fp = "/Users/caporaso/analysis/student-microbiome-project/beta-diversity/weighted_unifrac_dm.txt.gz"
 udm_fp = "/Users/caporaso/analysis/student-microbiome-project/beta-diversity/unweighted_unifrac_dm.txt.gz"
 
-def get_timeseries_sample_ids(mapping_d,
-                        inclusion_field,
-                        inclusion_value,
-                        personal_id_field,
-                        disturbed_field,
-                        disturbed_value,
-                        time_field):
-    sids = {}
-    for k, v in mapping_d.items():
-        if v[inclusion_field] == inclusion_value:
-            personal_id = v[personal_id_field]
-            week = v[time_field]
-            sample_disturbed = v[disturbed_field] == disturbed_value
-            try:
-                sids[personal_id].append((week,k,sample_disturbed))
-            except KeyError:
-                sids[personal_id] = [(week,k,sample_disturbed)]
-    
-    for k in sids:
-        sids[k].sort()
-    
-    return sids
 
-def plot_adjacent_unifrac(sid_data,
-                          dm_header,
-                          dm_data,
-                          map_data,
-                          time_field = 'WeeksSinceStart',
-                          line_color='blue'):
-    disturbed_weeks = [float(e[0]) for e in sid_data if e[2]]
-    adjacent_distances = get_adjacent_distances(dm_header,dm_data,[e[1] for e in sid_data])
-    
-    x = map(float,[map_data[e[1]][time_field] for e in adjacent_distances[1]])
-    y = adjacent_distances[0]
-    plot(x,y,'-.',c=line_color)
-    ylim(0,1)
-    ymin, ymax = ylim()
-    for dw in disturbed_weeks:
-        plot([dw,dw],[ymin,ymax],'--',c='r')
-
-def plot_adjacent_unifracs(dm_headers,
-                           dm_datas,
-                           map_data,
-                           inclusion_field,
-                           inclusion_value,
-                           disturbed_field,
-                           disturbed_value,
-                           output_fp,
-                           personal_id_field = 'PersonalID',
-                           time_field = 'WeeksSinceStart',
-                           colors=['blue','green','orange','purple']):
-    sids = get_timeseries_sample_ids(map_data,
-                                     inclusion_field,
-                                     inclusion_value,
-                                     personal_id_field,
-                                     disturbed_field,
-                                     disturbed_value,
-                                     time_field)
-    num_rows = len(sids)
-    num_cols = 4
-    figure(num=None, figsize=(20, 200), dpi=80, facecolor='w', edgecolor='k')
-    
-    for i,v in enumerate(sids.values()):    
-        plot_num = i+1
-        subplot(num_rows,num_cols,plot_num)
-        for dm_header,dm_data,color in zip(dm_headers,dm_datas,colors):
-            plot_adjacent_unifrac(v,dm_header,dm_data,map_data,line_color=color)
-    savefig(output_fp)
 
 def rank_test(data,value='Yes',tails='high'):
     data.sort()
@@ -152,7 +85,7 @@ def score_ranked_adjacent_unifracs(mapping_data,
                                      inclusion_field=inclusion_field,
                                      inclusion_value=inclusion_value,
                                      personal_id_field=personal_id_field,
-                                     disturbed_field=disturbed_field,
+                                     disturbed_fields=[disturbed_field],
                                      disturbed_value=disturbed_value,
                                      time_field=time_field)
     ranked_data = []
@@ -167,6 +100,102 @@ def score_ranked_adjacent_unifracs(mapping_data,
     test_result = rank_test(ranked_data)
     return test_result[1], test_result[2], test_result[3], test_result[4]
 
+def get_timeseries_sample_ids(mapping_d,
+                        inclusion_field,
+                        inclusion_value,
+                        personal_id_field,
+                        disturbed_fields,
+                        disturbed_value,
+                        time_field):
+    pid_to_adjacent_unifrac = {}
+    for k, v in mapping_d.items():
+        if v[inclusion_field] == inclusion_value:
+            personal_id = v[personal_id_field]
+            week = v[time_field]
+            sample_disturbances = []
+            for disturbed_field in disturbed_fields:
+                if v[disturbed_field] == disturbed_value:
+                    sample_disturbances.append(disturbed_field)
+            try:
+                pid_to_adjacent_unifrac[personal_id].append((week,k,sample_disturbances))
+            except KeyError:
+                pid_to_adjacent_unifrac[personal_id] = [(week,k,sample_disturbances)]
+    
+    for personal_id in pid_to_adjacent_unifrac:
+        pid_to_adjacent_unifrac[personal_id].sort()
+    
+    return pid_to_adjacent_unifrac
+
+def plot_adjacent_unifrac(sid_data,
+                          dm_header,
+                          dm_data,
+                          map_data,
+                          time_field = 'WeeksSinceStart',
+                          line_color='blue',
+                          disturbance_colors=['blue','green','red','orange']):
+    disturbed_weeks = []
+    disturbance_types = []
+    for e in sid_data:
+        for d in e[2]:
+            disturbed_weeks.append((float(e[0]),d))
+            disturbance_types.append(d)
+    disturbance_types = list(set(disturbance_types))
+    disturbance_colors = dict(zip(disturbance_types,disturbance_colors))
+    adjacent_distances = get_adjacent_distances(dm_header,dm_data,[e[1] for e in sid_data])
+    
+    x = map(float,[map_data[e[1]][time_field] for e in adjacent_distances[1]])
+    y = adjacent_distances[0]
+    plot(x,y,'-.',c=line_color)
+    ylim(0,1)
+    ymin, ymax = ylim()
+    for dw,dt in disturbed_weeks:
+        line_color = disturbance_colors[dt]
+        dw_w_offset = dw + (disturbance_types.index(dt) * 0.1)
+        plot([dw_w_offset,dw_w_offset],[ymin,ymax],'--',c=line_color)
+
+def plot_adjacent_unifracs(dm_header,
+                           dm_data,
+                           map_data,
+                           inclusion_fields,
+                           inclusion_value,
+                           disturbed_fields,
+                           disturbed_value,
+                           output_fp,
+                           personal_id_field = 'PersonalID',
+                           time_field = 'WeeksSinceStart',
+                           colors=['brown','red','blue','orange']):
+    data = {}
+    all_pids = []
+    for inclusion_field in inclusion_fields:
+        pid_data = get_timeseries_sample_ids(
+                                         map_data,
+                                         inclusion_field,
+                                         inclusion_value,
+                                         personal_id_field,
+                                         disturbed_fields,
+                                         disturbed_value,
+                                         time_field)
+        all_pids.extend(pid_data)
+        data[inclusion_field] = pid_data
+    all_pids = set(all_pids)
+    
+    # configure the plot and subplots
+    num_rows = len(all_pids)
+    num_cols = 4
+    figure(num=None, figsize=(20, 200), dpi=80, facecolor='w', edgecolor='k')
+
+    for i,pid in enumerate(all_pids):
+        plot_num = i+1
+        subplot(num_rows,num_cols,plot_num)
+        for inclusion_field,color in zip(inclusion_fields,colors):
+            try:
+                datum = data[inclusion_field][pid]
+            except KeyError:
+                pass
+            else:
+                plot_adjacent_unifrac(datum,dm_header,dm_data,map_data,line_color=color)
+    savefig(output_fp)
+
 def main():
     option_parser, opts, args =\
        parse_command_line_parameters(**script_info)
@@ -175,13 +204,12 @@ def main():
     wh, wdm = parse_distmat(qiime_open(wdm_fp,'U'))
     uh, udm = parse_distmat(qiime_open(udm_fp,'U'))
 
-    plot_adjacent_unifracs([wh,uh],[wdm,udm],m,"GutTimeseries","Yes","SampleAntibioticDisturbance","Yes",output_fp='gut-abx.pdf')
-
-    plot_adjacent_unifracs([wh,uh],[wdm,udm],m,"TongueTimeseries","Yes","SampleAntibioticDisturbance","Yes",output_fp='tongue-abx.pdf')
-
-    plot_adjacent_unifracs([wh,uh],[wdm,udm],m,"ForeheadTimeseries","Yes","SampleAntibioticDisturbance","Yes",output_fp='forehead-abx.pdf')
-
-    plot_adjacent_unifracs([wh,uh],[wdm,udm],m,"PalmTimeseries","Yes","SampleAntibioticDisturbance","Yes",output_fp='palm-abx.pdf')
+    plot_adjacent_unifracs(uh,udm,m,["GutTimeseries","TongueTimeseries","ForeheadTimeseries","PalmTimeseries"],
+                           "Yes",["SampleAntibioticDisturbance","SampleMenstruationDisturbance","SampleSicknessDisturbance"],
+                           "Yes",output_fp='unweighted-abx.pdf')
+    plot_adjacent_unifracs(wh,wdm,m,["GutTimeseries","TongueTimeseries","ForeheadTimeseries","PalmTimeseries"],
+                           "Yes",["SampleAntibioticDisturbance","SampleMenstruationDisturbance","SampleSicknessDisturbance"],
+                           "Yes",output_fp='weighted-abx.pdf')
 
     r = score_ranked_adjacent_unifracs(m,
                                        udm,
