@@ -208,15 +208,19 @@ def plot_self_v_other_pcoa(
               self_colors,
               other_colors,
               labels,
-              disturbed_markers,
-              output_fp):
+              output_fp,
+              disturbed_markers=None):
     fig = figure()
     ax  = fig.add_subplot(111, projection = '3d')
 
     for i in range(len(self_pc1s)):
         ax.plot(self_pc1s[i], self_pc2s[i], self_pc3s[i], color = self_colors[i])
-        for j in range(len(self_pc1s[i])):
-            ax.scatter(self_pc1s[i][j],self_pc2s[i][j],self_pc3s[i][j],marker=disturbed_markers[j])
+        if disturbed_markers != None:
+            for j in range(len(self_pc1s[i])):
+                ax.scatter(self_pc1s[i][j],
+                           self_pc2s[i][j],
+                           self_pc3s[i][j],
+                           marker=disturbed_markers[j])
 
     for i in range(len(other_pc1s)):
         ax.scatter(other_pc1s[i], other_pc2s[i], other_pc2s[i], color = other_colors[i],s=1)
@@ -224,11 +228,12 @@ def plot_self_v_other_pcoa(
     savefig(output_fp)
 
 def ugly_pc_function(m,
+                     pc_h,
+                     pc,
                      inclusion_fields,
+                     disturbed_fields,
                      personal_id,
                      output_fp):
-    wpc_h, wpc, _, _ = parse_coords(qiime_open(wpc_fp))
-    upc_h, upc, _, _ = parse_coords(qiime_open(upc_fp))
     
     self_pc1s = []
     self_pc2s = []
@@ -243,16 +248,14 @@ def ugly_pc_function(m,
                             inclusion_field=inclusion_field,
                             inclusion_value="Yes",
                             personal_id_field="PersonalID",
-                            disturbed_fields=["SampleAntibioticDisturbance",
-                                              "SampleMenstruationDisturbance",
-                                              "SampleSicknessDisturbance"],
+                            disturbed_fields=disturbed_fields,
                             disturbed_value="Yes",
                             time_field="WeeksSinceStart")
         try:
             self_sample_ids = [e[1] for e in timeseries_sample_ids[personal_id]]
         except KeyError:
             self_sample_ids = []
-        self_coordinates, order = get_ordered_coordinates(wpc_h, wpc, self_sample_ids)
+        self_coordinates, order = get_ordered_coordinates(pc_h, pc, self_sample_ids)
         self_pc1 = []
         self_pc2 = []
         self_pc3 = []
@@ -268,7 +271,7 @@ def ugly_pc_function(m,
         for k,v in timeseries_sample_ids.items():
             if k != personal_id:
                 other_sample_ids.extend([e[1] for e in v])
-        other_coordinates, order = get_ordered_coordinates(wpc_h, wpc, other_sample_ids)
+        other_coordinates, order = get_ordered_coordinates(pc_h, pc, other_sample_ids)
         other_pc1 = []
         other_pc2 = []
         other_pc3 = []
@@ -290,18 +293,40 @@ def ugly_pc_function(m,
               ['r', 'r', 'r', 'r'],
               ['b', 'g', 'r', 'k'],
               ['gut','tongue', 'palm', 'forehead'],
-              [''] * len(self_pc1s[0]),
-              output_fp)
+              output_fp,
+              disturbed_markers=None)
 
 def main():
     option_parser, opts, args =\
        parse_command_line_parameters(**script_info)
 
     m = parse_mapping_file_to_dict(open(opts.mapping_fp,'U'))[0]
+    wpc_h, wpc, _, _ = parse_coords(qiime_open(wpc_fp))
+    upc_h, upc, _, _ = parse_coords(qiime_open(upc_fp))
     ugly_pc_function(m,
-                     ["GutTimeseries","TongueTimeseries","ForeheadTimeseries","PalmTimeseries"],
-                     "NAU144",
-                     "pc.pdf")
+                     wpc_h,
+                     wpc,
+                     ["GutTimeseries",
+                      "TongueTimeseries",
+                      "ForeheadTimeseries",
+                      "PalmTimeseries"],
+                     ["SampleAntibioticDisturbance",
+                      "SampleMenstruationDisturbance",
+                      "SampleSicknessDisturbance"],
+                     "CUB000",
+                     "pc-weighted.pdf")
+    ugly_pc_function(m,
+                     upc_h,
+                     upc,
+                     ["GutTimeseries",
+                      "TongueTimeseries",
+                      "ForeheadTimeseries",
+                      "PalmTimeseries"],
+                     ["SampleAntibioticDisturbance",
+                      "SampleMenstruationDisturbance",
+                      "SampleSicknessDisturbance"],
+                     "CUB000",
+                     "pc-unweighted.pdf")
 
     wh, wdm = parse_distmat(qiime_open(wdm_fp,'U'))
     uh, udm = parse_distmat(qiime_open(udm_fp,'U'))
