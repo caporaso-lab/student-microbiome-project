@@ -223,165 +223,74 @@ def plot_self_v_other_pcoa(
 
     savefig(output_fp)
 
-def ugly_pc_function(m,output_fp):
+def ugly_pc_function(m,
+                     inclusion_fields,
+                     personal_id,
+                     output_fp):
     wpc_h, wpc, _, _ = parse_coords(qiime_open(wpc_fp))
     upc_h, upc, _, _ = parse_coords(qiime_open(upc_fp))
     
-    timeseries_sample_ids = get_timeseries_sample_ids(
-                        mapping_d=m,
-                        inclusion_field="GutTimeseries",
-                        inclusion_value="Yes",
-                        personal_id_field="PersonalID",
-                        disturbed_fields=["SampleAntibioticDisturbance",
-                                          "SampleMenstruationDisturbance",
-                                          "SampleSicknessDisturbance"],
-                        disturbed_value="Yes",
-                        time_field="WeeksSinceStart")
-    try:
-        self_sample_ids = [e[1] for e in timeseries_sample_ids['NAU144']]
-    except KeyError:
-        self_sample_ids = []
-    self_gut, order = get_ordered_coordinates(wpc_h, wpc, self_sample_ids)
-    self_gut_pc1 = []
-    self_gut_pc2 = []
-    self_gut_pc3 = []
-    for vector in self_gut:
-        self_gut_pc1.append(vector[0])
-        self_gut_pc2.append(vector[1])
-        self_gut_pc3.append(vector[2])
+    self_pc1s = []
+    self_pc2s = []
+    self_pc3s = []
+    other_pc1s = []
+    other_pc2s = []
+    other_pc3s = []
     
-    other_sample_ids = []
-    for k,v in timeseries_sample_ids.items():
-        if k != 'NAU144':
-            other_sample_ids.extend([e[1] for e in v])
-    other_gut, order = get_ordered_coordinates(wpc_h, wpc, other_sample_ids)
-    other_gut_pc1 = []
-    other_gut_pc2 = []
-    other_gut_pc3 = []
-    for vector in other_gut:
-        other_gut_pc1.append(vector[0])
-        other_gut_pc2.append(vector[1])
-        other_gut_pc3.append(vector[2])
+    for inclusion_field in inclusion_fields:
+        timeseries_sample_ids = get_timeseries_sample_ids(
+                            mapping_d=m,
+                            inclusion_field=inclusion_field,
+                            inclusion_value="Yes",
+                            personal_id_field="PersonalID",
+                            disturbed_fields=["SampleAntibioticDisturbance",
+                                              "SampleMenstruationDisturbance",
+                                              "SampleSicknessDisturbance"],
+                            disturbed_value="Yes",
+                            time_field="WeeksSinceStart")
+        try:
+            self_sample_ids = [e[1] for e in timeseries_sample_ids[personal_id]]
+        except KeyError:
+            self_sample_ids = []
+        self_coordinates, order = get_ordered_coordinates(wpc_h, wpc, self_sample_ids)
+        self_pc1 = []
+        self_pc2 = []
+        self_pc3 = []
+        for vector in self_coordinates:
+            self_pc1.append(vector[0])
+            self_pc2.append(vector[1])
+            self_pc3.append(vector[2])
+        self_pc1s.append(self_pc1)
+        self_pc2s.append(self_pc2)
+        self_pc3s.append(self_pc3)
     
-    timeseries_sample_ids = get_timeseries_sample_ids(
-                        mapping_d=m,
-                        inclusion_field="TongueTimeseries",
-                        inclusion_value="Yes",
-                        personal_id_field="PersonalID",
-                        disturbed_fields=["SampleAntibioticDisturbance",
-                                          "SampleMenstruationDisturbance",
-                                          "SampleSicknessDisturbance"],
-                        disturbed_value="Yes",
-                        time_field="WeeksSinceStart")
-    try:
-        self_sample_ids = [e[1] for e in timeseries_sample_ids['NAU144']]
-    except KeyError:
-        self_sample_ids = []
-    self_tongue, order = get_ordered_coordinates(wpc_h, wpc, self_sample_ids)
-    self_tongue_pc1 = []
-    self_tongue_pc2 = []
-    self_tongue_pc3 = []
-    for vector in self_tongue:
-        self_tongue_pc1.append(vector[0])
-        self_tongue_pc2.append(vector[1])
-        self_tongue_pc3.append(vector[2])
-        
-    other_sample_ids = []
-    for k,v in timeseries_sample_ids.items():
-        if k != 'NAU144':
-            other_sample_ids.extend([e[1] for e in v])
-    other_tongue, order = get_ordered_coordinates(wpc_h, wpc, other_sample_ids)
-    other_tongue_pc1 = []
-    other_tongue_pc2 = []
-    other_tongue_pc3 = []
-    for vector in other_tongue:
-        other_tongue_pc1.append(vector[0])
-        other_tongue_pc2.append(vector[1])
-        other_tongue_pc3.append(vector[2])
-
-    timeseries_sample_ids = get_timeseries_sample_ids(
-                        mapping_d=m,
-                        inclusion_field="PalmTimeseries",
-                        inclusion_value="Yes",
-                        personal_id_field="PersonalID",
-                        disturbed_fields=["SampleAntibioticDisturbance",
-                                          "SampleMenstruationDisturbance",
-                                          "SampleSicknessDisturbance"],
-                        disturbed_value="Yes",
-                        time_field="WeeksSinceStart")
-    try:
-        self_sample_ids = [e[1] for e in timeseries_sample_ids['NAU144']]
-    except KeyError:
-        self_sample_ids = []
-    self_palm, order = get_ordered_coordinates(wpc_h, wpc, self_sample_ids)
-    self_palm_pc1 = []
-    self_palm_pc2 = []
-    self_palm_pc3 = []
-    for vector in self_palm:
-        self_palm_pc1.append(vector[0])
-        self_palm_pc2.append(vector[1])
-        self_palm_pc3.append(vector[2])
-        
-    other_sample_ids = []
-    for k,v in timeseries_sample_ids.items():
-        if k != 'NAU144':
-            other_sample_ids.extend([e[1] for e in v])
-    other_palm, order = get_ordered_coordinates(wpc_h, wpc, other_sample_ids)
-    other_palm_pc1 = []
-    other_palm_pc2 = []
-    other_palm_pc3 = []
-    for vector in other_palm:
-        other_palm_pc1.append(vector[0])
-        other_palm_pc2.append(vector[1])
-        other_palm_pc3.append(vector[2])
-
-    timeseries_sample_ids = get_timeseries_sample_ids(
-                        mapping_d=m,
-                        inclusion_field="ForeheadTimeseries",
-                        inclusion_value="Yes",
-                        personal_id_field="PersonalID",
-                        disturbed_fields=["SampleAntibioticDisturbance",
-                                          "SampleMenstruationDisturbance",
-                                          "SampleSicknessDisturbance"],
-                        disturbed_value="Yes",
-                        time_field="WeeksSinceStart")
-    try:
-        self_sample_ids = [e[1] for e in timeseries_sample_ids['NAU144']]
-    except KeyError:
-        self_sample_ids = []
-    self_forehead, order = get_ordered_coordinates(wpc_h, wpc, self_sample_ids)
-    self_forehead_pc1 = []
-    self_forehead_pc2 = []
-    self_forehead_pc3 = []
-    for vector in self_forehead:
-        self_forehead_pc1.append(vector[0])
-        self_forehead_pc2.append(vector[1])
-        self_forehead_pc3.append(vector[2])
-        
-    other_sample_ids = []
-    for k,v in timeseries_sample_ids.items():
-        if k != 'NAU144':
-            other_sample_ids.extend([e[1] for e in v])
-    other_forehead, order = get_ordered_coordinates(wpc_h, wpc, other_sample_ids)
-    other_forehead_pc1 = []
-    other_forehead_pc2 = []
-    other_forehead_pc3 = []
-    for vector in other_forehead:
-        other_forehead_pc1.append(vector[0])
-        other_forehead_pc2.append(vector[1])
-        other_forehead_pc3.append(vector[2])
+        other_sample_ids = []
+        for k,v in timeseries_sample_ids.items():
+            if k != personal_id:
+                other_sample_ids.extend([e[1] for e in v])
+        other_coordinates, order = get_ordered_coordinates(wpc_h, wpc, other_sample_ids)
+        other_pc1 = []
+        other_pc2 = []
+        other_pc3 = []
+        for vector in other_coordinates:
+            other_pc1.append(vector[0])
+            other_pc2.append(vector[1])
+            other_pc3.append(vector[2])
+        other_pc1s.append(other_pc1)
+        other_pc2s.append(other_pc2)
+        other_pc3s.append(other_pc3)
 
     plot_self_v_other_pcoa(
-              [self_gut_pc1, self_tongue_pc1, self_palm_pc1, self_forehead_pc1],
-              [self_gut_pc2, self_tongue_pc2, self_palm_pc2, self_forehead_pc2],
-              [self_gut_pc3, self_tongue_pc3, self_palm_pc3, self_forehead_pc3],
-              [other_gut_pc1, other_tongue_pc1, other_palm_pc1, other_forehead_pc1],
-              [other_gut_pc2, other_tongue_pc2, other_palm_pc2, other_forehead_pc2],
-              [other_gut_pc3, other_tongue_pc3, other_palm_pc3, other_forehead_pc3],
+              self_pc1s,
+              self_pc2s,
+              self_pc3s,
+              other_pc1s,
+              other_pc2s,
+              other_pc3s,
               ['r', 'r', 'r', 'r'],
               ['b', 'g', 'r', 'k'],
               ['gut','tongue', 'palm', 'forehead'],
-              [''] * len(self_gut_pc1),
+              [''] * len(self_pc1s[0]),
               output_fp)
 
 def main():
@@ -389,8 +298,10 @@ def main():
        parse_command_line_parameters(**script_info)
 
     m = parse_mapping_file_to_dict(open(opts.mapping_fp,'U'))[0]
-    ugly_pc_function(m,"pc.pdf")
-
+    ugly_pc_function(m,
+                     ["GutTimeseries","TongueTimeseries","ForeheadTimeseries","PalmTimeseries"],
+                     "NAU144",
+                     "pc.pdf")
 
     wh, wdm = parse_distmat(qiime_open(wdm_fp,'U'))
     uh, udm = parse_distmat(qiime_open(udm_fp,'U'))
