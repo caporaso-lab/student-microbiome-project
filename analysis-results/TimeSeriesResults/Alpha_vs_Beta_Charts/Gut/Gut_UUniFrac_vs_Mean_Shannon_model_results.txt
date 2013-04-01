@@ -1,0 +1,19 @@
+
+Call:
+lm(formula = MEAN_Gut_Unweighted ~ Mean_Shannon, data = mapGUT)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.086456 -0.034942  0.005038  0.027589  0.091858 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   0.757624   0.042524  17.816  < 2e-16 ***
+Mean_Shannon -0.051902   0.008271  -6.275 2.23e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Residual standard error: 0.0403 on 73 degrees of freedom
+Multiple R-squared: 0.3504,	Adjusted R-squared: 0.3415 
+F-statistic: 39.37 on 1 and 73 DF,  p-value: 2.23e-08 
+

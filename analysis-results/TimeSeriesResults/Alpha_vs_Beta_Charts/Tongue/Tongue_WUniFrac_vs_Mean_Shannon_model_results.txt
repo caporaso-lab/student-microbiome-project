@@ -1,0 +1,19 @@
+
+Call:
+lm(formula = MEAN_Tongue_Weighted ~ Mean_Shannon, data = mapTON)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.143109 -0.043724  0.001767  0.041077  0.213229 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   0.56779    0.08727   6.506 6.74e-09 ***
+Mean_Shannon -0.05743    0.02168  -2.648  0.00978 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Residual standard error: 0.07115 on 78 degrees of freedom
+Multiple R-squared: 0.08251,	Adjusted R-squared: 0.07074 
+F-statistic: 7.014 on 1 and 78 DF,  p-value: 0.009783 
+
