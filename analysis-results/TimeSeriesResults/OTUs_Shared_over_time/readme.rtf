@@ -1,0 +1,89 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 This is related to Issue #33 - highlight intrapersonal variation.\
+I have generated box plots for each body habitat at different levels of filtering on a per individual basis - no singletons and the top 10% (based on abundance) of otus. The R script for this is below. I think this is a good way to highlight intrapersonal variation and allows us to say that on average xx proportion of otus are shared between any two time points per individual.\
+\
+\
+##R script to examine the number of out's shared per individual over time\
+\
+\
+otuWTax=read.table(otu_fp, header=TRUE, row.names=1, sep="\\t",check.names=FALSE)\
+map=read.table(map_fp, header=TRUE, check.names=FALSE, sep="\\t")\
+\
+u=unique(map[,"PersonalID"])\
+  \
+  out=NULL\
+  \
+  l=ncol(otuWTax)\
+  p=otuWTax[,l]\
+  otu=otuWTax[,-l]\
+  \
+  for(i in 1:length(u))\{\
+    tmp=map[map[,"PersonalID"]==u[i],]\
+    s=sort(tmp[,'WeeksSinceStart'],index=TRUE)\
+    tmp.ordered=tmp[s$ix,]\
+    otu.temp = match(tmp.ordered[,"SampleID"],colnames(otu))\
+    tmp.otu = otu[,otu.temp]\
+    \
+    ##Removes otus with 0 counts and filter to top 10% per individual, filter can be changed with other 	##one below that removes singletons per individual\
+    tmp.otu2 = tmp.otu[rowSums(tmp.otu)!=0,]\
+    tmp.otu3 = tmp.otu2[order(rowSums(tmp.otu2),decreasing=TRUE),]\
+    tmp.otu4 = tmp.otu3[1:(0.1*nrow(tmp.otu3)),]\
+    tmp.otu4[tmp.otu4>0]=1\
+    \
+    # loop through each number of sample combinations\
+    persMeans = c()\
+    for(j in 2:7)\{\
+      x2=combn(names(tmp.otu4), m=j, FUN = NULL, simplify=FALSE)\
+      x2=t(as.data.frame(x2))\
+      shared = c()\
+      for(k in 1:nrow(x2))\{\
+        # going through otus to see if present across all x2 ids\
+        for(n in 1:nrow(tmp.otu4))\{\
+          # going through x2 ids to get corresponding pres/abs for otu\
+          valsToSum = c()\
+          for(m in 1:ncol(x2))\{\
+            valsToSum = c(valsToSum,tmp.otu4[n,x2[k,m]])\
+          \}\
+          # valsToSum should equal j if otu present in all x2 ids\
+          if(sum(valsToSum) == j)\{\
+            shared = c(shared,1)\
+          \} else \{\
+            shared = c(shared,0)\
+          \}\
+        \}\
+      \}\
+      persMeans = c(persMeans,mean(shared))\
+    \}\
+    # add each patient data to master table and add column names\
+    out = rbind(out,persMeans)\
+  \}\
+   colnames(out)=c(2,3,4,5,6,7)\
+    write.table(out, "Table_palm_top_10per.txt",sep='\\t', col.names=c(2,3,4,5,6,7))\
+  \
+\
+  # make boxplots\
+  \
+  out=read.table("Table_palm_top_10per.txt", header=TRUE, check.names=FALSE, row.names=NULL, sep='\\t')\
+  pdf('Shared_OTUs_across_individuals_Palm_top_10per.pdf',onefile=TRUE, width=8.5,11)\
+  boxplot(out[,2:7],notch=TRUE, col ="blue", ylim=c(0,1),xlab="Weeks of Samples Compared", ylab="Proportion of OTUs Shared",cex.axis=1.25,cex.lab=1.5, cex=2,border="black", boxwex=0.8, main="Palm")\
+  dev.off()\
+  \
+  ##forehead = coral\
+  ##gut = brown\
+  ##tongue = lightpink1\
+  ##palm = blue\
+  \
+  \
+  \
+  ###Removes otus with 0 counts and singletons\
+  ##tmp.otu2 = tmp.otu[rowSums(tmp.otu)!=0,]\
+  ##tmp.otu2 = tmp.otu2[rowSums(tmp.otu2)!=1,]\
+  ##tmp.otu3 = tmp.otu2[order(rowSums(tmp.otu2),decreasing=TRUE),]\
+  ##tmp.otu4 = tmp.otu3\
+  ##tmp.otu4[tmp.otu4>0]=1\
+}
