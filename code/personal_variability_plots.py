@@ -16,7 +16,7 @@ from mpl_toolkits.mplot3d import Axes3D
 from cogent.draw.distribution_plots import generate_box_plots
 from cogent.maths.stats.test import mc_t_two_sample
 from qiime.parse import parse_distmat, parse_mapping_file_to_dict
-from qiime.util import qiime_open
+from qiime.util import qiime_open, create_dir
 from qiime.parse import parse_coords
 from qiime.group import get_adjacent_distances, get_ordered_coordinates
 from qiime.util import parse_command_line_parameters, make_option
@@ -31,8 +31,9 @@ script_info['required_options'] = [\
  make_option('-m','--mapping_fp',type="existing_filepath",help='the input mapping file'),\
 ]
 script_info['optional_options'] = [
- make_option('-o','--output_dir',type="new_dirpath",
-             help='the output directory [default: %default]',default='./'),\
+ # this isn't actually being used - will add back later
+ # make_option('-o','--output_dir',type="new_dirpath",
+ #             help='the output directory [default: %default]',default='./'),\
 ]
 script_info['version'] = __version__
 
@@ -301,287 +302,127 @@ def main():
        parse_command_line_parameters(**script_info)
 
     m = parse_mapping_file_to_dict(open(opts.mapping_fp,'U'))[0]
-    wpc_h, wpc, _, _ = parse_coords(qiime_open(wpc_fp))
-    upc_h, upc, _, _ = parse_coords(qiime_open(upc_fp))
-    ugly_pc_function(m,
-                     wpc_h,
-                     wpc,
-                     ["GutTimeseries",
-                      "TongueTimeseries",
-                      "ForeheadTimeseries",
-                      "PalmTimeseries"],
-                     ["SampleAntibioticDisturbance",
-                      "SampleMenstruationDisturbance",
-                      "SampleSicknessDisturbance"],
-                     "CUB000",
-                     "pc-weighted.pdf")
-    ugly_pc_function(m,
-                     upc_h,
-                     upc,
-                     ["GutTimeseries",
-                      "TongueTimeseries",
-                      "ForeheadTimeseries",
-                      "PalmTimeseries"],
-                     ["SampleAntibioticDisturbance",
-                      "SampleMenstruationDisturbance",
-                      "SampleSicknessDisturbance"],
-                     "CUB000",
-                     "pc-unweighted.pdf")
+    
+    adjacent_unifrac_analyses = False
+    pcoa_analyses = True
+    
+    if pcoa_analyses:
+        wpc_h, wpc, _, _ = parse_coords(qiime_open(wpc_fp))
+        upc_h, upc, _, _ = parse_coords(qiime_open(upc_fp))
+        ugly_pc_function(m,
+                         wpc_h,
+                         wpc,
+                         ["GutTimeseries",
+                          "TongueTimeseries",
+                          "ForeheadTimeseries",
+                          "PalmTimeseries"],
+                         ["SampleAntibioticDisturbance",
+                          "SampleMenstruationDisturbance",
+                          "SampleSicknessDisturbance"],
+                         "CUB000",
+                         "pc-weighted.pdf")
+        ugly_pc_function(m,
+                         upc_h,
+                         upc,
+                         ["GutTimeseries",
+                          "TongueTimeseries",
+                          "ForeheadTimeseries",
+                          "PalmTimeseries"],
+                         ["SampleAntibioticDisturbance",
+                          "SampleMenstruationDisturbance",
+                          "SampleSicknessDisturbance"],
+                         "CUB000",
+                         "pc-unweighted.pdf")
 
-    wh, wdm = parse_distmat(qiime_open(wdm_fp,'U'))
-    uh, udm = parse_distmat(qiime_open(udm_fp,'U'))
+        wh, wdm = parse_distmat(qiime_open(wdm_fp,'U'))
+        uh, udm = parse_distmat(qiime_open(udm_fp,'U'))
 
-    plot_adjacent_unifracs(uh,udm,m,["GutTimeseries","TongueTimeseries","ForeheadTimeseries","PalmTimeseries"],
-                           "Yes",["SampleAntibioticDisturbance","SampleMenstruationDisturbance","SampleSicknessDisturbance"],
-                           "Yes",output_fp='unweighted-unifrac.pdf')
-    plot_adjacent_unifracs(wh,wdm,m,["GutTimeseries","TongueTimeseries","ForeheadTimeseries","PalmTimeseries"],
-                           "Yes",["SampleAntibioticDisturbance","SampleMenstruationDisturbance","SampleSicknessDisturbance"],
-                           "Yes",output_fp='weighted-unifrac.pdf')
+    if adjacent_unifrac_analyses:
+        plot_adjacent_unifracs(uh,udm,m,["GutTimeseries","TongueTimeseries","ForeheadTimeseries","PalmTimeseries"],
+                               "Yes",["SampleAntibioticDisturbance","SampleMenstruationDisturbance","SampleSicknessDisturbance"],
+                               "Yes",output_fp='unweighted-unifrac.pdf')
+        plot_adjacent_unifracs(wh,wdm,m,["GutTimeseries","TongueTimeseries","ForeheadTimeseries","PalmTimeseries"],
+                               "Yes",["SampleAntibioticDisturbance","SampleMenstruationDisturbance","SampleSicknessDisturbance"],
+                               "Yes",output_fp='weighted-unifrac.pdf')
 
-    r = score_ranked_adjacent_unifracs(m,
-                                       udm,
-                                       uh,
-                                       inclusion_field="GutTimeseries",
-                                       inclusion_value="Yes",
-                                       personal_id_field="PersonalID",
-                                       disturbed_field="SampleAntibioticDisturbance",
-                                       disturbed_value="Yes")
-    print "Unweighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3])) 
-    r = score_ranked_adjacent_unifracs(m,
-                                       wdm,
-                                       wh,
-                                       inclusion_field="GutTimeseries",
-                                       inclusion_value="Yes",
-                                       personal_id_field="PersonalID",
-                                       disturbed_field="SampleAntibioticDisturbance",
-                                       disturbed_value="Yes")
-    print "Weighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
+        r = score_ranked_adjacent_unifracs(m,
+                                           udm,
+                                           uh,
+                                           inclusion_field="GutTimeseries",
+                                           inclusion_value="Yes",
+                                           personal_id_field="PersonalID",
+                                           disturbed_field="SampleAntibioticDisturbance",
+                                           disturbed_value="Yes")
+        print "Gut Unweighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3])) 
+        r = score_ranked_adjacent_unifracs(m,
+                                           wdm,
+                                           wh,
+                                           inclusion_field="GutTimeseries",
+                                           inclusion_value="Yes",
+                                           personal_id_field="PersonalID",
+                                           disturbed_field="SampleAntibioticDisturbance",
+                                           disturbed_value="Yes")
+        print "Gut Weighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
 
-    r = score_ranked_adjacent_unifracs(m,
-                                       udm,
-                                       uh,
-                                       inclusion_field="TongueTimeseries",
-                                       inclusion_value="Yes",
-                                       personal_id_field="PersonalID",
-                                       disturbed_field="SampleAntibioticDisturbance",
-                                       disturbed_value="Yes")
-    print "Unweighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
-    r = score_ranked_adjacent_unifracs(m,
-                                       wdm,
-                                       wh,
-                                       inclusion_field="TongueTimeseries",
-                                       inclusion_value="Yes",
-                                       personal_id_field="PersonalID",
-                                       disturbed_field="SampleAntibioticDisturbance",
-                                       disturbed_value="Yes")
-    print "Weighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
+        r = score_ranked_adjacent_unifracs(m,
+                                           udm,
+                                           uh,
+                                           inclusion_field="TongueTimeseries",
+                                           inclusion_value="Yes",
+                                           personal_id_field="PersonalID",
+                                           disturbed_field="SampleAntibioticDisturbance",
+                                           disturbed_value="Yes")
+        print "Tongue Unweighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
+        r = score_ranked_adjacent_unifracs(m,
+                                           wdm,
+                                           wh,
+                                           inclusion_field="TongueTimeseries",
+                                           inclusion_value="Yes",
+                                           personal_id_field="PersonalID",
+                                           disturbed_field="SampleAntibioticDisturbance",
+                                           disturbed_value="Yes")
+        print "Tongue Weighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
 
-    r = score_ranked_adjacent_unifracs(m,
-                                       udm,
-                                       uh,
-                                       inclusion_field="PalmTimeseries",
-                                       inclusion_value="Yes",
-                                       personal_id_field="PersonalID",
-                                       disturbed_field="SampleAntibioticDisturbance",
-                                       disturbed_value="Yes")
-    print "Unweighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
-    r = score_ranked_adjacent_unifracs(m,
-                                       wdm,
-                                       wh,
-                                       inclusion_field="PalmTimeseries",
-                                       inclusion_value="Yes",
-                                       personal_id_field="PersonalID",
-                                       disturbed_field="SampleAntibioticDisturbance",
-                                       disturbed_value="Yes")
-    print "Weighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
+        r = score_ranked_adjacent_unifracs(m,
+                                           udm,
+                                           uh,
+                                           inclusion_field="PalmTimeseries",
+                                           inclusion_value="Yes",
+                                           personal_id_field="PersonalID",
+                                           disturbed_field="SampleAntibioticDisturbance",
+                                           disturbed_value="Yes")
+        print "Palm Unweighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
+        r = score_ranked_adjacent_unifracs(m,
+                                           wdm,
+                                           wh,
+                                           inclusion_field="PalmTimeseries",
+                                           inclusion_value="Yes",
+                                           personal_id_field="PersonalID",
+                                           disturbed_field="SampleAntibioticDisturbance",
+                                           disturbed_value="Yes")
+        print "Palm Weighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
 
 
 
-    r = score_ranked_adjacent_unifracs(m,
-                                       udm,
-                                       uh,
-                                       inclusion_field="ForeheadTimeseries",
-                                       inclusion_value="Yes",
-                                       personal_id_field="PersonalID",
-                                       disturbed_field="SampleAntibioticDisturbance",
-                                       disturbed_value="Yes")
-    print "Unweighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
-    r = score_ranked_adjacent_unifracs(m,
-                                       wdm,
-                                       wh,
-                                       inclusion_field="ForeheadTimeseries",
-                                       inclusion_value="Yes",
-                                       personal_id_field="PersonalID",
-                                       disturbed_field="SampleAntibioticDisturbance",
-                                       disturbed_value="Yes")
-    print "Weighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
+        r = score_ranked_adjacent_unifracs(m,
+                                           udm,
+                                           uh,
+                                           inclusion_field="ForeheadTimeseries",
+                                           inclusion_value="Yes",
+                                           personal_id_field="PersonalID",
+                                           disturbed_field="SampleAntibioticDisturbance",
+                                           disturbed_value="Yes")
+        print "Forehead Unweighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
+        r = score_ranked_adjacent_unifracs(m,
+                                           wdm,
+                                           wh,
+                                           inclusion_field="ForeheadTimeseries",
+                                           inclusion_value="Yes",
+                                           personal_id_field="PersonalID",
+                                           disturbed_field="SampleAntibioticDisturbance",
+                                           disturbed_value="Yes")
+        print "Forehead Weighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
 
-    # 
-    # r = score_ranked_adjacent_unifracs(m,
-    #                                    udm,
-    #                                    uh,
-    #                                    inclusion_field="GutTimeseries",
-    #                                    inclusion_value="Yes",
-    #                                    personal_id_field="PersonalID",
-    #                                    disturbed_field="SampleMenstruationDisturbance",
-    #                                    disturbed_value="Yes")
-    # print "Unweighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
-    # r = score_ranked_adjacent_unifracs(m,
-    #                                    wdm,
-    #                                    wh,
-    #                                    inclusion_field="GutTimeseries",
-    #                                    inclusion_value="Yes",
-    #                                    personal_id_field="PersonalID",
-    #                                    disturbed_field="SampleMenstruationDisturbance",
-    #                                    disturbed_value="Yes")
-    # print "Weighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
-    # 
-    # # <codecell>
-    # 
-    # r = score_ranked_adjacent_unifracs(m,
-    #                                    udm,
-    #                                    uh,
-    #                                    inclusion_field="TongueTimeseries",
-    #                                    inclusion_value="Yes",
-    #                                    personal_id_field="PersonalID",
-    #                                    disturbed_field="SampleMenstruationDisturbance",
-    #                                    disturbed_value="Yes")
-    # print "Unweighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
-    # r = score_ranked_adjacent_unifracs(m,
-    #                                    wdm,
-    #                                    wh,
-    #                                    inclusion_field="TongueTimeseries",
-    #                                    inclusion_value="Yes",
-    #                                    personal_id_field="PersonalID",
-    #                                    disturbed_field="SampleMenstruationDisturbance",
-    #                                    disturbed_value="Yes")
-    # print "Weighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
-    # 
-    # # <codecell>
-    # 
-    # r = score_ranked_adjacent_unifracs(m,
-    #                                    udm,
-    #                                    uh,
-    #                                    inclusion_field="PalmTimeseries",
-    #                                    inclusion_value="Yes",
-    #                                    personal_id_field="PersonalID",
-    #                                    disturbed_field="SampleMenstruationDisturbance",
-    #                                    disturbed_value="Yes")
-    # print "Unweighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
-    # r = score_ranked_adjacent_unifracs(m,
-    #                                    wdm,
-    #                                    wh,
-    #                                    inclusion_field="PalmTimeseries",
-    #                                    inclusion_value="Yes",
-    #                                    personal_id_field="PersonalID",
-    #                                    disturbed_field="SampleMenstruationDisturbance",
-    #                                    disturbed_value="Yes")
-    # print "Weighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
-    # 
-    # # <codecell>
-    # 
-    # r = score_ranked_adjacent_unifracs(m,
-    #                                    udm,
-    #                                    uh,
-    #                                    inclusion_field="ForeheadTimeseries",
-    #                                    inclusion_value="Yes",
-    #                                    personal_id_field="PersonalID",
-    #                                    disturbed_field="SampleMenstruationDisturbance",
-    #                                    disturbed_value="Yes")
-    # print "Unweighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
-    # r = score_ranked_adjacent_unifracs(m,
-    #                                    wdm,
-    #                                    wh,
-    #                                    inclusion_field="ForeheadTimeseries",
-    #                                    inclusion_value="Yes",
-    #                                    personal_id_field="PersonalID",
-    #                                    disturbed_field="SampleMenstruationDisturbance",
-    #                                    disturbed_value="Yes")
-    # print "Weighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
-    # 
-    # # <codecell>
-    # 
-    # r = score_ranked_adjacent_unifracs(m,
-    #                                    udm,
-    #                                    uh,
-    #                                    inclusion_field="GutTimeseries",
-    #                                    inclusion_value="Yes",
-    #                                    personal_id_field="PersonalID",
-    #                                    disturbed_field="SampleSicknessDisturbance",
-    #                                    disturbed_value="Yes")
-    # print "Unweighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
-    # r = score_ranked_adjacent_unifracs(m,
-    #                                    wdm,
-    #                                    wh,
-    #                                    inclusion_field="GutTimeseries",
-    #                                    inclusion_value="Yes",
-    #                                    personal_id_field="PersonalID",
-    #                                    disturbed_field="SampleSicknessDisturbance",
-    #                                    disturbed_value="Yes")
-    # print "Weighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
-    # 
-    # # <codecell>
-    # 
-    # r = score_ranked_adjacent_unifracs(m,
-    #                                    udm,
-    #                                    uh,
-    #                                    inclusion_field="TongueTimeseries",
-    #                                    inclusion_value="Yes",
-    #                                    personal_id_field="PersonalID",
-    #                                    disturbed_field="SampleSicknessDisturbance",
-    #                                    disturbed_value="Yes")
-    # print "Unweighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
-    # r = score_ranked_adjacent_unifracs(m,
-    #                                    wdm,
-    #                                    wh,
-    #                                    inclusion_field="TongueTimeseries",
-    #                                    inclusion_value="Yes",
-    #                                    personal_id_field="PersonalID",
-    #                                    disturbed_field="SampleSicknessDisturbance",
-    #                                    disturbed_value="Yes")
-    # print "Weighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
-    # 
-    # # <codecell>
-    # 
-    # r = score_ranked_adjacent_unifracs(m,
-    #                                    udm,
-    #                                    uh,
-    #                                    inclusion_field="PalmTimeseries",
-    #                                    inclusion_value="Yes",
-    #                                    personal_id_field="PersonalID",
-    #                                    disturbed_field="SampleSicknessDisturbance",
-    #                                    disturbed_value="Yes")
-    # print "Unweighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
-    # r = score_ranked_adjacent_unifracs(m,
-    #                                    wdm,
-    #                                    wh,
-    #                                    inclusion_field="PalmTimeseries",
-    #                                    inclusion_value="Yes",
-    #                                    personal_id_field="PersonalID",
-    #                                    disturbed_field="SampleSicknessDisturbance",
-    #                                    disturbed_value="Yes")
-    # print "Weighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
-    # 
-    # # <codecell>
-    # 
-    # r = score_ranked_adjacent_unifracs(m,
-    #                                    udm,
-    #                                    uh,
-    #                                    inclusion_field="ForeheadTimeseries",
-    #                                    inclusion_value="Yes",
-    #                                    personal_id_field="PersonalID",
-    #                                    disturbed_field="SampleSicknessDisturbance",
-    #                                    disturbed_value="Yes")
-    # print "Unweighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
-    # r = score_ranked_adjacent_unifracs(m,
-    #                                    wdm,
-    #                                    wh,
-    #                                    inclusion_field="ForeheadTimeseries",
-    #                                    inclusion_value="Yes",
-    #                                    personal_id_field="PersonalID",
-    #                                    disturbed_field="SampleSicknessDisturbance",
-    #                                    disturbed_value="Yes")
-    # print "Weighted UniFrac: %1.3f (n-disturbed samples: %d, n-undisturbed samples: %d) " % (r[1], len(r[2]), len(r[3]))
 
 if __name__ == "__main__":
     main()
