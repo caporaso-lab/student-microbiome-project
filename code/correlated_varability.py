@@ -49,6 +49,7 @@ def main():
     option_parser, opts, args =\
        parse_command_line_parameters(**script_info)
     md, mh, _ = parse_mapping_file(open(mapping_fp))
+    
     body_sites = ['Gut','Tongue','Palm','Forehead']
     intraindividual_distances = []
     
@@ -63,6 +64,7 @@ def main():
             r = correlated_variability(intraindividual_distances[i],intraindividual_distances[j])
             print "%s/%s (n=%d): rho:%1.3f, p=%f" % (body_sites[i],body_sites[j],r[0],r[1][0],r[1][3])
     
+    intraindividual_distances = []
     print "**"
     print "Weighted UniFrac"
     for b in body_sites:
