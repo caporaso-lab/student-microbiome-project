@@ -8,13 +8,19 @@
 # weighted and unweighted UniFrac. Color by PersonalID.
 MAP=map.txt
 PID=PersonalID
+UNIV=University
 for ZIPFILE in *weighted_unifrac_dm.*_ts_only_pc.txt.gz
 do
-  PCFILE=$(echo $ZIPFILE | sed 's/.gz//')
-  OUTDIRBASE=$(echo $PCFILE | sed 's/_pc.txt//')_plots
-  mkdir $OUTDIRBASE
+PCFILE=$(echo $ZIPFILE | sed 's/.gz//')
+  OUTDIRBASE1=$(echo $PCFILE | sed 's/_pc.txt//')_personal_id_plots
+  OUTDIRBASE2=$(echo $PCFILE | sed 's/_pc.txt//')_University_plots
+  mkdir $OUTDIRBASE1
+  mkdir $OUTDIRBASE2
   gunzip -c $ZIPFILE > $PCFILE
-  make_2d_plots.py -i $PCFILE -m $MAP -b $PID -o $OUTDIRBASE/2d_discrete
-  make_3d_plots.py -i $PCFILE -m $MAP -b $PID -o $OUTDIRBASE/3d_discrete -s scaled,unscaled
-  tar czf $OUTDIRBASE.tar.gz $OUTDIRBASE
+  make_2d_plots.py -i $PCFILE -m $MAP -b $UNIV -o $OUTDIRBASE1/2d_discrete_personal_id
+  make_3d_plots.py -i $PCFILE -m $MAP -b $UNIV -o $OUTDIRBASE1/3d_discrete_personal_id -s scaled,unscaled
+  make_2d_plots.py -i $PCFILE -m $MAP -b $UNIV -o $OUTDIRBASE2/2d_discrete_university
+  make_3d_plots.py -i $PCFILE -m $MAP -b $UNIV -o $OUTDIRBASE2/3d_discrete_university -s scaled,unscaled
+  tar czf $OUTDIRBASE1.tar.gz $OUTDIRBASE1
+  tar czf $OUTDIRBASE2.tar.gz $OUTDIRBASE2
 done
