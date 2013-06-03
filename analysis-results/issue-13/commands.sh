@@ -9,14 +9,15 @@
 DMDIR=../../beta-diversity
 MAP=map.txt
 PID=PersonalID
+UNIV=University
 NUMPERMS=999
 for ZIPFILE in $DMDIR/*weighted_unifrac_dm.*_ts_only.txt.gz
 do
   DMFILE=$(echo $ZIPFILE | sed 's/.gz//')
-  OUTDIR=$(basename $DMFILE | sed 's/.txt//')_stats
+  OUTDIR=$(basename $DMFILE | sed 's/.txt//')_university_stats
   mkdir $OUTDIR
   gunzip -c $ZIPFILE > $DMFILE
-  compare_categories.py -i $DMFILE -m $MAP -c $PID -o $OUTDIR -n $NUMPERMS --method adonis
-  compare_categories.py -i $DMFILE -m $MAP -c $PID -o $OUTDIR -n $NUMPERMS --method anosim
-  compare_categories.py -i $DMFILE -m $MAP -c $PID -o $OUTDIR -n $NUMPERMS --method permdisp
+  compare_categories.py -i $DMFILE -m $MAP -c $UNIV -o $OUTDIR -n $NUMPERMS --method adonis
+  compare_categories.py -i $DMFILE -m $MAP -c $UNIV -o $OUTDIR -n $NUMPERMS --method anosim
+  compare_categories.py -i $DMFILE -m $MAP -c $UNIV -o $OUTDIR -n $NUMPERMS --method permdisp
 done

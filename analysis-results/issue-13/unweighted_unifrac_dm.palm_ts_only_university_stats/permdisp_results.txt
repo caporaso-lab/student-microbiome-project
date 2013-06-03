@@ -1,0 +1,33 @@
+Analysis of Variance Table
+
+Response: Distances
+           Df  Sum Sq   Mean Sq F value  Pr(>F)  
+Groups      2 0.01479 0.0073962  4.5935 0.01054 *
+Residuals 512 0.82439 0.0016101                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Permutation test for homogeneity of multivariate dispersions
+
+No. of permutations: 999  
+
+**** STRATA ****
+Permutations are unstratified
+
+**** SAMPLES ****
+Permutation type: free 
+Mirrored permutations for Samples?: No 
+
+Response: Distances
+           Df  Sum Sq   Mean Sq      F N.Perm Pr(>F)   
+Groups      2 0.01479 0.0073962 4.5935    999  0.009 **
+Residuals 512 0.82439 0.0016101                        
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Pairwise comparisons:
+(Observed p-value below diagonal, permuted p-value above diagonal)
+           CU       NAU   NCS
+CU            0.0050000 0.744
+NAU 0.0053137           0.026
+NCS 0.7399688 0.0239098      
