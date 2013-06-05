@@ -14,10 +14,17 @@ NUMPERMS=999
 for ZIPFILE in $DMDIR/*weighted_unifrac_dm.*_ts_only.txt.gz
 do
   DMFILE=$(echo $ZIPFILE | sed 's/.gz//')
-  OUTDIR=$(basename $DMFILE | sed 's/.txt//')_university_stats
-  mkdir $OUTDIR
+  OUTDIR1=$(basename $DMFILE | sed 's/.txt//')_university_stats
+  OUTDIR2=$(basename $DMFILE | sed 's/.txt//')_personal_id_stats
+
+  mkdir $OUTDIR1
+  mkdir $OUTDIR2
   gunzip -c $ZIPFILE > $DMFILE
-  compare_categories.py -i $DMFILE -m $MAP -c $UNIV -o $OUTDIR -n $NUMPERMS --method adonis
-  compare_categories.py -i $DMFILE -m $MAP -c $UNIV -o $OUTDIR -n $NUMPERMS --method anosim
-  compare_categories.py -i $DMFILE -m $MAP -c $UNIV -o $OUTDIR -n $NUMPERMS --method permdisp
+  compare_categories.py -i $DMFILE -m $MAP -c $UNIV -o $OUTDIR1 -n $NUMPERMS --method adonis
+  compare_categories.py -i $DMFILE -m $MAP -c $UNIV -o $OUTDIR1 -n $NUMPERMS --method anosim
+  compare_categories.py -i $DMFILE -m $MAP -c $UNIV -o $OUTDIR1 -n $NUMPERMS --method permdisp
+  
+  compare_categories.py -i $DMFILE -m $MAP -c $PID -o $OUTDIR2 -n $NUMPERMS --method adonis
+  compare_categories.py -i $DMFILE -m $MAP -c $PID -o $OUTDIR2 -n $NUMPERMS --method anosim
+  compare_categories.py -i $DMFILE -m $MAP -c $PID -o $OUTDIR2 -n $NUMPERMS --method permdisp
 done
