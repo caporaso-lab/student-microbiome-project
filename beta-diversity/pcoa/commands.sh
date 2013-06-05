@@ -10,7 +10,7 @@ MAP=map.txt
 COL=PersonalID,University
 for ZIPFILE in *weighted_unifrac_dm.*_ts_only_pc.txt.gz
 do
-PCFILE=$(echo $ZIPFILE | sed 's/.gz//')
+  PCFILE=$(echo $ZIPFILE | sed 's/.gz//')
   OUTDIRBASE=$(echo $PCFILE | sed 's/_pc.txt//')_Personal_ID_University_plots
   mkdir $OUTDIRBASE
   gunzip -c $ZIPFILE > $PCFILE
