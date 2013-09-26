@@ -209,4 +209,13 @@ echo 'principal_coordinates.py -i /scratch/caporaso/student_microbiome/student-m
 echo 'principal_coordinates.py -i /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/weighted_unifrac_dm.ts_only.txt -o /scratch/caporaso/student_microbiome/student-microbiome-project-raw-data/ucrC/mislabeling/bdiv_even10000/weighted_unifrac_pc.ts_only.txt' | qsub -keo -N pcts -l pvmem=8gb -q memroute
 ```
 
+Rank-based disturbance tests
+----------------------------
+
+`personal_variability_plots.py` is in the student microbiome project GitHub repository code directory. The version used here was in commit `73d8ebdb9b42441f8f58129c5652442d5a6d2a3d`.
+
+```
+personal_variability_plots.py -m ../SMP-map.tsv
+```
+
 
