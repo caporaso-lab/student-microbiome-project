@@ -15,7 +15,7 @@ echo "weighted_unifrac_dm.tongue_ts_only.txt.gz" >> input_dms.txt
 
 for i in `cat input_dms.txt`
     do
-        FILENAME=$(echo $i | sed 's/.gz//')
+FILENAME=$(echo $i | sed 's/.gz//')
         PC_FILENAME=pcoa/$(echo "${FILENAME}" | sed 's/.txt/_pc.txt/')
         echo "processing ${FILENAME}"
         echo "result is ${PC_FILENAME}"
