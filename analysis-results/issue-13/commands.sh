@@ -1,5 +1,7 @@
 #!/bin/bash
 # QIIME 1.7.0-dev, master@72514df
+# R 2.12.0
+# vegan 2.0-7
 # SMP: bb888861d87c9d10b33121d829f672df01aace45
 # map.txt MD5: 8de601815ea5f4f9b0900794407a42be
 # Author: Jai Ram Rideout
